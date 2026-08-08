@@ -259,7 +259,6 @@ What confirms it is the supplement's own results. The top three adaptive profile
 
 Every figure script writes a CSV of the estimates it plots, so a fresh run can be diffed against the committed one without comparing images. Each rendered figure was also laid beside the published page, which is the only check that catches a plot drawing the right numbers in the wrong places.
 
-::: {layout-ncol=1}
 ```{r}
 #| label: fig-3
 #| fig-cap: "Study 1, over time posterior probabilities (Figure 3)."
@@ -271,7 +270,6 @@ knitr::include_graphics(image_path("figure_3_study1_posterior_probs"))
 #| fig-cap: "Study 3, over time posterior probabilities by attribute (Figure G.9). This is the figure a transposed profile grid would have scrambled."
 knitr::include_graphics(image_path("figure_g9_study3_by_attribute"))
 ```
-:::
 
 Two differences from the published figures are deliberate. Appendix Figures D.4 and D.5 carry an eleventh point at a first batch of 1,000, where the whole sample sits in the first batch and there is nothing left to adapt on; the deposit binds its static run in at that position under both algorithm labels, and the rewrite does the same. Figure 6's covariate-adjusted series is drawn with a distinct shape as well as a distinct shade, which the published version does not do.
 
