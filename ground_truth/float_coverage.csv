@@ -1,0 +1,29 @@
+table_figure,published_values,covered_values,covered_fraction,uncoverable_reason
+table_1,39,39,1,NA
+table_2,0,0,NA,Study 1 treatment wording. Nothing in the deposit computes it.
+table_3,0,0,NA,Study 2 question wording and the official statistics quoted in it. Nothing in the deposit computes them.
+table_4,0,0,NA,Study 2 treatment wording. Nothing in the deposit computes it.
+figure_1,10,10,1,NA
+figure_2,0,0,NA,Two views of the same nine simulations as Figure 1; the article states no number from it that Figure 1 does not.
+figure_3,0,0,NA,A trajectory plot with no numbers on its face; its endpoints are the posterior probabilities the results section states.
+figure_4,36,36,1,NA
+figure_5,0,0,NA,A trajectory plot with no numbers on its face.
+figure_6,40,40,1,NA
+table_c1,24,0,0,"An analytic enumeration in the supplement's worked example. The deposit ships no code for supplement A, B or C."
+figure_d1,0,0,NA,"Plots the cells of Table D.2, which are covered."
+figure_d2,0,0,NA,"Plots the cells of Table D.2, which are covered."
+table_d2,255,255,1,NA
+figure_d3,0,0,NA,"Plots the cells of Table D.3, which are covered."
+table_d3,165,165,1,NA
+figure_d4,0,0,NA,"Plots the cells of Table D.4 and D.5, which are covered, plus the static run at a first batch of 1,000."
+figure_d5,0,0,NA,"Plots the cells of Table D.4 and D.5, which are covered, plus the static run at a first batch of 1,000."
+table_d4,150,150,1,NA
+table_d5,150,150,1,NA
+table_e6,50,0,0,Fifty state minimum wage rates transcribed from an external source. The deposited data carry no wage field.
+figure_f6,20,20,1,NA
+figure_f7,20,20,1,NA
+figure_f8,40,40,1,NA
+table_f7,64,64,1,NA
+table_g8,0,0,NA,Conjoint attribute wording. The level counts it implies are covered separately.
+figure_g9,0,0,NA,A trajectory plot with no numbers on its face.
+figure_g10,0,0,NA,A trajectory plot with no numbers on its face; its endpoints are the six probabilities the supplement's results state.

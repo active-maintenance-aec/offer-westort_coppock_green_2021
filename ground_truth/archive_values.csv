@@ -1,0 +1,142 @@
+table_figure,source_block,algorithm,topic,study,arm,case,batches,first_batch,best_arm_value_hundredths,statistic,value_script
+table_1,table_1,TS,NA,NA,NA,1,NA,NA,NA,correct,0.968
+table_1,table_1,TS,NA,NA,NA,1,NA,NA,NA,rmse_best,0.0214
+table_1,table_1,TS,NA,NA,NA,1,NA,NA,NA,cov_best,0.958
+table_1,table_1,TS,NA,NA,NA,2,NA,NA,NA,correct,0.193
+table_1,table_1,TS,NA,NA,NA,2,NA,NA,NA,rmse_best,0.0335
+table_1,table_1,TS,NA,NA,NA,2,NA,NA,NA,cov_best,0.88
+table_1,table_1,TS,NA,NA,NA,3,NA,NA,NA,correct,0.715
+table_1,table_1,TS,NA,NA,NA,3,NA,NA,NA,rmse_best,0.0247
+table_1,table_1,TS,NA,NA,NA,3,NA,NA,NA,cov_best,0.955
+table_1,table_1,Static,NA,NA,NA,1,NA,NA,NA,correct,0.909
+table_1,table_1,Static,NA,NA,NA,1,NA,NA,NA,rmse_best,0.0306
+table_1,table_1,Static,NA,NA,NA,1,NA,NA,NA,rmse_te,0.0378
+table_1,table_1,Static,NA,NA,NA,1,NA,NA,NA,cov_best,0.941
+table_1,table_1,Static,NA,NA,NA,1,NA,NA,NA,cov_te,0.949
+table_1,table_1,Static,NA,NA,NA,2,NA,NA,NA,correct,0.180
+table_1,table_1,Static,NA,NA,NA,2,NA,NA,NA,rmse_best,0.0239
+table_1,table_1,Static,NA,NA,NA,2,NA,NA,NA,rmse_te,0.0334
+table_1,table_1,Static,NA,NA,NA,2,NA,NA,NA,cov_best,0.935
+table_1,table_1,Static,NA,NA,NA,2,NA,NA,NA,cov_te,0.947
+table_1,table_1,Static,NA,NA,NA,3,NA,NA,NA,correct,0.635
+table_1,table_1,Static,NA,NA,NA,3,NA,NA,NA,rmse_best,0.0307
+table_1,table_1,Static,NA,NA,NA,3,NA,NA,NA,rmse_te,0.0384
+table_1,table_1,Static,NA,NA,NA,3,NA,NA,NA,cov_best,0.94
+table_1,table_1,Static,NA,NA,NA,3,NA,NA,NA,cov_te,0.945
+table_d2,table_d2,TS,NA,NA,NA,1,1,NA,NA,correct,0.909
+table_d2,table_d2,TS,NA,NA,NA,1,1,NA,NA,rmse_best,0.0306
+table_d2,table_d2,TS,NA,NA,NA,1,1,NA,NA,rmse_te,0.0378
+table_d2,table_d2,TS,NA,NA,NA,1,1,NA,NA,cov_best,0.941
+table_d2,table_d2,TS,NA,NA,NA,1,1,NA,NA,cov_te,0.949
+table_d2,table_d2,TS,NA,NA,NA,1,2,NA,NA,correct,0.945
+table_d2,table_d2,TS,NA,NA,NA,1,2,NA,NA,rmse_best,0.0251
+table_d2,table_d2,TS,NA,NA,NA,1,2,NA,NA,rmse_te,0.0560
+table_d2,table_d2,TS,NA,NA,NA,1,2,NA,NA,cov_best,0.952
+table_d2,table_d2,TS,NA,NA,NA,1,2,NA,NA,cov_te,0.846
+table_d2,table_d2,TS,NA,NA,NA,1,4,NA,NA,correct,0.962
+table_d2,table_d2,TS,NA,NA,NA,1,4,NA,NA,rmse_best,0.0224
+table_d2,table_d2,TS,NA,NA,NA,1,4,NA,NA,rmse_te,0.0597
+table_d2,table_d2,TS,NA,NA,NA,1,4,NA,NA,cov_best,0.955
+table_d2,table_d2,TS,NA,NA,NA,1,4,NA,NA,cov_te,0.769
+table_d2,table_d2,TS,NA,NA,NA,1,5,NA,NA,correct,0.963
+table_d2,table_d2,TS,NA,NA,NA,1,5,NA,NA,rmse_best,0.0221
+table_d2,table_d2,TS,NA,NA,NA,1,5,NA,NA,rmse_te,0.0598
+table_d2,table_d2,TS,NA,NA,NA,1,5,NA,NA,cov_best,0.956
+table_d2,table_d2,TS,NA,NA,NA,1,5,NA,NA,cov_te,0.774
+table_d2,table_d2,TS,NA,NA,NA,1,8,NA,NA,correct,0.965
+table_d2,table_d2,TS,NA,NA,NA,1,8,NA,NA,rmse_best,0.0217
+table_d2,table_d2,TS,NA,NA,NA,1,8,NA,NA,rmse_te,0.0578
+table_d2,table_d2,TS,NA,NA,NA,1,8,NA,NA,cov_best,0.955
+table_d2,table_d2,TS,NA,NA,NA,1,8,NA,NA,cov_te,0.785
+table_d2,table_d2,TS,NA,NA,NA,1,10,NA,NA,correct,0.968
+table_d2,table_d2,TS,NA,NA,NA,1,10,NA,NA,rmse_best,0.0214
+table_d2,table_d2,TS,NA,NA,NA,1,10,NA,NA,rmse_te,0.0574
+table_d2,table_d2,TS,NA,NA,NA,1,10,NA,NA,cov_best,0.958
+table_d2,table_d2,TS,NA,NA,NA,1,10,NA,NA,cov_te,0.795
+table_d4,table_d4,TS,NA,NA,NA,1,NA,100,NA,correct,0.968
+table_d4,table_d4,TS,NA,NA,NA,1,NA,100,NA,rmse_best,0.0214
+table_d4,table_d4,TS,NA,NA,NA,1,NA,100,NA,rmse_te,0.0574
+table_d4,table_d4,TS,NA,NA,NA,1,NA,100,NA,cov_best,0.958
+table_d4,table_d4,TS,NA,NA,NA,1,NA,100,NA,cov_te,0.795
+table_d4,table_d4,TS,NA,NA,NA,1,NA,190,NA,correct,0.964
+table_d4,table_d4,TS,NA,NA,NA,1,NA,190,NA,rmse_best,0.0212
+table_d4,table_d4,TS,NA,NA,NA,1,NA,190,NA,rmse_te,0.0582
+table_d4,table_d4,TS,NA,NA,NA,1,NA,190,NA,cov_best,0.958
+table_d4,table_d4,TS,NA,NA,NA,1,NA,190,NA,cov_te,0.760
+table_d4,table_d4,TS,NA,NA,NA,1,NA,280,NA,correct,0.971
+table_d4,table_d4,TS,NA,NA,NA,1,NA,280,NA,rmse_best,0.0209
+table_d4,table_d4,TS,NA,NA,NA,1,NA,280,NA,rmse_te,0.0592
+table_d4,table_d4,TS,NA,NA,NA,1,NA,280,NA,cov_best,0.964
+table_d4,table_d4,TS,NA,NA,NA,1,NA,280,NA,cov_te,0.747
+table_d4,table_d4,TS,NA,NA,NA,1,NA,370,NA,correct,0.969
+table_d4,table_d4,TS,NA,NA,NA,1,NA,370,NA,rmse_best,0.0223
+table_d4,table_d4,TS,NA,NA,NA,1,NA,370,NA,rmse_te,0.0591
+table_d4,table_d4,TS,NA,NA,NA,1,NA,370,NA,cov_best,0.958
+table_d4,table_d4,TS,NA,NA,NA,1,NA,370,NA,cov_te,0.755
+table_d4,table_d4,TS,NA,NA,NA,1,NA,460,NA,correct,0.967
+table_d4,table_d4,TS,NA,NA,NA,1,NA,460,NA,rmse_best,0.0230
+table_d4,table_d4,TS,NA,NA,NA,1,NA,460,NA,rmse_te,0.0584
+table_d4,table_d4,TS,NA,NA,NA,1,NA,460,NA,cov_best,0.958
+table_d4,table_d4,TS,NA,NA,NA,1,NA,460,NA,cov_te,0.807
+table_d4,table_d4,TS,NA,NA,NA,1,NA,550,NA,correct,0.971
+table_d4,table_d4,TS,NA,NA,NA,1,NA,550,NA,rmse_best,0.0241
+table_d4,table_d4,TS,NA,NA,NA,1,NA,550,NA,rmse_te,0.0548
+table_d4,table_d4,TS,NA,NA,NA,1,NA,550,NA,cov_best,0.960
+table_d4,table_d4,TS,NA,NA,NA,1,NA,550,NA,cov_te,0.866
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,10,correct,0.113
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,10,rmse_best,0.0346
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,10,rmse_te,0.0503
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,10,cov_best,0.867
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,10,cov_te,0.848
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,11,correct,0.193
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,11,rmse_best,0.0335
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,11,rmse_te,0.0495
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,11,cov_best,0.88
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,11,cov_te,0.851
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,12,correct,0.289
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,12,rmse_best,0.0311
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,12,rmse_te,0.0483
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,12,cov_best,0.911
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,12,cov_te,0.867
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,13,correct,0.414
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,13,rmse_best,0.0297
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,13,rmse_te,0.0484
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,13,cov_best,0.923
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,13,cov_te,0.859
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,14,correct,0.534
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,14,rmse_best,0.0284
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,14,rmse_te,0.0491
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,14,cov_best,0.934
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,14,cov_te,0.856
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,15,correct,0.665
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,15,rmse_best,0.0263
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,15,rmse_te,0.0487
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,15,cov_best,0.945
+table_d3,table_d3,TS,NA,NA,NA,NA,NA,NA,15,cov_te,0.855
+figure_3,study_1_counts,NA,Right-to-work,NA,Proposal 1 (CA),NA,NA,NA,NA,n,29
+figure_3,study_1_counts,NA,Right-to-work,NA,Proposal 1 (BM),NA,NA,NA,NA,n,46
+figure_3,study_1_counts,NA,Right-to-work,NA,Proposal 2 (CA),NA,NA,NA,NA,n,29
+figure_3,study_1_counts,NA,Right-to-work,NA,Proposal 2 (BM),NA,NA,NA,NA,n,50
+figure_3,study_1_counts,NA,Right-to-work,NA,Proposal 3 (CA),NA,NA,NA,NA,n,22
+figure_3,study_1_counts,NA,Right-to-work,NA,Proposal 3 (BM),NA,NA,NA,NA,n,21
+figure_3,study_1_counts,NA,Right-to-work,NA,Proposal 4 (CA),NA,NA,NA,NA,n,82
+figure_3,study_1_counts,NA,Right-to-work,NA,Proposal 4 (BM),NA,NA,NA,NA,n,721
+figure_3,study_1_counts,NA,Right-to-work,NA,Proposal 1 (Y),NA,NA,NA,NA,n,86
+figure_3,study_1_counts,NA,Minimum wage,NA,Proposal 1 (Y),NA,NA,NA,NA,n,86
+figure_3,study_1_counts,NA,Minimum wage,NA,Proposal 1 (N),NA,NA,NA,NA,n,46
+figure_3,study_1_counts,NA,Minimum wage,NA,Proposal 2 (Y),NA,NA,NA,NA,n,63
+figure_3,study_1_counts,NA,Minimum wage,NA,Proposal 2 (N),NA,NA,NA,NA,n,41
+figure_3,study_1_counts,NA,Minimum wage,NA,Proposal 3 (Y),NA,NA,NA,NA,n,121
+figure_3,study_1_counts,NA,Minimum wage,NA,Proposal 3 (N),NA,NA,NA,NA,n,183
+figure_3,study_1_counts,NA,Minimum wage,NA,Proposal 4 (Y),NA,NA,NA,NA,n,87
+figure_3,study_1_counts,NA,Minimum wage,NA,Proposal 4 (N),NA,NA,NA,NA,n,31
+figure_3,study_1_counts,NA,Minimum wage,NA,Proposal 5 (Y),NA,NA,NA,NA,n,209
+figure_3,study_1_counts,NA,Minimum wage,NA,Proposal 5 (N),NA,NA,NA,NA,n,133
+text_study1_f_tests,study_1_f,NA,NA,mw,NA,NA,NA,NA,NA,f_statistic,3.415861
+text_study1_f_tests,study_1_f,NA,NA,mw,NA,NA,NA,NA,NA,p_value,0.429
+text_study1_f_tests,study_1_f,NA,NA,rtw,NA,NA,NA,NA,NA,f_statistic,14.805485
+text_study1_f_tests,study_1_f,NA,NA,rtw,NA,NA,NA,NA,NA,p_value,0.199
+text_study2_f_tests,study_2_f,NA,NA,d,NA,NA,NA,NA,NA,f_statistic,1.933602
+text_study2_f_tests,study_2_f,NA,NA,d,NA,NA,NA,NA,NA,p_value,0.028
+text_study2_f_tests,study_2_f,NA,NA,r,NA,NA,NA,NA,NA,f_statistic,2.313104
+text_study2_f_tests,study_2_f,NA,NA,r,NA,NA,NA,NA,NA,p_value,0.013

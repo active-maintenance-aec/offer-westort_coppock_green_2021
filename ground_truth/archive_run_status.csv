@@ -1,0 +1,23 @@
+pass,script,completed,stopped_at
+as_shipped,simulations.R,1,NA
+as_shipped,simulations_iterated.R,0,Error:
+as_shipped,study_1_rtw-mw_analysis.R,1,NA
+as_shipped,study_1_rtw-mw_F.R,1,NA
+as_shipped,study_1_rtw-mw_simulations.R,1,NA
+as_shipped,study_2_misperceptions_probabilities.R,0,"Error in file(file, ...) : argument ""file"" is missing, with no default"
+as_shipped,study_2_misperceptions_analysis.R,0,"Error in readRDS(con, refhook = refhook) : cannot open the connection"
+as_shipped,study_2_misperceptions_additional_analysis.R,0,Error in if (is.na(s)) { : the condition has length > 1
+as_shipped,study_2_misperceptions_bols.R,1,NA
+as_shipped,study_2_misperceptions_F.R,1,NA
+as_shipped,study_3_conjoint_analysis.R,0,Error in `repaired_names()`:
+stripped,simulations.R,1,NA
+stripped,simulations_iterated.R,0,Did not finish within 600 seconds.
+stripped,study_1_rtw-mw_analysis.R,1,NA
+stripped,study_1_rtw-mw_F.R,1,NA
+stripped,study_1_rtw-mw_simulations.R,0,Did not finish within 600 seconds.
+stripped,study_2_misperceptions_probabilities.R,0,"Error in file(file, ...) : argument ""file"" is missing, with no default"
+stripped,study_2_misperceptions_analysis.R,0,"Error in readRDS(con, refhook = refhook) : cannot open the connection"
+stripped,study_2_misperceptions_additional_analysis.R,0,Error in if (is.na(s)) { : the condition has length > 1
+stripped,study_2_misperceptions_bols.R,1,NA
+stripped,study_2_misperceptions_F.R,1,NA
+stripped,study_3_conjoint_analysis.R,0,Error in `repaired_names()`:

@@ -1,0 +1,47 @@
+script,line,commented,text
+simulations.R,255,1,# ggsave(
+simulations.R,262,1,# ggsave(
+simulations.R,275,1,"# write_csv(gg_df, 'figure1_values.csv')"
+simulations.R,385,1,"# ggsave(filename = 'figure2.pdf',"
+simulations.R,402,1,"# ggsave(filename = 'figure2_color.pdf',"
+simulations.R,413,1,"# write_csv(gg_df, 'figure2_values.csv')"
+simulations_iterated.R,144,0,"write_rds(simulations_supplement1, 'simulations_supplement1.rds')"
+simulations_iterated.R,175,0,"write_rds(simulations_supplement2, 'simulations_supplement2.rds')"
+simulations_iterated.R,242,1,"# write_csv(df, 'table1.csv')"
+simulations_iterated.R,550,1,"# write_csv(df, 'tableD6.csv')"
+simulations_iterated.R,888,1,"# write_csv(df, 'tableD8-D9.csv')"
+simulations_iterated.R,1078,1,"# write_csv(df, 'tableD7.csv')"
+simulations_iterated.R,1214,1,"# ggsave('figureD8.pdf', g, width = 6.5, height = 6.5)"
+simulations_iterated.R,1258,1,"# ggsave('figureD7p1.pdf', g, width = 6.5, height = 3)"
+simulations_iterated.R,1287,1,"# ggsave('figureD7p2.pdf', g, width = 6.5, height = 4)"
+simulations_iterated.R,1435,1,"# ggsave('figureD11.pdf', g, width = 6.5, height = 6.5)"
+simulations_iterated.R,1477,1,"# ggsave('figureD10p1.pdf', g, width = 6.5, height = 3)"
+simulations_iterated.R,1505,1,"# ggsave('figureD10p2.pdf', g, width = 6.5, height = 4)"
+simulations_iterated.R,1618,1,"# ggsave('figureD9p1.pdf', g, width = 6.5, height = 3.5)"
+simulations_iterated.R,1640,1,"# ggsave('figureD9p2.pdf', g, width = 6.5, height = 4)"
+study_1_rtw-mw_analysis.R,24,1,"# write_csv(rtw_counts, 'study_1_rtw_counts.csv')"
+study_1_rtw-mw_analysis.R,25,1,"# write_csv(mw_counts, 'study_1_mw_counts.csv')"
+study_1_rtw-mw_analysis.R,74,1,# ggsave(
+study_1_rtw-mw_analysis.R,182,1,# ggsave(
+study_1_rtw-mw_analysis.R,190,1,# ggsave(
+study_1_rtw-mw_F.R,51,1,"# write_csv(outF, 'study_1_Fstats.csv')"
+study_1_rtw-mw_simulations.R,38,0,"save(outmw, outmw_stat,"
+study_1_rtw-mw_simulations.R,50,0,"write_rds(study_1_sims, 'study_1_sims.rds')"
+study_1_rtw-mw_simulations.R,76,1,"# write_csv(df, 'study_1_simulations_iterated.csv')"
+study_2_misperceptions_probabilities.R,106,0,"write_rds(pmat, path = 'study_2_probabilities.rds')"
+study_2_misperceptions_analysis.R,35,1,"# write_csv(study_2_response_control, 'study_2_response_control.csv')"
+study_2_misperceptions_analysis.R,146,1,# ggsave(
+study_2_misperceptions_analysis.R,153,1,# ggsave(
+study_2_misperceptions_analysis.R,219,1,# ggsave(
+study_2_misperceptions_analysis.R,226,1,# ggsave(
+study_2_misperceptions_analysis.R,308,1,# ggsave(
+study_2_misperceptions_analysis.R,315,1,# ggsave(
+study_2_misperceptions_analysis.R,471,1,# ggsave(
+study_2_misperceptions_analysis.R,478,1,# ggsave(
+study_2_misperceptions_additional_analysis.R,81,1,# ggsave(
+study_2_misperceptions_additional_analysis.R,161,0,stargazer(
+study_2_misperceptions_bols.R,75,1,"# write_csv(df, 'study_2_bols.csv')"
+study_2_misperceptions_F.R,254,1,"# write_csv(outF, 'study_2_Fstats.csv')"
+study_3_conjoint_analysis.R,153,1,# ggsave(
+study_3_conjoint_analysis.R,252,1,# ggsave(
+study_3_conjoint_analysis.R,260,1,# ggsave(

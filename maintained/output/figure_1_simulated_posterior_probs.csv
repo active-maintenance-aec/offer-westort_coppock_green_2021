@@ -1,0 +1,595 @@
+case,design,arm,batch,posterior_prob
+Case 1: Clear winner,Thompson sampling,best,0,0.1111111111111111
+Case 1: Clear winner,Thompson sampling,alt1,0,0.1111111111111111
+Case 1: Clear winner,Thompson sampling,alt2,0,0.1111111111111111
+Case 1: Clear winner,Thompson sampling,alt3,0,0.1111111111111111
+Case 1: Clear winner,Thompson sampling,alt4,0,0.1111111111111111
+Case 1: Clear winner,Thompson sampling,alt5,0,0.1111111111111111
+Case 1: Clear winner,Thompson sampling,alt6,0,0.1111111111111111
+Case 1: Clear winner,Thompson sampling,alt7,0,0.1111111111111111
+Case 1: Clear winner,Thompson sampling,alt8,0,0.1111111111111111
+Case 1: Clear winner,Thompson sampling,best,1,0.154
+Case 1: Clear winner,Thompson sampling,alt1,1,0.536
+Case 1: Clear winner,Thompson sampling,alt2,1,0.001
+Case 1: Clear winner,Thompson sampling,alt3,1,0.0036
+Case 1: Clear winner,Thompson sampling,alt4,1,0.0164
+Case 1: Clear winner,Thompson sampling,alt5,1,0.0492
+Case 1: Clear winner,Thompson sampling,alt6,1,0.225
+Case 1: Clear winner,Thompson sampling,alt7,1,8e-4
+Case 1: Clear winner,Thompson sampling,alt8,1,0.014
+Case 1: Clear winner,Thompson sampling,best,2,0.2226
+Case 1: Clear winner,Thompson sampling,alt1,2,0.004
+Case 1: Clear winner,Thompson sampling,alt2,2,0.0094
+Case 1: Clear winner,Thompson sampling,alt3,2,0.0422
+Case 1: Clear winner,Thompson sampling,alt4,2,0.095
+Case 1: Clear winner,Thompson sampling,alt5,2,0.2116
+Case 1: Clear winner,Thompson sampling,alt6,2,0.3234
+Case 1: Clear winner,Thompson sampling,alt7,2,0.0084
+Case 1: Clear winner,Thompson sampling,alt8,2,0.0834
+Case 1: Clear winner,Thompson sampling,best,3,0.3938
+Case 1: Clear winner,Thompson sampling,alt1,3,0.011
+Case 1: Clear winner,Thompson sampling,alt2,3,0.2704
+Case 1: Clear winner,Thompson sampling,alt3,3,0.0816
+Case 1: Clear winner,Thompson sampling,alt4,3,0.0138
+Case 1: Clear winner,Thompson sampling,alt5,3,0.0132
+Case 1: Clear winner,Thompson sampling,alt6,3,0.0784
+Case 1: Clear winner,Thompson sampling,alt7,3,0.0198
+Case 1: Clear winner,Thompson sampling,alt8,3,0.118
+Case 1: Clear winner,Thompson sampling,best,4,0.3096
+Case 1: Clear winner,Thompson sampling,alt1,4,0.0094
+Case 1: Clear winner,Thompson sampling,alt2,4,0.0206
+Case 1: Clear winner,Thompson sampling,alt3,4,0.195
+Case 1: Clear winner,Thompson sampling,alt4,4,0.0118
+Case 1: Clear winner,Thompson sampling,alt5,4,0.021
+Case 1: Clear winner,Thompson sampling,alt6,4,0.1364
+Case 1: Clear winner,Thompson sampling,alt7,4,0.0174
+Case 1: Clear winner,Thompson sampling,alt8,4,0.2788
+Case 1: Clear winner,Thompson sampling,best,5,0.5376
+Case 1: Clear winner,Thompson sampling,alt1,5,0.0124
+Case 1: Clear winner,Thompson sampling,alt2,5,0.0256
+Case 1: Clear winner,Thompson sampling,alt3,5,0.1086
+Case 1: Clear winner,Thompson sampling,alt4,5,0.0144
+Case 1: Clear winner,Thompson sampling,alt5,5,0.015
+Case 1: Clear winner,Thompson sampling,alt6,5,0.0626
+Case 1: Clear winner,Thompson sampling,alt7,5,0.024
+Case 1: Clear winner,Thompson sampling,alt8,5,0.1998
+Case 1: Clear winner,Thompson sampling,best,6,0.6292
+Case 1: Clear winner,Thompson sampling,alt1,6,0.011
+Case 1: Clear winner,Thompson sampling,alt2,6,0.044
+Case 1: Clear winner,Thompson sampling,alt3,6,0.0496
+Case 1: Clear winner,Thompson sampling,alt4,6,0.0062
+Case 1: Clear winner,Thompson sampling,alt5,6,0.0298
+Case 1: Clear winner,Thompson sampling,alt6,6,0.0402
+Case 1: Clear winner,Thompson sampling,alt7,6,0.0138
+Case 1: Clear winner,Thompson sampling,alt8,6,0.1762
+Case 1: Clear winner,Thompson sampling,best,7,0.8014
+Case 1: Clear winner,Thompson sampling,alt1,7,0.0084
+Case 1: Clear winner,Thompson sampling,alt2,7,0.0436
+Case 1: Clear winner,Thompson sampling,alt3,7,0.034
+Case 1: Clear winner,Thompson sampling,alt4,7,0.0042
+Case 1: Clear winner,Thompson sampling,alt5,7,0.0184
+Case 1: Clear winner,Thompson sampling,alt6,7,0.0298
+Case 1: Clear winner,Thompson sampling,alt7,7,0.0146
+Case 1: Clear winner,Thompson sampling,alt8,7,0.0456
+Case 1: Clear winner,Thompson sampling,best,8,0.8276
+Case 1: Clear winner,Thompson sampling,alt1,8,0.0116
+Case 1: Clear winner,Thompson sampling,alt2,8,0.0172
+Case 1: Clear winner,Thompson sampling,alt3,8,0.0444
+Case 1: Clear winner,Thompson sampling,alt4,8,0.0064
+Case 1: Clear winner,Thompson sampling,alt5,8,0.0156
+Case 1: Clear winner,Thompson sampling,alt6,8,0.026
+Case 1: Clear winner,Thompson sampling,alt7,8,0.0196
+Case 1: Clear winner,Thompson sampling,alt8,8,0.0316
+Case 1: Clear winner,Thompson sampling,best,9,0.8932
+Case 1: Clear winner,Thompson sampling,alt1,9,0.0052
+Case 1: Clear winner,Thompson sampling,alt2,9,0.0208
+Case 1: Clear winner,Thompson sampling,alt3,9,0.0172
+Case 1: Clear winner,Thompson sampling,alt4,9,0.0034
+Case 1: Clear winner,Thompson sampling,alt5,9,0.0274
+Case 1: Clear winner,Thompson sampling,alt6,9,0.0114
+Case 1: Clear winner,Thompson sampling,alt7,9,0.0124
+Case 1: Clear winner,Thompson sampling,alt8,9,0.009
+Case 1: Clear winner,Thompson sampling,best,10,0.8954
+Case 1: Clear winner,Thompson sampling,alt1,10,0.0082
+Case 1: Clear winner,Thompson sampling,alt2,10,0.0168
+Case 1: Clear winner,Thompson sampling,alt3,10,0.0168
+Case 1: Clear winner,Thompson sampling,alt4,10,0.0048
+Case 1: Clear winner,Thompson sampling,alt5,10,0.0198
+Case 1: Clear winner,Thompson sampling,alt6,10,0.0152
+Case 1: Clear winner,Thompson sampling,alt7,10,0.0156
+Case 1: Clear winner,Thompson sampling,alt8,10,0.0074
+Case 1: Clear winner,Static,best,0,0.1111111111111111
+Case 1: Clear winner,Static,alt1,0,0.1111111111111111
+Case 1: Clear winner,Static,alt2,0,0.1111111111111111
+Case 1: Clear winner,Static,alt3,0,0.1111111111111111
+Case 1: Clear winner,Static,alt4,0,0.1111111111111111
+Case 1: Clear winner,Static,alt5,0,0.1111111111111111
+Case 1: Clear winner,Static,alt6,0,0.1111111111111111
+Case 1: Clear winner,Static,alt7,0,0.1111111111111111
+Case 1: Clear winner,Static,alt8,0,0.1111111111111111
+Case 1: Clear winner,Static,best,1,0.0636
+Case 1: Clear winner,Static,alt1,1,0.0314
+Case 1: Clear winner,Static,alt2,1,0.2792
+Case 1: Clear winner,Static,alt3,1,0.0906
+Case 1: Clear winner,Static,alt4,1,0.0062
+Case 1: Clear winner,Static,alt5,1,0.0858
+Case 1: Clear winner,Static,alt6,1,0.1352
+Case 1: Clear winner,Static,alt7,1,0.295
+Case 1: Clear winner,Static,alt8,1,0.013
+Case 1: Clear winner,Static,best,2,0.2894
+Case 1: Clear winner,Static,alt1,2,0.002
+Case 1: Clear winner,Static,alt2,2,0.0482
+Case 1: Clear winner,Static,alt3,2,0.0016
+Case 1: Clear winner,Static,alt4,2,0.0112
+Case 1: Clear winner,Static,alt5,2,0.0378
+Case 1: Clear winner,Static,alt6,2,0.1036
+Case 1: Clear winner,Static,alt7,2,0.5034
+Case 1: Clear winner,Static,alt8,2,0.0028
+Case 1: Clear winner,Static,best,3,0.1594
+Case 1: Clear winner,Static,alt1,3,8e-4
+Case 1: Clear winner,Static,alt2,3,0.1338
+Case 1: Clear winner,Static,alt3,3,0.0022
+Case 1: Clear winner,Static,alt4,3,0.0076
+Case 1: Clear winner,Static,alt5,3,0.0436
+Case 1: Clear winner,Static,alt6,3,0.2322
+Case 1: Clear winner,Static,alt7,3,0.4172
+Case 1: Clear winner,Static,alt8,3,0.0032
+Case 1: Clear winner,Static,best,4,0.2038
+Case 1: Clear winner,Static,alt1,4,0.0152
+Case 1: Clear winner,Static,alt2,4,0.0396
+Case 1: Clear winner,Static,alt3,4,6e-4
+Case 1: Clear winner,Static,alt4,4,0.0092
+Case 1: Clear winner,Static,alt5,4,0.0864
+Case 1: Clear winner,Static,alt6,4,0.1164
+Case 1: Clear winner,Static,alt7,4,0.5274
+Case 1: Clear winner,Static,alt8,4,0.0014
+Case 1: Clear winner,Static,best,5,0.3196
+Case 1: Clear winner,Static,alt1,5,0.0276
+Case 1: Clear winner,Static,alt2,5,0.0886
+Case 1: Clear winner,Static,alt3,5,6e-4
+Case 1: Clear winner,Static,alt4,5,0.007
+Case 1: Clear winner,Static,alt5,5,0.0636
+Case 1: Clear winner,Static,alt6,5,0.0422
+Case 1: Clear winner,Static,alt7,5,0.4496
+Case 1: Clear winner,Static,alt8,5,0.0012
+Case 1: Clear winner,Static,best,6,0.3092
+Case 1: Clear winner,Static,alt1,6,0.0132
+Case 1: Clear winner,Static,alt2,6,0.1362
+Case 1: Clear winner,Static,alt3,6,2e-4
+Case 1: Clear winner,Static,alt4,6,0.0336
+Case 1: Clear winner,Static,alt5,6,0.0326
+Case 1: Clear winner,Static,alt6,6,0.1108
+Case 1: Clear winner,Static,alt7,6,0.3562
+Case 1: Clear winner,Static,alt8,6,0.008
+Case 1: Clear winner,Static,best,7,0.3226
+Case 1: Clear winner,Static,alt1,7,0.051
+Case 1: Clear winner,Static,alt2,7,0.1194
+Case 1: Clear winner,Static,alt3,7,2e-4
+Case 1: Clear winner,Static,alt4,7,0.0386
+Case 1: Clear winner,Static,alt5,7,0.0502
+Case 1: Clear winner,Static,alt6,7,0.1782
+Case 1: Clear winner,Static,alt7,7,0.2378
+Case 1: Clear winner,Static,alt8,7,0.002
+Case 1: Clear winner,Static,best,8,0.308
+Case 1: Clear winner,Static,alt1,8,0.1022
+Case 1: Clear winner,Static,alt2,8,0.0848
+Case 1: Clear winner,Static,alt3,8,0
+Case 1: Clear winner,Static,alt4,8,0.0336
+Case 1: Clear winner,Static,alt5,8,0.0468
+Case 1: Clear winner,Static,alt6,8,0.1882
+Case 1: Clear winner,Static,alt7,8,0.2354
+Case 1: Clear winner,Static,alt8,8,0.001
+Case 1: Clear winner,Static,best,9,0.4472
+Case 1: Clear winner,Static,alt1,9,0.0356
+Case 1: Clear winner,Static,alt2,9,0.0874
+Case 1: Clear winner,Static,alt3,9,0
+Case 1: Clear winner,Static,alt4,9,0.069
+Case 1: Clear winner,Static,alt5,9,0.0348
+Case 1: Clear winner,Static,alt6,9,0.2132
+Case 1: Clear winner,Static,alt7,9,0.1098
+Case 1: Clear winner,Static,alt8,9,0.003
+Case 1: Clear winner,Static,best,10,0.607
+Case 1: Clear winner,Static,alt1,10,0.0306
+Case 1: Clear winner,Static,alt2,10,0.0542
+Case 1: Clear winner,Static,alt3,10,0
+Case 1: Clear winner,Static,alt4,10,0.0176
+Case 1: Clear winner,Static,alt5,10,0.0426
+Case 1: Clear winner,Static,alt6,10,0.1124
+Case 1: Clear winner,Static,alt7,10,0.1318
+Case 1: Clear winner,Static,alt8,10,0.0038
+Case 2: No clear winner,Thompson sampling,best,0,0.1111111111111111
+Case 2: No clear winner,Thompson sampling,alt1,0,0.1111111111111111
+Case 2: No clear winner,Thompson sampling,alt2,0,0.1111111111111111
+Case 2: No clear winner,Thompson sampling,alt3,0,0.1111111111111111
+Case 2: No clear winner,Thompson sampling,alt4,0,0.1111111111111111
+Case 2: No clear winner,Thompson sampling,alt5,0,0.1111111111111111
+Case 2: No clear winner,Thompson sampling,alt6,0,0.1111111111111111
+Case 2: No clear winner,Thompson sampling,alt7,0,0.1111111111111111
+Case 2: No clear winner,Thompson sampling,alt8,0,0.1111111111111111
+Case 2: No clear winner,Thompson sampling,best,1,0.014
+Case 2: No clear winner,Thompson sampling,alt1,1,0.0102
+Case 2: No clear winner,Thompson sampling,alt2,1,0.133
+Case 2: No clear winner,Thompson sampling,alt3,1,0.04
+Case 2: No clear winner,Thompson sampling,alt4,1,0.2326
+Case 2: No clear winner,Thompson sampling,alt5,1,0.1298
+Case 2: No clear winner,Thompson sampling,alt6,1,0.1188
+Case 2: No clear winner,Thompson sampling,alt7,1,0.0104
+Case 2: No clear winner,Thompson sampling,alt8,1,0.3112
+Case 2: No clear winner,Thompson sampling,best,2,0.065
+Case 2: No clear winner,Thompson sampling,alt1,2,0.0612
+Case 2: No clear winner,Thompson sampling,alt2,2,0.0794
+Case 2: No clear winner,Thompson sampling,alt3,2,0.1034
+Case 2: No clear winner,Thompson sampling,alt4,2,0.191
+Case 2: No clear winner,Thompson sampling,alt5,2,0.1864
+Case 2: No clear winner,Thompson sampling,alt6,2,0.096
+Case 2: No clear winner,Thompson sampling,alt7,2,0.189
+Case 2: No clear winner,Thompson sampling,alt8,2,0.0286
+Case 2: No clear winner,Thompson sampling,best,3,0.0634
+Case 2: No clear winner,Thompson sampling,alt1,3,0.0236
+Case 2: No clear winner,Thompson sampling,alt2,3,0.0504
+Case 2: No clear winner,Thompson sampling,alt3,3,0.1764
+Case 2: No clear winner,Thompson sampling,alt4,3,0.0258
+Case 2: No clear winner,Thompson sampling,alt5,3,0.3626
+Case 2: No clear winner,Thompson sampling,alt6,3,0.129
+Case 2: No clear winner,Thompson sampling,alt7,3,0.1178
+Case 2: No clear winner,Thompson sampling,alt8,3,0.051
+Case 2: No clear winner,Thompson sampling,best,4,0.1312
+Case 2: No clear winner,Thompson sampling,alt1,4,0.0212
+Case 2: No clear winner,Thompson sampling,alt2,4,0.1482
+Case 2: No clear winner,Thompson sampling,alt3,4,0.125
+Case 2: No clear winner,Thompson sampling,alt4,4,0.0526
+Case 2: No clear winner,Thompson sampling,alt5,4,0.276
+Case 2: No clear winner,Thompson sampling,alt6,4,0.1686
+Case 2: No clear winner,Thompson sampling,alt7,4,0.0194
+Case 2: No clear winner,Thompson sampling,alt8,4,0.0578
+Case 2: No clear winner,Thompson sampling,best,5,0.1666
+Case 2: No clear winner,Thompson sampling,alt1,5,0.0202
+Case 2: No clear winner,Thompson sampling,alt2,5,0.0542
+Case 2: No clear winner,Thompson sampling,alt3,5,0.1032
+Case 2: No clear winner,Thompson sampling,alt4,5,0.2136
+Case 2: No clear winner,Thompson sampling,alt5,5,0.2138
+Case 2: No clear winner,Thompson sampling,alt6,5,0.0452
+Case 2: No clear winner,Thompson sampling,alt7,5,0.0362
+Case 2: No clear winner,Thompson sampling,alt8,5,0.147
+Case 2: No clear winner,Thompson sampling,best,6,0.1362
+Case 2: No clear winner,Thompson sampling,alt1,6,0.0906
+Case 2: No clear winner,Thompson sampling,alt2,6,0.0594
+Case 2: No clear winner,Thompson sampling,alt3,6,0.0894
+Case 2: No clear winner,Thompson sampling,alt4,6,0.1988
+Case 2: No clear winner,Thompson sampling,alt5,6,0.1814
+Case 2: No clear winner,Thompson sampling,alt6,6,0.0556
+Case 2: No clear winner,Thompson sampling,alt7,6,0.0846
+Case 2: No clear winner,Thompson sampling,alt8,6,0.104
+Case 2: No clear winner,Thompson sampling,best,7,0.1072
+Case 2: No clear winner,Thompson sampling,alt1,7,0.0994
+Case 2: No clear winner,Thompson sampling,alt2,7,0.2214
+Case 2: No clear winner,Thompson sampling,alt3,7,0.1144
+Case 2: No clear winner,Thompson sampling,alt4,7,0.1362
+Case 2: No clear winner,Thompson sampling,alt5,7,0.1264
+Case 2: No clear winner,Thompson sampling,alt6,7,0.0552
+Case 2: No clear winner,Thompson sampling,alt7,7,0.0888
+Case 2: No clear winner,Thompson sampling,alt8,7,0.051
+Case 2: No clear winner,Thompson sampling,best,8,0.1608
+Case 2: No clear winner,Thompson sampling,alt1,8,0.0572
+Case 2: No clear winner,Thompson sampling,alt2,8,0.2226
+Case 2: No clear winner,Thompson sampling,alt3,8,0.0278
+Case 2: No clear winner,Thompson sampling,alt4,8,0.0804
+Case 2: No clear winner,Thompson sampling,alt5,8,0.2066
+Case 2: No clear winner,Thompson sampling,alt6,8,0.028
+Case 2: No clear winner,Thompson sampling,alt7,8,0.1656
+Case 2: No clear winner,Thompson sampling,alt8,8,0.051
+Case 2: No clear winner,Thompson sampling,best,9,0.097
+Case 2: No clear winner,Thompson sampling,alt1,9,0.0244
+Case 2: No clear winner,Thompson sampling,alt2,9,0.3592
+Case 2: No clear winner,Thompson sampling,alt3,9,0.0236
+Case 2: No clear winner,Thompson sampling,alt4,9,0.0844
+Case 2: No clear winner,Thompson sampling,alt5,9,0.164
+Case 2: No clear winner,Thompson sampling,alt6,9,0.0258
+Case 2: No clear winner,Thompson sampling,alt7,9,0.1954
+Case 2: No clear winner,Thompson sampling,alt8,9,0.0262
+Case 2: No clear winner,Thompson sampling,best,10,0.132
+Case 2: No clear winner,Thompson sampling,alt1,10,0.0318
+Case 2: No clear winner,Thompson sampling,alt2,10,0.1362
+Case 2: No clear winner,Thompson sampling,alt3,10,0.0308
+Case 2: No clear winner,Thompson sampling,alt4,10,0.066
+Case 2: No clear winner,Thompson sampling,alt5,10,0.1852
+Case 2: No clear winner,Thompson sampling,alt6,10,0.1092
+Case 2: No clear winner,Thompson sampling,alt7,10,0.2424
+Case 2: No clear winner,Thompson sampling,alt8,10,0.0664
+Case 2: No clear winner,Static,best,0,0.1111111111111111
+Case 2: No clear winner,Static,alt1,0,0.1111111111111111
+Case 2: No clear winner,Static,alt2,0,0.1111111111111111
+Case 2: No clear winner,Static,alt3,0,0.1111111111111111
+Case 2: No clear winner,Static,alt4,0,0.1111111111111111
+Case 2: No clear winner,Static,alt5,0,0.1111111111111111
+Case 2: No clear winner,Static,alt6,0,0.1111111111111111
+Case 2: No clear winner,Static,alt7,0,0.1111111111111111
+Case 2: No clear winner,Static,alt8,0,0.1111111111111111
+Case 2: No clear winner,Static,best,1,0.1812
+Case 2: No clear winner,Static,alt1,1,0.01
+Case 2: No clear winner,Static,alt2,1,0.216
+Case 2: No clear winner,Static,alt3,1,0.0224
+Case 2: No clear winner,Static,alt4,1,0.2728
+Case 2: No clear winner,Static,alt5,1,0.005
+Case 2: No clear winner,Static,alt6,1,0.051
+Case 2: No clear winner,Static,alt7,1,0.1834
+Case 2: No clear winner,Static,alt8,1,0.0582
+Case 2: No clear winner,Static,best,2,0.1222
+Case 2: No clear winner,Static,alt1,2,0.0466
+Case 2: No clear winner,Static,alt2,2,0.0618
+Case 2: No clear winner,Static,alt3,2,0.0186
+Case 2: No clear winner,Static,alt4,2,0.333
+Case 2: No clear winner,Static,alt5,2,4e-4
+Case 2: No clear winner,Static,alt6,2,0.0062
+Case 2: No clear winner,Static,alt7,2,0.2256
+Case 2: No clear winner,Static,alt8,2,0.1856
+Case 2: No clear winner,Static,best,3,0.171
+Case 2: No clear winner,Static,alt1,3,0.0254
+Case 2: No clear winner,Static,alt2,3,0.0356
+Case 2: No clear winner,Static,alt3,3,0.0134
+Case 2: No clear winner,Static,alt4,3,0.4244
+Case 2: No clear winner,Static,alt5,3,0.0058
+Case 2: No clear winner,Static,alt6,3,0.0336
+Case 2: No clear winner,Static,alt7,3,0.0968
+Case 2: No clear winner,Static,alt8,3,0.194
+Case 2: No clear winner,Static,best,4,0.1552
+Case 2: No clear winner,Static,alt1,4,0.0242
+Case 2: No clear winner,Static,alt2,4,0.0248
+Case 2: No clear winner,Static,alt3,4,0.034
+Case 2: No clear winner,Static,alt4,4,0.3172
+Case 2: No clear winner,Static,alt5,4,0.0188
+Case 2: No clear winner,Static,alt6,4,0.0728
+Case 2: No clear winner,Static,alt7,4,0.0816
+Case 2: No clear winner,Static,alt8,4,0.2714
+Case 2: No clear winner,Static,best,5,0.1588
+Case 2: No clear winner,Static,alt1,5,0.0162
+Case 2: No clear winner,Static,alt2,5,0.0072
+Case 2: No clear winner,Static,alt3,5,0.1284
+Case 2: No clear winner,Static,alt4,5,0.3652
+Case 2: No clear winner,Static,alt5,5,0.0046
+Case 2: No clear winner,Static,alt6,5,0.04
+Case 2: No clear winner,Static,alt7,5,0.1624
+Case 2: No clear winner,Static,alt8,5,0.1172
+Case 2: No clear winner,Static,best,6,0.1338
+Case 2: No clear winner,Static,alt1,6,0.0178
+Case 2: No clear winner,Static,alt2,6,0.0064
+Case 2: No clear winner,Static,alt3,6,0.0526
+Case 2: No clear winner,Static,alt4,6,0.1712
+Case 2: No clear winner,Static,alt5,6,0.018
+Case 2: No clear winner,Static,alt6,6,0.102
+Case 2: No clear winner,Static,alt7,6,0.2152
+Case 2: No clear winner,Static,alt8,6,0.283
+Case 2: No clear winner,Static,best,7,0.0894
+Case 2: No clear winner,Static,alt1,7,0.0302
+Case 2: No clear winner,Static,alt2,7,0.0308
+Case 2: No clear winner,Static,alt3,7,0.0402
+Case 2: No clear winner,Static,alt4,7,0.0912
+Case 2: No clear winner,Static,alt5,7,0.0252
+Case 2: No clear winner,Static,alt6,7,0.0738
+Case 2: No clear winner,Static,alt7,7,0.2474
+Case 2: No clear winner,Static,alt8,7,0.3718
+Case 2: No clear winner,Static,best,8,0.0614
+Case 2: No clear winner,Static,alt1,8,0.0266
+Case 2: No clear winner,Static,alt2,8,0.0142
+Case 2: No clear winner,Static,alt3,8,0.038
+Case 2: No clear winner,Static,alt4,8,0.0432
+Case 2: No clear winner,Static,alt5,8,0.0102
+Case 2: No clear winner,Static,alt6,8,0.2058
+Case 2: No clear winner,Static,alt7,8,0.1384
+Case 2: No clear winner,Static,alt8,8,0.4622
+Case 2: No clear winner,Static,best,9,0.0444
+Case 2: No clear winner,Static,alt1,9,0.0136
+Case 2: No clear winner,Static,alt2,9,0.0298
+Case 2: No clear winner,Static,alt3,9,0.0906
+Case 2: No clear winner,Static,alt4,9,0.0726
+Case 2: No clear winner,Static,alt5,9,0.018
+Case 2: No clear winner,Static,alt6,9,0.297
+Case 2: No clear winner,Static,alt7,9,0.1012
+Case 2: No clear winner,Static,alt8,9,0.3328
+Case 2: No clear winner,Static,best,10,0.0582
+Case 2: No clear winner,Static,alt1,10,0.0222
+Case 2: No clear winner,Static,alt2,10,0.0458
+Case 2: No clear winner,Static,alt3,10,0.0688
+Case 2: No clear winner,Static,alt4,10,0.086
+Case 2: No clear winner,Static,alt5,10,0.0224
+Case 2: No clear winner,Static,alt6,10,0.3574
+Case 2: No clear winner,Static,alt7,10,0.137
+Case 2: No clear winner,Static,alt8,10,0.2022
+Case 3: Competing second best,Thompson sampling,best,0,0.1111111111111111
+Case 3: Competing second best,Thompson sampling,alt1,0,0.1111111111111111
+Case 3: Competing second best,Thompson sampling,alt2,0,0.1111111111111111
+Case 3: Competing second best,Thompson sampling,alt3,0,0.1111111111111111
+Case 3: Competing second best,Thompson sampling,alt4,0,0.1111111111111111
+Case 3: Competing second best,Thompson sampling,alt5,0,0.1111111111111111
+Case 3: Competing second best,Thompson sampling,alt6,0,0.1111111111111111
+Case 3: Competing second best,Thompson sampling,alt7,0,0.1111111111111111
+Case 3: Competing second best,Thompson sampling,alt8,0,0.1111111111111111
+Case 3: Competing second best,Thompson sampling,best,1,0.0354
+Case 3: Competing second best,Thompson sampling,alt1,1,0.838
+Case 3: Competing second best,Thompson sampling,alt2,1,0.0172
+Case 3: Competing second best,Thompson sampling,alt3,1,0.0136
+Case 3: Competing second best,Thompson sampling,alt4,1,0.0298
+Case 3: Competing second best,Thompson sampling,alt5,1,0.0204
+Case 3: Competing second best,Thompson sampling,alt6,1,0.0162
+Case 3: Competing second best,Thompson sampling,alt7,1,0.025
+Case 3: Competing second best,Thompson sampling,alt8,1,0.0044
+Case 3: Competing second best,Thompson sampling,best,2,0.1978
+Case 3: Competing second best,Thompson sampling,alt1,2,0.2816
+Case 3: Competing second best,Thompson sampling,alt2,2,0.0482
+Case 3: Competing second best,Thompson sampling,alt3,2,0.0174
+Case 3: Competing second best,Thompson sampling,alt4,2,0.0808
+Case 3: Competing second best,Thompson sampling,alt5,2,0.0478
+Case 3: Competing second best,Thompson sampling,alt6,2,0.1434
+Case 3: Competing second best,Thompson sampling,alt7,2,0.1698
+Case 3: Competing second best,Thompson sampling,alt8,2,0.0132
+Case 3: Competing second best,Thompson sampling,best,3,0.444
+Case 3: Competing second best,Thompson sampling,alt1,3,0.3068
+Case 3: Competing second best,Thompson sampling,alt2,3,0.02
+Case 3: Competing second best,Thompson sampling,alt3,3,0.025
+Case 3: Competing second best,Thompson sampling,alt4,3,0.036
+Case 3: Competing second best,Thompson sampling,alt5,3,0.0684
+Case 3: Competing second best,Thompson sampling,alt6,3,0.0326
+Case 3: Competing second best,Thompson sampling,alt7,3,0.0426
+Case 3: Competing second best,Thompson sampling,alt8,3,0.0246
+Case 3: Competing second best,Thompson sampling,best,4,0.4678
+Case 3: Competing second best,Thompson sampling,alt1,4,0.2122
+Case 3: Competing second best,Thompson sampling,alt2,4,0.0074
+Case 3: Competing second best,Thompson sampling,alt3,4,0.005
+Case 3: Competing second best,Thompson sampling,alt4,4,0.2558
+Case 3: Competing second best,Thompson sampling,alt5,4,0.0146
+Case 3: Competing second best,Thompson sampling,alt6,4,0.0048
+Case 3: Competing second best,Thompson sampling,alt7,4,0.0058
+Case 3: Competing second best,Thompson sampling,alt8,4,0.0266
+Case 3: Competing second best,Thompson sampling,best,5,0.298
+Case 3: Competing second best,Thompson sampling,alt1,5,0.2626
+Case 3: Competing second best,Thompson sampling,alt2,5,0.006
+Case 3: Competing second best,Thompson sampling,alt3,5,0.0024
+Case 3: Competing second best,Thompson sampling,alt4,5,0.3728
+Case 3: Competing second best,Thompson sampling,alt5,5,0.0092
+Case 3: Competing second best,Thompson sampling,alt6,5,0.0246
+Case 3: Competing second best,Thompson sampling,alt7,5,0.0064
+Case 3: Competing second best,Thompson sampling,alt8,5,0.018
+Case 3: Competing second best,Thompson sampling,best,6,0.52
+Case 3: Competing second best,Thompson sampling,alt1,6,0.3498
+Case 3: Competing second best,Thompson sampling,alt2,6,0.0074
+Case 3: Competing second best,Thompson sampling,alt3,6,0.0016
+Case 3: Competing second best,Thompson sampling,alt4,6,0.019
+Case 3: Competing second best,Thompson sampling,alt5,6,0.0314
+Case 3: Competing second best,Thompson sampling,alt6,6,0.0448
+Case 3: Competing second best,Thompson sampling,alt7,6,0.0078
+Case 3: Competing second best,Thompson sampling,alt8,6,0.0182
+Case 3: Competing second best,Thompson sampling,best,7,0.641
+Case 3: Competing second best,Thompson sampling,alt1,7,0.2758
+Case 3: Competing second best,Thompson sampling,alt2,7,0.01
+Case 3: Competing second best,Thompson sampling,alt3,7,0.0038
+Case 3: Competing second best,Thompson sampling,alt4,7,0.0106
+Case 3: Competing second best,Thompson sampling,alt5,7,0.0154
+Case 3: Competing second best,Thompson sampling,alt6,7,0.0284
+Case 3: Competing second best,Thompson sampling,alt7,7,0.0054
+Case 3: Competing second best,Thompson sampling,alt8,7,0.0096
+Case 3: Competing second best,Thompson sampling,best,8,0.6456
+Case 3: Competing second best,Thompson sampling,alt1,8,0.2016
+Case 3: Competing second best,Thompson sampling,alt2,8,0.011
+Case 3: Competing second best,Thompson sampling,alt3,8,0.0026
+Case 3: Competing second best,Thompson sampling,alt4,8,0.0208
+Case 3: Competing second best,Thompson sampling,alt5,8,0.0336
+Case 3: Competing second best,Thompson sampling,alt6,8,0.0634
+Case 3: Competing second best,Thompson sampling,alt7,8,0.0088
+Case 3: Competing second best,Thompson sampling,alt8,8,0.0126
+Case 3: Competing second best,Thompson sampling,best,9,0.8602
+Case 3: Competing second best,Thompson sampling,alt1,9,0.052
+Case 3: Competing second best,Thompson sampling,alt2,9,0.0058
+Case 3: Competing second best,Thompson sampling,alt3,9,0.0026
+Case 3: Competing second best,Thompson sampling,alt4,9,0.0106
+Case 3: Competing second best,Thompson sampling,alt5,9,0.0224
+Case 3: Competing second best,Thompson sampling,alt6,9,0.0304
+Case 3: Competing second best,Thompson sampling,alt7,9,0.0056
+Case 3: Competing second best,Thompson sampling,alt8,9,0.0104
+Case 3: Competing second best,Thompson sampling,best,10,0.8764
+Case 3: Competing second best,Thompson sampling,alt1,10,0.0366
+Case 3: Competing second best,Thompson sampling,alt2,10,0.007
+Case 3: Competing second best,Thompson sampling,alt3,10,0.0016
+Case 3: Competing second best,Thompson sampling,alt4,10,0.008
+Case 3: Competing second best,Thompson sampling,alt5,10,0.0082
+Case 3: Competing second best,Thompson sampling,alt6,10,0.0462
+Case 3: Competing second best,Thompson sampling,alt7,10,0.0052
+Case 3: Competing second best,Thompson sampling,alt8,10,0.0108
+Case 3: Competing second best,Static,best,0,0.1111111111111111
+Case 3: Competing second best,Static,alt1,0,0.1111111111111111
+Case 3: Competing second best,Static,alt2,0,0.1111111111111111
+Case 3: Competing second best,Static,alt3,0,0.1111111111111111
+Case 3: Competing second best,Static,alt4,0,0.1111111111111111
+Case 3: Competing second best,Static,alt5,0,0.1111111111111111
+Case 3: Competing second best,Static,alt6,0,0.1111111111111111
+Case 3: Competing second best,Static,alt7,0,0.1111111111111111
+Case 3: Competing second best,Static,alt8,0,0.1111111111111111
+Case 3: Competing second best,Static,best,1,0.1504
+Case 3: Competing second best,Static,alt1,1,0.693
+Case 3: Competing second best,Static,alt2,1,6e-4
+Case 3: Competing second best,Static,alt3,1,0.0048
+Case 3: Competing second best,Static,alt4,1,0.089
+Case 3: Competing second best,Static,alt5,1,0.0108
+Case 3: Competing second best,Static,alt6,1,0.0172
+Case 3: Competing second best,Static,alt7,1,0.0082
+Case 3: Competing second best,Static,alt8,1,0.026
+Case 3: Competing second best,Static,best,2,0.1198
+Case 3: Competing second best,Static,alt1,2,0.7662
+Case 3: Competing second best,Static,alt2,2,8e-4
+Case 3: Competing second best,Static,alt3,2,0
+Case 3: Competing second best,Static,alt4,2,0.0646
+Case 3: Competing second best,Static,alt5,2,6e-4
+Case 3: Competing second best,Static,alt6,2,0
+Case 3: Competing second best,Static,alt7,2,0.0014
+Case 3: Competing second best,Static,alt8,2,0.0466
+Case 3: Competing second best,Static,best,3,0.4282
+Case 3: Competing second best,Static,alt1,3,0.512
+Case 3: Competing second best,Static,alt2,3,0.0036
+Case 3: Competing second best,Static,alt3,3,2e-4
+Case 3: Competing second best,Static,alt4,3,0.026
+Case 3: Competing second best,Static,alt5,3,0.002
+Case 3: Competing second best,Static,alt6,3,2e-4
+Case 3: Competing second best,Static,alt7,3,4e-4
+Case 3: Competing second best,Static,alt8,3,0.0274
+Case 3: Competing second best,Static,best,4,0.146
+Case 3: Competing second best,Static,alt1,4,0.8414
+Case 3: Competing second best,Static,alt2,4,8e-4
+Case 3: Competing second best,Static,alt3,4,2e-4
+Case 3: Competing second best,Static,alt4,4,0.0074
+Case 3: Competing second best,Static,alt5,4,4e-4
+Case 3: Competing second best,Static,alt6,4,0.0016
+Case 3: Competing second best,Static,alt7,4,0
+Case 3: Competing second best,Static,alt8,4,0.0022
+Case 3: Competing second best,Static,best,5,0.2536
+Case 3: Competing second best,Static,alt1,5,0.6852
+Case 3: Competing second best,Static,alt2,5,0.0134
+Case 3: Competing second best,Static,alt3,5,0.0076
+Case 3: Competing second best,Static,alt4,5,0.0116
+Case 3: Competing second best,Static,alt5,5,0.0142
+Case 3: Competing second best,Static,alt6,5,0.0138
+Case 3: Competing second best,Static,alt7,5,0
+Case 3: Competing second best,Static,alt8,5,6e-4
+Case 3: Competing second best,Static,best,6,0.1936
+Case 3: Competing second best,Static,alt1,6,0.7564
+Case 3: Competing second best,Static,alt2,6,0.019
+Case 3: Competing second best,Static,alt3,6,0.01
+Case 3: Competing second best,Static,alt4,6,0.007
+Case 3: Competing second best,Static,alt5,6,0.0018
+Case 3: Competing second best,Static,alt6,6,0.0112
+Case 3: Competing second best,Static,alt7,6,8e-4
+Case 3: Competing second best,Static,alt8,6,2e-4
+Case 3: Competing second best,Static,best,7,0.1734
+Case 3: Competing second best,Static,alt1,7,0.7614
+Case 3: Competing second best,Static,alt2,7,0.01
+Case 3: Competing second best,Static,alt3,7,0.004
+Case 3: Competing second best,Static,alt4,7,0.0214
+Case 3: Competing second best,Static,alt5,7,0.0198
+Case 3: Competing second best,Static,alt6,7,0.0094
+Case 3: Competing second best,Static,alt7,7,2e-4
+Case 3: Competing second best,Static,alt8,7,4e-4
+Case 3: Competing second best,Static,best,8,0.248
+Case 3: Competing second best,Static,alt1,8,0.6706
+Case 3: Competing second best,Static,alt2,8,0.01
+Case 3: Competing second best,Static,alt3,8,0.0036
+Case 3: Competing second best,Static,alt4,8,0.0212
+Case 3: Competing second best,Static,alt5,8,0.0348
+Case 3: Competing second best,Static,alt6,8,0.0118
+Case 3: Competing second best,Static,alt7,8,0
+Case 3: Competing second best,Static,alt8,8,0
+Case 3: Competing second best,Static,best,9,0.1748
+Case 3: Competing second best,Static,alt1,9,0.7398
+Case 3: Competing second best,Static,alt2,9,0.0162
+Case 3: Competing second best,Static,alt3,9,0.0046
+Case 3: Competing second best,Static,alt4,9,0.0194
+Case 3: Competing second best,Static,alt5,9,0.0364
+Case 3: Competing second best,Static,alt6,9,0.0084
+Case 3: Competing second best,Static,alt7,9,2e-4
+Case 3: Competing second best,Static,alt8,9,2e-4
+Case 3: Competing second best,Static,best,10,0.2392
+Case 3: Competing second best,Static,alt1,10,0.6574
+Case 3: Competing second best,Static,alt2,10,0.0226
+Case 3: Competing second best,Static,alt3,10,0.0074
+Case 3: Competing second best,Static,alt4,10,0.0066
+Case 3: Competing second best,Static,alt5,10,0.027
+Case 3: Competing second best,Static,alt6,10,0.0398
+Case 3: Competing second best,Static,alt7,10,0
+Case 3: Competing second best,Static,alt8,10,0

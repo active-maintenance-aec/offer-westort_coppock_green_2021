@@ -1,0 +1,133 @@
+Scenario,Algorithm,first_batch,statistic,value
+1: Clear winner,Thompson Sampling,100,Success rate of best arm,0.02135995777642827
+1: Clear winner,Thompson Sampling,100,ATE of best arm,0.05738448863580026
+1: Clear winner,Thompson Sampling,190,Success rate of best arm,0.02117674566868638
+1: Clear winner,Thompson Sampling,190,ATE of best arm,0.0582005827248554
+1: Clear winner,Thompson Sampling,280,Success rate of best arm,0.02085773385945895
+1: Clear winner,Thompson Sampling,280,ATE of best arm,0.05915309439848503
+1: Clear winner,Thompson Sampling,370,Success rate of best arm,0.02233474964680466
+1: Clear winner,Thompson Sampling,370,ATE of best arm,0.0590747073674704
+1: Clear winner,Thompson Sampling,460,Success rate of best arm,0.02298936239932198
+1: Clear winner,Thompson Sampling,460,ATE of best arm,0.05837408920090575
+1: Clear winner,Thompson Sampling,550,Success rate of best arm,0.02405106426609024
+1: Clear winner,Thompson Sampling,550,ATE of best arm,0.05477301860496111
+1: Clear winner,Thompson Sampling,640,Success rate of best arm,0.02517687702305987
+1: Clear winner,Thompson Sampling,640,ATE of best arm,0.05188590759456175
+1: Clear winner,Thompson Sampling,730,Success rate of best arm,0.02682994383732945
+1: Clear winner,Thompson Sampling,730,ATE of best arm,0.0482395297352204
+1: Clear winner,Thompson Sampling,820,Success rate of best arm,0.02806774096625427
+1: Clear winner,Thompson Sampling,820,ATE of best arm,0.04458243980385626
+1: Clear winner,Thompson Sampling,910,Success rate of best arm,0.02903398563425092
+1: Clear winner,Thompson Sampling,910,ATE of best arm,0.04178327840042907
+1: Clear winner,Control-Augmented,100,Success rate of best arm,0.02338363176240237
+1: Clear winner,Control-Augmented,100,ATE of best arm,0.02932266358822316
+1: Clear winner,Control-Augmented,190,Success rate of best arm,0.02323851153326175
+1: Clear winner,Control-Augmented,190,ATE of best arm,0.029137421133587
+1: Clear winner,Control-Augmented,280,Success rate of best arm,0.02310986631103107
+1: Clear winner,Control-Augmented,280,ATE of best arm,0.02925571616465418
+1: Clear winner,Control-Augmented,370,Success rate of best arm,0.02353383327848394
+1: Clear winner,Control-Augmented,370,ATE of best arm,0.02978637568017359
+1: Clear winner,Control-Augmented,460,Success rate of best arm,0.02412842814961311
+1: Clear winner,Control-Augmented,460,ATE of best arm,0.03047482144160972
+1: Clear winner,Control-Augmented,550,Success rate of best arm,0.02507786673217335
+1: Clear winner,Control-Augmented,550,ATE of best arm,0.03190875409226669
+1: Clear winner,Control-Augmented,640,Success rate of best arm,0.02652587807255245
+1: Clear winner,Control-Augmented,640,ATE of best arm,0.03295464258908947
+1: Clear winner,Control-Augmented,730,Success rate of best arm,0.02723592797560605
+1: Clear winner,Control-Augmented,730,ATE of best arm,0.03445321923174877
+1: Clear winner,Control-Augmented,820,Success rate of best arm,0.02862783523312862
+1: Clear winner,Control-Augmented,820,ATE of best arm,0.03575018125435614
+1: Clear winner,Control-Augmented,910,Success rate of best arm,0.02967243695423199
+1: Clear winner,Control-Augmented,910,ATE of best arm,0.03682010001782305
+2: No clear winner,Thompson Sampling,100,Success rate of best arm,0.03349211329438671
+2: No clear winner,Thompson Sampling,100,ATE of best arm,0.04950631904668689
+2: No clear winner,Thompson Sampling,190,Success rate of best arm,0.03315214300596828
+2: No clear winner,Thompson Sampling,190,ATE of best arm,0.0502174025987795
+2: No clear winner,Thompson Sampling,280,Success rate of best arm,0.03269288184043358
+2: No clear winner,Thompson Sampling,280,ATE of best arm,0.04904923040460103
+2: No clear winner,Thompson Sampling,370,Success rate of best arm,0.03249260514524101
+2: No clear winner,Thompson Sampling,370,ATE of best arm,0.04903689527623595
+2: No clear winner,Thompson Sampling,460,Success rate of best arm,0.03187647138506073
+2: No clear winner,Thompson Sampling,460,ATE of best arm,0.04757644711124904
+2: No clear winner,Thompson Sampling,550,Success rate of best arm,0.03106226198938815
+2: No clear winner,Thompson Sampling,550,ATE of best arm,0.04649765525715332
+2: No clear winner,Thompson Sampling,640,Success rate of best arm,0.03044058717867485
+2: No clear winner,Thompson Sampling,640,ATE of best arm,0.04460815081533215
+2: No clear winner,Thompson Sampling,730,Success rate of best arm,0.02854112811786012
+2: No clear winner,Thompson Sampling,730,ATE of best arm,0.04278597138006496
+2: No clear winner,Thompson Sampling,820,Success rate of best arm,0.02764236873964991
+2: No clear winner,Thompson Sampling,820,ATE of best arm,0.03998028255393086
+2: No clear winner,Thompson Sampling,910,Success rate of best arm,0.02602034638052476
+2: No clear winner,Thompson Sampling,910,ATE of best arm,0.03696152587188314
+2: No clear winner,Control-Augmented,100,Success rate of best arm,0.034299514826319
+2: No clear winner,Control-Augmented,100,ATE of best arm,0.04076995020301906
+2: No clear winner,Control-Augmented,190,Success rate of best arm,0.03521107272880928
+2: No clear winner,Control-Augmented,190,ATE of best arm,0.04105182369345096
+2: No clear winner,Control-Augmented,280,Success rate of best arm,0.03453243033926381
+2: No clear winner,Control-Augmented,280,ATE of best arm,0.04076522732538092
+2: No clear winner,Control-Augmented,370,Success rate of best arm,0.03437431837263195
+2: No clear winner,Control-Augmented,370,ATE of best arm,0.04081968757764411
+2: No clear winner,Control-Augmented,460,Success rate of best arm,0.03370520019827885
+2: No clear winner,Control-Augmented,460,ATE of best arm,0.04014153354187955
+2: No clear winner,Control-Augmented,550,Success rate of best arm,0.03279671751139328
+2: No clear winner,Control-Augmented,550,ATE of best arm,0.03969354856673202
+2: No clear winner,Control-Augmented,640,Success rate of best arm,0.03151559924180613
+2: No clear winner,Control-Augmented,640,ATE of best arm,0.03856229636738842
+2: No clear winner,Control-Augmented,730,Success rate of best arm,0.03074830325838483
+2: No clear winner,Control-Augmented,730,ATE of best arm,0.03810218836665447
+2: No clear winner,Control-Augmented,820,Success rate of best arm,0.02929396403595672
+2: No clear winner,Control-Augmented,820,ATE of best arm,0.03672257785699302
+2: No clear winner,Control-Augmented,910,Success rate of best arm,0.02674316783909758
+2: No clear winner,Control-Augmented,910,ATE of best arm,0.03510633015095883
+3: Competing second-best,Thompson Sampling,100,Success rate of best arm,0.02474514364637702
+3: Competing second-best,Thompson Sampling,100,ATE of best arm,0.06080980341688941
+3: Competing second-best,Thompson Sampling,190,Success rate of best arm,0.02427809735070878
+3: Competing second-best,Thompson Sampling,190,ATE of best arm,0.0627497388580178
+3: Competing second-best,Thompson Sampling,280,Success rate of best arm,0.02426911200554955
+3: Competing second-best,Thompson Sampling,280,ATE of best arm,0.0639811833678387
+3: Competing second-best,Thompson Sampling,370,Success rate of best arm,0.02450762004290732
+3: Competing second-best,Thompson Sampling,370,ATE of best arm,0.06385993488002237
+3: Competing second-best,Thompson Sampling,460,Success rate of best arm,0.02527519935332537
+3: Competing second-best,Thompson Sampling,460,ATE of best arm,0.06199624395853929
+3: Competing second-best,Thompson Sampling,550,Success rate of best arm,0.02591655981168535
+3: Competing second-best,Thompson Sampling,550,ATE of best arm,0.05780620443729654
+3: Competing second-best,Thompson Sampling,640,Success rate of best arm,0.02680836005442909
+3: Competing second-best,Thompson Sampling,640,ATE of best arm,0.05382654068213988
+3: Competing second-best,Thompson Sampling,730,Success rate of best arm,0.02720742249546413
+3: Competing second-best,Thompson Sampling,730,ATE of best arm,0.04959442601196492
+3: Competing second-best,Thompson Sampling,820,Success rate of best arm,0.02846417417593618
+3: Competing second-best,Thompson Sampling,820,ATE of best arm,0.04490287665947621
+3: Competing second-best,Thompson Sampling,910,Success rate of best arm,0.0293624927371111
+3: Competing second-best,Thompson Sampling,910,ATE of best arm,0.0408209233190973
+3: Competing second-best,Control-Augmented,100,Success rate of best arm,0.02865948447311381
+3: Competing second-best,Control-Augmented,100,ATE of best arm,0.03452476735094487
+3: Competing second-best,Control-Augmented,190,Success rate of best arm,0.0282739350863822
+3: Competing second-best,Control-Augmented,190,ATE of best arm,0.03404026027623819
+3: Competing second-best,Control-Augmented,280,Success rate of best arm,0.0274756741396385
+3: Competing second-best,Control-Augmented,280,ATE of best arm,0.03378196745946957
+3: Competing second-best,Control-Augmented,370,Success rate of best arm,0.02727555527716762
+3: Competing second-best,Control-Augmented,370,ATE of best arm,0.03335184397552918
+3: Competing second-best,Control-Augmented,460,Success rate of best arm,0.02720581727654379
+3: Competing second-best,Control-Augmented,460,ATE of best arm,0.03394875876660986
+3: Competing second-best,Control-Augmented,550,Success rate of best arm,0.02748296760272334
+3: Competing second-best,Control-Augmented,550,ATE of best arm,0.03426405387581234
+3: Competing second-best,Control-Augmented,640,Success rate of best arm,0.02805310789742149
+3: Competing second-best,Control-Augmented,640,ATE of best arm,0.03513439407700525
+3: Competing second-best,Control-Augmented,730,Success rate of best arm,0.02878095982173415
+3: Competing second-best,Control-Augmented,730,ATE of best arm,0.03563565973547399
+3: Competing second-best,Control-Augmented,820,Success rate of best arm,0.02974061741770621
+3: Competing second-best,Control-Augmented,820,ATE of best arm,0.03694990284820643
+3: Competing second-best,Control-Augmented,910,Success rate of best arm,0.03015018951963628
+3: Competing second-best,Control-Augmented,910,ATE of best arm,0.03721793304924194
+1: Clear winner,Thompson Sampling,1000,Success rate of best arm,0.03057578548020312
+1: Clear winner,Thompson Sampling,1000,ATE of best arm,0.03778077487367352
+1: Clear winner,Control-Augmented,1000,Success rate of best arm,0.03057578548020312
+1: Clear winner,Control-Augmented,1000,ATE of best arm,0.03778077487367352
+2: No clear winner,Thompson Sampling,1000,Success rate of best arm,0.02392054854705499
+2: No clear winner,Thompson Sampling,1000,ATE of best arm,0.03336911323814139
+2: No clear winner,Control-Augmented,1000,Success rate of best arm,0.02392054854705499
+2: No clear winner,Control-Augmented,1000,ATE of best arm,0.03336911323814139
+3: Competing second-best,Thompson Sampling,1000,Success rate of best arm,0.03072629985587587
+3: Competing second-best,Thompson Sampling,1000,ATE of best arm,0.03836693596694698
+3: Competing second-best,Control-Augmented,1000,Success rate of best arm,0.03072629985587587
+3: Competing second-best,Control-Augmented,1000,ATE of best arm,0.03836693596694698

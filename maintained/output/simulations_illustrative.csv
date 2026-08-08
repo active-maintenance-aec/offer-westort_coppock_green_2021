@@ -1,0 +1,1783 @@
+case,design,arm,batch,quantity,value
+Case 1: Clear winner,Thompson sampling,best,0,posterior_prob,0.1111111111111111
+Case 1: Clear winner,Thompson sampling,alt1,0,posterior_prob,0.1111111111111111
+Case 1: Clear winner,Thompson sampling,alt2,0,posterior_prob,0.1111111111111111
+Case 1: Clear winner,Thompson sampling,alt3,0,posterior_prob,0.1111111111111111
+Case 1: Clear winner,Thompson sampling,alt4,0,posterior_prob,0.1111111111111111
+Case 1: Clear winner,Thompson sampling,alt5,0,posterior_prob,0.1111111111111111
+Case 1: Clear winner,Thompson sampling,alt6,0,posterior_prob,0.1111111111111111
+Case 1: Clear winner,Thompson sampling,alt7,0,posterior_prob,0.1111111111111111
+Case 1: Clear winner,Thompson sampling,alt8,0,posterior_prob,0.1111111111111111
+Case 1: Clear winner,Thompson sampling,best,1,posterior_prob,0.154
+Case 1: Clear winner,Thompson sampling,alt1,1,posterior_prob,0.536
+Case 1: Clear winner,Thompson sampling,alt2,1,posterior_prob,0.001
+Case 1: Clear winner,Thompson sampling,alt3,1,posterior_prob,0.0036
+Case 1: Clear winner,Thompson sampling,alt4,1,posterior_prob,0.0164
+Case 1: Clear winner,Thompson sampling,alt5,1,posterior_prob,0.0492
+Case 1: Clear winner,Thompson sampling,alt6,1,posterior_prob,0.225
+Case 1: Clear winner,Thompson sampling,alt7,1,posterior_prob,8e-4
+Case 1: Clear winner,Thompson sampling,alt8,1,posterior_prob,0.014
+Case 1: Clear winner,Thompson sampling,best,2,posterior_prob,0.2226
+Case 1: Clear winner,Thompson sampling,alt1,2,posterior_prob,0.004
+Case 1: Clear winner,Thompson sampling,alt2,2,posterior_prob,0.0094
+Case 1: Clear winner,Thompson sampling,alt3,2,posterior_prob,0.0422
+Case 1: Clear winner,Thompson sampling,alt4,2,posterior_prob,0.095
+Case 1: Clear winner,Thompson sampling,alt5,2,posterior_prob,0.2116
+Case 1: Clear winner,Thompson sampling,alt6,2,posterior_prob,0.3234
+Case 1: Clear winner,Thompson sampling,alt7,2,posterior_prob,0.0084
+Case 1: Clear winner,Thompson sampling,alt8,2,posterior_prob,0.0834
+Case 1: Clear winner,Thompson sampling,best,3,posterior_prob,0.3938
+Case 1: Clear winner,Thompson sampling,alt1,3,posterior_prob,0.011
+Case 1: Clear winner,Thompson sampling,alt2,3,posterior_prob,0.2704
+Case 1: Clear winner,Thompson sampling,alt3,3,posterior_prob,0.0816
+Case 1: Clear winner,Thompson sampling,alt4,3,posterior_prob,0.0138
+Case 1: Clear winner,Thompson sampling,alt5,3,posterior_prob,0.0132
+Case 1: Clear winner,Thompson sampling,alt6,3,posterior_prob,0.0784
+Case 1: Clear winner,Thompson sampling,alt7,3,posterior_prob,0.0198
+Case 1: Clear winner,Thompson sampling,alt8,3,posterior_prob,0.118
+Case 1: Clear winner,Thompson sampling,best,4,posterior_prob,0.3096
+Case 1: Clear winner,Thompson sampling,alt1,4,posterior_prob,0.0094
+Case 1: Clear winner,Thompson sampling,alt2,4,posterior_prob,0.0206
+Case 1: Clear winner,Thompson sampling,alt3,4,posterior_prob,0.195
+Case 1: Clear winner,Thompson sampling,alt4,4,posterior_prob,0.0118
+Case 1: Clear winner,Thompson sampling,alt5,4,posterior_prob,0.021
+Case 1: Clear winner,Thompson sampling,alt6,4,posterior_prob,0.1364
+Case 1: Clear winner,Thompson sampling,alt7,4,posterior_prob,0.0174
+Case 1: Clear winner,Thompson sampling,alt8,4,posterior_prob,0.2788
+Case 1: Clear winner,Thompson sampling,best,5,posterior_prob,0.5376
+Case 1: Clear winner,Thompson sampling,alt1,5,posterior_prob,0.0124
+Case 1: Clear winner,Thompson sampling,alt2,5,posterior_prob,0.0256
+Case 1: Clear winner,Thompson sampling,alt3,5,posterior_prob,0.1086
+Case 1: Clear winner,Thompson sampling,alt4,5,posterior_prob,0.0144
+Case 1: Clear winner,Thompson sampling,alt5,5,posterior_prob,0.015
+Case 1: Clear winner,Thompson sampling,alt6,5,posterior_prob,0.0626
+Case 1: Clear winner,Thompson sampling,alt7,5,posterior_prob,0.024
+Case 1: Clear winner,Thompson sampling,alt8,5,posterior_prob,0.1998
+Case 1: Clear winner,Thompson sampling,best,6,posterior_prob,0.6292
+Case 1: Clear winner,Thompson sampling,alt1,6,posterior_prob,0.011
+Case 1: Clear winner,Thompson sampling,alt2,6,posterior_prob,0.044
+Case 1: Clear winner,Thompson sampling,alt3,6,posterior_prob,0.0496
+Case 1: Clear winner,Thompson sampling,alt4,6,posterior_prob,0.0062
+Case 1: Clear winner,Thompson sampling,alt5,6,posterior_prob,0.0298
+Case 1: Clear winner,Thompson sampling,alt6,6,posterior_prob,0.0402
+Case 1: Clear winner,Thompson sampling,alt7,6,posterior_prob,0.0138
+Case 1: Clear winner,Thompson sampling,alt8,6,posterior_prob,0.1762
+Case 1: Clear winner,Thompson sampling,best,7,posterior_prob,0.8014
+Case 1: Clear winner,Thompson sampling,alt1,7,posterior_prob,0.0084
+Case 1: Clear winner,Thompson sampling,alt2,7,posterior_prob,0.0436
+Case 1: Clear winner,Thompson sampling,alt3,7,posterior_prob,0.034
+Case 1: Clear winner,Thompson sampling,alt4,7,posterior_prob,0.0042
+Case 1: Clear winner,Thompson sampling,alt5,7,posterior_prob,0.0184
+Case 1: Clear winner,Thompson sampling,alt6,7,posterior_prob,0.0298
+Case 1: Clear winner,Thompson sampling,alt7,7,posterior_prob,0.0146
+Case 1: Clear winner,Thompson sampling,alt8,7,posterior_prob,0.0456
+Case 1: Clear winner,Thompson sampling,best,8,posterior_prob,0.8276
+Case 1: Clear winner,Thompson sampling,alt1,8,posterior_prob,0.0116
+Case 1: Clear winner,Thompson sampling,alt2,8,posterior_prob,0.0172
+Case 1: Clear winner,Thompson sampling,alt3,8,posterior_prob,0.0444
+Case 1: Clear winner,Thompson sampling,alt4,8,posterior_prob,0.0064
+Case 1: Clear winner,Thompson sampling,alt5,8,posterior_prob,0.0156
+Case 1: Clear winner,Thompson sampling,alt6,8,posterior_prob,0.026
+Case 1: Clear winner,Thompson sampling,alt7,8,posterior_prob,0.0196
+Case 1: Clear winner,Thompson sampling,alt8,8,posterior_prob,0.0316
+Case 1: Clear winner,Thompson sampling,best,9,posterior_prob,0.8932
+Case 1: Clear winner,Thompson sampling,alt1,9,posterior_prob,0.0052
+Case 1: Clear winner,Thompson sampling,alt2,9,posterior_prob,0.0208
+Case 1: Clear winner,Thompson sampling,alt3,9,posterior_prob,0.0172
+Case 1: Clear winner,Thompson sampling,alt4,9,posterior_prob,0.0034
+Case 1: Clear winner,Thompson sampling,alt5,9,posterior_prob,0.0274
+Case 1: Clear winner,Thompson sampling,alt6,9,posterior_prob,0.0114
+Case 1: Clear winner,Thompson sampling,alt7,9,posterior_prob,0.0124
+Case 1: Clear winner,Thompson sampling,alt8,9,posterior_prob,0.009
+Case 1: Clear winner,Thompson sampling,best,10,posterior_prob,0.8954
+Case 1: Clear winner,Thompson sampling,alt1,10,posterior_prob,0.0082
+Case 1: Clear winner,Thompson sampling,alt2,10,posterior_prob,0.0168
+Case 1: Clear winner,Thompson sampling,alt3,10,posterior_prob,0.0168
+Case 1: Clear winner,Thompson sampling,alt4,10,posterior_prob,0.0048
+Case 1: Clear winner,Thompson sampling,alt5,10,posterior_prob,0.0198
+Case 1: Clear winner,Thompson sampling,alt6,10,posterior_prob,0.0152
+Case 1: Clear winner,Thompson sampling,alt7,10,posterior_prob,0.0156
+Case 1: Clear winner,Thompson sampling,alt8,10,posterior_prob,0.0074
+Case 1: Clear winner,Thompson sampling,best,0,cumulative_n,0
+Case 1: Clear winner,Thompson sampling,alt1,0,cumulative_n,0
+Case 1: Clear winner,Thompson sampling,alt2,0,cumulative_n,0
+Case 1: Clear winner,Thompson sampling,alt3,0,cumulative_n,0
+Case 1: Clear winner,Thompson sampling,alt4,0,cumulative_n,0
+Case 1: Clear winner,Thompson sampling,alt5,0,cumulative_n,0
+Case 1: Clear winner,Thompson sampling,alt6,0,cumulative_n,0
+Case 1: Clear winner,Thompson sampling,alt7,0,cumulative_n,0
+Case 1: Clear winner,Thompson sampling,alt8,0,cumulative_n,0
+Case 1: Clear winner,Thompson sampling,best,1,cumulative_n,14
+Case 1: Clear winner,Thompson sampling,alt1,1,cumulative_n,12
+Case 1: Clear winner,Thompson sampling,alt2,1,cumulative_n,13
+Case 1: Clear winner,Thompson sampling,alt3,1,cumulative_n,15
+Case 1: Clear winner,Thompson sampling,alt4,1,cumulative_n,6
+Case 1: Clear winner,Thompson sampling,alt5,1,cumulative_n,8
+Case 1: Clear winner,Thompson sampling,alt6,1,cumulative_n,7
+Case 1: Clear winner,Thompson sampling,alt7,1,cumulative_n,14
+Case 1: Clear winner,Thompson sampling,alt8,1,cumulative_n,11
+Case 1: Clear winner,Thompson sampling,best,2,cumulative_n,26
+Case 1: Clear winner,Thompson sampling,alt1,2,cumulative_n,78
+Case 1: Clear winner,Thompson sampling,alt2,2,cumulative_n,13
+Case 1: Clear winner,Thompson sampling,alt3,2,cumulative_n,15
+Case 1: Clear winner,Thompson sampling,alt4,2,cumulative_n,6
+Case 1: Clear winner,Thompson sampling,alt5,2,cumulative_n,13
+Case 1: Clear winner,Thompson sampling,alt6,2,cumulative_n,23
+Case 1: Clear winner,Thompson sampling,alt7,2,cumulative_n,14
+Case 1: Clear winner,Thompson sampling,alt8,2,cumulative_n,12
+Case 1: Clear winner,Thompson sampling,best,3,cumulative_n,52
+Case 1: Clear winner,Thompson sampling,alt1,3,cumulative_n,80
+Case 1: Clear winner,Thompson sampling,alt2,3,cumulative_n,15
+Case 1: Clear winner,Thompson sampling,alt3,3,cumulative_n,22
+Case 1: Clear winner,Thompson sampling,alt4,3,cumulative_n,17
+Case 1: Clear winner,Thompson sampling,alt5,3,cumulative_n,32
+Case 1: Clear winner,Thompson sampling,alt6,3,cumulative_n,54
+Case 1: Clear winner,Thompson sampling,alt7,3,cumulative_n,14
+Case 1: Clear winner,Thompson sampling,alt8,3,cumulative_n,14
+Case 1: Clear winner,Thompson sampling,best,4,cumulative_n,96
+Case 1: Clear winner,Thompson sampling,alt1,4,cumulative_n,83
+Case 1: Clear winner,Thompson sampling,alt2,4,cumulative_n,39
+Case 1: Clear winner,Thompson sampling,alt3,4,cumulative_n,30
+Case 1: Clear winner,Thompson sampling,alt4,4,cumulative_n,18
+Case 1: Clear winner,Thompson sampling,alt5,4,cumulative_n,32
+Case 1: Clear winner,Thompson sampling,alt6,4,cumulative_n,64
+Case 1: Clear winner,Thompson sampling,alt7,4,cumulative_n,16
+Case 1: Clear winner,Thompson sampling,alt8,4,cumulative_n,22
+Case 1: Clear winner,Thompson sampling,best,5,cumulative_n,132
+Case 1: Clear winner,Thompson sampling,alt1,5,cumulative_n,83
+Case 1: Clear winner,Thompson sampling,alt2,5,cumulative_n,39
+Case 1: Clear winner,Thompson sampling,alt3,5,cumulative_n,49
+Case 1: Clear winner,Thompson sampling,alt4,5,cumulative_n,18
+Case 1: Clear winner,Thompson sampling,alt5,5,cumulative_n,34
+Case 1: Clear winner,Thompson sampling,alt6,5,cumulative_n,80
+Case 1: Clear winner,Thompson sampling,alt7,5,cumulative_n,16
+Case 1: Clear winner,Thompson sampling,alt8,5,cumulative_n,49
+Case 1: Clear winner,Thompson sampling,best,6,cumulative_n,180
+Case 1: Clear winner,Thompson sampling,alt1,6,cumulative_n,85
+Case 1: Clear winner,Thompson sampling,alt2,6,cumulative_n,41
+Case 1: Clear winner,Thompson sampling,alt3,6,cumulative_n,59
+Case 1: Clear winner,Thompson sampling,alt4,6,cumulative_n,19
+Case 1: Clear winner,Thompson sampling,alt5,6,cumulative_n,37
+Case 1: Clear winner,Thompson sampling,alt6,6,cumulative_n,87
+Case 1: Clear winner,Thompson sampling,alt7,6,cumulative_n,17
+Case 1: Clear winner,Thompson sampling,alt8,6,cumulative_n,75
+Case 1: Clear winner,Thompson sampling,best,7,cumulative_n,245
+Case 1: Clear winner,Thompson sampling,alt1,7,cumulative_n,87
+Case 1: Clear winner,Thompson sampling,alt2,7,cumulative_n,42
+Case 1: Clear winner,Thompson sampling,alt3,7,cumulative_n,64
+Case 1: Clear winner,Thompson sampling,alt4,7,cumulative_n,21
+Case 1: Clear winner,Thompson sampling,alt5,7,cumulative_n,41
+Case 1: Clear winner,Thompson sampling,alt6,7,cumulative_n,90
+Case 1: Clear winner,Thompson sampling,alt7,7,cumulative_n,17
+Case 1: Clear winner,Thompson sampling,alt8,7,cumulative_n,93
+Case 1: Clear winner,Thompson sampling,best,8,cumulative_n,319
+Case 1: Clear winner,Thompson sampling,alt1,8,cumulative_n,89
+Case 1: Clear winner,Thompson sampling,alt2,8,cumulative_n,50
+Case 1: Clear winner,Thompson sampling,alt3,8,cumulative_n,64
+Case 1: Clear winner,Thompson sampling,alt4,8,cumulative_n,22
+Case 1: Clear winner,Thompson sampling,alt5,8,cumulative_n,43
+Case 1: Clear winner,Thompson sampling,alt6,8,cumulative_n,95
+Case 1: Clear winner,Thompson sampling,alt7,8,cumulative_n,17
+Case 1: Clear winner,Thompson sampling,alt8,8,cumulative_n,101
+Case 1: Clear winner,Thompson sampling,best,9,cumulative_n,401
+Case 1: Clear winner,Thompson sampling,alt1,9,cumulative_n,90
+Case 1: Clear winner,Thompson sampling,alt2,9,cumulative_n,54
+Case 1: Clear winner,Thompson sampling,alt3,9,cumulative_n,68
+Case 1: Clear winner,Thompson sampling,alt4,9,cumulative_n,22
+Case 1: Clear winner,Thompson sampling,alt5,9,cumulative_n,44
+Case 1: Clear winner,Thompson sampling,alt6,9,cumulative_n,97
+Case 1: Clear winner,Thompson sampling,alt7,9,cumulative_n,17
+Case 1: Clear winner,Thompson sampling,alt8,9,cumulative_n,107
+Case 1: Clear winner,Thompson sampling,best,10,cumulative_n,491
+Case 1: Clear winner,Thompson sampling,alt1,10,cumulative_n,90
+Case 1: Clear winner,Thompson sampling,alt2,10,cumulative_n,56
+Case 1: Clear winner,Thompson sampling,alt3,10,cumulative_n,69
+Case 1: Clear winner,Thompson sampling,alt4,10,cumulative_n,22
+Case 1: Clear winner,Thompson sampling,alt5,10,cumulative_n,48
+Case 1: Clear winner,Thompson sampling,alt6,10,cumulative_n,99
+Case 1: Clear winner,Thompson sampling,alt7,10,cumulative_n,17
+Case 1: Clear winner,Thompson sampling,alt8,10,cumulative_n,108
+Case 1: Clear winner,Control-augmented,best,0,posterior_prob,0.1111111111111111
+Case 1: Clear winner,Control-augmented,alt1,0,posterior_prob,0.1111111111111111
+Case 1: Clear winner,Control-augmented,alt2,0,posterior_prob,0.1111111111111111
+Case 1: Clear winner,Control-augmented,alt3,0,posterior_prob,0.1111111111111111
+Case 1: Clear winner,Control-augmented,alt4,0,posterior_prob,0.1111111111111111
+Case 1: Clear winner,Control-augmented,alt5,0,posterior_prob,0.1111111111111111
+Case 1: Clear winner,Control-augmented,alt6,0,posterior_prob,0.1111111111111111
+Case 1: Clear winner,Control-augmented,alt7,0,posterior_prob,0.1111111111111111
+Case 1: Clear winner,Control-augmented,alt8,0,posterior_prob,0.1111111111111111
+Case 1: Clear winner,Control-augmented,best,1,posterior_prob,0.2574
+Case 1: Clear winner,Control-augmented,alt1,1,posterior_prob,0.1004
+Case 1: Clear winner,Control-augmented,alt2,1,posterior_prob,0.002
+Case 1: Clear winner,Control-augmented,alt3,1,posterior_prob,0.0562
+Case 1: Clear winner,Control-augmented,alt4,1,posterior_prob,0.0134
+Case 1: Clear winner,Control-augmented,alt5,1,posterior_prob,0.154
+Case 1: Clear winner,Control-augmented,alt6,1,posterior_prob,0.001
+Case 1: Clear winner,Control-augmented,alt7,1,posterior_prob,0.4066
+Case 1: Clear winner,Control-augmented,alt8,1,posterior_prob,0.009
+Case 1: Clear winner,Control-augmented,best,2,posterior_prob,0.428
+Case 1: Clear winner,Control-augmented,alt1,2,posterior_prob,0.0386
+Case 1: Clear winner,Control-augmented,alt2,2,posterior_prob,4e-4
+Case 1: Clear winner,Control-augmented,alt3,2,posterior_prob,0.0388
+Case 1: Clear winner,Control-augmented,alt4,2,posterior_prob,0.025
+Case 1: Clear winner,Control-augmented,alt5,2,posterior_prob,0.0392
+Case 1: Clear winner,Control-augmented,alt6,2,posterior_prob,0.0042
+Case 1: Clear winner,Control-augmented,alt7,2,posterior_prob,0.4006
+Case 1: Clear winner,Control-augmented,alt8,2,posterior_prob,0.0252
+Case 1: Clear winner,Control-augmented,best,3,posterior_prob,0.2168
+Case 1: Clear winner,Control-augmented,alt1,3,posterior_prob,0.0916
+Case 1: Clear winner,Control-augmented,alt2,3,posterior_prob,0.0098
+Case 1: Clear winner,Control-augmented,alt3,3,posterior_prob,0.074
+Case 1: Clear winner,Control-augmented,alt4,3,posterior_prob,0.0472
+Case 1: Clear winner,Control-augmented,alt5,3,posterior_prob,0.172
+Case 1: Clear winner,Control-augmented,alt6,3,posterior_prob,0.0142
+Case 1: Clear winner,Control-augmented,alt7,3,posterior_prob,0.2786
+Case 1: Clear winner,Control-augmented,alt8,3,posterior_prob,0.0958
+Case 1: Clear winner,Control-augmented,best,4,posterior_prob,0.2094
+Case 1: Clear winner,Control-augmented,alt1,4,posterior_prob,0.0488
+Case 1: Clear winner,Control-augmented,alt2,4,posterior_prob,8e-4
+Case 1: Clear winner,Control-augmented,alt3,4,posterior_prob,0.0264
+Case 1: Clear winner,Control-augmented,alt4,4,posterior_prob,0.0374
+Case 1: Clear winner,Control-augmented,alt5,4,posterior_prob,0.082
+Case 1: Clear winner,Control-augmented,alt6,4,posterior_prob,0.0182
+Case 1: Clear winner,Control-augmented,alt7,4,posterior_prob,0.2592
+Case 1: Clear winner,Control-augmented,alt8,4,posterior_prob,0.3178
+Case 1: Clear winner,Control-augmented,best,5,posterior_prob,0.4314
+Case 1: Clear winner,Control-augmented,alt1,5,posterior_prob,0.017
+Case 1: Clear winner,Control-augmented,alt2,5,posterior_prob,2e-4
+Case 1: Clear winner,Control-augmented,alt3,5,posterior_prob,0.1486
+Case 1: Clear winner,Control-augmented,alt4,5,posterior_prob,0.0212
+Case 1: Clear winner,Control-augmented,alt5,5,posterior_prob,0.0224
+Case 1: Clear winner,Control-augmented,alt6,5,posterior_prob,0.0094
+Case 1: Clear winner,Control-augmented,alt7,5,posterior_prob,0.0878
+Case 1: Clear winner,Control-augmented,alt8,5,posterior_prob,0.262
+Case 1: Clear winner,Control-augmented,best,6,posterior_prob,0.851
+Case 1: Clear winner,Control-augmented,alt1,6,posterior_prob,0.0092
+Case 1: Clear winner,Control-augmented,alt2,6,posterior_prob,8e-4
+Case 1: Clear winner,Control-augmented,alt3,6,posterior_prob,0.0274
+Case 1: Clear winner,Control-augmented,alt4,6,posterior_prob,0.0076
+Case 1: Clear winner,Control-augmented,alt5,6,posterior_prob,0.0276
+Case 1: Clear winner,Control-augmented,alt6,6,posterior_prob,0.0102
+Case 1: Clear winner,Control-augmented,alt7,6,posterior_prob,0.051
+Case 1: Clear winner,Control-augmented,alt8,6,posterior_prob,0.0152
+Case 1: Clear winner,Control-augmented,best,7,posterior_prob,0.9658
+Case 1: Clear winner,Control-augmented,alt1,7,posterior_prob,0.0022
+Case 1: Clear winner,Control-augmented,alt2,7,posterior_prob,0
+Case 1: Clear winner,Control-augmented,alt3,7,posterior_prob,0.0064
+Case 1: Clear winner,Control-augmented,alt4,7,posterior_prob,0.0036
+Case 1: Clear winner,Control-augmented,alt5,7,posterior_prob,0.0068
+Case 1: Clear winner,Control-augmented,alt6,7,posterior_prob,0.0042
+Case 1: Clear winner,Control-augmented,alt7,7,posterior_prob,0.0088
+Case 1: Clear winner,Control-augmented,alt8,7,posterior_prob,0.0022
+Case 1: Clear winner,Control-augmented,best,8,posterior_prob,0.9404
+Case 1: Clear winner,Control-augmented,alt1,8,posterior_prob,0.0152
+Case 1: Clear winner,Control-augmented,alt2,8,posterior_prob,0
+Case 1: Clear winner,Control-augmented,alt3,8,posterior_prob,0.0082
+Case 1: Clear winner,Control-augmented,alt4,8,posterior_prob,0.004
+Case 1: Clear winner,Control-augmented,alt5,8,posterior_prob,0.013
+Case 1: Clear winner,Control-augmented,alt6,8,posterior_prob,0.0034
+Case 1: Clear winner,Control-augmented,alt7,8,posterior_prob,0.0132
+Case 1: Clear winner,Control-augmented,alt8,8,posterior_prob,0.0026
+Case 1: Clear winner,Control-augmented,best,9,posterior_prob,0.9102
+Case 1: Clear winner,Control-augmented,alt1,9,posterior_prob,0.0196
+Case 1: Clear winner,Control-augmented,alt2,9,posterior_prob,0
+Case 1: Clear winner,Control-augmented,alt3,9,posterior_prob,0.0122
+Case 1: Clear winner,Control-augmented,alt4,9,posterior_prob,0.0042
+Case 1: Clear winner,Control-augmented,alt5,9,posterior_prob,0.027
+Case 1: Clear winner,Control-augmented,alt6,9,posterior_prob,0.0044
+Case 1: Clear winner,Control-augmented,alt7,9,posterior_prob,0.0162
+Case 1: Clear winner,Control-augmented,alt8,9,posterior_prob,0.0062
+Case 1: Clear winner,Control-augmented,best,10,posterior_prob,0.8948
+Case 1: Clear winner,Control-augmented,alt1,10,posterior_prob,0.0218
+Case 1: Clear winner,Control-augmented,alt2,10,posterior_prob,0
+Case 1: Clear winner,Control-augmented,alt3,10,posterior_prob,0.0126
+Case 1: Clear winner,Control-augmented,alt4,10,posterior_prob,0.0062
+Case 1: Clear winner,Control-augmented,alt5,10,posterior_prob,0.0288
+Case 1: Clear winner,Control-augmented,alt6,10,posterior_prob,0.0048
+Case 1: Clear winner,Control-augmented,alt7,10,posterior_prob,0.0226
+Case 1: Clear winner,Control-augmented,alt8,10,posterior_prob,0.0084
+Case 1: Clear winner,Control-augmented,best,0,cumulative_n,0
+Case 1: Clear winner,Control-augmented,alt1,0,cumulative_n,0
+Case 1: Clear winner,Control-augmented,alt2,0,cumulative_n,0
+Case 1: Clear winner,Control-augmented,alt3,0,cumulative_n,0
+Case 1: Clear winner,Control-augmented,alt4,0,cumulative_n,0
+Case 1: Clear winner,Control-augmented,alt5,0,cumulative_n,0
+Case 1: Clear winner,Control-augmented,alt6,0,cumulative_n,0
+Case 1: Clear winner,Control-augmented,alt7,0,cumulative_n,0
+Case 1: Clear winner,Control-augmented,alt8,0,cumulative_n,0
+Case 1: Clear winner,Control-augmented,best,1,cumulative_n,12
+Case 1: Clear winner,Control-augmented,alt1,1,cumulative_n,12
+Case 1: Clear winner,Control-augmented,alt2,1,cumulative_n,16
+Case 1: Clear winner,Control-augmented,alt3,1,cumulative_n,10
+Case 1: Clear winner,Control-augmented,alt4,1,cumulative_n,9
+Case 1: Clear winner,Control-augmented,alt5,1,cumulative_n,3
+Case 1: Clear winner,Control-augmented,alt6,1,cumulative_n,15
+Case 1: Clear winner,Control-augmented,alt7,1,cumulative_n,13
+Case 1: Clear winner,Control-augmented,alt8,1,cumulative_n,10
+Case 1: Clear winner,Control-augmented,best,2,cumulative_n,33
+Case 1: Clear winner,Control-augmented,alt1,2,cumulative_n,20
+Case 1: Clear winner,Control-augmented,alt2,2,cumulative_n,25
+Case 1: Clear winner,Control-augmented,alt3,2,cumulative_n,15
+Case 1: Clear winner,Control-augmented,alt4,2,cumulative_n,10
+Case 1: Clear winner,Control-augmented,alt5,2,cumulative_n,15
+Case 1: Clear winner,Control-augmented,alt6,2,cumulative_n,15
+Case 1: Clear winner,Control-augmented,alt7,2,cumulative_n,57
+Case 1: Clear winner,Control-augmented,alt8,2,cumulative_n,10
+Case 1: Clear winner,Control-augmented,best,3,cumulative_n,70
+Case 1: Clear winner,Control-augmented,alt1,3,cumulative_n,20
+Case 1: Clear winner,Control-augmented,alt2,3,cumulative_n,42
+Case 1: Clear winner,Control-augmented,alt3,3,cumulative_n,15
+Case 1: Clear winner,Control-augmented,alt4,3,cumulative_n,10
+Case 1: Clear winner,Control-augmented,alt5,3,cumulative_n,17
+Case 1: Clear winner,Control-augmented,alt6,3,cumulative_n,15
+Case 1: Clear winner,Control-augmented,alt7,3,cumulative_n,97
+Case 1: Clear winner,Control-augmented,alt8,3,cumulative_n,14
+Case 1: Clear winner,Control-augmented,best,4,cumulative_n,82
+Case 1: Clear winner,Control-augmented,alt1,4,cumulative_n,26
+Case 1: Clear winner,Control-augmented,alt2,4,cumulative_n,88
+Case 1: Clear winner,Control-augmented,alt3,4,cumulative_n,22
+Case 1: Clear winner,Control-augmented,alt4,4,cumulative_n,12
+Case 1: Clear winner,Control-augmented,alt5,4,cumulative_n,29
+Case 1: Clear winner,Control-augmented,alt6,4,cumulative_n,16
+Case 1: Clear winner,Control-augmented,alt7,4,cumulative_n,105
+Case 1: Clear winner,Control-augmented,alt8,4,cumulative_n,20
+Case 1: Clear winner,Control-augmented,best,5,cumulative_n,104
+Case 1: Clear winner,Control-augmented,alt1,5,cumulative_n,31
+Case 1: Clear winner,Control-augmented,alt2,5,cumulative_n,99
+Case 1: Clear winner,Control-augmented,alt3,5,cumulative_n,25
+Case 1: Clear winner,Control-augmented,alt4,5,cumulative_n,15
+Case 1: Clear winner,Control-augmented,alt5,5,cumulative_n,37
+Case 1: Clear winner,Control-augmented,alt6,5,cumulative_n,17
+Case 1: Clear winner,Control-augmented,alt7,5,cumulative_n,130
+Case 1: Clear winner,Control-augmented,alt8,5,cumulative_n,42
+Case 1: Clear winner,Control-augmented,best,6,cumulative_n,142
+Case 1: Clear winner,Control-augmented,alt1,6,cumulative_n,32
+Case 1: Clear winner,Control-augmented,alt2,6,cumulative_n,115
+Case 1: Clear winner,Control-augmented,alt3,6,cumulative_n,34
+Case 1: Clear winner,Control-augmented,alt4,6,cumulative_n,17
+Case 1: Clear winner,Control-augmented,alt5,6,cumulative_n,40
+Case 1: Clear winner,Control-augmented,alt6,6,cumulative_n,17
+Case 1: Clear winner,Control-augmented,alt7,6,cumulative_n,138
+Case 1: Clear winner,Control-augmented,alt8,6,cumulative_n,65
+Case 1: Clear winner,Control-augmented,best,7,cumulative_n,197
+Case 1: Clear winner,Control-augmented,alt1,7,cumulative_n,32
+Case 1: Clear winner,Control-augmented,alt2,7,cumulative_n,152
+Case 1: Clear winner,Control-augmented,alt3,7,cumulative_n,35
+Case 1: Clear winner,Control-augmented,alt4,7,cumulative_n,18
+Case 1: Clear winner,Control-augmented,alt5,7,cumulative_n,41
+Case 1: Clear winner,Control-augmented,alt6,7,cumulative_n,18
+Case 1: Clear winner,Control-augmented,alt7,7,cumulative_n,142
+Case 1: Clear winner,Control-augmented,alt8,7,cumulative_n,65
+Case 1: Clear winner,Control-augmented,best,8,cumulative_n,240
+Case 1: Clear winner,Control-augmented,alt1,8,cumulative_n,33
+Case 1: Clear winner,Control-augmented,alt2,8,cumulative_n,207
+Case 1: Clear winner,Control-augmented,alt3,8,cumulative_n,36
+Case 1: Clear winner,Control-augmented,alt4,8,cumulative_n,18
+Case 1: Clear winner,Control-augmented,alt5,8,cumulative_n,41
+Case 1: Clear winner,Control-augmented,alt6,8,cumulative_n,18
+Case 1: Clear winner,Control-augmented,alt7,8,cumulative_n,142
+Case 1: Clear winner,Control-augmented,alt8,8,cumulative_n,65
+Case 1: Clear winner,Control-augmented,best,9,cumulative_n,293
+Case 1: Clear winner,Control-augmented,alt1,9,cumulative_n,33
+Case 1: Clear winner,Control-augmented,alt2,9,cumulative_n,250
+Case 1: Clear winner,Control-augmented,alt3,9,cumulative_n,36
+Case 1: Clear winner,Control-augmented,alt4,9,cumulative_n,18
+Case 1: Clear winner,Control-augmented,alt5,9,cumulative_n,43
+Case 1: Clear winner,Control-augmented,alt6,9,cumulative_n,18
+Case 1: Clear winner,Control-augmented,alt7,9,cumulative_n,144
+Case 1: Clear winner,Control-augmented,alt8,9,cumulative_n,65
+Case 1: Clear winner,Control-augmented,best,10,cumulative_n,339
+Case 1: Clear winner,Control-augmented,alt1,10,cumulative_n,34
+Case 1: Clear winner,Control-augmented,alt2,10,cumulative_n,298
+Case 1: Clear winner,Control-augmented,alt3,10,cumulative_n,37
+Case 1: Clear winner,Control-augmented,alt4,10,cumulative_n,18
+Case 1: Clear winner,Control-augmented,alt5,10,cumulative_n,45
+Case 1: Clear winner,Control-augmented,alt6,10,cumulative_n,19
+Case 1: Clear winner,Control-augmented,alt7,10,cumulative_n,145
+Case 1: Clear winner,Control-augmented,alt8,10,cumulative_n,65
+Case 1: Clear winner,Static,best,0,posterior_prob,0.1111111111111111
+Case 1: Clear winner,Static,alt1,0,posterior_prob,0.1111111111111111
+Case 1: Clear winner,Static,alt2,0,posterior_prob,0.1111111111111111
+Case 1: Clear winner,Static,alt3,0,posterior_prob,0.1111111111111111
+Case 1: Clear winner,Static,alt4,0,posterior_prob,0.1111111111111111
+Case 1: Clear winner,Static,alt5,0,posterior_prob,0.1111111111111111
+Case 1: Clear winner,Static,alt6,0,posterior_prob,0.1111111111111111
+Case 1: Clear winner,Static,alt7,0,posterior_prob,0.1111111111111111
+Case 1: Clear winner,Static,alt8,0,posterior_prob,0.1111111111111111
+Case 1: Clear winner,Static,best,1,posterior_prob,0.0636
+Case 1: Clear winner,Static,alt1,1,posterior_prob,0.0314
+Case 1: Clear winner,Static,alt2,1,posterior_prob,0.2792
+Case 1: Clear winner,Static,alt3,1,posterior_prob,0.0906
+Case 1: Clear winner,Static,alt4,1,posterior_prob,0.0062
+Case 1: Clear winner,Static,alt5,1,posterior_prob,0.0858
+Case 1: Clear winner,Static,alt6,1,posterior_prob,0.1352
+Case 1: Clear winner,Static,alt7,1,posterior_prob,0.295
+Case 1: Clear winner,Static,alt8,1,posterior_prob,0.013
+Case 1: Clear winner,Static,best,2,posterior_prob,0.2894
+Case 1: Clear winner,Static,alt1,2,posterior_prob,0.002
+Case 1: Clear winner,Static,alt2,2,posterior_prob,0.0482
+Case 1: Clear winner,Static,alt3,2,posterior_prob,0.0016
+Case 1: Clear winner,Static,alt4,2,posterior_prob,0.0112
+Case 1: Clear winner,Static,alt5,2,posterior_prob,0.0378
+Case 1: Clear winner,Static,alt6,2,posterior_prob,0.1036
+Case 1: Clear winner,Static,alt7,2,posterior_prob,0.5034
+Case 1: Clear winner,Static,alt8,2,posterior_prob,0.0028
+Case 1: Clear winner,Static,best,3,posterior_prob,0.1594
+Case 1: Clear winner,Static,alt1,3,posterior_prob,8e-4
+Case 1: Clear winner,Static,alt2,3,posterior_prob,0.1338
+Case 1: Clear winner,Static,alt3,3,posterior_prob,0.0022
+Case 1: Clear winner,Static,alt4,3,posterior_prob,0.0076
+Case 1: Clear winner,Static,alt5,3,posterior_prob,0.0436
+Case 1: Clear winner,Static,alt6,3,posterior_prob,0.2322
+Case 1: Clear winner,Static,alt7,3,posterior_prob,0.4172
+Case 1: Clear winner,Static,alt8,3,posterior_prob,0.0032
+Case 1: Clear winner,Static,best,4,posterior_prob,0.2038
+Case 1: Clear winner,Static,alt1,4,posterior_prob,0.0152
+Case 1: Clear winner,Static,alt2,4,posterior_prob,0.0396
+Case 1: Clear winner,Static,alt3,4,posterior_prob,6e-4
+Case 1: Clear winner,Static,alt4,4,posterior_prob,0.0092
+Case 1: Clear winner,Static,alt5,4,posterior_prob,0.0864
+Case 1: Clear winner,Static,alt6,4,posterior_prob,0.1164
+Case 1: Clear winner,Static,alt7,4,posterior_prob,0.5274
+Case 1: Clear winner,Static,alt8,4,posterior_prob,0.0014
+Case 1: Clear winner,Static,best,5,posterior_prob,0.3196
+Case 1: Clear winner,Static,alt1,5,posterior_prob,0.0276
+Case 1: Clear winner,Static,alt2,5,posterior_prob,0.0886
+Case 1: Clear winner,Static,alt3,5,posterior_prob,6e-4
+Case 1: Clear winner,Static,alt4,5,posterior_prob,0.007
+Case 1: Clear winner,Static,alt5,5,posterior_prob,0.0636
+Case 1: Clear winner,Static,alt6,5,posterior_prob,0.0422
+Case 1: Clear winner,Static,alt7,5,posterior_prob,0.4496
+Case 1: Clear winner,Static,alt8,5,posterior_prob,0.0012
+Case 1: Clear winner,Static,best,6,posterior_prob,0.3092
+Case 1: Clear winner,Static,alt1,6,posterior_prob,0.0132
+Case 1: Clear winner,Static,alt2,6,posterior_prob,0.1362
+Case 1: Clear winner,Static,alt3,6,posterior_prob,2e-4
+Case 1: Clear winner,Static,alt4,6,posterior_prob,0.0336
+Case 1: Clear winner,Static,alt5,6,posterior_prob,0.0326
+Case 1: Clear winner,Static,alt6,6,posterior_prob,0.1108
+Case 1: Clear winner,Static,alt7,6,posterior_prob,0.3562
+Case 1: Clear winner,Static,alt8,6,posterior_prob,0.008
+Case 1: Clear winner,Static,best,7,posterior_prob,0.3226
+Case 1: Clear winner,Static,alt1,7,posterior_prob,0.051
+Case 1: Clear winner,Static,alt2,7,posterior_prob,0.1194
+Case 1: Clear winner,Static,alt3,7,posterior_prob,2e-4
+Case 1: Clear winner,Static,alt4,7,posterior_prob,0.0386
+Case 1: Clear winner,Static,alt5,7,posterior_prob,0.0502
+Case 1: Clear winner,Static,alt6,7,posterior_prob,0.1782
+Case 1: Clear winner,Static,alt7,7,posterior_prob,0.2378
+Case 1: Clear winner,Static,alt8,7,posterior_prob,0.002
+Case 1: Clear winner,Static,best,8,posterior_prob,0.308
+Case 1: Clear winner,Static,alt1,8,posterior_prob,0.1022
+Case 1: Clear winner,Static,alt2,8,posterior_prob,0.0848
+Case 1: Clear winner,Static,alt3,8,posterior_prob,0
+Case 1: Clear winner,Static,alt4,8,posterior_prob,0.0336
+Case 1: Clear winner,Static,alt5,8,posterior_prob,0.0468
+Case 1: Clear winner,Static,alt6,8,posterior_prob,0.1882
+Case 1: Clear winner,Static,alt7,8,posterior_prob,0.2354
+Case 1: Clear winner,Static,alt8,8,posterior_prob,0.001
+Case 1: Clear winner,Static,best,9,posterior_prob,0.4472
+Case 1: Clear winner,Static,alt1,9,posterior_prob,0.0356
+Case 1: Clear winner,Static,alt2,9,posterior_prob,0.0874
+Case 1: Clear winner,Static,alt3,9,posterior_prob,0
+Case 1: Clear winner,Static,alt4,9,posterior_prob,0.069
+Case 1: Clear winner,Static,alt5,9,posterior_prob,0.0348
+Case 1: Clear winner,Static,alt6,9,posterior_prob,0.2132
+Case 1: Clear winner,Static,alt7,9,posterior_prob,0.1098
+Case 1: Clear winner,Static,alt8,9,posterior_prob,0.003
+Case 1: Clear winner,Static,best,10,posterior_prob,0.607
+Case 1: Clear winner,Static,alt1,10,posterior_prob,0.0306
+Case 1: Clear winner,Static,alt2,10,posterior_prob,0.0542
+Case 1: Clear winner,Static,alt3,10,posterior_prob,0
+Case 1: Clear winner,Static,alt4,10,posterior_prob,0.0176
+Case 1: Clear winner,Static,alt5,10,posterior_prob,0.0426
+Case 1: Clear winner,Static,alt6,10,posterior_prob,0.1124
+Case 1: Clear winner,Static,alt7,10,posterior_prob,0.1318
+Case 1: Clear winner,Static,alt8,10,posterior_prob,0.0038
+Case 1: Clear winner,Static,best,0,cumulative_n,0
+Case 1: Clear winner,Static,alt1,0,cumulative_n,0
+Case 1: Clear winner,Static,alt2,0,cumulative_n,0
+Case 1: Clear winner,Static,alt3,0,cumulative_n,0
+Case 1: Clear winner,Static,alt4,0,cumulative_n,0
+Case 1: Clear winner,Static,alt5,0,cumulative_n,0
+Case 1: Clear winner,Static,alt6,0,cumulative_n,0
+Case 1: Clear winner,Static,alt7,0,cumulative_n,0
+Case 1: Clear winner,Static,alt8,0,cumulative_n,0
+Case 1: Clear winner,Static,best,1,cumulative_n,6
+Case 1: Clear winner,Static,alt1,1,cumulative_n,20
+Case 1: Clear winner,Static,alt2,1,cumulative_n,10
+Case 1: Clear winner,Static,alt3,1,cumulative_n,5
+Case 1: Clear winner,Static,alt4,1,cumulative_n,14
+Case 1: Clear winner,Static,alt5,1,cumulative_n,15
+Case 1: Clear winner,Static,alt6,1,cumulative_n,13
+Case 1: Clear winner,Static,alt7,1,cumulative_n,6
+Case 1: Clear winner,Static,alt8,1,cumulative_n,11
+Case 1: Clear winner,Static,best,2,cumulative_n,18
+Case 1: Clear winner,Static,alt1,2,cumulative_n,32
+Case 1: Clear winner,Static,alt2,2,cumulative_n,18
+Case 1: Clear winner,Static,alt3,2,cumulative_n,19
+Case 1: Clear winner,Static,alt4,2,cumulative_n,25
+Case 1: Clear winner,Static,alt5,2,cumulative_n,25
+Case 1: Clear winner,Static,alt6,2,cumulative_n,24
+Case 1: Clear winner,Static,alt7,2,cumulative_n,15
+Case 1: Clear winner,Static,alt8,2,cumulative_n,24
+Case 1: Clear winner,Static,best,3,cumulative_n,26
+Case 1: Clear winner,Static,alt1,3,cumulative_n,43
+Case 1: Clear winner,Static,alt2,3,cumulative_n,37
+Case 1: Clear winner,Static,alt3,3,cumulative_n,32
+Case 1: Clear winner,Static,alt4,3,cumulative_n,38
+Case 1: Clear winner,Static,alt5,3,cumulative_n,39
+Case 1: Clear winner,Static,alt6,3,cumulative_n,33
+Case 1: Clear winner,Static,alt7,3,cumulative_n,24
+Case 1: Clear winner,Static,alt8,3,cumulative_n,28
+Case 1: Clear winner,Static,best,4,cumulative_n,39
+Case 1: Clear winner,Static,alt1,4,cumulative_n,54
+Case 1: Clear winner,Static,alt2,4,cumulative_n,54
+Case 1: Clear winner,Static,alt3,4,cumulative_n,47
+Case 1: Clear winner,Static,alt4,4,cumulative_n,46
+Case 1: Clear winner,Static,alt5,4,cumulative_n,47
+Case 1: Clear winner,Static,alt6,4,cumulative_n,44
+Case 1: Clear winner,Static,alt7,4,cumulative_n,30
+Case 1: Clear winner,Static,alt8,4,cumulative_n,39
+Case 1: Clear winner,Static,best,5,cumulative_n,48
+Case 1: Clear winner,Static,alt1,5,cumulative_n,68
+Case 1: Clear winner,Static,alt2,5,cumulative_n,68
+Case 1: Clear winner,Static,alt3,5,cumulative_n,58
+Case 1: Clear winner,Static,alt4,5,cumulative_n,57
+Case 1: Clear winner,Static,alt5,5,cumulative_n,59
+Case 1: Clear winner,Static,alt6,5,cumulative_n,56
+Case 1: Clear winner,Static,alt7,5,cumulative_n,34
+Case 1: Clear winner,Static,alt8,5,cumulative_n,52
+Case 1: Clear winner,Static,best,6,cumulative_n,63
+Case 1: Clear winner,Static,alt1,6,cumulative_n,80
+Case 1: Clear winner,Static,alt2,6,cumulative_n,80
+Case 1: Clear winner,Static,alt3,6,cumulative_n,64
+Case 1: Clear winner,Static,alt4,6,cumulative_n,69
+Case 1: Clear winner,Static,alt5,6,cumulative_n,76
+Case 1: Clear winner,Static,alt6,6,cumulative_n,63
+Case 1: Clear winner,Static,alt7,6,cumulative_n,44
+Case 1: Clear winner,Static,alt8,6,cumulative_n,61
+Case 1: Clear winner,Static,best,7,cumulative_n,73
+Case 1: Clear winner,Static,alt1,7,cumulative_n,90
+Case 1: Clear winner,Static,alt2,7,cumulative_n,86
+Case 1: Clear winner,Static,alt3,7,cumulative_n,76
+Case 1: Clear winner,Static,alt4,7,cumulative_n,80
+Case 1: Clear winner,Static,alt5,7,cumulative_n,91
+Case 1: Clear winner,Static,alt6,7,cumulative_n,75
+Case 1: Clear winner,Static,alt7,7,cumulative_n,60
+Case 1: Clear winner,Static,alt8,7,cumulative_n,69
+Case 1: Clear winner,Static,best,8,cumulative_n,80
+Case 1: Clear winner,Static,alt1,8,cumulative_n,102
+Case 1: Clear winner,Static,alt2,8,cumulative_n,99
+Case 1: Clear winner,Static,alt3,8,cumulative_n,88
+Case 1: Clear winner,Static,alt4,8,cumulative_n,89
+Case 1: Clear winner,Static,alt5,8,cumulative_n,108
+Case 1: Clear winner,Static,alt6,8,cumulative_n,87
+Case 1: Clear winner,Static,alt7,8,cumulative_n,72
+Case 1: Clear winner,Static,alt8,8,cumulative_n,75
+Case 1: Clear winner,Static,best,9,cumulative_n,91
+Case 1: Clear winner,Static,alt1,9,cumulative_n,116
+Case 1: Clear winner,Static,alt2,9,cumulative_n,104
+Case 1: Clear winner,Static,alt3,9,cumulative_n,98
+Case 1: Clear winner,Static,alt4,9,cumulative_n,102
+Case 1: Clear winner,Static,alt5,9,cumulative_n,119
+Case 1: Clear winner,Static,alt6,9,cumulative_n,103
+Case 1: Clear winner,Static,alt7,9,cumulative_n,81
+Case 1: Clear winner,Static,alt8,9,cumulative_n,86
+Case 1: Clear winner,Static,best,10,cumulative_n,100
+Case 1: Clear winner,Static,alt1,10,cumulative_n,127
+Case 1: Clear winner,Static,alt2,10,cumulative_n,115
+Case 1: Clear winner,Static,alt3,10,cumulative_n,108
+Case 1: Clear winner,Static,alt4,10,cumulative_n,114
+Case 1: Clear winner,Static,alt5,10,cumulative_n,125
+Case 1: Clear winner,Static,alt6,10,cumulative_n,123
+Case 1: Clear winner,Static,alt7,10,cumulative_n,95
+Case 1: Clear winner,Static,alt8,10,cumulative_n,93
+Case 2: No clear winner,Thompson sampling,best,0,posterior_prob,0.1111111111111111
+Case 2: No clear winner,Thompson sampling,alt1,0,posterior_prob,0.1111111111111111
+Case 2: No clear winner,Thompson sampling,alt2,0,posterior_prob,0.1111111111111111
+Case 2: No clear winner,Thompson sampling,alt3,0,posterior_prob,0.1111111111111111
+Case 2: No clear winner,Thompson sampling,alt4,0,posterior_prob,0.1111111111111111
+Case 2: No clear winner,Thompson sampling,alt5,0,posterior_prob,0.1111111111111111
+Case 2: No clear winner,Thompson sampling,alt6,0,posterior_prob,0.1111111111111111
+Case 2: No clear winner,Thompson sampling,alt7,0,posterior_prob,0.1111111111111111
+Case 2: No clear winner,Thompson sampling,alt8,0,posterior_prob,0.1111111111111111
+Case 2: No clear winner,Thompson sampling,best,1,posterior_prob,0.014
+Case 2: No clear winner,Thompson sampling,alt1,1,posterior_prob,0.0102
+Case 2: No clear winner,Thompson sampling,alt2,1,posterior_prob,0.133
+Case 2: No clear winner,Thompson sampling,alt3,1,posterior_prob,0.04
+Case 2: No clear winner,Thompson sampling,alt4,1,posterior_prob,0.2326
+Case 2: No clear winner,Thompson sampling,alt5,1,posterior_prob,0.1298
+Case 2: No clear winner,Thompson sampling,alt6,1,posterior_prob,0.1188
+Case 2: No clear winner,Thompson sampling,alt7,1,posterior_prob,0.0104
+Case 2: No clear winner,Thompson sampling,alt8,1,posterior_prob,0.3112
+Case 2: No clear winner,Thompson sampling,best,2,posterior_prob,0.065
+Case 2: No clear winner,Thompson sampling,alt1,2,posterior_prob,0.0612
+Case 2: No clear winner,Thompson sampling,alt2,2,posterior_prob,0.0794
+Case 2: No clear winner,Thompson sampling,alt3,2,posterior_prob,0.1034
+Case 2: No clear winner,Thompson sampling,alt4,2,posterior_prob,0.191
+Case 2: No clear winner,Thompson sampling,alt5,2,posterior_prob,0.1864
+Case 2: No clear winner,Thompson sampling,alt6,2,posterior_prob,0.096
+Case 2: No clear winner,Thompson sampling,alt7,2,posterior_prob,0.189
+Case 2: No clear winner,Thompson sampling,alt8,2,posterior_prob,0.0286
+Case 2: No clear winner,Thompson sampling,best,3,posterior_prob,0.0634
+Case 2: No clear winner,Thompson sampling,alt1,3,posterior_prob,0.0236
+Case 2: No clear winner,Thompson sampling,alt2,3,posterior_prob,0.0504
+Case 2: No clear winner,Thompson sampling,alt3,3,posterior_prob,0.1764
+Case 2: No clear winner,Thompson sampling,alt4,3,posterior_prob,0.0258
+Case 2: No clear winner,Thompson sampling,alt5,3,posterior_prob,0.3626
+Case 2: No clear winner,Thompson sampling,alt6,3,posterior_prob,0.129
+Case 2: No clear winner,Thompson sampling,alt7,3,posterior_prob,0.1178
+Case 2: No clear winner,Thompson sampling,alt8,3,posterior_prob,0.051
+Case 2: No clear winner,Thompson sampling,best,4,posterior_prob,0.1312
+Case 2: No clear winner,Thompson sampling,alt1,4,posterior_prob,0.0212
+Case 2: No clear winner,Thompson sampling,alt2,4,posterior_prob,0.1482
+Case 2: No clear winner,Thompson sampling,alt3,4,posterior_prob,0.125
+Case 2: No clear winner,Thompson sampling,alt4,4,posterior_prob,0.0526
+Case 2: No clear winner,Thompson sampling,alt5,4,posterior_prob,0.276
+Case 2: No clear winner,Thompson sampling,alt6,4,posterior_prob,0.1686
+Case 2: No clear winner,Thompson sampling,alt7,4,posterior_prob,0.0194
+Case 2: No clear winner,Thompson sampling,alt8,4,posterior_prob,0.0578
+Case 2: No clear winner,Thompson sampling,best,5,posterior_prob,0.1666
+Case 2: No clear winner,Thompson sampling,alt1,5,posterior_prob,0.0202
+Case 2: No clear winner,Thompson sampling,alt2,5,posterior_prob,0.0542
+Case 2: No clear winner,Thompson sampling,alt3,5,posterior_prob,0.1032
+Case 2: No clear winner,Thompson sampling,alt4,5,posterior_prob,0.2136
+Case 2: No clear winner,Thompson sampling,alt5,5,posterior_prob,0.2138
+Case 2: No clear winner,Thompson sampling,alt6,5,posterior_prob,0.0452
+Case 2: No clear winner,Thompson sampling,alt7,5,posterior_prob,0.0362
+Case 2: No clear winner,Thompson sampling,alt8,5,posterior_prob,0.147
+Case 2: No clear winner,Thompson sampling,best,6,posterior_prob,0.1362
+Case 2: No clear winner,Thompson sampling,alt1,6,posterior_prob,0.0906
+Case 2: No clear winner,Thompson sampling,alt2,6,posterior_prob,0.0594
+Case 2: No clear winner,Thompson sampling,alt3,6,posterior_prob,0.0894
+Case 2: No clear winner,Thompson sampling,alt4,6,posterior_prob,0.1988
+Case 2: No clear winner,Thompson sampling,alt5,6,posterior_prob,0.1814
+Case 2: No clear winner,Thompson sampling,alt6,6,posterior_prob,0.0556
+Case 2: No clear winner,Thompson sampling,alt7,6,posterior_prob,0.0846
+Case 2: No clear winner,Thompson sampling,alt8,6,posterior_prob,0.104
+Case 2: No clear winner,Thompson sampling,best,7,posterior_prob,0.1072
+Case 2: No clear winner,Thompson sampling,alt1,7,posterior_prob,0.0994
+Case 2: No clear winner,Thompson sampling,alt2,7,posterior_prob,0.2214
+Case 2: No clear winner,Thompson sampling,alt3,7,posterior_prob,0.1144
+Case 2: No clear winner,Thompson sampling,alt4,7,posterior_prob,0.1362
+Case 2: No clear winner,Thompson sampling,alt5,7,posterior_prob,0.1264
+Case 2: No clear winner,Thompson sampling,alt6,7,posterior_prob,0.0552
+Case 2: No clear winner,Thompson sampling,alt7,7,posterior_prob,0.0888
+Case 2: No clear winner,Thompson sampling,alt8,7,posterior_prob,0.051
+Case 2: No clear winner,Thompson sampling,best,8,posterior_prob,0.1608
+Case 2: No clear winner,Thompson sampling,alt1,8,posterior_prob,0.0572
+Case 2: No clear winner,Thompson sampling,alt2,8,posterior_prob,0.2226
+Case 2: No clear winner,Thompson sampling,alt3,8,posterior_prob,0.0278
+Case 2: No clear winner,Thompson sampling,alt4,8,posterior_prob,0.0804
+Case 2: No clear winner,Thompson sampling,alt5,8,posterior_prob,0.2066
+Case 2: No clear winner,Thompson sampling,alt6,8,posterior_prob,0.028
+Case 2: No clear winner,Thompson sampling,alt7,8,posterior_prob,0.1656
+Case 2: No clear winner,Thompson sampling,alt8,8,posterior_prob,0.051
+Case 2: No clear winner,Thompson sampling,best,9,posterior_prob,0.097
+Case 2: No clear winner,Thompson sampling,alt1,9,posterior_prob,0.0244
+Case 2: No clear winner,Thompson sampling,alt2,9,posterior_prob,0.3592
+Case 2: No clear winner,Thompson sampling,alt3,9,posterior_prob,0.0236
+Case 2: No clear winner,Thompson sampling,alt4,9,posterior_prob,0.0844
+Case 2: No clear winner,Thompson sampling,alt5,9,posterior_prob,0.164
+Case 2: No clear winner,Thompson sampling,alt6,9,posterior_prob,0.0258
+Case 2: No clear winner,Thompson sampling,alt7,9,posterior_prob,0.1954
+Case 2: No clear winner,Thompson sampling,alt8,9,posterior_prob,0.0262
+Case 2: No clear winner,Thompson sampling,best,10,posterior_prob,0.132
+Case 2: No clear winner,Thompson sampling,alt1,10,posterior_prob,0.0318
+Case 2: No clear winner,Thompson sampling,alt2,10,posterior_prob,0.1362
+Case 2: No clear winner,Thompson sampling,alt3,10,posterior_prob,0.0308
+Case 2: No clear winner,Thompson sampling,alt4,10,posterior_prob,0.066
+Case 2: No clear winner,Thompson sampling,alt5,10,posterior_prob,0.1852
+Case 2: No clear winner,Thompson sampling,alt6,10,posterior_prob,0.1092
+Case 2: No clear winner,Thompson sampling,alt7,10,posterior_prob,0.2424
+Case 2: No clear winner,Thompson sampling,alt8,10,posterior_prob,0.0664
+Case 2: No clear winner,Thompson sampling,best,0,cumulative_n,0
+Case 2: No clear winner,Thompson sampling,alt1,0,cumulative_n,0
+Case 2: No clear winner,Thompson sampling,alt2,0,cumulative_n,0
+Case 2: No clear winner,Thompson sampling,alt3,0,cumulative_n,0
+Case 2: No clear winner,Thompson sampling,alt4,0,cumulative_n,0
+Case 2: No clear winner,Thompson sampling,alt5,0,cumulative_n,0
+Case 2: No clear winner,Thompson sampling,alt6,0,cumulative_n,0
+Case 2: No clear winner,Thompson sampling,alt7,0,cumulative_n,0
+Case 2: No clear winner,Thompson sampling,alt8,0,cumulative_n,0
+Case 2: No clear winner,Thompson sampling,best,1,cumulative_n,16
+Case 2: No clear winner,Thompson sampling,alt1,1,cumulative_n,10
+Case 2: No clear winner,Thompson sampling,alt2,1,cumulative_n,8
+Case 2: No clear winner,Thompson sampling,alt3,1,cumulative_n,12
+Case 2: No clear winner,Thompson sampling,alt4,1,cumulative_n,10
+Case 2: No clear winner,Thompson sampling,alt5,1,cumulative_n,8
+Case 2: No clear winner,Thompson sampling,alt6,1,cumulative_n,17
+Case 2: No clear winner,Thompson sampling,alt7,1,cumulative_n,10
+Case 2: No clear winner,Thompson sampling,alt8,1,cumulative_n,9
+Case 2: No clear winner,Thompson sampling,best,2,cumulative_n,17
+Case 2: No clear winner,Thompson sampling,alt1,2,cumulative_n,10
+Case 2: No clear winner,Thompson sampling,alt2,2,cumulative_n,24
+Case 2: No clear winner,Thompson sampling,alt3,2,cumulative_n,15
+Case 2: No clear winner,Thompson sampling,alt4,2,cumulative_n,30
+Case 2: No clear winner,Thompson sampling,alt5,2,cumulative_n,18
+Case 2: No clear winner,Thompson sampling,alt6,2,cumulative_n,29
+Case 2: No clear winner,Thompson sampling,alt7,2,cumulative_n,12
+Case 2: No clear winner,Thompson sampling,alt8,2,cumulative_n,45
+Case 2: No clear winner,Thompson sampling,best,3,cumulative_n,21
+Case 2: No clear winner,Thompson sampling,alt1,3,cumulative_n,17
+Case 2: No clear winner,Thompson sampling,alt2,3,cumulative_n,31
+Case 2: No clear winner,Thompson sampling,alt3,3,cumulative_n,22
+Case 2: No clear winner,Thompson sampling,alt4,3,cumulative_n,52
+Case 2: No clear winner,Thompson sampling,alt5,3,cumulative_n,40
+Case 2: No clear winner,Thompson sampling,alt6,3,cumulative_n,38
+Case 2: No clear winner,Thompson sampling,alt7,3,cumulative_n,32
+Case 2: No clear winner,Thompson sampling,alt8,3,cumulative_n,47
+Case 2: No clear winner,Thompson sampling,best,4,cumulative_n,31
+Case 2: No clear winner,Thompson sampling,alt1,4,cumulative_n,19
+Case 2: No clear winner,Thompson sampling,alt2,4,cumulative_n,37
+Case 2: No clear winner,Thompson sampling,alt3,4,cumulative_n,39
+Case 2: No clear winner,Thompson sampling,alt4,4,cumulative_n,55
+Case 2: No clear winner,Thompson sampling,alt5,4,cumulative_n,69
+Case 2: No clear winner,Thompson sampling,alt6,4,cumulative_n,49
+Case 2: No clear winner,Thompson sampling,alt7,4,cumulative_n,47
+Case 2: No clear winner,Thompson sampling,alt8,4,cumulative_n,54
+Case 2: No clear winner,Thompson sampling,best,5,cumulative_n,50
+Case 2: No clear winner,Thompson sampling,alt1,5,cumulative_n,19
+Case 2: No clear winner,Thompson sampling,alt2,5,cumulative_n,55
+Case 2: No clear winner,Thompson sampling,alt3,5,cumulative_n,49
+Case 2: No clear winner,Thompson sampling,alt4,5,cumulative_n,61
+Case 2: No clear winner,Thompson sampling,alt5,5,cumulative_n,93
+Case 2: No clear winner,Thompson sampling,alt6,5,cumulative_n,64
+Case 2: No clear winner,Thompson sampling,alt7,5,cumulative_n,50
+Case 2: No clear winner,Thompson sampling,alt8,5,cumulative_n,59
+Case 2: No clear winner,Thompson sampling,best,6,cumulative_n,68
+Case 2: No clear winner,Thompson sampling,alt1,6,cumulative_n,23
+Case 2: No clear winner,Thompson sampling,alt2,6,cumulative_n,62
+Case 2: No clear winner,Thompson sampling,alt3,6,cumulative_n,58
+Case 2: No clear winner,Thompson sampling,alt4,6,cumulative_n,79
+Case 2: No clear winner,Thompson sampling,alt5,6,cumulative_n,117
+Case 2: No clear winner,Thompson sampling,alt6,6,cumulative_n,71
+Case 2: No clear winner,Thompson sampling,alt7,6,cumulative_n,50
+Case 2: No clear winner,Thompson sampling,alt8,6,cumulative_n,72
+Case 2: No clear winner,Thompson sampling,best,7,cumulative_n,84
+Case 2: No clear winner,Thompson sampling,alt1,7,cumulative_n,32
+Case 2: No clear winner,Thompson sampling,alt2,7,cumulative_n,65
+Case 2: No clear winner,Thompson sampling,alt3,7,cumulative_n,66
+Case 2: No clear winner,Thompson sampling,alt4,7,cumulative_n,104
+Case 2: No clear winner,Thompson sampling,alt5,7,cumulative_n,130
+Case 2: No clear winner,Thompson sampling,alt6,7,cumulative_n,74
+Case 2: No clear winner,Thompson sampling,alt7,7,cumulative_n,60
+Case 2: No clear winner,Thompson sampling,alt8,7,cumulative_n,85
+Case 2: No clear winner,Thompson sampling,best,8,cumulative_n,94
+Case 2: No clear winner,Thompson sampling,alt1,8,cumulative_n,38
+Case 2: No clear winner,Thompson sampling,alt2,8,cumulative_n,81
+Case 2: No clear winner,Thompson sampling,alt3,8,cumulative_n,83
+Case 2: No clear winner,Thompson sampling,alt4,8,cumulative_n,113
+Case 2: No clear winner,Thompson sampling,alt5,8,cumulative_n,144
+Case 2: No clear winner,Thompson sampling,alt6,8,cumulative_n,83
+Case 2: No clear winner,Thompson sampling,alt7,8,cumulative_n,69
+Case 2: No clear winner,Thompson sampling,alt8,8,cumulative_n,95
+Case 2: No clear winner,Thompson sampling,best,9,cumulative_n,110
+Case 2: No clear winner,Thompson sampling,alt1,9,cumulative_n,45
+Case 2: No clear winner,Thompson sampling,alt2,9,cumulative_n,102
+Case 2: No clear winner,Thompson sampling,alt3,9,cumulative_n,87
+Case 2: No clear winner,Thompson sampling,alt4,9,cumulative_n,121
+Case 2: No clear winner,Thompson sampling,alt5,9,cumulative_n,164
+Case 2: No clear winner,Thompson sampling,alt6,9,cumulative_n,85
+Case 2: No clear winner,Thompson sampling,alt7,9,cumulative_n,83
+Case 2: No clear winner,Thompson sampling,alt8,9,cumulative_n,103
+Case 2: No clear winner,Thompson sampling,best,10,cumulative_n,120
+Case 2: No clear winner,Thompson sampling,alt1,10,cumulative_n,46
+Case 2: No clear winner,Thompson sampling,alt2,10,cumulative_n,137
+Case 2: No clear winner,Thompson sampling,alt3,10,cumulative_n,89
+Case 2: No clear winner,Thompson sampling,alt4,10,cumulative_n,133
+Case 2: No clear winner,Thompson sampling,alt5,10,cumulative_n,179
+Case 2: No clear winner,Thompson sampling,alt6,10,cumulative_n,89
+Case 2: No clear winner,Thompson sampling,alt7,10,cumulative_n,101
+Case 2: No clear winner,Thompson sampling,alt8,10,cumulative_n,106
+Case 2: No clear winner,Static,best,0,posterior_prob,0.1111111111111111
+Case 2: No clear winner,Static,alt1,0,posterior_prob,0.1111111111111111
+Case 2: No clear winner,Static,alt2,0,posterior_prob,0.1111111111111111
+Case 2: No clear winner,Static,alt3,0,posterior_prob,0.1111111111111111
+Case 2: No clear winner,Static,alt4,0,posterior_prob,0.1111111111111111
+Case 2: No clear winner,Static,alt5,0,posterior_prob,0.1111111111111111
+Case 2: No clear winner,Static,alt6,0,posterior_prob,0.1111111111111111
+Case 2: No clear winner,Static,alt7,0,posterior_prob,0.1111111111111111
+Case 2: No clear winner,Static,alt8,0,posterior_prob,0.1111111111111111
+Case 2: No clear winner,Static,best,1,posterior_prob,0.1812
+Case 2: No clear winner,Static,alt1,1,posterior_prob,0.01
+Case 2: No clear winner,Static,alt2,1,posterior_prob,0.216
+Case 2: No clear winner,Static,alt3,1,posterior_prob,0.0224
+Case 2: No clear winner,Static,alt4,1,posterior_prob,0.2728
+Case 2: No clear winner,Static,alt5,1,posterior_prob,0.005
+Case 2: No clear winner,Static,alt6,1,posterior_prob,0.051
+Case 2: No clear winner,Static,alt7,1,posterior_prob,0.1834
+Case 2: No clear winner,Static,alt8,1,posterior_prob,0.0582
+Case 2: No clear winner,Static,best,2,posterior_prob,0.1222
+Case 2: No clear winner,Static,alt1,2,posterior_prob,0.0466
+Case 2: No clear winner,Static,alt2,2,posterior_prob,0.0618
+Case 2: No clear winner,Static,alt3,2,posterior_prob,0.0186
+Case 2: No clear winner,Static,alt4,2,posterior_prob,0.333
+Case 2: No clear winner,Static,alt5,2,posterior_prob,4e-4
+Case 2: No clear winner,Static,alt6,2,posterior_prob,0.0062
+Case 2: No clear winner,Static,alt7,2,posterior_prob,0.2256
+Case 2: No clear winner,Static,alt8,2,posterior_prob,0.1856
+Case 2: No clear winner,Static,best,3,posterior_prob,0.171
+Case 2: No clear winner,Static,alt1,3,posterior_prob,0.0254
+Case 2: No clear winner,Static,alt2,3,posterior_prob,0.0356
+Case 2: No clear winner,Static,alt3,3,posterior_prob,0.0134
+Case 2: No clear winner,Static,alt4,3,posterior_prob,0.4244
+Case 2: No clear winner,Static,alt5,3,posterior_prob,0.0058
+Case 2: No clear winner,Static,alt6,3,posterior_prob,0.0336
+Case 2: No clear winner,Static,alt7,3,posterior_prob,0.0968
+Case 2: No clear winner,Static,alt8,3,posterior_prob,0.194
+Case 2: No clear winner,Static,best,4,posterior_prob,0.1552
+Case 2: No clear winner,Static,alt1,4,posterior_prob,0.0242
+Case 2: No clear winner,Static,alt2,4,posterior_prob,0.0248
+Case 2: No clear winner,Static,alt3,4,posterior_prob,0.034
+Case 2: No clear winner,Static,alt4,4,posterior_prob,0.3172
+Case 2: No clear winner,Static,alt5,4,posterior_prob,0.0188
+Case 2: No clear winner,Static,alt6,4,posterior_prob,0.0728
+Case 2: No clear winner,Static,alt7,4,posterior_prob,0.0816
+Case 2: No clear winner,Static,alt8,4,posterior_prob,0.2714
+Case 2: No clear winner,Static,best,5,posterior_prob,0.1588
+Case 2: No clear winner,Static,alt1,5,posterior_prob,0.0162
+Case 2: No clear winner,Static,alt2,5,posterior_prob,0.0072
+Case 2: No clear winner,Static,alt3,5,posterior_prob,0.1284
+Case 2: No clear winner,Static,alt4,5,posterior_prob,0.3652
+Case 2: No clear winner,Static,alt5,5,posterior_prob,0.0046
+Case 2: No clear winner,Static,alt6,5,posterior_prob,0.04
+Case 2: No clear winner,Static,alt7,5,posterior_prob,0.1624
+Case 2: No clear winner,Static,alt8,5,posterior_prob,0.1172
+Case 2: No clear winner,Static,best,6,posterior_prob,0.1338
+Case 2: No clear winner,Static,alt1,6,posterior_prob,0.0178
+Case 2: No clear winner,Static,alt2,6,posterior_prob,0.0064
+Case 2: No clear winner,Static,alt3,6,posterior_prob,0.0526
+Case 2: No clear winner,Static,alt4,6,posterior_prob,0.1712
+Case 2: No clear winner,Static,alt5,6,posterior_prob,0.018
+Case 2: No clear winner,Static,alt6,6,posterior_prob,0.102
+Case 2: No clear winner,Static,alt7,6,posterior_prob,0.2152
+Case 2: No clear winner,Static,alt8,6,posterior_prob,0.283
+Case 2: No clear winner,Static,best,7,posterior_prob,0.0894
+Case 2: No clear winner,Static,alt1,7,posterior_prob,0.0302
+Case 2: No clear winner,Static,alt2,7,posterior_prob,0.0308
+Case 2: No clear winner,Static,alt3,7,posterior_prob,0.0402
+Case 2: No clear winner,Static,alt4,7,posterior_prob,0.0912
+Case 2: No clear winner,Static,alt5,7,posterior_prob,0.0252
+Case 2: No clear winner,Static,alt6,7,posterior_prob,0.0738
+Case 2: No clear winner,Static,alt7,7,posterior_prob,0.2474
+Case 2: No clear winner,Static,alt8,7,posterior_prob,0.3718
+Case 2: No clear winner,Static,best,8,posterior_prob,0.0614
+Case 2: No clear winner,Static,alt1,8,posterior_prob,0.0266
+Case 2: No clear winner,Static,alt2,8,posterior_prob,0.0142
+Case 2: No clear winner,Static,alt3,8,posterior_prob,0.038
+Case 2: No clear winner,Static,alt4,8,posterior_prob,0.0432
+Case 2: No clear winner,Static,alt5,8,posterior_prob,0.0102
+Case 2: No clear winner,Static,alt6,8,posterior_prob,0.2058
+Case 2: No clear winner,Static,alt7,8,posterior_prob,0.1384
+Case 2: No clear winner,Static,alt8,8,posterior_prob,0.4622
+Case 2: No clear winner,Static,best,9,posterior_prob,0.0444
+Case 2: No clear winner,Static,alt1,9,posterior_prob,0.0136
+Case 2: No clear winner,Static,alt2,9,posterior_prob,0.0298
+Case 2: No clear winner,Static,alt3,9,posterior_prob,0.0906
+Case 2: No clear winner,Static,alt4,9,posterior_prob,0.0726
+Case 2: No clear winner,Static,alt5,9,posterior_prob,0.018
+Case 2: No clear winner,Static,alt6,9,posterior_prob,0.297
+Case 2: No clear winner,Static,alt7,9,posterior_prob,0.1012
+Case 2: No clear winner,Static,alt8,9,posterior_prob,0.3328
+Case 2: No clear winner,Static,best,10,posterior_prob,0.0582
+Case 2: No clear winner,Static,alt1,10,posterior_prob,0.0222
+Case 2: No clear winner,Static,alt2,10,posterior_prob,0.0458
+Case 2: No clear winner,Static,alt3,10,posterior_prob,0.0688
+Case 2: No clear winner,Static,alt4,10,posterior_prob,0.086
+Case 2: No clear winner,Static,alt5,10,posterior_prob,0.0224
+Case 2: No clear winner,Static,alt6,10,posterior_prob,0.3574
+Case 2: No clear winner,Static,alt7,10,posterior_prob,0.137
+Case 2: No clear winner,Static,alt8,10,posterior_prob,0.2022
+Case 2: No clear winner,Static,best,0,cumulative_n,0
+Case 2: No clear winner,Static,alt1,0,cumulative_n,0
+Case 2: No clear winner,Static,alt2,0,cumulative_n,0
+Case 2: No clear winner,Static,alt3,0,cumulative_n,0
+Case 2: No clear winner,Static,alt4,0,cumulative_n,0
+Case 2: No clear winner,Static,alt5,0,cumulative_n,0
+Case 2: No clear winner,Static,alt6,0,cumulative_n,0
+Case 2: No clear winner,Static,alt7,0,cumulative_n,0
+Case 2: No clear winner,Static,alt8,0,cumulative_n,0
+Case 2: No clear winner,Static,best,1,cumulative_n,7
+Case 2: No clear winner,Static,alt1,1,cumulative_n,11
+Case 2: No clear winner,Static,alt2,1,cumulative_n,14
+Case 2: No clear winner,Static,alt3,1,cumulative_n,14
+Case 2: No clear winner,Static,alt4,1,cumulative_n,13
+Case 2: No clear winner,Static,alt5,1,cumulative_n,13
+Case 2: No clear winner,Static,alt6,1,cumulative_n,11
+Case 2: No clear winner,Static,alt7,1,cumulative_n,11
+Case 2: No clear winner,Static,alt8,1,cumulative_n,6
+Case 2: No clear winner,Static,best,2,cumulative_n,19
+Case 2: No clear winner,Static,alt1,2,cumulative_n,24
+Case 2: No clear winner,Static,alt2,2,cumulative_n,27
+Case 2: No clear winner,Static,alt3,2,cumulative_n,23
+Case 2: No clear winner,Static,alt4,2,cumulative_n,18
+Case 2: No clear winner,Static,alt5,2,cumulative_n,25
+Case 2: No clear winner,Static,alt6,2,cumulative_n,27
+Case 2: No clear winner,Static,alt7,2,cumulative_n,20
+Case 2: No clear winner,Static,alt8,2,cumulative_n,17
+Case 2: No clear winner,Static,best,3,cumulative_n,26
+Case 2: No clear winner,Static,alt1,3,cumulative_n,33
+Case 2: No clear winner,Static,alt2,3,cumulative_n,42
+Case 2: No clear winner,Static,alt3,3,cumulative_n,31
+Case 2: No clear winner,Static,alt4,3,cumulative_n,33
+Case 2: No clear winner,Static,alt5,3,cumulative_n,34
+Case 2: No clear winner,Static,alt6,3,cumulative_n,36
+Case 2: No clear winner,Static,alt7,3,cumulative_n,35
+Case 2: No clear winner,Static,alt8,3,cumulative_n,30
+Case 2: No clear winner,Static,best,4,cumulative_n,39
+Case 2: No clear winner,Static,alt1,4,cumulative_n,40
+Case 2: No clear winner,Static,alt2,4,cumulative_n,62
+Case 2: No clear winner,Static,alt3,4,cumulative_n,45
+Case 2: No clear winner,Static,alt4,4,cumulative_n,43
+Case 2: No clear winner,Static,alt5,4,cumulative_n,42
+Case 2: No clear winner,Static,alt6,4,cumulative_n,39
+Case 2: No clear winner,Static,alt7,4,cumulative_n,51
+Case 2: No clear winner,Static,alt8,4,cumulative_n,39
+Case 2: No clear winner,Static,best,5,cumulative_n,53
+Case 2: No clear winner,Static,alt1,5,cumulative_n,52
+Case 2: No clear winner,Static,alt2,5,cumulative_n,75
+Case 2: No clear winner,Static,alt3,5,cumulative_n,56
+Case 2: No clear winner,Static,alt4,5,cumulative_n,50
+Case 2: No clear winner,Static,alt5,5,cumulative_n,52
+Case 2: No clear winner,Static,alt6,5,cumulative_n,53
+Case 2: No clear winner,Static,alt7,5,cumulative_n,59
+Case 2: No clear winner,Static,alt8,5,cumulative_n,50
+Case 2: No clear winner,Static,best,6,cumulative_n,65
+Case 2: No clear winner,Static,alt1,6,cumulative_n,65
+Case 2: No clear winner,Static,alt2,6,cumulative_n,84
+Case 2: No clear winner,Static,alt3,6,cumulative_n,69
+Case 2: No clear winner,Static,alt4,6,cumulative_n,61
+Case 2: No clear winner,Static,alt5,6,cumulative_n,63
+Case 2: No clear winner,Static,alt6,6,cumulative_n,67
+Case 2: No clear winner,Static,alt7,6,cumulative_n,71
+Case 2: No clear winner,Static,alt8,6,cumulative_n,55
+Case 2: No clear winner,Static,best,7,cumulative_n,81
+Case 2: No clear winner,Static,alt1,7,cumulative_n,79
+Case 2: No clear winner,Static,alt2,7,cumulative_n,94
+Case 2: No clear winner,Static,alt3,7,cumulative_n,74
+Case 2: No clear winner,Static,alt4,7,cumulative_n,73
+Case 2: No clear winner,Static,alt5,7,cumulative_n,74
+Case 2: No clear winner,Static,alt6,7,cumulative_n,76
+Case 2: No clear winner,Static,alt7,7,cumulative_n,81
+Case 2: No clear winner,Static,alt8,7,cumulative_n,68
+Case 2: No clear winner,Static,best,8,cumulative_n,96
+Case 2: No clear winner,Static,alt1,8,cumulative_n,90
+Case 2: No clear winner,Static,alt2,8,cumulative_n,105
+Case 2: No clear winner,Static,alt3,8,cumulative_n,85
+Case 2: No clear winner,Static,alt4,8,cumulative_n,83
+Case 2: No clear winner,Static,alt5,8,cumulative_n,82
+Case 2: No clear winner,Static,alt6,8,cumulative_n,91
+Case 2: No clear winner,Static,alt7,8,cumulative_n,90
+Case 2: No clear winner,Static,alt8,8,cumulative_n,78
+Case 2: No clear winner,Static,best,9,cumulative_n,103
+Case 2: No clear winner,Static,alt1,9,cumulative_n,100
+Case 2: No clear winner,Static,alt2,9,cumulative_n,116
+Case 2: No clear winner,Static,alt3,9,cumulative_n,101
+Case 2: No clear winner,Static,alt4,9,cumulative_n,96
+Case 2: No clear winner,Static,alt5,9,cumulative_n,89
+Case 2: No clear winner,Static,alt6,9,cumulative_n,109
+Case 2: No clear winner,Static,alt7,9,cumulative_n,99
+Case 2: No clear winner,Static,alt8,9,cumulative_n,87
+Case 2: No clear winner,Static,best,10,cumulative_n,111
+Case 2: No clear winner,Static,alt1,10,cumulative_n,114
+Case 2: No clear winner,Static,alt2,10,cumulative_n,128
+Case 2: No clear winner,Static,alt3,10,cumulative_n,114
+Case 2: No clear winner,Static,alt4,10,cumulative_n,103
+Case 2: No clear winner,Static,alt5,10,cumulative_n,99
+Case 2: No clear winner,Static,alt6,10,cumulative_n,122
+Case 2: No clear winner,Static,alt7,10,cumulative_n,111
+Case 2: No clear winner,Static,alt8,10,cumulative_n,98
+Case 2: No clear winner,Control-augmented,best,0,posterior_prob,0.1111111111111111
+Case 2: No clear winner,Control-augmented,alt1,0,posterior_prob,0.1111111111111111
+Case 2: No clear winner,Control-augmented,alt2,0,posterior_prob,0.1111111111111111
+Case 2: No clear winner,Control-augmented,alt3,0,posterior_prob,0.1111111111111111
+Case 2: No clear winner,Control-augmented,alt4,0,posterior_prob,0.1111111111111111
+Case 2: No clear winner,Control-augmented,alt5,0,posterior_prob,0.1111111111111111
+Case 2: No clear winner,Control-augmented,alt6,0,posterior_prob,0.1111111111111111
+Case 2: No clear winner,Control-augmented,alt7,0,posterior_prob,0.1111111111111111
+Case 2: No clear winner,Control-augmented,alt8,0,posterior_prob,0.1111111111111111
+Case 2: No clear winner,Control-augmented,best,1,posterior_prob,0.021
+Case 2: No clear winner,Control-augmented,alt1,1,posterior_prob,0.3466
+Case 2: No clear winner,Control-augmented,alt2,1,posterior_prob,0.265
+Case 2: No clear winner,Control-augmented,alt3,1,posterior_prob,0.1742
+Case 2: No clear winner,Control-augmented,alt4,1,posterior_prob,0.034
+Case 2: No clear winner,Control-augmented,alt5,1,posterior_prob,0.006
+Case 2: No clear winner,Control-augmented,alt6,1,posterior_prob,0.12
+Case 2: No clear winner,Control-augmented,alt7,1,posterior_prob,0.033
+Case 2: No clear winner,Control-augmented,alt8,1,posterior_prob,2e-4
+Case 2: No clear winner,Control-augmented,best,2,posterior_prob,0.0792
+Case 2: No clear winner,Control-augmented,alt1,2,posterior_prob,0.554
+Case 2: No clear winner,Control-augmented,alt2,2,posterior_prob,0.0172
+Case 2: No clear winner,Control-augmented,alt3,2,posterior_prob,0.1762
+Case 2: No clear winner,Control-augmented,alt4,2,posterior_prob,0.1102
+Case 2: No clear winner,Control-augmented,alt5,2,posterior_prob,0.0324
+Case 2: No clear winner,Control-augmented,alt6,2,posterior_prob,0.0056
+Case 2: No clear winner,Control-augmented,alt7,2,posterior_prob,0.019
+Case 2: No clear winner,Control-augmented,alt8,2,posterior_prob,0.0062
+Case 2: No clear winner,Control-augmented,best,3,posterior_prob,0.1118
+Case 2: No clear winner,Control-augmented,alt1,3,posterior_prob,0.5054
+Case 2: No clear winner,Control-augmented,alt2,3,posterior_prob,0.0394
+Case 2: No clear winner,Control-augmented,alt3,3,posterior_prob,0.243
+Case 2: No clear winner,Control-augmented,alt4,3,posterior_prob,0.025
+Case 2: No clear winner,Control-augmented,alt5,3,posterior_prob,0.0168
+Case 2: No clear winner,Control-augmented,alt6,3,posterior_prob,0.017
+Case 2: No clear winner,Control-augmented,alt7,3,posterior_prob,0.024
+Case 2: No clear winner,Control-augmented,alt8,3,posterior_prob,0.0176
+Case 2: No clear winner,Control-augmented,best,4,posterior_prob,0.1682
+Case 2: No clear winner,Control-augmented,alt1,4,posterior_prob,0.4884
+Case 2: No clear winner,Control-augmented,alt2,4,posterior_prob,0.0844
+Case 2: No clear winner,Control-augmented,alt3,4,posterior_prob,0.1504
+Case 2: No clear winner,Control-augmented,alt4,4,posterior_prob,0.0374
+Case 2: No clear winner,Control-augmented,alt5,4,posterior_prob,0.0196
+Case 2: No clear winner,Control-augmented,alt6,4,posterior_prob,0.0124
+Case 2: No clear winner,Control-augmented,alt7,4,posterior_prob,0.0178
+Case 2: No clear winner,Control-augmented,alt8,4,posterior_prob,0.0214
+Case 2: No clear winner,Control-augmented,best,5,posterior_prob,0.4628
+Case 2: No clear winner,Control-augmented,alt1,5,posterior_prob,0.1832
+Case 2: No clear winner,Control-augmented,alt2,5,posterior_prob,0.0524
+Case 2: No clear winner,Control-augmented,alt3,5,posterior_prob,0.1916
+Case 2: No clear winner,Control-augmented,alt4,5,posterior_prob,0.0294
+Case 2: No clear winner,Control-augmented,alt5,5,posterior_prob,0.0214
+Case 2: No clear winner,Control-augmented,alt6,5,posterior_prob,0.0146
+Case 2: No clear winner,Control-augmented,alt7,5,posterior_prob,0.0224
+Case 2: No clear winner,Control-augmented,alt8,5,posterior_prob,0.0222
+Case 2: No clear winner,Control-augmented,best,6,posterior_prob,0.1046
+Case 2: No clear winner,Control-augmented,alt1,6,posterior_prob,0.1618
+Case 2: No clear winner,Control-augmented,alt2,6,posterior_prob,0.046
+Case 2: No clear winner,Control-augmented,alt3,6,posterior_prob,0.436
+Case 2: No clear winner,Control-augmented,alt4,6,posterior_prob,0.036
+Case 2: No clear winner,Control-augmented,alt5,6,posterior_prob,0.0264
+Case 2: No clear winner,Control-augmented,alt6,6,posterior_prob,0.0176
+Case 2: No clear winner,Control-augmented,alt7,6,posterior_prob,0.1404
+Case 2: No clear winner,Control-augmented,alt8,6,posterior_prob,0.0312
+Case 2: No clear winner,Control-augmented,best,7,posterior_prob,0.0748
+Case 2: No clear winner,Control-augmented,alt1,7,posterior_prob,0.1362
+Case 2: No clear winner,Control-augmented,alt2,7,posterior_prob,0.0298
+Case 2: No clear winner,Control-augmented,alt3,7,posterior_prob,0.3472
+Case 2: No clear winner,Control-augmented,alt4,7,posterior_prob,0.0898
+Case 2: No clear winner,Control-augmented,alt5,7,posterior_prob,0.0246
+Case 2: No clear winner,Control-augmented,alt6,7,posterior_prob,0.0134
+Case 2: No clear winner,Control-augmented,alt7,7,posterior_prob,0.1802
+Case 2: No clear winner,Control-augmented,alt8,7,posterior_prob,0.104
+Case 2: No clear winner,Control-augmented,best,8,posterior_prob,0.013
+Case 2: No clear winner,Control-augmented,alt1,8,posterior_prob,0.0302
+Case 2: No clear winner,Control-augmented,alt2,8,posterior_prob,0.0034
+Case 2: No clear winner,Control-augmented,alt3,8,posterior_prob,0.3872
+Case 2: No clear winner,Control-augmented,alt4,8,posterior_prob,0.0276
+Case 2: No clear winner,Control-augmented,alt5,8,posterior_prob,0.0122
+Case 2: No clear winner,Control-augmented,alt6,8,posterior_prob,0.0062
+Case 2: No clear winner,Control-augmented,alt7,8,posterior_prob,0.4798
+Case 2: No clear winner,Control-augmented,alt8,8,posterior_prob,0.0404
+Case 2: No clear winner,Control-augmented,best,9,posterior_prob,0.042
+Case 2: No clear winner,Control-augmented,alt1,9,posterior_prob,0.0468
+Case 2: No clear winner,Control-augmented,alt2,9,posterior_prob,0.0102
+Case 2: No clear winner,Control-augmented,alt3,9,posterior_prob,0.5336
+Case 2: No clear winner,Control-augmented,alt4,9,posterior_prob,0.0328
+Case 2: No clear winner,Control-augmented,alt5,9,posterior_prob,0.013
+Case 2: No clear winner,Control-augmented,alt6,9,posterior_prob,0.007
+Case 2: No clear winner,Control-augmented,alt7,9,posterior_prob,0.2742
+Case 2: No clear winner,Control-augmented,alt8,9,posterior_prob,0.0404
+Case 2: No clear winner,Control-augmented,best,10,posterior_prob,0.034
+Case 2: No clear winner,Control-augmented,alt1,10,posterior_prob,0.0456
+Case 2: No clear winner,Control-augmented,alt2,10,posterior_prob,0.0182
+Case 2: No clear winner,Control-augmented,alt3,10,posterior_prob,0.2032
+Case 2: No clear winner,Control-augmented,alt4,10,posterior_prob,0.0862
+Case 2: No clear winner,Control-augmented,alt5,10,posterior_prob,0.0122
+Case 2: No clear winner,Control-augmented,alt6,10,posterior_prob,0.0074
+Case 2: No clear winner,Control-augmented,alt7,10,posterior_prob,0.5528
+Case 2: No clear winner,Control-augmented,alt8,10,posterior_prob,0.0404
+Case 2: No clear winner,Control-augmented,best,0,cumulative_n,0
+Case 2: No clear winner,Control-augmented,alt1,0,cumulative_n,0
+Case 2: No clear winner,Control-augmented,alt2,0,cumulative_n,0
+Case 2: No clear winner,Control-augmented,alt3,0,cumulative_n,0
+Case 2: No clear winner,Control-augmented,alt4,0,cumulative_n,0
+Case 2: No clear winner,Control-augmented,alt5,0,cumulative_n,0
+Case 2: No clear winner,Control-augmented,alt6,0,cumulative_n,0
+Case 2: No clear winner,Control-augmented,alt7,0,cumulative_n,0
+Case 2: No clear winner,Control-augmented,alt8,0,cumulative_n,0
+Case 2: No clear winner,Control-augmented,best,1,cumulative_n,15
+Case 2: No clear winner,Control-augmented,alt1,1,cumulative_n,12
+Case 2: No clear winner,Control-augmented,alt2,1,cumulative_n,6
+Case 2: No clear winner,Control-augmented,alt3,1,cumulative_n,15
+Case 2: No clear winner,Control-augmented,alt4,1,cumulative_n,8
+Case 2: No clear winner,Control-augmented,alt5,1,cumulative_n,13
+Case 2: No clear winner,Control-augmented,alt6,1,cumulative_n,4
+Case 2: No clear winner,Control-augmented,alt7,1,cumulative_n,7
+Case 2: No clear winner,Control-augmented,alt8,1,cumulative_n,20
+Case 2: No clear winner,Control-augmented,best,2,cumulative_n,17
+Case 2: No clear winner,Control-augmented,alt1,2,cumulative_n,45
+Case 2: No clear winner,Control-augmented,alt2,2,cumulative_n,25
+Case 2: No clear winner,Control-augmented,alt3,2,cumulative_n,30
+Case 2: No clear winner,Control-augmented,alt4,2,cumulative_n,15
+Case 2: No clear winner,Control-augmented,alt5,2,cumulative_n,13
+Case 2: No clear winner,Control-augmented,alt6,2,cumulative_n,20
+Case 2: No clear winner,Control-augmented,alt7,2,cumulative_n,15
+Case 2: No clear winner,Control-augmented,alt8,2,cumulative_n,20
+Case 2: No clear winner,Control-augmented,best,3,cumulative_n,19
+Case 2: No clear winner,Control-augmented,alt1,3,cumulative_n,82
+Case 2: No clear winner,Control-augmented,alt2,3,cumulative_n,51
+Case 2: No clear winner,Control-augmented,alt3,3,cumulative_n,42
+Case 2: No clear winner,Control-augmented,alt4,3,cumulative_n,28
+Case 2: No clear winner,Control-augmented,alt5,3,cumulative_n,20
+Case 2: No clear winner,Control-augmented,alt6,3,cumulative_n,20
+Case 2: No clear winner,Control-augmented,alt7,3,cumulative_n,18
+Case 2: No clear winner,Control-augmented,alt8,3,cumulative_n,20
+Case 2: No clear winner,Control-augmented,best,4,cumulative_n,25
+Case 2: No clear winner,Control-augmented,alt1,4,cumulative_n,126
+Case 2: No clear winner,Control-augmented,alt2,4,cumulative_n,87
+Case 2: No clear winner,Control-augmented,alt3,4,cumulative_n,49
+Case 2: No clear winner,Control-augmented,alt4,4,cumulative_n,28
+Case 2: No clear winner,Control-augmented,alt5,4,cumulative_n,21
+Case 2: No clear winner,Control-augmented,alt6,4,cumulative_n,23
+Case 2: No clear winner,Control-augmented,alt7,4,cumulative_n,21
+Case 2: No clear winner,Control-augmented,alt8,4,cumulative_n,20
+Case 2: No clear winner,Control-augmented,best,5,cumulative_n,31
+Case 2: No clear winner,Control-augmented,alt1,5,cumulative_n,158
+Case 2: No clear winner,Control-augmented,alt2,5,cumulative_n,136
+Case 2: No clear winner,Control-augmented,alt3,5,cumulative_n,57
+Case 2: No clear winner,Control-augmented,alt4,5,cumulative_n,32
+Case 2: No clear winner,Control-augmented,alt5,5,cumulative_n,21
+Case 2: No clear winner,Control-augmented,alt6,5,cumulative_n,24
+Case 2: No clear winner,Control-augmented,alt7,5,cumulative_n,21
+Case 2: No clear winner,Control-augmented,alt8,5,cumulative_n,20
+Case 2: No clear winner,Control-augmented,best,6,cumulative_n,79
+Case 2: No clear winner,Control-augmented,alt1,6,cumulative_n,174
+Case 2: No clear winner,Control-augmented,alt2,6,cumulative_n,150
+Case 2: No clear winner,Control-augmented,alt3,6,cumulative_n,74
+Case 2: No clear winner,Control-augmented,alt4,6,cumulative_n,33
+Case 2: No clear winner,Control-augmented,alt5,6,cumulative_n,22
+Case 2: No clear winner,Control-augmented,alt6,6,cumulative_n,25
+Case 2: No clear winner,Control-augmented,alt7,6,cumulative_n,22
+Case 2: No clear winner,Control-augmented,alt8,6,cumulative_n,21
+Case 2: No clear winner,Control-augmented,best,7,cumulative_n,88
+Case 2: No clear winner,Control-augmented,alt1,7,cumulative_n,185
+Case 2: No clear winner,Control-augmented,alt2,7,cumulative_n,162
+Case 2: No clear winner,Control-augmented,alt3,7,cumulative_n,112
+Case 2: No clear winner,Control-augmented,alt4,7,cumulative_n,37
+Case 2: No clear winner,Control-augmented,alt5,7,cumulative_n,24
+Case 2: No clear winner,Control-augmented,alt6,7,cumulative_n,28
+Case 2: No clear winner,Control-augmented,alt7,7,cumulative_n,39
+Case 2: No clear winner,Control-augmented,alt8,7,cumulative_n,25
+Case 2: No clear winner,Control-augmented,best,8,cumulative_n,97
+Case 2: No clear winner,Control-augmented,alt1,8,cumulative_n,206
+Case 2: No clear winner,Control-augmented,alt2,8,cumulative_n,171
+Case 2: No clear winner,Control-augmented,alt3,8,cumulative_n,138
+Case 2: No clear winner,Control-augmented,alt4,8,cumulative_n,49
+Case 2: No clear winner,Control-augmented,alt5,8,cumulative_n,24
+Case 2: No clear winner,Control-augmented,alt6,8,cumulative_n,28
+Case 2: No clear winner,Control-augmented,alt7,8,cumulative_n,49
+Case 2: No clear winner,Control-augmented,alt8,8,cumulative_n,38
+Case 2: No clear winner,Control-augmented,best,9,cumulative_n,98
+Case 2: No clear winner,Control-augmented,alt1,9,cumulative_n,209
+Case 2: No clear winner,Control-augmented,alt2,9,cumulative_n,186
+Case 2: No clear winner,Control-augmented,alt3,9,cumulative_n,169
+Case 2: No clear winner,Control-augmented,alt4,9,cumulative_n,52
+Case 2: No clear winner,Control-augmented,alt5,9,cumulative_n,25
+Case 2: No clear winner,Control-augmented,alt6,9,cumulative_n,28
+Case 2: No clear winner,Control-augmented,alt7,9,cumulative_n,92
+Case 2: No clear winner,Control-augmented,alt8,9,cumulative_n,41
+Case 2: No clear winner,Control-augmented,best,10,cumulative_n,103
+Case 2: No clear winner,Control-augmented,alt1,10,cumulative_n,212
+Case 2: No clear winner,Control-augmented,alt2,10,cumulative_n,198
+Case 2: No clear winner,Control-augmented,alt3,10,cumulative_n,219
+Case 2: No clear winner,Control-augmented,alt4,10,cumulative_n,53
+Case 2: No clear winner,Control-augmented,alt5,10,cumulative_n,26
+Case 2: No clear winner,Control-augmented,alt6,10,cumulative_n,29
+Case 2: No clear winner,Control-augmented,alt7,10,cumulative_n,117
+Case 2: No clear winner,Control-augmented,alt8,10,cumulative_n,43
+Case 3: Competing second best,Thompson sampling,best,0,posterior_prob,0.1111111111111111
+Case 3: Competing second best,Thompson sampling,alt1,0,posterior_prob,0.1111111111111111
+Case 3: Competing second best,Thompson sampling,alt2,0,posterior_prob,0.1111111111111111
+Case 3: Competing second best,Thompson sampling,alt3,0,posterior_prob,0.1111111111111111
+Case 3: Competing second best,Thompson sampling,alt4,0,posterior_prob,0.1111111111111111
+Case 3: Competing second best,Thompson sampling,alt5,0,posterior_prob,0.1111111111111111
+Case 3: Competing second best,Thompson sampling,alt6,0,posterior_prob,0.1111111111111111
+Case 3: Competing second best,Thompson sampling,alt7,0,posterior_prob,0.1111111111111111
+Case 3: Competing second best,Thompson sampling,alt8,0,posterior_prob,0.1111111111111111
+Case 3: Competing second best,Thompson sampling,best,1,posterior_prob,0.0354
+Case 3: Competing second best,Thompson sampling,alt1,1,posterior_prob,0.838
+Case 3: Competing second best,Thompson sampling,alt2,1,posterior_prob,0.0172
+Case 3: Competing second best,Thompson sampling,alt3,1,posterior_prob,0.0136
+Case 3: Competing second best,Thompson sampling,alt4,1,posterior_prob,0.0298
+Case 3: Competing second best,Thompson sampling,alt5,1,posterior_prob,0.0204
+Case 3: Competing second best,Thompson sampling,alt6,1,posterior_prob,0.0162
+Case 3: Competing second best,Thompson sampling,alt7,1,posterior_prob,0.025
+Case 3: Competing second best,Thompson sampling,alt8,1,posterior_prob,0.0044
+Case 3: Competing second best,Thompson sampling,best,2,posterior_prob,0.1978
+Case 3: Competing second best,Thompson sampling,alt1,2,posterior_prob,0.2816
+Case 3: Competing second best,Thompson sampling,alt2,2,posterior_prob,0.0482
+Case 3: Competing second best,Thompson sampling,alt3,2,posterior_prob,0.0174
+Case 3: Competing second best,Thompson sampling,alt4,2,posterior_prob,0.0808
+Case 3: Competing second best,Thompson sampling,alt5,2,posterior_prob,0.0478
+Case 3: Competing second best,Thompson sampling,alt6,2,posterior_prob,0.1434
+Case 3: Competing second best,Thompson sampling,alt7,2,posterior_prob,0.1698
+Case 3: Competing second best,Thompson sampling,alt8,2,posterior_prob,0.0132
+Case 3: Competing second best,Thompson sampling,best,3,posterior_prob,0.444
+Case 3: Competing second best,Thompson sampling,alt1,3,posterior_prob,0.3068
+Case 3: Competing second best,Thompson sampling,alt2,3,posterior_prob,0.02
+Case 3: Competing second best,Thompson sampling,alt3,3,posterior_prob,0.025
+Case 3: Competing second best,Thompson sampling,alt4,3,posterior_prob,0.036
+Case 3: Competing second best,Thompson sampling,alt5,3,posterior_prob,0.0684
+Case 3: Competing second best,Thompson sampling,alt6,3,posterior_prob,0.0326
+Case 3: Competing second best,Thompson sampling,alt7,3,posterior_prob,0.0426
+Case 3: Competing second best,Thompson sampling,alt8,3,posterior_prob,0.0246
+Case 3: Competing second best,Thompson sampling,best,4,posterior_prob,0.4678
+Case 3: Competing second best,Thompson sampling,alt1,4,posterior_prob,0.2122
+Case 3: Competing second best,Thompson sampling,alt2,4,posterior_prob,0.0074
+Case 3: Competing second best,Thompson sampling,alt3,4,posterior_prob,0.005
+Case 3: Competing second best,Thompson sampling,alt4,4,posterior_prob,0.2558
+Case 3: Competing second best,Thompson sampling,alt5,4,posterior_prob,0.0146
+Case 3: Competing second best,Thompson sampling,alt6,4,posterior_prob,0.0048
+Case 3: Competing second best,Thompson sampling,alt7,4,posterior_prob,0.0058
+Case 3: Competing second best,Thompson sampling,alt8,4,posterior_prob,0.0266
+Case 3: Competing second best,Thompson sampling,best,5,posterior_prob,0.298
+Case 3: Competing second best,Thompson sampling,alt1,5,posterior_prob,0.2626
+Case 3: Competing second best,Thompson sampling,alt2,5,posterior_prob,0.006
+Case 3: Competing second best,Thompson sampling,alt3,5,posterior_prob,0.0024
+Case 3: Competing second best,Thompson sampling,alt4,5,posterior_prob,0.3728
+Case 3: Competing second best,Thompson sampling,alt5,5,posterior_prob,0.0092
+Case 3: Competing second best,Thompson sampling,alt6,5,posterior_prob,0.0246
+Case 3: Competing second best,Thompson sampling,alt7,5,posterior_prob,0.0064
+Case 3: Competing second best,Thompson sampling,alt8,5,posterior_prob,0.018
+Case 3: Competing second best,Thompson sampling,best,6,posterior_prob,0.52
+Case 3: Competing second best,Thompson sampling,alt1,6,posterior_prob,0.3498
+Case 3: Competing second best,Thompson sampling,alt2,6,posterior_prob,0.0074
+Case 3: Competing second best,Thompson sampling,alt3,6,posterior_prob,0.0016
+Case 3: Competing second best,Thompson sampling,alt4,6,posterior_prob,0.019
+Case 3: Competing second best,Thompson sampling,alt5,6,posterior_prob,0.0314
+Case 3: Competing second best,Thompson sampling,alt6,6,posterior_prob,0.0448
+Case 3: Competing second best,Thompson sampling,alt7,6,posterior_prob,0.0078
+Case 3: Competing second best,Thompson sampling,alt8,6,posterior_prob,0.0182
+Case 3: Competing second best,Thompson sampling,best,7,posterior_prob,0.641
+Case 3: Competing second best,Thompson sampling,alt1,7,posterior_prob,0.2758
+Case 3: Competing second best,Thompson sampling,alt2,7,posterior_prob,0.01
+Case 3: Competing second best,Thompson sampling,alt3,7,posterior_prob,0.0038
+Case 3: Competing second best,Thompson sampling,alt4,7,posterior_prob,0.0106
+Case 3: Competing second best,Thompson sampling,alt5,7,posterior_prob,0.0154
+Case 3: Competing second best,Thompson sampling,alt6,7,posterior_prob,0.0284
+Case 3: Competing second best,Thompson sampling,alt7,7,posterior_prob,0.0054
+Case 3: Competing second best,Thompson sampling,alt8,7,posterior_prob,0.0096
+Case 3: Competing second best,Thompson sampling,best,8,posterior_prob,0.6456
+Case 3: Competing second best,Thompson sampling,alt1,8,posterior_prob,0.2016
+Case 3: Competing second best,Thompson sampling,alt2,8,posterior_prob,0.011
+Case 3: Competing second best,Thompson sampling,alt3,8,posterior_prob,0.0026
+Case 3: Competing second best,Thompson sampling,alt4,8,posterior_prob,0.0208
+Case 3: Competing second best,Thompson sampling,alt5,8,posterior_prob,0.0336
+Case 3: Competing second best,Thompson sampling,alt6,8,posterior_prob,0.0634
+Case 3: Competing second best,Thompson sampling,alt7,8,posterior_prob,0.0088
+Case 3: Competing second best,Thompson sampling,alt8,8,posterior_prob,0.0126
+Case 3: Competing second best,Thompson sampling,best,9,posterior_prob,0.8602
+Case 3: Competing second best,Thompson sampling,alt1,9,posterior_prob,0.052
+Case 3: Competing second best,Thompson sampling,alt2,9,posterior_prob,0.0058
+Case 3: Competing second best,Thompson sampling,alt3,9,posterior_prob,0.0026
+Case 3: Competing second best,Thompson sampling,alt4,9,posterior_prob,0.0106
+Case 3: Competing second best,Thompson sampling,alt5,9,posterior_prob,0.0224
+Case 3: Competing second best,Thompson sampling,alt6,9,posterior_prob,0.0304
+Case 3: Competing second best,Thompson sampling,alt7,9,posterior_prob,0.0056
+Case 3: Competing second best,Thompson sampling,alt8,9,posterior_prob,0.0104
+Case 3: Competing second best,Thompson sampling,best,10,posterior_prob,0.8764
+Case 3: Competing second best,Thompson sampling,alt1,10,posterior_prob,0.0366
+Case 3: Competing second best,Thompson sampling,alt2,10,posterior_prob,0.007
+Case 3: Competing second best,Thompson sampling,alt3,10,posterior_prob,0.0016
+Case 3: Competing second best,Thompson sampling,alt4,10,posterior_prob,0.008
+Case 3: Competing second best,Thompson sampling,alt5,10,posterior_prob,0.0082
+Case 3: Competing second best,Thompson sampling,alt6,10,posterior_prob,0.0462
+Case 3: Competing second best,Thompson sampling,alt7,10,posterior_prob,0.0052
+Case 3: Competing second best,Thompson sampling,alt8,10,posterior_prob,0.0108
+Case 3: Competing second best,Thompson sampling,best,0,cumulative_n,0
+Case 3: Competing second best,Thompson sampling,alt1,0,cumulative_n,0
+Case 3: Competing second best,Thompson sampling,alt2,0,cumulative_n,0
+Case 3: Competing second best,Thompson sampling,alt3,0,cumulative_n,0
+Case 3: Competing second best,Thompson sampling,alt4,0,cumulative_n,0
+Case 3: Competing second best,Thompson sampling,alt5,0,cumulative_n,0
+Case 3: Competing second best,Thompson sampling,alt6,0,cumulative_n,0
+Case 3: Competing second best,Thompson sampling,alt7,0,cumulative_n,0
+Case 3: Competing second best,Thompson sampling,alt8,0,cumulative_n,0
+Case 3: Competing second best,Thompson sampling,best,1,cumulative_n,13
+Case 3: Competing second best,Thompson sampling,alt1,1,cumulative_n,11
+Case 3: Competing second best,Thompson sampling,alt2,1,cumulative_n,10
+Case 3: Competing second best,Thompson sampling,alt3,1,cumulative_n,11
+Case 3: Competing second best,Thompson sampling,alt4,1,cumulative_n,8
+Case 3: Competing second best,Thompson sampling,alt5,1,cumulative_n,15
+Case 3: Competing second best,Thompson sampling,alt6,1,cumulative_n,10
+Case 3: Competing second best,Thompson sampling,alt7,1,cumulative_n,8
+Case 3: Competing second best,Thompson sampling,alt8,1,cumulative_n,14
+Case 3: Competing second best,Thompson sampling,best,2,cumulative_n,16
+Case 3: Competing second best,Thompson sampling,alt1,2,cumulative_n,97
+Case 3: Competing second best,Thompson sampling,alt2,2,cumulative_n,10
+Case 3: Competing second best,Thompson sampling,alt3,2,cumulative_n,14
+Case 3: Competing second best,Thompson sampling,alt4,2,cumulative_n,8
+Case 3: Competing second best,Thompson sampling,alt5,2,cumulative_n,17
+Case 3: Competing second best,Thompson sampling,alt6,2,cumulative_n,12
+Case 3: Competing second best,Thompson sampling,alt7,2,cumulative_n,11
+Case 3: Competing second best,Thompson sampling,alt8,2,cumulative_n,15
+Case 3: Competing second best,Thompson sampling,best,3,cumulative_n,39
+Case 3: Competing second best,Thompson sampling,alt1,3,cumulative_n,119
+Case 3: Competing second best,Thompson sampling,alt2,3,cumulative_n,15
+Case 3: Competing second best,Thompson sampling,alt3,3,cumulative_n,15
+Case 3: Competing second best,Thompson sampling,alt4,3,cumulative_n,13
+Case 3: Competing second best,Thompson sampling,alt5,3,cumulative_n,26
+Case 3: Competing second best,Thompson sampling,alt6,3,cumulative_n,22
+Case 3: Competing second best,Thompson sampling,alt7,3,cumulative_n,36
+Case 3: Competing second best,Thompson sampling,alt8,3,cumulative_n,15
+Case 3: Competing second best,Thompson sampling,best,4,cumulative_n,84
+Case 3: Competing second best,Thompson sampling,alt1,4,cumulative_n,147
+Case 3: Competing second best,Thompson sampling,alt2,4,cumulative_n,17
+Case 3: Competing second best,Thompson sampling,alt3,4,cumulative_n,18
+Case 3: Competing second best,Thompson sampling,alt4,4,cumulative_n,19
+Case 3: Competing second best,Thompson sampling,alt5,4,cumulative_n,29
+Case 3: Competing second best,Thompson sampling,alt6,4,cumulative_n,26
+Case 3: Competing second best,Thompson sampling,alt7,4,cumulative_n,41
+Case 3: Competing second best,Thompson sampling,alt8,4,cumulative_n,19
+Case 3: Competing second best,Thompson sampling,best,5,cumulative_n,125
+Case 3: Competing second best,Thompson sampling,alt1,5,cumulative_n,165
+Case 3: Competing second best,Thompson sampling,alt2,5,cumulative_n,17
+Case 3: Competing second best,Thompson sampling,alt3,5,cumulative_n,22
+Case 3: Competing second best,Thompson sampling,alt4,5,cumulative_n,46
+Case 3: Competing second best,Thompson sampling,alt5,5,cumulative_n,33
+Case 3: Competing second best,Thompson sampling,alt6,5,cumulative_n,28
+Case 3: Competing second best,Thompson sampling,alt7,5,cumulative_n,42
+Case 3: Competing second best,Thompson sampling,alt8,5,cumulative_n,22
+Case 3: Competing second best,Thompson sampling,best,6,cumulative_n,157
+Case 3: Competing second best,Thompson sampling,alt1,6,cumulative_n,189
+Case 3: Competing second best,Thompson sampling,alt2,6,cumulative_n,17
+Case 3: Competing second best,Thompson sampling,alt3,6,cumulative_n,23
+Case 3: Competing second best,Thompson sampling,alt4,6,cumulative_n,81
+Case 3: Competing second best,Thompson sampling,alt5,6,cumulative_n,35
+Case 3: Competing second best,Thompson sampling,alt6,6,cumulative_n,32
+Case 3: Competing second best,Thompson sampling,alt7,6,cumulative_n,43
+Case 3: Competing second best,Thompson sampling,alt8,6,cumulative_n,23
+Case 3: Competing second best,Thompson sampling,best,7,cumulative_n,210
+Case 3: Competing second best,Thompson sampling,alt1,7,cumulative_n,222
+Case 3: Competing second best,Thompson sampling,alt2,7,cumulative_n,18
+Case 3: Competing second best,Thompson sampling,alt3,7,cumulative_n,23
+Case 3: Competing second best,Thompson sampling,alt4,7,cumulative_n,85
+Case 3: Competing second best,Thompson sampling,alt5,7,cumulative_n,38
+Case 3: Competing second best,Thompson sampling,alt6,7,cumulative_n,35
+Case 3: Competing second best,Thompson sampling,alt7,7,cumulative_n,44
+Case 3: Competing second best,Thompson sampling,alt8,7,cumulative_n,25
+Case 3: Competing second best,Thompson sampling,best,8,cumulative_n,276
+Case 3: Competing second best,Thompson sampling,alt1,8,cumulative_n,247
+Case 3: Competing second best,Thompson sampling,alt2,8,cumulative_n,18
+Case 3: Competing second best,Thompson sampling,alt3,8,cumulative_n,24
+Case 3: Competing second best,Thompson sampling,alt4,8,cumulative_n,85
+Case 3: Competing second best,Thompson sampling,alt5,8,cumulative_n,42
+Case 3: Competing second best,Thompson sampling,alt6,8,cumulative_n,38
+Case 3: Competing second best,Thompson sampling,alt7,8,cumulative_n,44
+Case 3: Competing second best,Thompson sampling,alt8,8,cumulative_n,26
+Case 3: Competing second best,Thompson sampling,best,9,cumulative_n,338
+Case 3: Competing second best,Thompson sampling,alt1,9,cumulative_n,268
+Case 3: Competing second best,Thompson sampling,alt2,9,cumulative_n,19
+Case 3: Competing second best,Thompson sampling,alt3,9,cumulative_n,24
+Case 3: Competing second best,Thompson sampling,alt4,9,cumulative_n,87
+Case 3: Competing second best,Thompson sampling,alt5,9,cumulative_n,44
+Case 3: Competing second best,Thompson sampling,alt6,9,cumulative_n,48
+Case 3: Competing second best,Thompson sampling,alt7,9,cumulative_n,45
+Case 3: Competing second best,Thompson sampling,alt8,9,cumulative_n,27
+Case 3: Competing second best,Thompson sampling,best,10,cumulative_n,422
+Case 3: Competing second best,Thompson sampling,alt1,10,cumulative_n,276
+Case 3: Competing second best,Thompson sampling,alt2,10,cumulative_n,19
+Case 3: Competing second best,Thompson sampling,alt3,10,cumulative_n,25
+Case 3: Competing second best,Thompson sampling,alt4,10,cumulative_n,87
+Case 3: Competing second best,Thompson sampling,alt5,10,cumulative_n,48
+Case 3: Competing second best,Thompson sampling,alt6,10,cumulative_n,51
+Case 3: Competing second best,Thompson sampling,alt7,10,cumulative_n,45
+Case 3: Competing second best,Thompson sampling,alt8,10,cumulative_n,27
+Case 3: Competing second best,Static,best,0,posterior_prob,0.1111111111111111
+Case 3: Competing second best,Static,alt1,0,posterior_prob,0.1111111111111111
+Case 3: Competing second best,Static,alt2,0,posterior_prob,0.1111111111111111
+Case 3: Competing second best,Static,alt3,0,posterior_prob,0.1111111111111111
+Case 3: Competing second best,Static,alt4,0,posterior_prob,0.1111111111111111
+Case 3: Competing second best,Static,alt5,0,posterior_prob,0.1111111111111111
+Case 3: Competing second best,Static,alt6,0,posterior_prob,0.1111111111111111
+Case 3: Competing second best,Static,alt7,0,posterior_prob,0.1111111111111111
+Case 3: Competing second best,Static,alt8,0,posterior_prob,0.1111111111111111
+Case 3: Competing second best,Static,best,1,posterior_prob,0.1504
+Case 3: Competing second best,Static,alt1,1,posterior_prob,0.693
+Case 3: Competing second best,Static,alt2,1,posterior_prob,6e-4
+Case 3: Competing second best,Static,alt3,1,posterior_prob,0.0048
+Case 3: Competing second best,Static,alt4,1,posterior_prob,0.089
+Case 3: Competing second best,Static,alt5,1,posterior_prob,0.0108
+Case 3: Competing second best,Static,alt6,1,posterior_prob,0.0172
+Case 3: Competing second best,Static,alt7,1,posterior_prob,0.0082
+Case 3: Competing second best,Static,alt8,1,posterior_prob,0.026
+Case 3: Competing second best,Static,best,2,posterior_prob,0.1198
+Case 3: Competing second best,Static,alt1,2,posterior_prob,0.7662
+Case 3: Competing second best,Static,alt2,2,posterior_prob,8e-4
+Case 3: Competing second best,Static,alt3,2,posterior_prob,0
+Case 3: Competing second best,Static,alt4,2,posterior_prob,0.0646
+Case 3: Competing second best,Static,alt5,2,posterior_prob,6e-4
+Case 3: Competing second best,Static,alt6,2,posterior_prob,0
+Case 3: Competing second best,Static,alt7,2,posterior_prob,0.0014
+Case 3: Competing second best,Static,alt8,2,posterior_prob,0.0466
+Case 3: Competing second best,Static,best,3,posterior_prob,0.4282
+Case 3: Competing second best,Static,alt1,3,posterior_prob,0.512
+Case 3: Competing second best,Static,alt2,3,posterior_prob,0.0036
+Case 3: Competing second best,Static,alt3,3,posterior_prob,2e-4
+Case 3: Competing second best,Static,alt4,3,posterior_prob,0.026
+Case 3: Competing second best,Static,alt5,3,posterior_prob,0.002
+Case 3: Competing second best,Static,alt6,3,posterior_prob,2e-4
+Case 3: Competing second best,Static,alt7,3,posterior_prob,4e-4
+Case 3: Competing second best,Static,alt8,3,posterior_prob,0.0274
+Case 3: Competing second best,Static,best,4,posterior_prob,0.146
+Case 3: Competing second best,Static,alt1,4,posterior_prob,0.8414
+Case 3: Competing second best,Static,alt2,4,posterior_prob,8e-4
+Case 3: Competing second best,Static,alt3,4,posterior_prob,2e-4
+Case 3: Competing second best,Static,alt4,4,posterior_prob,0.0074
+Case 3: Competing second best,Static,alt5,4,posterior_prob,4e-4
+Case 3: Competing second best,Static,alt6,4,posterior_prob,0.0016
+Case 3: Competing second best,Static,alt7,4,posterior_prob,0
+Case 3: Competing second best,Static,alt8,4,posterior_prob,0.0022
+Case 3: Competing second best,Static,best,5,posterior_prob,0.2536
+Case 3: Competing second best,Static,alt1,5,posterior_prob,0.6852
+Case 3: Competing second best,Static,alt2,5,posterior_prob,0.0134
+Case 3: Competing second best,Static,alt3,5,posterior_prob,0.0076
+Case 3: Competing second best,Static,alt4,5,posterior_prob,0.0116
+Case 3: Competing second best,Static,alt5,5,posterior_prob,0.0142
+Case 3: Competing second best,Static,alt6,5,posterior_prob,0.0138
+Case 3: Competing second best,Static,alt7,5,posterior_prob,0
+Case 3: Competing second best,Static,alt8,5,posterior_prob,6e-4
+Case 3: Competing second best,Static,best,6,posterior_prob,0.1936
+Case 3: Competing second best,Static,alt1,6,posterior_prob,0.7564
+Case 3: Competing second best,Static,alt2,6,posterior_prob,0.019
+Case 3: Competing second best,Static,alt3,6,posterior_prob,0.01
+Case 3: Competing second best,Static,alt4,6,posterior_prob,0.007
+Case 3: Competing second best,Static,alt5,6,posterior_prob,0.0018
+Case 3: Competing second best,Static,alt6,6,posterior_prob,0.0112
+Case 3: Competing second best,Static,alt7,6,posterior_prob,8e-4
+Case 3: Competing second best,Static,alt8,6,posterior_prob,2e-4
+Case 3: Competing second best,Static,best,7,posterior_prob,0.1734
+Case 3: Competing second best,Static,alt1,7,posterior_prob,0.7614
+Case 3: Competing second best,Static,alt2,7,posterior_prob,0.01
+Case 3: Competing second best,Static,alt3,7,posterior_prob,0.004
+Case 3: Competing second best,Static,alt4,7,posterior_prob,0.0214
+Case 3: Competing second best,Static,alt5,7,posterior_prob,0.0198
+Case 3: Competing second best,Static,alt6,7,posterior_prob,0.0094
+Case 3: Competing second best,Static,alt7,7,posterior_prob,2e-4
+Case 3: Competing second best,Static,alt8,7,posterior_prob,4e-4
+Case 3: Competing second best,Static,best,8,posterior_prob,0.248
+Case 3: Competing second best,Static,alt1,8,posterior_prob,0.6706
+Case 3: Competing second best,Static,alt2,8,posterior_prob,0.01
+Case 3: Competing second best,Static,alt3,8,posterior_prob,0.0036
+Case 3: Competing second best,Static,alt4,8,posterior_prob,0.0212
+Case 3: Competing second best,Static,alt5,8,posterior_prob,0.0348
+Case 3: Competing second best,Static,alt6,8,posterior_prob,0.0118
+Case 3: Competing second best,Static,alt7,8,posterior_prob,0
+Case 3: Competing second best,Static,alt8,8,posterior_prob,0
+Case 3: Competing second best,Static,best,9,posterior_prob,0.1748
+Case 3: Competing second best,Static,alt1,9,posterior_prob,0.7398
+Case 3: Competing second best,Static,alt2,9,posterior_prob,0.0162
+Case 3: Competing second best,Static,alt3,9,posterior_prob,0.0046
+Case 3: Competing second best,Static,alt4,9,posterior_prob,0.0194
+Case 3: Competing second best,Static,alt5,9,posterior_prob,0.0364
+Case 3: Competing second best,Static,alt6,9,posterior_prob,0.0084
+Case 3: Competing second best,Static,alt7,9,posterior_prob,2e-4
+Case 3: Competing second best,Static,alt8,9,posterior_prob,2e-4
+Case 3: Competing second best,Static,best,10,posterior_prob,0.2392
+Case 3: Competing second best,Static,alt1,10,posterior_prob,0.6574
+Case 3: Competing second best,Static,alt2,10,posterior_prob,0.0226
+Case 3: Competing second best,Static,alt3,10,posterior_prob,0.0074
+Case 3: Competing second best,Static,alt4,10,posterior_prob,0.0066
+Case 3: Competing second best,Static,alt5,10,posterior_prob,0.027
+Case 3: Competing second best,Static,alt6,10,posterior_prob,0.0398
+Case 3: Competing second best,Static,alt7,10,posterior_prob,0
+Case 3: Competing second best,Static,alt8,10,posterior_prob,0
+Case 3: Competing second best,Static,best,0,cumulative_n,0
+Case 3: Competing second best,Static,alt1,0,cumulative_n,0
+Case 3: Competing second best,Static,alt2,0,cumulative_n,0
+Case 3: Competing second best,Static,alt3,0,cumulative_n,0
+Case 3: Competing second best,Static,alt4,0,cumulative_n,0
+Case 3: Competing second best,Static,alt5,0,cumulative_n,0
+Case 3: Competing second best,Static,alt6,0,cumulative_n,0
+Case 3: Competing second best,Static,alt7,0,cumulative_n,0
+Case 3: Competing second best,Static,alt8,0,cumulative_n,0
+Case 3: Competing second best,Static,best,1,cumulative_n,17
+Case 3: Competing second best,Static,alt1,1,cumulative_n,11
+Case 3: Competing second best,Static,alt2,1,cumulative_n,12
+Case 3: Competing second best,Static,alt3,1,cumulative_n,13
+Case 3: Competing second best,Static,alt4,1,cumulative_n,13
+Case 3: Competing second best,Static,alt5,1,cumulative_n,7
+Case 3: Competing second best,Static,alt6,1,cumulative_n,6
+Case 3: Competing second best,Static,alt7,1,cumulative_n,8
+Case 3: Competing second best,Static,alt8,1,cumulative_n,13
+Case 3: Competing second best,Static,best,2,cumulative_n,29
+Case 3: Competing second best,Static,alt1,2,cumulative_n,21
+Case 3: Competing second best,Static,alt2,2,cumulative_n,23
+Case 3: Competing second best,Static,alt3,2,cumulative_n,29
+Case 3: Competing second best,Static,alt4,2,cumulative_n,17
+Case 3: Competing second best,Static,alt5,2,cumulative_n,16
+Case 3: Competing second best,Static,alt6,2,cumulative_n,21
+Case 3: Competing second best,Static,alt7,2,cumulative_n,21
+Case 3: Competing second best,Static,alt8,2,cumulative_n,23
+Case 3: Competing second best,Static,best,3,cumulative_n,36
+Case 3: Competing second best,Static,alt1,3,cumulative_n,31
+Case 3: Competing second best,Static,alt2,3,cumulative_n,35
+Case 3: Competing second best,Static,alt3,3,cumulative_n,44
+Case 3: Competing second best,Static,alt4,3,cumulative_n,30
+Case 3: Competing second best,Static,alt5,3,cumulative_n,32
+Case 3: Competing second best,Static,alt6,3,cumulative_n,33
+Case 3: Competing second best,Static,alt7,3,cumulative_n,30
+Case 3: Competing second best,Static,alt8,3,cumulative_n,29
+Case 3: Competing second best,Static,best,4,cumulative_n,50
+Case 3: Competing second best,Static,alt1,4,cumulative_n,38
+Case 3: Competing second best,Static,alt2,4,cumulative_n,45
+Case 3: Competing second best,Static,alt3,4,cumulative_n,58
+Case 3: Competing second best,Static,alt4,4,cumulative_n,38
+Case 3: Competing second best,Static,alt5,4,cumulative_n,42
+Case 3: Competing second best,Static,alt6,4,cumulative_n,43
+Case 3: Competing second best,Static,alt7,4,cumulative_n,43
+Case 3: Competing second best,Static,alt8,4,cumulative_n,43
+Case 3: Competing second best,Static,best,5,cumulative_n,60
+Case 3: Competing second best,Static,alt1,5,cumulative_n,48
+Case 3: Competing second best,Static,alt2,5,cumulative_n,60
+Case 3: Competing second best,Static,alt3,5,cumulative_n,65
+Case 3: Competing second best,Static,alt4,5,cumulative_n,50
+Case 3: Competing second best,Static,alt5,5,cumulative_n,54
+Case 3: Competing second best,Static,alt6,5,cumulative_n,54
+Case 3: Competing second best,Static,alt7,5,cumulative_n,53
+Case 3: Competing second best,Static,alt8,5,cumulative_n,56
+Case 3: Competing second best,Static,best,6,cumulative_n,71
+Case 3: Competing second best,Static,alt1,6,cumulative_n,58
+Case 3: Competing second best,Static,alt2,6,cumulative_n,68
+Case 3: Competing second best,Static,alt3,6,cumulative_n,84
+Case 3: Competing second best,Static,alt4,6,cumulative_n,57
+Case 3: Competing second best,Static,alt5,6,cumulative_n,69
+Case 3: Competing second best,Static,alt6,6,cumulative_n,66
+Case 3: Competing second best,Static,alt7,6,cumulative_n,59
+Case 3: Competing second best,Static,alt8,6,cumulative_n,68
+Case 3: Competing second best,Static,best,7,cumulative_n,82
+Case 3: Competing second best,Static,alt1,7,cumulative_n,66
+Case 3: Competing second best,Static,alt2,7,cumulative_n,77
+Case 3: Competing second best,Static,alt3,7,cumulative_n,102
+Case 3: Competing second best,Static,alt4,7,cumulative_n,64
+Case 3: Competing second best,Static,alt5,7,cumulative_n,79
+Case 3: Competing second best,Static,alt6,7,cumulative_n,77
+Case 3: Competing second best,Static,alt7,7,cumulative_n,75
+Case 3: Competing second best,Static,alt8,7,cumulative_n,78
+Case 3: Competing second best,Static,best,8,cumulative_n,92
+Case 3: Competing second best,Static,alt1,8,cumulative_n,72
+Case 3: Competing second best,Static,alt2,8,cumulative_n,88
+Case 3: Competing second best,Static,alt3,8,cumulative_n,123
+Case 3: Competing second best,Static,alt4,8,cumulative_n,74
+Case 3: Competing second best,Static,alt5,8,cumulative_n,89
+Case 3: Competing second best,Static,alt6,8,cumulative_n,91
+Case 3: Competing second best,Static,alt7,8,cumulative_n,85
+Case 3: Competing second best,Static,alt8,8,cumulative_n,86
+Case 3: Competing second best,Static,best,9,cumulative_n,104
+Case 3: Competing second best,Static,alt1,9,cumulative_n,86
+Case 3: Competing second best,Static,alt2,9,cumulative_n,97
+Case 3: Competing second best,Static,alt3,9,cumulative_n,133
+Case 3: Competing second best,Static,alt4,9,cumulative_n,81
+Case 3: Competing second best,Static,alt5,9,cumulative_n,102
+Case 3: Competing second best,Static,alt6,9,cumulative_n,104
+Case 3: Competing second best,Static,alt7,9,cumulative_n,94
+Case 3: Competing second best,Static,alt8,9,cumulative_n,99
+Case 3: Competing second best,Static,best,10,cumulative_n,118
+Case 3: Competing second best,Static,alt1,10,cumulative_n,90
+Case 3: Competing second best,Static,alt2,10,cumulative_n,106
+Case 3: Competing second best,Static,alt3,10,cumulative_n,150
+Case 3: Competing second best,Static,alt4,10,cumulative_n,95
+Case 3: Competing second best,Static,alt5,10,cumulative_n,115
+Case 3: Competing second best,Static,alt6,10,cumulative_n,116
+Case 3: Competing second best,Static,alt7,10,cumulative_n,100
+Case 3: Competing second best,Static,alt8,10,cumulative_n,110
+Case 3: Competing second best,Control-augmented,best,0,posterior_prob,0.1111111111111111
+Case 3: Competing second best,Control-augmented,alt1,0,posterior_prob,0.1111111111111111
+Case 3: Competing second best,Control-augmented,alt2,0,posterior_prob,0.1111111111111111
+Case 3: Competing second best,Control-augmented,alt3,0,posterior_prob,0.1111111111111111
+Case 3: Competing second best,Control-augmented,alt4,0,posterior_prob,0.1111111111111111
+Case 3: Competing second best,Control-augmented,alt5,0,posterior_prob,0.1111111111111111
+Case 3: Competing second best,Control-augmented,alt6,0,posterior_prob,0.1111111111111111
+Case 3: Competing second best,Control-augmented,alt7,0,posterior_prob,0.1111111111111111
+Case 3: Competing second best,Control-augmented,alt8,0,posterior_prob,0.1111111111111111
+Case 3: Competing second best,Control-augmented,best,1,posterior_prob,0.3586
+Case 3: Competing second best,Control-augmented,alt1,1,posterior_prob,0.3494
+Case 3: Competing second best,Control-augmented,alt2,1,posterior_prob,0.0086
+Case 3: Competing second best,Control-augmented,alt3,1,posterior_prob,0.0218
+Case 3: Competing second best,Control-augmented,alt4,1,posterior_prob,0.0086
+Case 3: Competing second best,Control-augmented,alt5,1,posterior_prob,0.0032
+Case 3: Competing second best,Control-augmented,alt6,1,posterior_prob,0.0212
+Case 3: Competing second best,Control-augmented,alt7,1,posterior_prob,0.1184
+Case 3: Competing second best,Control-augmented,alt8,1,posterior_prob,0.1102
+Case 3: Competing second best,Control-augmented,best,2,posterior_prob,0.314
+Case 3: Competing second best,Control-augmented,alt1,2,posterior_prob,0.1526
+Case 3: Competing second best,Control-augmented,alt2,2,posterior_prob,0.0052
+Case 3: Competing second best,Control-augmented,alt3,2,posterior_prob,0.0918
+Case 3: Competing second best,Control-augmented,alt4,2,posterior_prob,0.052
+Case 3: Competing second best,Control-augmented,alt5,2,posterior_prob,0.0218
+Case 3: Competing second best,Control-augmented,alt6,2,posterior_prob,0.0678
+Case 3: Competing second best,Control-augmented,alt7,2,posterior_prob,0.163
+Case 3: Competing second best,Control-augmented,alt8,2,posterior_prob,0.1318
+Case 3: Competing second best,Control-augmented,best,3,posterior_prob,0.313
+Case 3: Competing second best,Control-augmented,alt1,3,posterior_prob,0.2076
+Case 3: Competing second best,Control-augmented,alt2,3,posterior_prob,4e-4
+Case 3: Competing second best,Control-augmented,alt3,3,posterior_prob,0.0814
+Case 3: Competing second best,Control-augmented,alt4,3,posterior_prob,0.0134
+Case 3: Competing second best,Control-augmented,alt5,3,posterior_prob,0.0644
+Case 3: Competing second best,Control-augmented,alt6,3,posterior_prob,0.2198
+Case 3: Competing second best,Control-augmented,alt7,3,posterior_prob,0.0722
+Case 3: Competing second best,Control-augmented,alt8,3,posterior_prob,0.0278
+Case 3: Competing second best,Control-augmented,best,4,posterior_prob,0.3034
+Case 3: Competing second best,Control-augmented,alt1,4,posterior_prob,0.1002
+Case 3: Competing second best,Control-augmented,alt2,4,posterior_prob,0
+Case 3: Competing second best,Control-augmented,alt3,4,posterior_prob,0.2576
+Case 3: Competing second best,Control-augmented,alt4,4,posterior_prob,0.0228
+Case 3: Competing second best,Control-augmented,alt5,4,posterior_prob,0.1248
+Case 3: Competing second best,Control-augmented,alt6,4,posterior_prob,0.0726
+Case 3: Competing second best,Control-augmented,alt7,4,posterior_prob,0.0386
+Case 3: Competing second best,Control-augmented,alt8,4,posterior_prob,0.08
+Case 3: Competing second best,Control-augmented,best,5,posterior_prob,0.6536
+Case 3: Competing second best,Control-augmented,alt1,5,posterior_prob,0.0516
+Case 3: Competing second best,Control-augmented,alt2,5,posterior_prob,0
+Case 3: Competing second best,Control-augmented,alt3,5,posterior_prob,0.0056
+Case 3: Competing second best,Control-augmented,alt4,5,posterior_prob,0.0684
+Case 3: Competing second best,Control-augmented,alt5,5,posterior_prob,0.0218
+Case 3: Competing second best,Control-augmented,alt6,5,posterior_prob,0.0388
+Case 3: Competing second best,Control-augmented,alt7,5,posterior_prob,0.0318
+Case 3: Competing second best,Control-augmented,alt8,5,posterior_prob,0.1284
+Case 3: Competing second best,Control-augmented,best,6,posterior_prob,0.6216
+Case 3: Competing second best,Control-augmented,alt1,6,posterior_prob,0.0236
+Case 3: Competing second best,Control-augmented,alt2,6,posterior_prob,0
+Case 3: Competing second best,Control-augmented,alt3,6,posterior_prob,0.007
+Case 3: Competing second best,Control-augmented,alt4,6,posterior_prob,0.2174
+Case 3: Competing second best,Control-augmented,alt5,6,posterior_prob,0.0266
+Case 3: Competing second best,Control-augmented,alt6,6,posterior_prob,0.0214
+Case 3: Competing second best,Control-augmented,alt7,6,posterior_prob,0.013
+Case 3: Competing second best,Control-augmented,alt8,6,posterior_prob,0.0694
+Case 3: Competing second best,Control-augmented,best,7,posterior_prob,0.7176
+Case 3: Competing second best,Control-augmented,alt1,7,posterior_prob,0.032
+Case 3: Competing second best,Control-augmented,alt2,7,posterior_prob,0
+Case 3: Competing second best,Control-augmented,alt3,7,posterior_prob,0.0098
+Case 3: Competing second best,Control-augmented,alt4,7,posterior_prob,0.0856
+Case 3: Competing second best,Control-augmented,alt5,7,posterior_prob,0.0306
+Case 3: Competing second best,Control-augmented,alt6,7,posterior_prob,0.0362
+Case 3: Competing second best,Control-augmented,alt7,7,posterior_prob,0.0158
+Case 3: Competing second best,Control-augmented,alt8,7,posterior_prob,0.0724
+Case 3: Competing second best,Control-augmented,best,8,posterior_prob,0.5102
+Case 3: Competing second best,Control-augmented,alt1,8,posterior_prob,0.0834
+Case 3: Competing second best,Control-augmented,alt2,8,posterior_prob,0
+Case 3: Competing second best,Control-augmented,alt3,8,posterior_prob,0.0134
+Case 3: Competing second best,Control-augmented,alt4,8,posterior_prob,0.1946
+Case 3: Competing second best,Control-augmented,alt5,8,posterior_prob,0.038
+Case 3: Competing second best,Control-augmented,alt6,8,posterior_prob,0.0614
+Case 3: Competing second best,Control-augmented,alt7,8,posterior_prob,0.0298
+Case 3: Competing second best,Control-augmented,alt8,8,posterior_prob,0.0692
+Case 3: Competing second best,Control-augmented,best,9,posterior_prob,0.6692
+Case 3: Competing second best,Control-augmented,alt1,9,posterior_prob,0.0698
+Case 3: Competing second best,Control-augmented,alt2,9,posterior_prob,0
+Case 3: Competing second best,Control-augmented,alt3,9,posterior_prob,0.0116
+Case 3: Competing second best,Control-augmented,alt4,9,posterior_prob,0.1132
+Case 3: Competing second best,Control-augmented,alt5,9,posterior_prob,0.0242
+Case 3: Competing second best,Control-augmented,alt6,9,posterior_prob,0.0386
+Case 3: Competing second best,Control-augmented,alt7,9,posterior_prob,0.0254
+Case 3: Competing second best,Control-augmented,alt8,9,posterior_prob,0.048
+Case 3: Competing second best,Control-augmented,best,10,posterior_prob,0.6106
+Case 3: Competing second best,Control-augmented,alt1,10,posterior_prob,0.0576
+Case 3: Competing second best,Control-augmented,alt2,10,posterior_prob,0
+Case 3: Competing second best,Control-augmented,alt3,10,posterior_prob,0.0186
+Case 3: Competing second best,Control-augmented,alt4,10,posterior_prob,0.1122
+Case 3: Competing second best,Control-augmented,alt5,10,posterior_prob,0.033
+Case 3: Competing second best,Control-augmented,alt6,10,posterior_prob,0.0696
+Case 3: Competing second best,Control-augmented,alt7,10,posterior_prob,0.0278
+Case 3: Competing second best,Control-augmented,alt8,10,posterior_prob,0.0706
+Case 3: Competing second best,Control-augmented,best,0,cumulative_n,0
+Case 3: Competing second best,Control-augmented,alt1,0,cumulative_n,0
+Case 3: Competing second best,Control-augmented,alt2,0,cumulative_n,0
+Case 3: Competing second best,Control-augmented,alt3,0,cumulative_n,0
+Case 3: Competing second best,Control-augmented,alt4,0,cumulative_n,0
+Case 3: Competing second best,Control-augmented,alt5,0,cumulative_n,0
+Case 3: Competing second best,Control-augmented,alt6,0,cumulative_n,0
+Case 3: Competing second best,Control-augmented,alt7,0,cumulative_n,0
+Case 3: Competing second best,Control-augmented,alt8,0,cumulative_n,0
+Case 3: Competing second best,Control-augmented,best,1,cumulative_n,11
+Case 3: Competing second best,Control-augmented,alt1,1,cumulative_n,6
+Case 3: Competing second best,Control-augmented,alt2,1,cumulative_n,12
+Case 3: Competing second best,Control-augmented,alt3,1,cumulative_n,10
+Case 3: Competing second best,Control-augmented,alt4,1,cumulative_n,12
+Case 3: Competing second best,Control-augmented,alt5,1,cumulative_n,15
+Case 3: Competing second best,Control-augmented,alt6,1,cumulative_n,10
+Case 3: Competing second best,Control-augmented,alt7,1,cumulative_n,15
+Case 3: Competing second best,Control-augmented,alt8,1,cumulative_n,9
+Case 3: Competing second best,Control-augmented,best,2,cumulative_n,49
+Case 3: Competing second best,Control-augmented,alt1,2,cumulative_n,32
+Case 3: Competing second best,Control-augmented,alt2,2,cumulative_n,26
+Case 3: Competing second best,Control-augmented,alt3,2,cumulative_n,10
+Case 3: Competing second best,Control-augmented,alt4,2,cumulative_n,12
+Case 3: Competing second best,Control-augmented,alt5,2,cumulative_n,15
+Case 3: Competing second best,Control-augmented,alt6,2,cumulative_n,11
+Case 3: Competing second best,Control-augmented,alt7,2,cumulative_n,24
+Case 3: Competing second best,Control-augmented,alt8,2,cumulative_n,21
+Case 3: Competing second best,Control-augmented,best,3,cumulative_n,67
+Case 3: Competing second best,Control-augmented,alt1,3,cumulative_n,40
+Case 3: Competing second best,Control-augmented,alt2,3,cumulative_n,58
+Case 3: Competing second best,Control-augmented,alt3,3,cumulative_n,16
+Case 3: Competing second best,Control-augmented,alt4,3,cumulative_n,17
+Case 3: Competing second best,Control-augmented,alt5,3,cumulative_n,17
+Case 3: Competing second best,Control-augmented,alt6,3,cumulative_n,20
+Case 3: Competing second best,Control-augmented,alt7,3,cumulative_n,35
+Case 3: Competing second best,Control-augmented,alt8,3,cumulative_n,30
+Case 3: Competing second best,Control-augmented,best,4,cumulative_n,90
+Case 3: Competing second best,Control-augmented,alt1,4,cumulative_n,56
+Case 3: Competing second best,Control-augmented,alt2,4,cumulative_n,76
+Case 3: Competing second best,Control-augmented,alt3,4,cumulative_n,20
+Case 3: Competing second best,Control-augmented,alt4,4,cumulative_n,17
+Case 3: Competing second best,Control-augmented,alt5,4,cumulative_n,24
+Case 3: Competing second best,Control-augmented,alt6,4,cumulative_n,46
+Case 3: Competing second best,Control-augmented,alt7,4,cumulative_n,40
+Case 3: Competing second best,Control-augmented,alt8,4,cumulative_n,31
+Case 3: Competing second best,Control-augmented,best,5,cumulative_n,110
+Case 3: Competing second best,Control-augmented,alt1,5,cumulative_n,67
+Case 3: Competing second best,Control-augmented,alt2,5,cumulative_n,101
+Case 3: Competing second best,Control-augmented,alt3,5,cumulative_n,40
+Case 3: Competing second best,Control-augmented,alt4,5,cumulative_n,18
+Case 3: Competing second best,Control-augmented,alt5,5,cumulative_n,34
+Case 3: Competing second best,Control-augmented,alt6,5,cumulative_n,55
+Case 3: Competing second best,Control-augmented,alt7,5,cumulative_n,42
+Case 3: Competing second best,Control-augmented,alt8,5,cumulative_n,33
+Case 3: Competing second best,Control-augmented,best,6,cumulative_n,172
+Case 3: Competing second best,Control-augmented,alt1,6,cumulative_n,73
+Case 3: Competing second best,Control-augmented,alt2,6,cumulative_n,111
+Case 3: Competing second best,Control-augmented,alt3,6,cumulative_n,40
+Case 3: Competing second best,Control-augmented,alt4,6,cumulative_n,22
+Case 3: Competing second best,Control-augmented,alt5,6,cumulative_n,34
+Case 3: Competing second best,Control-augmented,alt6,6,cumulative_n,59
+Case 3: Competing second best,Control-augmented,alt7,6,cumulative_n,47
+Case 3: Competing second best,Control-augmented,alt8,6,cumulative_n,42
+Case 3: Competing second best,Control-augmented,best,7,cumulative_n,195
+Case 3: Competing second best,Control-augmented,alt1,7,cumulative_n,73
+Case 3: Competing second best,Control-augmented,alt2,7,cumulative_n,180
+Case 3: Competing second best,Control-augmented,alt3,7,cumulative_n,41
+Case 3: Competing second best,Control-augmented,alt4,7,cumulative_n,28
+Case 3: Competing second best,Control-augmented,alt5,7,cumulative_n,34
+Case 3: Competing second best,Control-augmented,alt6,7,cumulative_n,59
+Case 3: Competing second best,Control-augmented,alt7,7,cumulative_n,47
+Case 3: Competing second best,Control-augmented,alt8,7,cumulative_n,43
+Case 3: Competing second best,Control-augmented,best,8,cumulative_n,250
+Case 3: Competing second best,Control-augmented,alt1,8,cumulative_n,74
+Case 3: Competing second best,Control-augmented,alt2,8,cumulative_n,207
+Case 3: Competing second best,Control-augmented,alt3,8,cumulative_n,41
+Case 3: Competing second best,Control-augmented,alt4,8,cumulative_n,34
+Case 3: Competing second best,Control-augmented,alt5,8,cumulative_n,34
+Case 3: Competing second best,Control-augmented,alt6,8,cumulative_n,62
+Case 3: Competing second best,Control-augmented,alt7,8,cumulative_n,52
+Case 3: Competing second best,Control-augmented,alt8,8,cumulative_n,46
+Case 3: Competing second best,Control-augmented,best,9,cumulative_n,276
+Case 3: Competing second best,Control-augmented,alt1,9,cumulative_n,77
+Case 3: Competing second best,Control-augmented,alt2,9,cumulative_n,258
+Case 3: Competing second best,Control-augmented,alt3,9,cumulative_n,42
+Case 3: Competing second best,Control-augmented,alt4,9,cumulative_n,39
+Case 3: Competing second best,Control-augmented,alt5,9,cumulative_n,37
+Case 3: Competing second best,Control-augmented,alt6,9,cumulative_n,66
+Case 3: Competing second best,Control-augmented,alt7,9,cumulative_n,55
+Case 3: Competing second best,Control-augmented,alt8,9,cumulative_n,50
+Case 3: Competing second best,Control-augmented,best,10,cumulative_n,317
+Case 3: Competing second best,Control-augmented,alt1,10,cumulative_n,83
+Case 3: Competing second best,Control-augmented,alt2,10,cumulative_n,292
+Case 3: Competing second best,Control-augmented,alt3,10,cumulative_n,42
+Case 3: Competing second best,Control-augmented,alt4,10,cumulative_n,46
+Case 3: Competing second best,Control-augmented,alt5,10,cumulative_n,38
+Case 3: Competing second best,Control-augmented,alt6,10,cumulative_n,71
+Case 3: Competing second best,Control-augmented,alt7,10,cumulative_n,56
+Case 3: Competing second best,Control-augmented,alt8,10,cumulative_n,55

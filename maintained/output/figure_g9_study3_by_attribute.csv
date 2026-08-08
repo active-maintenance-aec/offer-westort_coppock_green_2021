@@ -1,0 +1,353 @@
+design,attribute,level,batch,posterior_prob
+Adaptive,Personal limits,"$1,000,000",0,0.2500000000000001
+Adaptive,Personal limits,"$10,000",0,0.2500000000000001
+Adaptive,Personal limits,"100,000",0,0.2500000000000001
+Adaptive,Personal limits,No limits,0,0.2500000000000001
+Adaptive,Corporate limits,Allow all,0,0.33333333333333315
+Adaptive,Corporate limits,Prohibit all,0,0.33333333333333315
+Adaptive,Corporate limits,"Prohibit candidate;
+ allow PAC",0,0.33333333333333315
+Adaptive,Public funding,1:1 match,0,0.2500000000000001
+Adaptive,Public funding,5:1 match,0,0.2500000000000001
+Adaptive,Public funding,Maintain status quo,0,0.2500000000000001
+Adaptive,Public funding,Prohibit all,0,0.2500000000000001
+Adaptive,Disclosures,Disclose > $200,0,0.2500000000000001
+Adaptive,Disclosures,Disclose > $500,0,0.2500000000000001
+Adaptive,Disclosures,Disclose all,0,0.2500000000000001
+Adaptive,Disclosures,Eliminate,0,0.2500000000000001
+Adaptive,Personal limits,"$1,000,000",1,0.9592399999999999
+Adaptive,Personal limits,"$10,000",1,0.012799999999999999
+Adaptive,Personal limits,"100,000",1,0.01364
+Adaptive,Personal limits,No limits,1,0.014319999999999998
+Adaptive,Corporate limits,Allow all,1,1e-4
+Adaptive,Corporate limits,Prohibit all,1,0.4312699999999998
+Adaptive,Corporate limits,"Prohibit candidate;
+ allow PAC",1,0.56863
+Adaptive,Public funding,1:1 match,1,0.21358000000000005
+Adaptive,Public funding,5:1 match,1,0.27094
+Adaptive,Public funding,Maintain status quo,1,0.0024600000000000004
+Adaptive,Public funding,Prohibit all,1,0.5130199999999999
+Adaptive,Disclosures,Disclose > $200,1,0.36483
+Adaptive,Disclosures,Disclose > $500,1,0.5567499999999997
+Adaptive,Disclosures,Disclose all,1,0.039200000000000006
+Adaptive,Disclosures,Eliminate,1,0.03922
+Adaptive,Personal limits,"$1,000,000",2,0.7300099999999999
+Adaptive,Personal limits,"$10,000",2,0.06351
+Adaptive,Personal limits,"100,000",2,0.11094000000000001
+Adaptive,Personal limits,No limits,2,0.09554000000000003
+Adaptive,Corporate limits,Allow all,2,0.0018100000000000002
+Adaptive,Corporate limits,Prohibit all,2,0.7596799999999998
+Adaptive,Corporate limits,"Prohibit candidate;
+ allow PAC",2,0.23851
+Adaptive,Public funding,1:1 match,2,0.6000300000000001
+Adaptive,Public funding,5:1 match,2,0.34825000000000006
+Adaptive,Public funding,Maintain status quo,2,0.01515
+Adaptive,Public funding,Prohibit all,2,0.03657
+Adaptive,Disclosures,Disclose > $200,2,0.03626000000000001
+Adaptive,Disclosures,Disclose > $500,2,0.7560399999999999
+Adaptive,Disclosures,Disclose all,2,0.11797
+Adaptive,Disclosures,Eliminate,2,0.08972999999999999
+Adaptive,Personal limits,"$1,000,000",3,0.6261300000000001
+Adaptive,Personal limits,"$10,000",3,0.24752000000000002
+Adaptive,Personal limits,"100,000",3,0.0833
+Adaptive,Personal limits,No limits,3,0.04304999999999999
+Adaptive,Corporate limits,Allow all,3,0.0056999999999999985
+Adaptive,Corporate limits,Prohibit all,3,0.42162999999999995
+Adaptive,Corporate limits,"Prohibit candidate;
+ allow PAC",3,0.5726699999999999
+Adaptive,Public funding,1:1 match,3,0.13419000000000003
+Adaptive,Public funding,5:1 match,3,0.51613
+Adaptive,Public funding,Maintain status quo,3,0.05288
+Adaptive,Public funding,Prohibit all,3,0.29680000000000006
+Adaptive,Disclosures,Disclose > $200,3,0.25432000000000005
+Adaptive,Disclosures,Disclose > $500,3,0.53551
+Adaptive,Disclosures,Disclose all,3,0.1969800000000001
+Adaptive,Disclosures,Eliminate,3,0.013189999999999995
+Adaptive,Personal limits,"$1,000,000",4,0.3624199999999999
+Adaptive,Personal limits,"$10,000",4,0.50424
+Adaptive,Personal limits,"100,000",4,0.07517
+Adaptive,Personal limits,No limits,4,0.05817000000000001
+Adaptive,Corporate limits,Allow all,4,0.0020100000000000005
+Adaptive,Corporate limits,Prohibit all,4,0.5233300000000001
+Adaptive,Corporate limits,"Prohibit candidate;
+ allow PAC",4,0.47466000000000014
+Adaptive,Public funding,1:1 match,4,0.17601999999999998
+Adaptive,Public funding,5:1 match,4,0.05583
+Adaptive,Public funding,Maintain status quo,4,0.12141999999999999
+Adaptive,Public funding,Prohibit all,4,0.64673
+Adaptive,Disclosures,Disclose > $200,4,0.4149999999999999
+Adaptive,Disclosures,Disclose > $500,4,0.35986
+Adaptive,Disclosures,Disclose all,4,0.21317999999999998
+Adaptive,Disclosures,Eliminate,4,0.011959999999999997
+Adaptive,Personal limits,"$1,000,000",5,0.54647
+Adaptive,Personal limits,"$10,000",5,0.37001000000000006
+Adaptive,Personal limits,"100,000",5,0.0364
+Adaptive,Personal limits,No limits,5,0.047119999999999995
+Adaptive,Corporate limits,Allow all,5,0.00826
+Adaptive,Corporate limits,Prohibit all,5,0.7675500000000002
+Adaptive,Corporate limits,"Prohibit candidate;
+ allow PAC",5,0.22419
+Adaptive,Public funding,1:1 match,5,0.21286000000000002
+Adaptive,Public funding,5:1 match,5,0.12011000000000001
+Adaptive,Public funding,Maintain status quo,5,0.03299
+Adaptive,Public funding,Prohibit all,5,0.6340399999999999
+Adaptive,Disclosures,Disclose > $200,5,0.19588000000000003
+Adaptive,Disclosures,Disclose > $500,5,0.19396
+Adaptive,Disclosures,Disclose all,5,0.5999300000000002
+Adaptive,Disclosures,Eliminate,5,0.010229999999999998
+Adaptive,Personal limits,"$1,000,000",6,0.52611
+Adaptive,Personal limits,"$10,000",6,0.41489999999999994
+Adaptive,Personal limits,"100,000",6,0.05454
+Adaptive,Personal limits,No limits,6,0.004450000000000001
+Adaptive,Corporate limits,Allow all,6,0.00425
+Adaptive,Corporate limits,Prohibit all,6,0.7397699999999999
+Adaptive,Corporate limits,"Prohibit candidate;
+ allow PAC",6,0.25598000000000004
+Adaptive,Public funding,1:1 match,6,0.1196
+Adaptive,Public funding,5:1 match,6,0.03811
+Adaptive,Public funding,Maintain status quo,6,0.06288
+Adaptive,Public funding,Prohibit all,6,0.77941
+Adaptive,Disclosures,Disclose > $200,6,0.10653999999999998
+Adaptive,Disclosures,Disclose > $500,6,0.07794000000000001
+Adaptive,Disclosures,Disclose all,6,0.8069499999999998
+Adaptive,Disclosures,Eliminate,6,0.008569999999999998
+Adaptive,Personal limits,"$1,000,000",7,0.48994999999999994
+Adaptive,Personal limits,"$10,000",7,0.42719
+Adaptive,Personal limits,"100,000",7,0.08017999999999999
+Adaptive,Personal limits,No limits,7,0.00268
+Adaptive,Corporate limits,Allow all,7,0.002450000000000001
+Adaptive,Corporate limits,Prohibit all,7,0.90073
+Adaptive,Corporate limits,"Prohibit candidate;
+ allow PAC",7,0.09681999999999998
+Adaptive,Public funding,1:1 match,7,0.035690000000000006
+Adaptive,Public funding,5:1 match,7,0.0076
+Adaptive,Public funding,Maintain status quo,7,0.0451
+Adaptive,Public funding,Prohibit all,7,0.9116099999999999
+Adaptive,Disclosures,Disclose > $200,7,0.020859999999999986
+Adaptive,Disclosures,Disclose > $500,7,0.022459999999999994
+Adaptive,Disclosures,Disclose all,7,0.9558799999999998
+Adaptive,Disclosures,Eliminate,7,8.000000000000003e-4
+Adaptive,Personal limits,"$1,000,000",8,0.26180000000000003
+Adaptive,Personal limits,"$10,000",8,0.6421300000000001
+Adaptive,Personal limits,"100,000",8,0.09388999999999997
+Adaptive,Personal limits,No limits,8,0.00218
+Adaptive,Corporate limits,Allow all,8,0.0014600000000000001
+Adaptive,Corporate limits,Prohibit all,8,0.93832
+Adaptive,Corporate limits,"Prohibit candidate;
+ allow PAC",8,0.06022
+Adaptive,Public funding,1:1 match,8,0.06835
+Adaptive,Public funding,5:1 match,8,0.007859999999999999
+Adaptive,Public funding,Maintain status quo,8,0.07257999999999999
+Adaptive,Public funding,Prohibit all,8,0.8512100000000001
+Adaptive,Disclosures,Disclose > $200,8,0.010309999999999998
+Adaptive,Disclosures,Disclose > $500,8,0.012469999999999998
+Adaptive,Disclosures,Disclose all,8,0.9767
+Adaptive,Disclosures,Eliminate,8,5.200000000000001e-4
+Adaptive,Personal limits,"$1,000,000",9,0.23851000000000003
+Adaptive,Personal limits,"$10,000",9,0.6165800000000001
+Adaptive,Personal limits,"100,000",9,0.14221
+Adaptive,Personal limits,No limits,9,0.0027
+Adaptive,Corporate limits,Allow all,9,8.6e-4
+Adaptive,Corporate limits,Prohibit all,9,0.9140399999999999
+Adaptive,Corporate limits,"Prohibit candidate;
+ allow PAC",9,0.0851
+Adaptive,Public funding,1:1 match,9,0.11372
+Adaptive,Public funding,5:1 match,9,0.008520000000000002
+Adaptive,Public funding,Maintain status quo,9,0.10908999999999999
+Adaptive,Public funding,Prohibit all,9,0.7686699999999999
+Adaptive,Disclosures,Disclose > $200,9,0.01423
+Adaptive,Disclosures,Disclose > $500,9,0.020849999999999994
+Adaptive,Disclosures,Disclose all,9,0.9643099999999999
+Adaptive,Disclosures,Eliminate,9,6.100000000000001e-4
+Adaptive,Personal limits,"$1,000,000",10,0.11681000000000002
+Adaptive,Personal limits,"$10,000",10,0.5465700000000001
+Adaptive,Personal limits,"100,000",10,0.33411
+Adaptive,Personal limits,No limits,10,0.00251
+Adaptive,Corporate limits,Allow all,10,4.2e-4
+Adaptive,Corporate limits,Prohibit all,10,0.9234600000000001
+Adaptive,Corporate limits,"Prohibit candidate;
+ allow PAC",10,0.07612
+Adaptive,Public funding,1:1 match,10,0.12281
+Adaptive,Public funding,5:1 match,10,0.01423
+Adaptive,Public funding,Maintain status quo,10,0.13798000000000002
+Adaptive,Public funding,Prohibit all,10,0.7249800000000001
+Adaptive,Disclosures,Disclose > $200,10,0.021869999999999997
+Adaptive,Disclosures,Disclose > $500,10,0.025849999999999998
+Adaptive,Disclosures,Disclose all,10,0.95145
+Adaptive,Disclosures,Eliminate,10,8.300000000000001e-4
+Static,Personal limits,"$1,000,000",0,0.2500000000000001
+Static,Personal limits,"$10,000",0,0.2500000000000001
+Static,Personal limits,"100,000",0,0.2500000000000001
+Static,Personal limits,No limits,0,0.2500000000000001
+Static,Corporate limits,Allow all,0,0.33333333333333315
+Static,Corporate limits,Prohibit all,0,0.33333333333333315
+Static,Corporate limits,"Prohibit candidate;
+ allow PAC",0,0.33333333333333315
+Static,Public funding,1:1 match,0,0.2500000000000001
+Static,Public funding,5:1 match,0,0.2500000000000001
+Static,Public funding,Maintain status quo,0,0.2500000000000001
+Static,Public funding,Prohibit all,0,0.2500000000000001
+Static,Disclosures,Disclose > $200,0,0.2500000000000001
+Static,Disclosures,Disclose > $500,0,0.2500000000000001
+Static,Disclosures,Disclose all,0,0.2500000000000001
+Static,Disclosures,Eliminate,0,0.2500000000000001
+Static,Personal limits,"$1,000,000",1,0.06448000000000001
+Static,Personal limits,"$10,000",1,0.7376299999999998
+Static,Personal limits,"100,000",1,0.18897999999999995
+Static,Personal limits,No limits,1,0.008909999999999998
+Static,Corporate limits,Allow all,1,0.12692000000000006
+Static,Corporate limits,Prohibit all,1,0.8089
+Static,Corporate limits,"Prohibit candidate;
+ allow PAC",1,0.06418000000000003
+Static,Public funding,1:1 match,1,0.3081399999999999
+Static,Public funding,5:1 match,1,0.010129999999999998
+Static,Public funding,Maintain status quo,1,0.26324999999999993
+Static,Public funding,Prohibit all,1,0.41847999999999996
+Static,Disclosures,Disclose > $200,1,0.5905699999999999
+Static,Disclosures,Disclose > $500,1,0.27038999999999996
+Static,Disclosures,Disclose all,1,0.13903000000000001
+Static,Disclosures,Eliminate,1,1e-5
+Static,Personal limits,"$1,000,000",2,0.13988000000000003
+Static,Personal limits,"$10,000",2,0.7520999999999999
+Static,Personal limits,"100,000",2,0.10713000000000002
+Static,Personal limits,No limits,2,8.900000000000002e-4
+Static,Corporate limits,Allow all,2,2.6000000000000003e-4
+Static,Corporate limits,Prohibit all,2,0.98823
+Static,Corporate limits,"Prohibit candidate;
+ allow PAC",2,0.011509999999999996
+Static,Public funding,1:1 match,2,0.23059000000000004
+Static,Public funding,5:1 match,2,0.032
+Static,Public funding,Maintain status quo,2,0.05054
+Static,Public funding,Prohibit all,2,0.68687
+Static,Disclosures,Disclose > $200,2,0.5474799999999997
+Static,Disclosures,Disclose > $500,2,0.33370999999999995
+Static,Disclosures,Disclose all,2,0.11881
+Static,Disclosures,Eliminate,2,0
+Static,Personal limits,"$1,000,000",3,0.13823999999999997
+Static,Personal limits,"$10,000",3,0.8218399999999999
+Static,Personal limits,"100,000",3,0.03991000000000001
+Static,Personal limits,No limits,3,1e-5
+Static,Corporate limits,Allow all,3,1e-5
+Static,Corporate limits,Prohibit all,3,0.9887500000000001
+Static,Corporate limits,"Prohibit candidate;
+ allow PAC",3,0.011239999999999997
+Static,Public funding,1:1 match,3,0.10647
+Static,Public funding,5:1 match,3,0.0396
+Static,Public funding,Maintain status quo,3,0.04356
+Static,Public funding,Prohibit all,3,0.8103699999999999
+Static,Disclosures,Disclose > $200,3,0.37882
+Static,Disclosures,Disclose > $500,3,0.4695000000000001
+Static,Disclosures,Disclose all,3,0.15168
+Static,Disclosures,Eliminate,3,0
+Static,Personal limits,"$1,000,000",4,0.05016
+Static,Personal limits,"$10,000",4,0.87201
+Static,Personal limits,"100,000",4,0.07783000000000001
+Static,Personal limits,No limits,4,0
+Static,Corporate limits,Allow all,4,5.000000000000001e-5
+Static,Corporate limits,Prohibit all,4,0.99742
+Static,Corporate limits,"Prohibit candidate;
+ allow PAC",4,0.00253
+Static,Public funding,1:1 match,4,0.40252999999999994
+Static,Public funding,5:1 match,4,0.020749999999999998
+Static,Public funding,Maintain status quo,4,0.06060000000000001
+Static,Public funding,Prohibit all,4,0.51612
+Static,Disclosures,Disclose > $200,4,0.28209
+Static,Disclosures,Disclose > $500,4,0.25217
+Static,Disclosures,Disclose all,4,0.46574
+Static,Disclosures,Eliminate,4,0
+Static,Personal limits,"$1,000,000",5,0.06289
+Static,Personal limits,"$10,000",5,0.81346
+Static,Personal limits,"100,000",5,0.12365000000000001
+Static,Personal limits,No limits,5,0
+Static,Corporate limits,Allow all,5,1e-5
+Static,Corporate limits,Prohibit all,5,0.9970399999999999
+Static,Corporate limits,"Prohibit candidate;
+ allow PAC",5,0.00295
+Static,Public funding,1:1 match,5,0.5857
+Static,Public funding,5:1 match,5,0.02854
+Static,Public funding,Maintain status quo,5,0.04145000000000001
+Static,Public funding,Prohibit all,5,0.34431
+Static,Disclosures,Disclose > $200,5,0.18359999999999999
+Static,Disclosures,Disclose > $500,5,0.15087
+Static,Disclosures,Disclose all,5,0.66553
+Static,Disclosures,Eliminate,5,0
+Static,Personal limits,"$1,000,000",6,0.02465
+Static,Personal limits,"$10,000",6,0.91076
+Static,Personal limits,"100,000",6,0.06459
+Static,Personal limits,No limits,6,0
+Static,Corporate limits,Allow all,6,5e-5
+Static,Corporate limits,Prohibit all,6,0.9958600000000001
+Static,Corporate limits,"Prohibit candidate;
+ allow PAC",6,0.00409
+Static,Public funding,1:1 match,6,0.67511
+Static,Public funding,5:1 match,6,0.017990000000000003
+Static,Public funding,Maintain status quo,6,0.04404
+Static,Public funding,Prohibit all,6,0.26286
+Static,Disclosures,Disclose > $200,6,0.25969000000000003
+Static,Disclosures,Disclose > $500,6,0.34886000000000006
+Static,Disclosures,Disclose all,6,0.39145
+Static,Disclosures,Eliminate,6,0
+Static,Personal limits,"$1,000,000",7,0.06558
+Static,Personal limits,"$10,000",7,0.77659
+Static,Personal limits,"100,000",7,0.15783000000000003
+Static,Personal limits,No limits,7,0
+Static,Corporate limits,Allow all,7,1e-5
+Static,Corporate limits,Prohibit all,7,0.9987900000000001
+Static,Corporate limits,"Prohibit candidate;
+ allow PAC",7,0.0012000000000000003
+Static,Public funding,1:1 match,7,0.39337999999999995
+Static,Public funding,5:1 match,7,0.035620000000000006
+Static,Public funding,Maintain status quo,7,0.14382
+Static,Public funding,Prohibit all,7,0.42717999999999995
+Static,Disclosures,Disclose > $200,7,0.23855000000000004
+Static,Disclosures,Disclose > $500,7,0.26877000000000006
+Static,Disclosures,Disclose all,7,0.49268
+Static,Disclosures,Eliminate,7,0
+Static,Personal limits,"$1,000,000",8,0.03775
+Static,Personal limits,"$10,000",8,0.8515100000000001
+Static,Personal limits,"100,000",8,0.11074
+Static,Personal limits,No limits,8,0
+Static,Corporate limits,Allow all,8,0
+Static,Corporate limits,Prohibit all,8,0.9995600000000001
+Static,Corporate limits,"Prohibit candidate;
+ allow PAC",8,4.4000000000000007e-4
+Static,Public funding,1:1 match,8,0.6194000000000001
+Static,Public funding,5:1 match,8,0.045720000000000004
+Static,Public funding,Maintain status quo,8,0.12847
+Static,Public funding,Prohibit all,8,0.20640999999999998
+Static,Disclosures,Disclose > $200,8,0.16351000000000002
+Static,Disclosures,Disclose > $500,8,0.32930999999999994
+Static,Disclosures,Disclose all,8,0.50718
+Static,Disclosures,Eliminate,8,0
+Static,Personal limits,"$1,000,000",9,0.023310000000000004
+Static,Personal limits,"$10,000",9,0.92245
+Static,Personal limits,"100,000",9,0.05424
+Static,Personal limits,No limits,9,0
+Static,Corporate limits,Allow all,9,0
+Static,Corporate limits,Prohibit all,9,0.99998
+Static,Corporate limits,"Prohibit candidate;
+ allow PAC",9,2e-5
+Static,Public funding,1:1 match,9,0.56253
+Static,Public funding,5:1 match,9,0.038290000000000005
+Static,Public funding,Maintain status quo,9,0.10936
+Static,Public funding,Prohibit all,9,0.28982
+Static,Disclosures,Disclose > $200,9,0.09237
+Static,Disclosures,Disclose > $500,9,0.44747000000000003
+Static,Disclosures,Disclose all,9,0.46016000000000007
+Static,Disclosures,Eliminate,9,0
+Static,Personal limits,"$1,000,000",10,0.026439999999999998
+Static,Personal limits,"$10,000",10,0.9208599999999999
+Static,Personal limits,"100,000",10,0.0527
+Static,Personal limits,No limits,10,0
+Static,Corporate limits,Allow all,10,0
+Static,Corporate limits,Prohibit all,10,0.9999000000000001
+Static,Corporate limits,"Prohibit candidate;
+ allow PAC",10,1e-4
+Static,Public funding,1:1 match,10,0.49210000000000004
+Static,Public funding,5:1 match,10,0.05756
+Static,Public funding,Maintain status quo,10,0.11893999999999998
+Static,Public funding,Prohibit all,10,0.33140000000000003
+Static,Disclosures,Disclose > $200,10,0.21744000000000002
+Static,Disclosures,Disclose > $500,10,0.43942000000000003
+Static,Disclosures,Disclose all,10,0.34313999999999995
+Static,Disclosures,Eliminate,10,0

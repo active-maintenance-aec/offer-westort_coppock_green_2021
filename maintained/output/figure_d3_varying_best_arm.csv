@@ -1,0 +1,166 @@
+Algorithm,best_arm_value,statistic,value
+Thompson Sampling,0.1,Best arm selection,0.11339999999999983
+Thompson Sampling,0.1,Coverage of best arm,0.8674
+Thompson Sampling,0.1,Coverage of ATE,0.8482000000000003
+Thompson Sampling,0.1,RMSE of best arm,0.03455863692703397
+Thompson Sampling,0.1,RMSE of ATE,0.05027242135465109
+Thompson Sampling,0.11,Best arm selection,0.19329999999999972
+Thompson Sampling,0.11,Coverage of best arm,0.88
+Thompson Sampling,0.11,Coverage of ATE,0.8509000000000004
+Thompson Sampling,0.11,RMSE of best arm,0.03349211329438671
+Thompson Sampling,0.11,RMSE of ATE,0.04950631904668689
+Thompson Sampling,0.12,Best arm selection,0.28850000000000053
+Thompson Sampling,0.12,Coverage of best arm,0.9111999999999996
+Thompson Sampling,0.12,Coverage of ATE,0.8668999999999998
+Thompson Sampling,0.12,RMSE of best arm,0.03113161133334599
+Thompson Sampling,0.12,RMSE of ATE,0.04828012352734111
+Thompson Sampling,0.13,Best arm selection,0.4144999999999999
+Thompson Sampling,0.13,Coverage of best arm,0.9233
+Thompson Sampling,0.13,Coverage of ATE,0.8594999999999999
+Thompson Sampling,0.13,RMSE of best arm,0.02969718637300954
+Thompson Sampling,0.13,RMSE of ATE,0.0483857054297345
+Thompson Sampling,0.14,Best arm selection,0.5343999999999998
+Thompson Sampling,0.14,Coverage of best arm,0.9336
+Thompson Sampling,0.14,Coverage of ATE,0.8558999999999999
+Thompson Sampling,0.14,RMSE of best arm,0.0284038317712368
+Thompson Sampling,0.14,RMSE of ATE,0.04909555058622214
+Thompson Sampling,0.15,Best arm selection,0.6645999999999999
+Thompson Sampling,0.15,Coverage of best arm,0.9447999999999996
+Thompson Sampling,0.15,Coverage of ATE,0.8554000000000002
+Thompson Sampling,0.15,RMSE of best arm,0.02634460583607177
+Thompson Sampling,0.15,RMSE of ATE,0.04865358732634001
+Thompson Sampling,0.16,Best arm selection,0.7793000000000002
+Thompson Sampling,0.16,Coverage of best arm,0.9452000000000002
+Thompson Sampling,0.16,Coverage of ATE,0.8417000000000003
+Thompson Sampling,0.16,RMSE of best arm,0.02555762552365362
+Thompson Sampling,0.16,RMSE of ATE,0.04925872852586494
+Thompson Sampling,0.17,Best arm selection,0.8482000000000004
+Thompson Sampling,0.17,Coverage of best arm,0.952
+Thompson Sampling,0.17,Coverage of ATE,0.8331999999999997
+Thompson Sampling,0.17,RMSE of best arm,0.02428397644242396
+Thompson Sampling,0.17,RMSE of ATE,0.05111596553295271
+Thompson Sampling,0.18,Best arm selection,0.9045000000000002
+Thompson Sampling,0.18,Coverage of best arm,0.9536
+Thompson Sampling,0.18,Coverage of ATE,0.8238000000000005
+Thompson Sampling,0.18,RMSE of best arm,0.02315966553409122
+Thompson Sampling,0.18,RMSE of ATE,0.05253382299427079
+Thompson Sampling,0.19,Best arm selection,0.9464
+Thompson Sampling,0.19,Coverage of best arm,0.9596
+Thompson Sampling,0.19,Coverage of ATE,0.8066000000000003
+Thompson Sampling,0.19,RMSE of best arm,0.02207315303750493
+Thompson Sampling,0.19,RMSE of ATE,0.05456896112806259
+Thompson Sampling,0.2,Best arm selection,0.9681000000000002
+Thompson Sampling,0.2,Coverage of best arm,0.9583
+Thompson Sampling,0.2,Coverage of ATE,0.7951000000000001
+Thompson Sampling,0.2,RMSE of best arm,0.02135995777642827
+Thompson Sampling,0.2,RMSE of ATE,0.05738448863580026
+Static,0.1,Best arm selection,0.11780000000000038
+Static,0.1,Coverage of best arm,0.9356999999999996
+Static,0.1,Coverage of ATE,0.952
+Static,0.1,RMSE of best arm,0.02254411013970856
+Static,0.1,RMSE of ATE,0.03172256790041231
+Static,0.11,Best arm selection,0.17979999999999982
+Static,0.11,Coverage of best arm,0.9345
+Static,0.11,Coverage of ATE,0.9473
+Static,0.11,RMSE of best arm,0.02392054854705499
+Static,0.11,RMSE of ATE,0.03336911323814139
+Static,0.12,Best arm selection,0.26550000000000024
+Static,0.12,Coverage of best arm,0.9289
+Static,0.12,Coverage of ATE,0.9445
+Static,0.12,RMSE of best arm,0.02500527693367061
+Static,0.12,RMSE of ATE,0.03382603474807872
+Static,0.13,Best arm selection,0.3633000000000005
+Static,0.13,Coverage of best arm,0.9356999999999998
+Static,0.13,Coverage of ATE,0.9479
+Static,0.13,RMSE of best arm,0.02553956941920747
+Static,0.13,RMSE of ATE,0.03433719678556505
+Static,0.14,Best arm selection,0.4710000000000005
+Static,0.14,Coverage of best arm,0.9378000000000002
+Static,0.14,Coverage of ATE,0.9488
+Static,0.14,RMSE of best arm,0.02627597731662403
+Static,0.14,RMSE of ATE,0.03488544905548268
+Static,0.15,Best arm selection,0.5749000000000003
+Static,0.15,Coverage of best arm,0.9367000000000002
+Static,0.15,Coverage of ATE,0.9461000000000002
+Static,0.15,RMSE of best arm,0.02737130694350647
+Static,0.15,RMSE of ATE,0.035385673966644673
+Static,0.16,Best arm selection,0.6664000000000002
+Static,0.16,Coverage of best arm,0.9442000000000004
+Static,0.16,Coverage of ATE,0.9525
+Static,0.16,RMSE of best arm,0.02790174800224895
+Static,0.16,RMSE of ATE,0.03604820818503658
+Static,0.17,Best arm selection,0.7495999999999997
+Static,0.17,Coverage of best arm,0.9467
+Static,0.17,Coverage of ATE,0.9497
+Static,0.17,RMSE of best arm,0.02830176411292225
+Static,0.17,RMSE of ATE,0.03662703842352665
+Static,0.18,Best arm selection,0.8259999999999997
+Static,0.18,Coverage of best arm,0.9434999999999998
+Static,0.18,Coverage of ATE,0.9505
+Static,0.18,RMSE of best arm,0.02918205925298662
+Static,0.18,RMSE of ATE,0.03685934111206263
+Static,0.19,Best arm selection,0.8699000000000001
+Static,0.19,Coverage of best arm,0.9393000000000004
+Static,0.19,Coverage of ATE,0.9478
+Static,0.19,RMSE of best arm,0.03013335945126487
+Static,0.19,RMSE of ATE,0.03774880811989993
+Static,0.2,Best arm selection,0.9086
+Static,0.2,Coverage of best arm,0.9407
+Static,0.2,Coverage of ATE,0.9485000000000005
+Static,0.2,RMSE of best arm,0.03057578548020312
+Static,0.2,RMSE of ATE,0.03778077487367352
+Control-Augmented,0.1,Best arm selection,0.10580000000000006
+Control-Augmented,0.1,Coverage of best arm,0.8427999999999997
+Control-Augmented,0.1,Coverage of ATE,0.8541
+Control-Augmented,0.1,RMSE of best arm,0.03704757088521536
+Control-Augmented,0.1,RMSE of ATE,0.0428543114495956
+Control-Augmented,0.11,Best arm selection,0.17400000000000018
+Control-Augmented,0.11,Coverage of best arm,0.8793
+Control-Augmented,0.11,Coverage of ATE,0.8863000000000002
+Control-Augmented,0.11,RMSE of best arm,0.034299514826319
+Control-Augmented,0.11,RMSE of ATE,0.04076995020301906
+Control-Augmented,0.12,Best arm selection,0.2746999999999989
+Control-Augmented,0.12,Coverage of best arm,0.8973999999999999
+Control-Augmented,0.12,Coverage of ATE,0.9001999999999997
+Control-Augmented,0.12,RMSE of best arm,0.03328997529473111
+Control-Augmented,0.12,RMSE of ATE,0.03958488569454596
+Control-Augmented,0.13,Best arm selection,0.3749000000000016
+Control-Augmented,0.13,Coverage of best arm,0.9101
+Control-Augmented,0.13,Coverage of ATE,0.9065
+Control-Augmented,0.13,RMSE of best arm,0.03183577516076274
+Control-Augmented,0.13,RMSE of ATE,0.03826553507349072
+Control-Augmented,0.14,Best arm selection,0.5019000000000007
+Control-Augmented,0.14,Coverage of best arm,0.9291
+Control-Augmented,0.14,Coverage of ATE,0.9208
+Control-Augmented,0.14,RMSE of best arm,0.02967455155497818
+Control-Augmented,0.14,RMSE of ATE,0.03659840524547572
+Control-Augmented,0.15,Best arm selection,0.6357000000000002
+Control-Augmented,0.15,Coverage of best arm,0.9397
+Control-Augmented,0.15,Coverage of ATE,0.9358
+Control-Augmented,0.15,RMSE of best arm,0.02797271859841051
+Control-Augmented,0.15,RMSE of ATE,0.03459286246994437
+Control-Augmented,0.16,Best arm selection,0.7276000000000002
+Control-Augmented,0.16,Coverage of best arm,0.9439000000000004
+Control-Augmented,0.16,Coverage of ATE,0.9423
+Control-Augmented,0.16,RMSE of best arm,0.02688502871850178
+Control-Augmented,0.16,RMSE of ATE,0.03343483780183044
+Control-Augmented,0.17,Best arm selection,0.8197999999999998
+Control-Augmented,0.17,Coverage of best arm,0.9474
+Control-Augmented,0.17,Coverage of ATE,0.9431
+Control-Augmented,0.17,RMSE of best arm,0.02613243930396908
+Control-Augmented,0.17,RMSE of ATE,0.03260724921248501
+Control-Augmented,0.18,Best arm selection,0.8769000000000003
+Control-Augmented,0.18,Coverage of best arm,0.9491000000000002
+Control-Augmented,0.18,Coverage of ATE,0.9433
+Control-Augmented,0.18,RMSE of best arm,0.02545335034407884
+Control-Augmented,0.18,RMSE of ATE,0.03176645037352781
+Control-Augmented,0.19,Best arm selection,0.9231
+Control-Augmented,0.19,Coverage of best arm,0.9555
+Control-Augmented,0.19,Coverage of ATE,0.949
+Control-Augmented,0.19,RMSE of best arm,0.02425052522750749
+Control-Augmented,0.19,RMSE of ATE,0.03020959013593649
+Control-Augmented,0.2,Best arm selection,0.9560000000000004
+Control-Augmented,0.2,Coverage of best arm,0.9566
+Control-Augmented,0.2,Coverage of ATE,0.9516000000000004
+Control-Augmented,0.2,RMSE of best arm,0.02338363176240237
+Control-Augmented,0.2,RMSE of ATE,0.02932266358822316

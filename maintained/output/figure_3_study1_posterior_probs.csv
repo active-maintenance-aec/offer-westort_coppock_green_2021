@@ -1,0 +1,199 @@
+topic,arm,batch,posterior_prob,successes,trials,cumulative_successes,cumulative_trials
+Minimum wage,Proposal 1 (N),0,0.1,NA,NA,NA,NA
+Minimum wage,Proposal 1 (N),1,0.014033849682392144,7,9,7,9
+Minimum wage,Proposal 1 (N),2,0.029028842479432132,0,0,7,9
+Minimum wage,Proposal 1 (N),3,0.037159980405021616,4,5,11,14
+Minimum wage,Proposal 1 (N),4,0.1359304384125643,7,7,18,21
+Minimum wage,Proposal 1 (N),5,0.04388235630859124,12,16,30,37
+Minimum wage,Proposal 1 (N),6,8.328307786112505e-4,1,6,31,43
+Minimum wage,Proposal 1 (N),7,7.891800732620996e-4,0,0,31,43
+Minimum wage,Proposal 1 (N),8,0.0016861039963961273,1,1,32,44
+Minimum wage,Proposal 1 (N),9,9.880650886560985e-4,1,2,33,46
+Minimum wage,Proposal 1 (N),10,0.001476019860946605,0,0,33,46
+Minimum wage,Proposal 1 (Y),0,0.1,NA,NA,NA,NA
+Minimum wage,Proposal 1 (Y),1,0.028409586300067322,10,12,10,12
+Minimum wage,Proposal 1 (Y),2,0.09720878211230159,3,3,13,15
+Minimum wage,Proposal 1 (Y),3,0.10608114557183351,4,5,17,20
+Minimum wage,Proposal 1 (Y),4,0.08992951280914298,11,13,28,33
+Minimum wage,Proposal 1 (Y),5,0.07250129138354715,12,15,40,48
+Minimum wage,Proposal 1 (Y),6,0.11785564776963389,12,13,52,61
+Minimum wage,Proposal 1 (Y),7,0.05273081609179789,9,12,61,73
+Minimum wage,Proposal 1 (Y),8,0.035215078653530546,2,4,63,77
+Minimum wage,Proposal 1 (Y),9,0.034168738206743675,4,5,67,82
+Minimum wage,Proposal 1 (Y),10,0.06769266862097603,4,4,71,86
+Minimum wage,Proposal 2 (N),0,0.1,NA,NA,NA,NA
+Minimum wage,Proposal 2 (N),1,0.092481456600403,9,10,9,10
+Minimum wage,Proposal 2 (N),2,0.1453402003008675,7,8,16,18
+Minimum wage,Proposal 2 (N),3,0.003932722866707337,8,14,24,32
+Minimum wage,Proposal 2 (N),4,0.003722697967194344,0,0,24,32
+Minimum wage,Proposal 2 (N),5,0.005442241034258456,3,4,27,36
+Minimum wage,Proposal 2 (N),6,0.0020964352898179073,0,1,27,37
+Minimum wage,Proposal 2 (N),7,0.002039222544230663,0,0,27,37
+Minimum wage,Proposal 2 (N),8,0.003342734212795655,0,0,27,37
+Minimum wage,Proposal 2 (N),9,0.0045902633524648115,1,1,28,38
+Minimum wage,Proposal 2 (N),10,0.004175535686843665,2,3,30,41
+Minimum wage,Proposal 2 (Y),0,0.1,NA,NA,NA,NA
+Minimum wage,Proposal 2 (Y),1,0.00764664872394566,10,13,10,13
+Minimum wage,Proposal 2 (Y),2,0.03211486019035689,3,3,13,16
+Minimum wage,Proposal 2 (Y),3,0.029232476892611683,2,3,15,19
+Minimum wage,Proposal 2 (Y),4,0.10922475949959312,8,8,23,27
+Minimum wage,Proposal 2 (Y),5,0.06397031022319867,10,13,33,40
+Minimum wage,Proposal 2 (Y),6,0.05029867518573848,4,5,37,45
+Minimum wage,Proposal 2 (Y),7,0.037102233587417995,3,4,40,49
+Minimum wage,Proposal 2 (Y),8,0.04222304255290878,3,4,43,53
+Minimum wage,Proposal 2 (Y),9,0.04453686327212272,5,6,48,59
+Minimum wage,Proposal 2 (Y),10,0.08847096928148324,4,4,52,63
+Minimum wage,Proposal 3 (N),0,0.1,NA,NA,NA,NA
+Minimum wage,Proposal 3 (N),1,0.06441239951972284,7,8,7,8
+Minimum wage,Proposal 3 (N),2,0.11484539693937643,15,17,22,25
+Minimum wage,Proposal 3 (N),3,0.1609759210635865,13,15,35,40
+Minimum wage,Proposal 3 (N),4,0.21285456502973968,10,11,45,51
+Minimum wage,Proposal 3 (N),5,0.31491004733589356,14,16,59,67
+Minimum wage,Proposal 3 (N),6,0.37516594522889657,19,21,78,88
+Minimum wage,Proposal 3 (N),7,0.16892531905665248,27,33,105,121
+Minimum wage,Proposal 3 (N),8,0.24075071881530624,12,14,117,135
+Minimum wage,Proposal 3 (N),9,0.2081822739314715,21,25,138,160
+Minimum wage,Proposal 3 (N),10,0.2186159956150709,19,23,157,183
+Minimum wage,Proposal 3 (Y),0,0.1,NA,NA,NA,NA
+Minimum wage,Proposal 3 (Y),1,0.5987380140504827,14,14,14,14
+Minimum wage,Proposal 3 (Y),2,0.018656083740826453,44,55,58,69
+Minimum wage,Proposal 3 (Y),3,0.04533143968077143,2,2,60,71
+Minimum wage,Proposal 3 (Y),4,0.06151277072386968,4,4,64,75
+Minimum wage,Proposal 3 (Y),5,0.14949158171458082,4,4,68,79
+Minimum wage,Proposal 3 (Y),6,0.03866258317188206,13,18,81,97
+Minimum wage,Proposal 3 (Y),7,0.04763040756594509,3,3,84,100
+Minimum wage,Proposal 3 (Y),8,0.06711444648892378,4,5,88,105
+Minimum wage,Proposal 3 (Y),9,0.08583902217654893,8,9,96,114
+Minimum wage,Proposal 3 (Y),10,0.11976827824208258,6,7,102,121
+Minimum wage,Proposal 4 (N),0,0.1,NA,NA,NA,NA
+Minimum wage,Proposal 4 (N),1,0.003145273576596884,7,10,7,10
+Minimum wage,Proposal 4 (N),2,0.006911547972254041,0,0,7,10
+Minimum wage,Proposal 4 (N),3,0.012353007375522232,0,0,7,10
+Minimum wage,Proposal 4 (N),4,0.018784599896652737,1,1,8,11
+Minimum wage,Proposal 4 (N),5,0.007947113060374612,0,1,8,12
+Minimum wage,Proposal 4 (N),6,0.010908142528677264,1,1,9,13
+Minimum wage,Proposal 4 (N),7,0.025969415712137636,3,3,12,16
+Minimum wage,Proposal 4 (N),8,0.03535684939091625,0,0,12,16
+Minimum wage,Proposal 4 (N),9,0.10124967847362251,5,5,17,21
+Minimum wage,Proposal 4 (N),10,0.08613282058380416,8,10,25,31
+Minimum wage,Proposal 4 (Y),0,0.1,NA,NA,NA,NA
+Minimum wage,Proposal 4 (Y),1,0.07800176766291891,8,9,8,9
+Minimum wage,Proposal 4 (Y),2,0.05818043857566168,2,3,10,12
+Minimum wage,Proposal 4 (Y),3,0.023869371021251088,4,6,14,18
+Minimum wage,Proposal 4 (Y),4,0.04605215160440409,3,3,17,21
+Minimum wage,Proposal 4 (Y),5,0.1293988503815265,4,4,21,25
+Minimum wage,Proposal 4 (Y),6,0.15440649397918757,8,9,29,34
+Minimum wage,Proposal 4 (Y),7,0.24952715996428773,12,13,41,47
+Minimum wage,Proposal 4 (Y),8,0.11350701323656115,12,16,53,63
+Minimum wage,Proposal 4 (Y),9,0.17855132607523672,11,12,64,75
+Minimum wage,Proposal 4 (Y),10,0.1962885766531626,10,12,74,87
+Minimum wage,Proposal 5 (N),0,0.1,NA,NA,NA,NA
+Minimum wage,Proposal 5 (N),1,0.02064954728378022,3,4,3,4
+Minimum wage,Proposal 5 (N),2,0.07506735331464931,2,2,5,6
+Minimum wage,Proposal 5 (N),3,0.3720955722655345,7,7,12,13
+Minimum wage,Proposal 5 (N),4,0.17816625259141572,23,27,35,40
+Minimum wage,Proposal 5 (N),5,0.0725764150224241,11,15,46,55
+Minimum wage,Proposal 5 (N),6,0.15941550499382218,10,10,56,65
+Minimum wage,Proposal 5 (N),7,0.2819184791671043,16,17,72,82
+Minimum wage,Proposal 5 (N),8,0.08213396387307903,25,33,97,115
+Minimum wage,Proposal 5 (N),9,0.13111991673102438,6,6,103,121
+Minimum wage,Proposal 5 (N),10,0.07168040187631822,8,12,111,133
+Minimum wage,Proposal 5 (Y),0,0.1,NA,NA,NA,NA
+Minimum wage,Proposal 5 (Y),1,0.092481456600403,9,10,9,10
+Minimum wage,Proposal 5 (Y),2,0.42264649437389823,8,8,17,18
+Minimum wage,Proposal 5 (Y),3,0.2089684723796562,37,43,54,61
+Minimum wage,Proposal 5 (Y),4,0.1438222514654244,23,27,77,88
+Minimum wage,Proposal 5 (Y),5,0.1398797935356047,10,13,87,101
+Minimum wage,Proposal 5 (Y),6,0.09035774107373194,13,16,100,117
+Minimum wage,Proposal 5 (Y),7,0.13336776623717067,14,15,114,132
+Minimum wage,Proposal 5 (Y),8,0.3786700487795739,21,22,135,154
+Minimum wage,Proposal 5 (Y),9,0.2107738526921228,23,29,158,183
+Minimum wage,Proposal 5 (Y),10,0.14569873357920393,20,26,178,209
+Right-to-work,Proposal 1 (BM),0,0.125,NA,NA,NA,NA
+Right-to-work,Proposal 1 (BM),1,0.04230181901917131,10,12,10,12
+Right-to-work,Proposal 1 (BM),2,0.11510664801773682,8,10,18,22
+Right-to-work,Proposal 1 (BM),3,0.0033490429994567153,6,11,24,33
+Right-to-work,Proposal 1 (BM),4,4.766912800857861e-4,2,3,26,36
+Right-to-work,Proposal 1 (BM),5,3.0910073611803855e-5,1,3,27,39
+Right-to-work,Proposal 1 (BM),6,2.0929116828843782e-5,1,1,28,40
+Right-to-work,Proposal 1 (BM),7,7.598288774993531e-5,2,2,30,42
+Right-to-work,Proposal 1 (BM),8,4.092885174233768e-5,1,2,31,44
+Right-to-work,Proposal 1 (BM),9,3.7020476063644684e-5,2,2,33,46
+Right-to-work,Proposal 1 (BM),10,2.8187596950412424e-5,0,0,33,46
+Right-to-work,Proposal 1 (CA),0,0.125,NA,NA,NA,NA
+Right-to-work,Proposal 1 (CA),1,0.007552819602089277,8,11,8,11
+Right-to-work,Proposal 1 (CA),2,0.007830562097920706,2,4,10,15
+Right-to-work,Proposal 1 (CA),3,0.0065074291177734216,1,1,11,16
+Right-to-work,Proposal 1 (CA),4,9.641453442754477e-4,1,2,12,18
+Right-to-work,Proposal 1 (CA),5,0.0012190545933930604,2,2,14,20
+Right-to-work,Proposal 1 (CA),6,0.0015978872398425793,2,2,16,22
+Right-to-work,Proposal 1 (CA),7,9.633964723983807e-4,1,2,17,24
+Right-to-work,Proposal 1 (CA),8,0.0012213437973978931,0,0,17,24
+Right-to-work,Proposal 1 (CA),9,1.0772156193353679e-4,2,4,19,28
+Right-to-work,Proposal 1 (CA),10,1.185927891062148e-4,1,1,20,29
+Right-to-work,Proposal 2 (BM),0,0.125,NA,NA,NA,NA
+Right-to-work,Proposal 2 (BM),1,0.04230181901917131,10,12,10,12
+Right-to-work,Proposal 2 (BM),2,0.16295952873624717,5,6,15,18
+Right-to-work,Proposal 2 (BM),3,0.04719737301146808,10,13,25,31
+Right-to-work,Proposal 2 (BM),4,0.027324460545086506,2,2,27,33
+Right-to-work,Proposal 2 (BM),5,0.030153128106467513,3,3,30,36
+Right-to-work,Proposal 2 (BM),6,0.030691378982336523,2,2,32,38
+Right-to-work,Proposal 2 (BM),7,0.05274845628141852,1,1,33,39
+Right-to-work,Proposal 2 (BM),8,0.00746354956254595,3,6,36,45
+Right-to-work,Proposal 2 (BM),9,0.009258819523515434,4,4,40,49
+Right-to-work,Proposal 2 (BM),10,0.008955403861494406,1,1,41,50
+Right-to-work,Proposal 2 (CA),0,0.125,NA,NA,NA,NA
+Right-to-work,Proposal 2 (CA),1,0.016308919266731708,11,14,11,14
+Right-to-work,Proposal 2 (CA),2,0.09823254448867585,1,1,12,15
+Right-to-work,Proposal 2 (CA),3,0.0023783221539013916,3,7,15,22
+Right-to-work,Proposal 2 (CA),4,1.995867856568979e-4,0,1,15,23
+Right-to-work,Proposal 2 (CA),5,1.0968655515877082e-4,0,0,15,23
+Right-to-work,Proposal 2 (CA),6,7.002537157674445e-5,0,0,15,23
+Right-to-work,Proposal 2 (CA),7,3.0234990067275094e-5,0,1,15,24
+Right-to-work,Proposal 2 (CA),8,3.941772705879561e-5,0,0,15,24
+Right-to-work,Proposal 2 (CA),9,8.330683329777836e-6,1,2,16,26
+Right-to-work,Proposal 2 (CA),10,2.1579771326585537e-5,3,3,19,29
+Right-to-work,Proposal 3 (BM),0,0.125,NA,NA,NA,NA
+Right-to-work,Proposal 3 (BM),1,3.8543598148888035e-4,7,12,7,12
+Right-to-work,Proposal 3 (BM),2,0.0011286722617994123,1,2,8,14
+Right-to-work,Proposal 3 (BM),3,1.4763388066068697e-4,0,1,8,15
+Right-to-work,Proposal 3 (BM),4,3.769315219441626e-5,0,0,8,15
+Right-to-work,Proposal 3 (BM),5,2.1289073537676524e-5,0,0,8,15
+Right-to-work,Proposal 3 (BM),6,1.39478507445505e-5,0,0,8,15
+Right-to-work,Proposal 3 (BM),7,8.162405508329749e-6,1,2,9,17
+Right-to-work,Proposal 3 (BM),8,4.84625453604354e-5,3,3,12,20
+Right-to-work,Proposal 3 (BM),9,3.2151301247710626e-5,0,0,12,20
+Right-to-work,Proposal 3 (BM),10,5.2219779348198745e-6,0,1,12,21
+Right-to-work,Proposal 3 (CA),0,0.125,NA,NA,NA,NA
+Right-to-work,Proposal 3 (CA),1,0.005488385624157115,7,10,7,10
+Right-to-work,Proposal 3 (CA),2,0.008450171744579257,0,1,7,11
+Right-to-work,Proposal 3 (CA),3,0.005471777077241029,0,0,7,11
+Right-to-work,Proposal 3 (CA),4,5.218208523988476e-4,0,1,7,12
+Right-to-work,Proposal 3 (CA),5,8.801948674713663e-4,2,2,9,14
+Right-to-work,Proposal 3 (CA),6,1.293085570392666e-4,0,1,9,15
+Right-to-work,Proposal 3 (CA),7,2.1997717636927912e-4,0,0,9,15
+Right-to-work,Proposal 3 (CA),8,9.20129406995531e-5,1,2,10,17
+Right-to-work,Proposal 3 (CA),9,3.2151301247710626e-5,2,3,12,20
+Right-to-work,Proposal 3 (CA),10,6.338679950957671e-5,2,2,14,22
+Right-to-work,Proposal 4 (BM),0,0.125,NA,NA,NA,NA
+Right-to-work,Proposal 4 (BM),1,0.6560811576196525,13,13,13,13
+Right-to-work,Proposal 4 (BM),2,0.5551437195073787,43,50,56,63
+Right-to-work,Proposal 4 (BM),3,0.8894040539010593,53,57,109,120
+Right-to-work,Proposal 4 (BM),4,0.9550865707847364,80,85,189,205
+Right-to-work,Proposal 4 (BM),5,0.9527204343295096,81,87,270,292
+Right-to-work,Proposal 4 (BM),6,0.9546994705987988,86,92,356,384
+Right-to-work,Proposal 4 (BM),7,0.9212747417430703,80,91,436,475
+Right-to-work,Proposal 4 (BM),8,0.9532101489853508,75,84,511,559
+Right-to-work,Proposal 4 (BM),9,0.9360973275984459,73,77,584,636
+Right-to-work,Proposal 4 (BM),10,0.9059046533093147,79,85,663,721
+Right-to-work,Proposal 4 (CA),0,0.125,NA,NA,NA,NA
+Right-to-work,Proposal 4 (CA),1,0.2295796438678922,14,15,14,15
+Right-to-work,Proposal 4 (CA),2,0.051148153145948984,18,25,32,40
+Right-to-work,Proposal 4 (CA),3,0.045544367858723456,9,10,41,50
+Right-to-work,Proposal 4 (CA),4,0.015389026068057312,6,7,47,57
+Right-to-work,Proposal 4 (CA),5,0.0148651759528896,4,4,51,61
+Right-to-work,Proposal 4 (CA),6,0.012777487104316091,2,2,53,63
+Right-to-work,Proposal 4 (CA),7,0.024678538219096362,1,1,54,64
+Right-to-work,Proposal 4 (CA),8,0.037880000893176835,2,2,56,66
+Right-to-work,Proposal 4 (CA),9,0.054425254086766905,8,8,64,74
+Right-to-work,Proposal 4 (CA),10,0.08490643920378865,8,8,72,82

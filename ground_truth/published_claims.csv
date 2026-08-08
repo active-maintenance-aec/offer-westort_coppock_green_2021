@@ -1,0 +1,294 @@
+claim_id,location,claim_type,quantity,value_paper,digits,operator,mode,needs_block,notes
+sim_obs_per_period,"Simulations, p. 831",definitional,Observations sampled per period in the illustrative simulations,100,0,,,TRUE,
+sim_periods,"Simulations, p. 831",definitional,Number of periods in the illustrative simulations,10,0,,,TRUE,
+sim_arms,"Simulations, p. 831",definitional,Number of arms in the illustrative simulations,9,0,,,TRUE,
+sim_iterations,"Simulations, p. 831",definitional,Simulated experiments behind Table 1,10000,0,,,TRUE,
+ci_level,"Hypothesis testing, p. 831",definitional,Confidence level used throughout,0.95,2,,,TRUE,
+case1_best_rate,"Figure 1 note, p. 832",definitional,Case 1 best arm success rate,0.2,1,,,FALSE,"A design input to the simulation, set in simulations_illustrative.R and verified at the point of use."
+case1_other_rate,"Figure 1 note, p. 832",definitional,Case 1 other arms' success rate,0.1,1,,,FALSE,"A design input to the simulation, set in simulations_illustrative.R and verified at the point of use."
+case2_best_rate,"Figure 1 note, p. 832",definitional,Case 2 best arm success rate,0.11,2,,,FALSE,"A design input to the simulation, set in simulations_illustrative.R and verified at the point of use."
+case3_best_rate,"Figure 1 note, p. 832",definitional,Case 3 best arm success rate,0.2,1,,,FALSE,"A design input to the simulation, set in simulations_illustrative.R and verified at the point of use."
+case3_second_rate,"Figure 1 note, p. 832",definitional,Case 3 second best arm success rate,0.18,2,,,FALSE,"A design input to the simulation, set in simulations_illustrative.R and verified at the point of use."
+control_prob_cap,"Control-augmented algorithm, p. 830",definitional,Cap on the control arm's assignment probability,0.90,2,,,FALSE,Set in ca_sampling_probs() in helpers.R and verified at the point of use.
+control_catchup_example,"Control-augmented algorithm, p. 830",definitional,Worked example: share of the batch going to control,0.30,2,,,FALSE,A worked arithmetic example in the article's own prose; nothing in the deposit computes it.
+fig1_case1_ts_best,"Results of simulations, p. 832",pipeline,"Case 1 posterior probability of the true best arm, Thompson sampling",0.90,2,,,TRUE,
+fig1_case1_static_best,"Results of simulations, p. 832",pipeline,"Case 1 posterior probability of the true best arm, static",0.61,2,,,TRUE,"The article prints .61 without a leading zero; stored with one, per the house rule."
+fig1_case2_ts_best,"Results of simulations, p. 832",pipeline,"Case 2 posterior probability of the true best arm, Thompson sampling",0.13,2,,,TRUE,
+fig1_case2_ts_inferior,"Results of simulations, p. 832",pipeline,"Case 2 highest posterior probability of an inferior arm, Thompson sampling",0.24,2,,,TRUE,
+fig1_case2_static_best,"Results of simulations, p. 833",pipeline,"Case 2 posterior probability of the true best arm, static",0.06,2,,,TRUE,
+fig1_case2_static_inferior,"Results of simulations, p. 833",pipeline,"Case 2 highest posterior probability of an inferior arm, static",0.36,2,,,TRUE,
+fig1_case3_ts_best,"Results of simulations, p. 833",pipeline,"Case 3 posterior probability of the true best arm, Thompson sampling",0.88,2,,,TRUE,
+fig1_case3_ts_second,"Results of simulations, p. 833",pipeline,"Case 3 posterior probability of the second best arm, Thompson sampling",0.04,2,,,TRUE,
+fig1_case3_static_second,"Results of simulations, p. 833",pipeline,"Case 3 posterior probability of the second best arm, static",0.66,2,,,TRUE,
+fig1_case3_static_best,"Results of simulations, p. 833",pipeline,"Case 3 posterior probability of the true best arm, static",0.24,2,,,TRUE,
+s1_n,"Study 1 design, p. 834",definitional,Subjects recruited for study 1,1000,0,,,TRUE,
+s1_ts_prob,"Study 1 design, p. 834",definitional,Probability of assignment by Thompson sampling,0.90,2,,,FALSE,A property of the fielded design; the deposited data record the realised weights rather than the composite rule.
+s1_srs_prob,"Study 1 design, p. 834",definitional,Probability of assignment by balanced simple random assignment,0.10,2,,,FALSE,A property of the fielded design; the deposited data record the realised weights rather than the composite rule.
+s1_mw_arms,"Study 1 design, p. 834",definitional,Minimum wage treatment arms,10,0,,,TRUE,
+s1_rtw_arms,"Study 1 design, p. 835",definitional,Right-to-work treatment arms,8,0,,,TRUE,Spelled out in the article as 'eight unique right-to-work treatments'.
+s1_payment,"Study 1 design, p. 835",definitional,"Payment per subject, in dollars",1,0,,,FALSE,The deposited data carry no payment field.
+s1_field_dates,"Study 1 design, p. 835",structural,"Field period, June 21 to June 30, 2018",2018,0,,,FALSE,The deposited data carry batch numbers but no timestamps.
+s1_mw_top_posterior,"Study 1 results, p. 835",pipeline,Minimum wage leading arm's posterior probability of being best,0.219,3,,,TRUE,
+s1_mw_top_mean,"Study 1 results, p. 835",pipeline,Minimum wage leading arm's estimated mean,0.895,3,,,TRUE,
+s1_mw_top_n,"Study 1 results, p. 835",pipeline,Respondents assigned to the minimum wage leading arm,183,0,,,TRUE,
+s1_mw_arms_below_08,"Study 1 results, p. 835",descriptive,Minimum wage arms with a success rate under 0.8,2,0,==,,TRUE,The article spells this as 'only two had success rates under 0.8'.
+s1_mw_f_p,"Study 1 results, p. 835",pipeline,Minimum wage randomization inference F-test p-value,0.429,3,,,TRUE,
+s1_rtw_top_posterior,"Study 1 results, p. 835",pipeline,Right-to-work leading arm's posterior probability of being best,0.906,3,,,TRUE,
+s1_rtw_second_posterior,"Study 1 results, p. 835",pipeline,Right-to-work second arm's posterior probability of being best,0.085,3,,,TRUE,
+s1_rtw_top_mean,"Study 1 results, p. 835",pipeline,Right-to-work leading arm's estimated mean,0.926,3,,,TRUE,
+s1_rtw_second_mean,"Study 1 results, p. 835",pipeline,Right-to-work second arm's estimated mean,0.934,3,,,TRUE,
+s1_rtw_top_n,"Study 1 results, p. 835",pipeline,Respondents assigned to the right-to-work leading arm,721,0,,,TRUE,
+s1_rtw_second_n,"Study 1 results, p. 835",pipeline,Respondents assigned to the right-to-work second arm,82,0,,,TRUE,
+s1_rtw_f_p,"Study 1 results, p. 837",pipeline,Right-to-work randomization inference F-test p-value,0.199,3,,,TRUE,
+s1_static_mw_per_arm,"Study 1 results, p. 837",definitional,Expected assignments per minimum wage arm under a static design,100,0,,,TRUE,
+s1_static_rtw_per_arm,"Study 1 results, p. 837",definitional,Expected assignments per right-to-work arm under a static design,125,0,,,TRUE,
+s1_mw_correct_adaptive,"Study 1 results, p. 837",pipeline,"Share of simulated adaptive minimum wage trials picking the best proposal, per cent",47,0,,,TRUE,
+s1_mw_correct_static,"Study 1 results, p. 837",pipeline,"Share of simulated static minimum wage trials picking the best proposal, per cent",37,0,,,TRUE,
+s1_rtw_correct_adaptive,"Study 1 results, p. 837",pipeline,"Share of simulated adaptive right-to-work trials picking the best proposal, per cent",65,0,,,TRUE,
+s1_rtw_correct_static,"Study 1 results, p. 837",pipeline,"Share of simulated static right-to-work trials picking the best proposal, per cent",58,0,,,TRUE,
+s1_mw_se_ratio,"Study 1 results, p. 837",pipeline,"Static standard error as a percentage of the adaptive one, minimum wage",90,0,,,TRUE,
+s1_rtw_se_ratio,"Study 1 results, p. 837",pipeline,"Static standard error as a percentage of the adaptive one, right-to-work",133,0,,,TRUE,
+s1_rtw_se_ratio_inverse,"Discussion, p. 842",pipeline,"Adaptive standard error as a percentage of the static one, right-to-work",75,0,,,TRUE,
+s2_arms,"Study 2 design, p. 838",definitional,Arms in the study 2 trial,6,0,,,TRUE,Spelled out in the article as a 'six-arm trial'.
+s2_treatment_arms,"Study 2 design, p. 838",definitional,Treatment arms in the study 2 trial,5,0,,,TRUE,Spelled out in the article as 'each of five treatment arms'.
+s2_lottery_prize,"Study 2 design, p. 838",definitional,"Lottery prize, in dollars",100,0,,,FALSE,Treatment wording; the deposited data carry no prize field.
+s2_extra_time_seconds,"Study 2 design, p. 838",definitional,Seconds allotted under the Extra Time condition,45,0,,,FALSE,Treatment wording; the deposited data carry no timing field.
+s2_obs_per_day,"Study 2 design, p. 838",structural,Observations gathered per day,300,0,,approximate,TRUE,The article hedges this as 'approximately 300 observations per day'.
+s2_days,"Study 2 design, p. 838",definitional,Days of data collection,10,0,,,TRUE,
+s2_payment,"Study 2 design, p. 838",definitional,"Payment per subject, in dollars",1,0,,,FALSE,The deposited data carry no payment field.
+s2_field_dates,"Study 2 design, p. 838",structural,"Field period, November 27 to December 10, 2019",2019,0,,,FALSE,The deposited data carry batch numbers but no timestamps.
+s2_control_deficit_rep,"Study 2 design, p. 838",pipeline,"Republicans in the control condition answering the deficit question correctly, per cent",24,0,,,TRUE,
+s2_control_deficit_dem,"Study 2 design, p. 838",pipeline,"Democrats in the control condition answering the deficit question correctly, per cent",62,0,,,TRUE,
+s2_control_unemp_rep,"Study 2 design, p. 838",pipeline,"Republicans in the control condition answering the unemployment question correctly, per cent",75,0,,,TRUE,
+s2_control_unemp_dem,"Study 2 design, p. 838",pipeline,"Democrats in the control condition answering the unemployment question correctly, per cent",34,0,,,TRUE,
+s2_control_nfi_rep,"Study 2 design, p. 838",pipeline,"Republicans in the control condition answering the farm income question correctly, per cent",22,0,,,TRUE,
+s2_control_nfi_dem,"Study 2 design, p. 838",pipeline,"Democrats in the control condition answering the farm income question correctly, per cent",59,0,,,TRUE,
+s2_independents_n,"Study 2 design, footnote 14, p. 839",pipeline,Pure independents in study 2,568,0,,,TRUE,
+s2_pid_scale,"Figure 5 note, p. 841",definitional,Points on the partisanship scale,7,0,,,FALSE,A property of the survey instrument; the deposited data carry the coded groups rather than the scale.
+s2_rep_lottery_ate,"Study 2 results, p. 839",pipeline,"Republican Lottery effect, percentage points",4.1,1,,,TRUE,
+s2_rep_lottery_se,"Study 2 results, p. 839",pipeline,"Republican Lottery standard error, percentage points",1.7,1,,,TRUE,
+s2_rep_lottery_n,"Study 2 results, p. 839",pipeline,Republicans assigned to the Lottery condition,552,0,,,TRUE,
+s2_rep_total_n,"Study 2 results, p. 839",pipeline,Republicans in study 2,1258,0,,,TRUE,
+s2_rep_control_n,"Study 2 results, p. 839",pipeline,Republicans assigned to the control condition,493,0,,,TRUE,
+s2_rep_static_se,"Study 2 results, p. 840",pipeline,"Republican Lottery standard error under a simulated static design, percentage points",2.5,1,,unseeded,TRUE,"A 1,000-replicate bootstrap whose resampling order the deposit does not pin down."
+s2_rep_lottery_p,"Study 2 results, p. 840",pipeline,"Republican Lottery p-value, adaptive design",0.014,3,,,TRUE,
+s2_rep_static_p,"Study 2 results, p. 840",pipeline,"Republican Lottery p-value, simulated static design",0.152,3,,unseeded,TRUE,"A 1,000-replicate bootstrap whose resampling order the deposit does not pin down."
+s2_rep_4pt_arm,"Study 2 results, p. 840",descriptive,The article names the 4.1-point Republican effect as the accuracy treatment's,1,0,==,,TRUE,"The truth value of the article's own attribution, checked against the estimates."
+s2_rep_ri_p,"Study 2 results, p. 840",pipeline,Republican randomization inference F-test p-value,0.028,3,,,TRUE,
+s2_dem_lottery_ate,"Study 2 results, p. 841",pipeline,"Democratic Lottery effect, percentage points",7.1,1,,,TRUE,
+s2_dem_lottery_p,"Study 2 results, p. 841",pipeline,"Democratic Lottery p-value, unadjusted",0.007,3,,,TRUE,
+s2_dem_lottery_ate_adj,"Study 2 results, p. 841",pipeline,"Democratic Lottery effect, covariate adjusted, percentage points",5.3,1,,,TRUE,
+s2_dem_lottery_p_adj,"Study 2 results, p. 841",pipeline,"Democratic Lottery p-value, covariate adjusted",0.03,2,,,TRUE,
+s2_dem_ri_p,"Study 2 results, p. 841",pipeline,Democratic randomization inference F-test p-value,0.013,3,,,TRUE,
+s2_bols_p_rep,"Study 2 results, footnote 15, p. 841",pipeline,Republican Lottery p-value under batched OLS,0.026,3,,,TRUE,
+s2_bols_p_dem,"Study 2 results, footnote 15, p. 841",pipeline,Democratic Lottery p-value under batched OLS,0.018,3,,,TRUE,
+star_threshold,"Figure 6 note, p. 842",definitional,Significance threshold marked by an asterisk,0.05,2,,,FALSE,"A presentation convention, visible in make_entry() in helpers.R."
+si_crossrefs,Throughout,structural,"Supplement sections cited in the article, each at the page the article gives",13,0,,,FALSE,"Thirteen cross-references (A p.3, B p.6, B.1 p.6, B.3 p.9, C p.13, C.2 p.14, C.3 p.18, D p.21, D.1 p.21, E p.33, F p.34, F.3 p.36, G p.39). Every one names a section that exists at the page stated; checked by reading the supplement's own table of contents."
+appa_zt,"SI A, p. 5",definitional,Cap Zt on the control catch-up share,0.90,2,,,FALSE,Set in ca_sampling_probs() in helpers.R and verified at the point of use.
+appc1_prob_best,"SI C.1, p. 14",definitional,Worked example: probability that arm one is best after one success and one failure,0.833,3,,,FALSE,"The article prints the fraction 5/6. An analytic example worked in prose; the deposit ships no code for supplement A, B or C."
+appc2_expected_mean,"SI C.2, p. 16",definitional,Worked example: expected sample mean under Thompson sampling,0.458,3,,,FALSE,"An analytic example worked in prose; the deposit ships no code for supplement A, B or C."
+appc2_expected_max,"SI C.2, p. 16",definitional,Worked example: expected sample mean of the best observed arm,0.708,3,,,FALSE,"An analytic example worked in prose; the deposit ships no code for supplement A, B or C."
+appc2_ipw,"SI C.2, p. 17",definitional,Worked example: expected IPW estimate for either arm,0.5,1,,,FALSE,"An analytic example worked in prose; the deposit ships no code for supplement A, B or C."
+table_c1,"Table C.1, p. 16",definitional,"States after two periods, with their probabilities",24,0,,,FALSE,"Twelve rows of an analytic enumeration, each with a conditional probability and a state probability. The deposit ships no code for supplement C."
+appc3_t1_posterior,"SI C.3, p. 18",definitional,Worked example: posterior probability that arm T1 is best,0.929,3,,,FALSE,"An analytic example worked in prose; the deposit ships no code for supplement A, B or C."
+appc3_t2_posterior,"SI C.3, p. 18",definitional,Worked example: posterior probability that arm T2 is best,0.071,3,,,FALSE,"An analytic example worked in prose; the deposit ships no code for supplement A, B or C."
+appc3_pt1_period2,"SI C.3, p. 18",definitional,Worked example: period two assignment probability for T1,0.619,3,,,FALSE,"An analytic example worked in prose; the deposit ships no code for supplement A, B or C."
+appc3_pt2_period2,"SI C.3, p. 18",definitional,Worked example: period two assignment probability for T2,0.048,3,,,FALSE,"An analytic example worked in prose; the deposit ships no code for supplement A, B or C."
+appc3_t1_posterior2,"SI C.3, p. 19",definitional,Worked example: second period posterior probability for T1,0.713,3,,,FALSE,"An analytic example worked in prose; the deposit ships no code for supplement A, B or C."
+appc3_t2_posterior2,"SI C.3, p. 19",definitional,Worked example: second period posterior probability for T2,0.287,3,,,FALSE,"An analytic example worked in prose; the deposit ships no code for supplement A, B or C."
+appc3_pc_period3,"SI C.3, p. 19",definitional,Worked example: period three assignment probability for the control,0.630,3,,,FALSE,"An analytic example worked in prose; the deposit ships no code for supplement A, B or C."
+appc3_pt1_period3,"SI C.3, p. 19",definitional,Worked example: period three assignment probability for T1,0.264,3,,,FALSE,"An analytic example worked in prose; the deposit ships no code for supplement A, B or C."
+appc3_pt2_period3,"SI C.3, p. 19",definitional,Worked example: period three assignment probability for T2,0.106,3,,,FALSE,"An analytic example worked in prose; the deposit ships no code for supplement A, B or C."
+appd1_total_obs,"SI D.1, p. 21",definitional,Total observations in every appendix D simulation,1000,0,,,TRUE,
+appd1_gains_by_five,"SI D.1, p. 21",descriptive,Most of the gain in best arm selection is realised by five batches,1,0,==,,TRUE,
+table_1_cells,"Table 1, p. 831",pipeline,Published cells in Table 1,39,0,,,TRUE,
+table_d2_cells,"Table D.2, p. 24",pipeline,Published cells in Table D.2,255,0,,,TRUE,
+table_d3_cells,"Table D.3, p. 27",pipeline,Published cells in Table D.3,165,0,,,TRUE,
+table_d4_cells,"Table D.4, p. 30",pipeline,Published cells in Table D.4,150,0,,,TRUE,
+table_d5_cells,"Table D.5, p. 31",pipeline,Published cells in Table D.5,150,0,,,TRUE,
+table_e6_rates,"Table E.6, p. 33",transcribed,State minimum wage rates as of June 2018,50,0,,,FALSE,"Fifty rates transcribed from an external source the table names. The deposited data carry no wage field, so nothing in the pipeline can reach them; checked once against the table itself."
+appf1_control_mean_dem,"SI F.1, p. 34",pipeline,Democratic control condition response rate,0.956,3,,,TRUE,
+appf1_control_mean_rep,"SI F.1, p. 34",pipeline,Republican control condition response rate,0.977,3,,,TRUE,
+appf1_google_drop,"SI F.1, p. 34",pipeline,"Google condition response rate shortfall, percentage points",5,0,,approximate,TRUE,The article hedges this as 'about 5 percentage points lower for both'.
+appf1_extratime_drop_dem,"SI F.1, p. 34",pipeline,"Democratic Extra Time response rate shortfall, percentage points",32,0,,,TRUE,
+appf1_extratime_drop_rep,"SI F.1, p. 34",pipeline,"Republican Extra Time response rate shortfall, percentage points",23,0,,,TRUE,
+table_f7_cells,"Table F.7, p. 38",pipeline,Published cells in Table F.7,64,0,,,TRUE,
+appf8_bootstraps,"Figure F.8 note, p. 36",definitional,Bootstrap replicates behind the simulated static design,1000,0,,,TRUE,
+appg_n,"SI G, p. 40",definitional,Subjects in the adaptive conjoint trial,979,0,,,FALSE,"The deposit ships study 3 as batch-level fitted data rather than a respondent file, so nothing in the pipeline counts subjects."
+appg_mturk_n,"SI G, p. 40",definitional,Subjects in the static conjoint comparison,979,0,,,FALSE,"The deposit ships study 3 as batch-level fitted data rather than a respondent file, so nothing in the pipeline counts subjects."
+appg_profiles,"SI G, p. 39",definitional,Unique experimental arms in the conjoint,192,0,,,TRUE,
+appg_levels_z1,"SI G, p. 39",definitional,Levels of the personal limits attribute,4,0,,,TRUE,
+appg_levels_z2,"SI G, p. 39",definitional,Levels of the corporate limits attribute,3,0,,,TRUE,
+appg_levels_z3,"SI G, p. 39",definitional,Levels of the public funding attribute,4,0,,,TRUE,
+appg_levels_z4,"SI G, p. 39",definitional,Levels of the disclosures attribute,4,0,,,TRUE,
+appg_waves,"SI G, p. 40",definitional,Waves of conjoint data collection,10,0,,,TRUE,
+appg_payment,"SI G, p. 40",definitional,"Payment per conjoint subject, in dollars",1,0,,,FALSE,The deposited data carry no payment field.
+appg_field_dates,"SI G, p. 40",structural,"Conjoint field periods, November 26 to December 7 2018 and November 4 to 12 2018",2018,0,,,FALSE,The deposited data carry wave numbers but no timestamps.
+appg_adaptive_p1,"SI G results, p. 45",pipeline,"Adaptive design, most preferred profile's probability of being best",0.338,3,,,TRUE,
+appg_adaptive_p2,"SI G results, p. 45",pipeline,"Adaptive design, second profile's probability of being best",0.213,3,,,TRUE,
+appg_adaptive_p3,"SI G results, p. 45",pipeline,"Adaptive design, third profile's probability of being best",0.076,3,,,TRUE,
+appg_static_p1,"SI G results, p. 45",pipeline,"Static design, most preferred profile's probability of being best",0.194,3,,,TRUE,
+appg_static_p2,"SI G results, p. 45",pipeline,"Static design, second profile's probability of being best",0.161,3,,,TRUE,
+appg_static_p3,"SI G results, p. 45",pipeline,"Static design, third profile's probability of being best",0.140,3,,,TRUE,
+appg_adaptive_profile,"SI G results, p. 45",descriptive,"The adaptive design's most preferred profile is $10,000 personal limits, prohibit all corporate contributions, prohibit public funding, disclose all contributions",1,0,==,,TRUE,
+appg_static_profile,"SI G results, p. 45",descriptive,"The static design's most preferred profile is $10,000 personal limits, prohibit all corporate contributions, a 1:1 match, and disclosure above $500",1,0,==,,TRUE,
+table_g8,"Table G.8, p. 41",transcribed,Conjoint attribute levels and outcome wording,15,0,,,FALSE,Treatment wording reprinted from the instrument; the level counts are covered by appg_levels_z1 to z4.
+table_2_wording,"Table 2, pp. 836",transcribed,Study 1 ballot measure wording,5,0,,,FALSE,"Treatment text reprinted from the instrument, including dollar amounts and dates inside the proposals. Nothing in the deposit computes them; checked once against the questionnaire codebooks in the archive."
+table_3_wording,"Table 3, p. 839",transcribed,Study 2 question wording and answers,3,0,,,FALSE,Question text and the official statistics quoted inside it. Nothing in the deposit computes them; checked once against the questionnaire codebook in the archive.
+table_4_wording,"Table 4, p. 840",transcribed,Study 2 treatment preambles and reminders,5,0,,,FALSE,Treatment text reprinted from the instrument. Nothing in the deposit computes it; checked once against the questionnaire codebook in the archive.
+figure_4_minimum_wage_proposal_3_y__estimate,"Figure 4, p. 837",pipeline,"Figure 4, Minimum wage, Proposal 3 (Y), estimate",0.895,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_minimum_wage_proposal_3_y__se,"Figure 4, p. 837",pipeline,"Figure 4, Minimum wage, Proposal 3 (Y), se",0.033,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_minimum_wage_proposal_5_y__estimate,"Figure 4, p. 837",pipeline,"Figure 4, Minimum wage, Proposal 5 (Y), estimate",0.872,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_minimum_wage_proposal_5_y__se,"Figure 4, p. 837",pipeline,"Figure 4, Minimum wage, Proposal 5 (Y), se",0.024,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_minimum_wage_proposal_5_n__estimate,"Figure 4, p. 837",pipeline,"Figure 4, Minimum wage, Proposal 5 (N), estimate",0.870,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_minimum_wage_proposal_5_n__se,"Figure 4, p. 837",pipeline,"Figure 4, Minimum wage, Proposal 5 (N), se",0.030,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_minimum_wage_proposal_4_y__estimate,"Figure 4, p. 837",pipeline,"Figure 4, Minimum wage, Proposal 4 (Y), estimate",0.866,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_minimum_wage_proposal_4_y__se,"Figure 4, p. 837",pipeline,"Figure 4, Minimum wage, Proposal 4 (Y), se",0.039,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_minimum_wage_proposal_3_n__estimate,"Figure 4, p. 837",pipeline,"Figure 4, Minimum wage, Proposal 3 (N), estimate",0.865,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_minimum_wage_proposal_3_n__se,"Figure 4, p. 837",pipeline,"Figure 4, Minimum wage, Proposal 3 (N), se",0.029,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_minimum_wage_proposal_4_n__estimate,"Figure 4, p. 837",pipeline,"Figure 4, Minimum wage, Proposal 4 (N), estimate",0.861,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_minimum_wage_proposal_4_n__se,"Figure 4, p. 837",pipeline,"Figure 4, Minimum wage, Proposal 4 (N), se",0.068,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_minimum_wage_proposal_2_y__estimate,"Figure 4, p. 837",pipeline,"Figure 4, Minimum wage, Proposal 2 (Y), estimate",0.861,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_minimum_wage_proposal_2_y__se,"Figure 4, p. 837",pipeline,"Figure 4, Minimum wage, Proposal 2 (Y), se",0.044,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_minimum_wage_proposal_1_y__estimate,"Figure 4, p. 837",pipeline,"Figure 4, Minimum wage, Proposal 1 (Y), estimate",0.836,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_minimum_wage_proposal_1_y__se,"Figure 4, p. 837",pipeline,"Figure 4, Minimum wage, Proposal 1 (Y), se",0.042,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_minimum_wage_proposal_2_n__estimate,"Figure 4, p. 837",pipeline,"Figure 4, Minimum wage, Proposal 2 (N), estimate",0.705,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_minimum_wage_proposal_2_n__se,"Figure 4, p. 837",pipeline,"Figure 4, Minimum wage, Proposal 2 (N), se",0.117,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_minimum_wage_proposal_1_n__estimate,"Figure 4, p. 837",pipeline,"Figure 4, Minimum wage, Proposal 1 (N), estimate",0.703,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_minimum_wage_proposal_1_n__se,"Figure 4, p. 837",pipeline,"Figure 4, Minimum wage, Proposal 1 (N), se",0.102,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_right_to_work_proposal_4_ca__estimate,"Figure 4, p. 837",pipeline,"Figure 4, Right-to-work, Proposal 4 (CA), estimate",0.934,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_right_to_work_proposal_4_ca__se,"Figure 4, p. 837",pipeline,"Figure 4, Right-to-work, Proposal 4 (CA), se",0.025,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_right_to_work_proposal_4_bm__estimate,"Figure 4, p. 837",pipeline,"Figure 4, Right-to-work, Proposal 4 (BM), estimate",0.926,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_right_to_work_proposal_4_bm__se,"Figure 4, p. 837",pipeline,"Figure 4, Right-to-work, Proposal 4 (BM), se",0.010,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_right_to_work_proposal_2_bm__estimate,"Figure 4, p. 837",pipeline,"Figure 4, Right-to-work, Proposal 2 (BM), estimate",0.874,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_right_to_work_proposal_2_bm__se,"Figure 4, p. 837",pipeline,"Figure 4, Right-to-work, Proposal 2 (BM), se",0.047,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_right_to_work_proposal_1_bm__estimate,"Figure 4, p. 837",pipeline,"Figure 4, Right-to-work, Proposal 1 (BM), estimate",0.713,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_right_to_work_proposal_1_bm__se,"Figure 4, p. 837",pipeline,"Figure 4, Right-to-work, Proposal 1 (BM), se",0.094,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_right_to_work_proposal_1_ca__estimate,"Figure 4, p. 837",pipeline,"Figure 4, Right-to-work, Proposal 1 (CA), estimate",0.685,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_right_to_work_proposal_1_ca__se,"Figure 4, p. 837",pipeline,"Figure 4, Right-to-work, Proposal 1 (CA), se",0.106,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_right_to_work_proposal_3_ca__estimate,"Figure 4, p. 837",pipeline,"Figure 4, Right-to-work, Proposal 3 (CA), estimate",0.624,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_right_to_work_proposal_3_ca__se,"Figure 4, p. 837",pipeline,"Figure 4, Right-to-work, Proposal 3 (CA), se",0.134,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_right_to_work_proposal_2_ca__estimate,"Figure 4, p. 837",pipeline,"Figure 4, Right-to-work, Proposal 2 (CA), estimate",0.618,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_right_to_work_proposal_2_ca__se,"Figure 4, p. 837",pipeline,"Figure 4, Right-to-work, Proposal 2 (CA), se",0.145,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_right_to_work_proposal_3_bm__estimate,"Figure 4, p. 837",pipeline,"Figure 4, Right-to-work, Proposal 3 (BM), estimate",0.564,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_4_right_to_work_proposal_3_bm__se,"Figure 4, p. 837",pipeline,"Figure 4, Right-to-work, Proposal 3 (BM), se",0.154,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_democrats_ipw_lottery_estimate,"Figure 6, p. 842",pipeline,"Figure 6, Democrats, IPW, Lottery, estimate",0.071,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_democrats_ipw_lottery_se,"Figure 6, p. 842",pipeline,"Figure 6, Democrats, IPW, Lottery, se",0.026,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_democrats_ipw_google_estimate,"Figure 6, p. 842",pipeline,"Figure 6, Democrats, IPW, Google, estimate",0.054,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_democrats_ipw_google_se,"Figure 6, p. 842",pipeline,"Figure 6, Democrats, IPW, Google, se",0.033,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_democrats_ipw_extra_time_estimate,"Figure 6, p. 842",pipeline,"Figure 6, Democrats, IPW, Extra Time, estimate",-0.009,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_democrats_ipw_extra_time_se,"Figure 6, p. 842",pipeline,"Figure 6, Democrats, IPW, Extra Time, se",0.133,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_democrats_ipw_direction_estimate,"Figure 6, p. 842",pipeline,"Figure 6, Democrats, IPW, Direction, estimate",0.033,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_democrats_ipw_direction_se,"Figure 6, p. 842",pipeline,"Figure 6, Democrats, IPW, Direction, se",0.029,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_democrats_ipw_accuracy_estimate,"Figure 6, p. 842",pipeline,"Figure 6, Democrats, IPW, Accuracy, estimate",0.061,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_democrats_ipw_accuracy_se,"Figure 6, p. 842",pipeline,"Figure 6, Democrats, IPW, Accuracy, se",0.025,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_democrats_ipw_adjusted_lottery_estimate,"Figure 6, p. 842",pipeline,"Figure 6, Democrats, IPW-Adjusted, Lottery, estimate",0.053,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_democrats_ipw_adjusted_lottery_se,"Figure 6, p. 842",pipeline,"Figure 6, Democrats, IPW-Adjusted, Lottery, se",0.025,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_democrats_ipw_adjusted_google_estimate,"Figure 6, p. 842",pipeline,"Figure 6, Democrats, IPW-Adjusted, Google, estimate",0.050,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_democrats_ipw_adjusted_google_se,"Figure 6, p. 842",pipeline,"Figure 6, Democrats, IPW-Adjusted, Google, se",0.036,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_democrats_ipw_adjusted_extra_time_estimate,"Figure 6, p. 842",pipeline,"Figure 6, Democrats, IPW-Adjusted, Extra Time, estimate",-0.041,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_democrats_ipw_adjusted_extra_time_se,"Figure 6, p. 842",pipeline,"Figure 6, Democrats, IPW-Adjusted, Extra Time, se",0.112,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_democrats_ipw_adjusted_direction_estimate,"Figure 6, p. 842",pipeline,"Figure 6, Democrats, IPW-Adjusted, Direction, estimate",0.013,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_democrats_ipw_adjusted_direction_se,"Figure 6, p. 842",pipeline,"Figure 6, Democrats, IPW-Adjusted, Direction, se",0.026,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_democrats_ipw_adjusted_accuracy_estimate,"Figure 6, p. 842",pipeline,"Figure 6, Democrats, IPW-Adjusted, Accuracy, estimate",0.042,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_democrats_ipw_adjusted_accuracy_se,"Figure 6, p. 842",pipeline,"Figure 6, Democrats, IPW-Adjusted, Accuracy, se",0.025,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_republicans_ipw_lottery_estimate,"Figure 6, p. 842",pipeline,"Figure 6, Republicans, IPW, Lottery, estimate",0.041,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_republicans_ipw_lottery_se,"Figure 6, p. 842",pipeline,"Figure 6, Republicans, IPW, Lottery, se",0.017,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_republicans_ipw_google_estimate,"Figure 6, p. 842",pipeline,"Figure 6, Republicans, IPW, Google, estimate",-0.037,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_republicans_ipw_google_se,"Figure 6, p. 842",pipeline,"Figure 6, Republicans, IPW, Google, se",0.059,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_republicans_ipw_extra_time_estimate,"Figure 6, p. 842",pipeline,"Figure 6, Republicans, IPW, Extra Time, estimate",-0.059,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_republicans_ipw_extra_time_se,"Figure 6, p. 842",pipeline,"Figure 6, Republicans, IPW, Extra Time, se",0.081,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_republicans_ipw_direction_estimate,"Figure 6, p. 842",pipeline,"Figure 6, Republicans, IPW, Direction, estimate",-0.052,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_republicans_ipw_direction_se,"Figure 6, p. 842",pipeline,"Figure 6, Republicans, IPW, Direction, se",0.052,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_republicans_ipw_accuracy_estimate,"Figure 6, p. 842",pipeline,"Figure 6, Republicans, IPW, Accuracy, estimate",-0.053,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_republicans_ipw_accuracy_se,"Figure 6, p. 842",pipeline,"Figure 6, Republicans, IPW, Accuracy, se",0.050,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_republicans_ipw_adjusted_lottery_estimate,"Figure 6, p. 842",pipeline,"Figure 6, Republicans, IPW-Adjusted, Lottery, estimate",0.039,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_republicans_ipw_adjusted_lottery_se,"Figure 6, p. 842",pipeline,"Figure 6, Republicans, IPW-Adjusted, Lottery, se",0.017,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_republicans_ipw_adjusted_google_estimate,"Figure 6, p. 842",pipeline,"Figure 6, Republicans, IPW-Adjusted, Google, estimate",-0.071,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_republicans_ipw_adjusted_google_se,"Figure 6, p. 842",pipeline,"Figure 6, Republicans, IPW-Adjusted, Google, se",0.052,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_republicans_ipw_adjusted_extra_time_estimate,"Figure 6, p. 842",pipeline,"Figure 6, Republicans, IPW-Adjusted, Extra Time, estimate",-0.049,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_republicans_ipw_adjusted_extra_time_se,"Figure 6, p. 842",pipeline,"Figure 6, Republicans, IPW-Adjusted, Extra Time, se",0.093,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_republicans_ipw_adjusted_direction_estimate,"Figure 6, p. 842",pipeline,"Figure 6, Republicans, IPW-Adjusted, Direction, estimate",-0.040,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_republicans_ipw_adjusted_direction_se,"Figure 6, p. 842",pipeline,"Figure 6, Republicans, IPW-Adjusted, Direction, se",0.040,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_republicans_ipw_adjusted_accuracy_estimate,"Figure 6, p. 842",pipeline,"Figure 6, Republicans, IPW-Adjusted, Accuracy, estimate",-0.082,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_6_republicans_ipw_adjusted_accuracy_se,"Figure 6, p. 842",pipeline,"Figure 6, Republicans, IPW-Adjusted, Accuracy, se",0.048,3,,,TRUE,Read off a rendered page; the published figure has no text layer.
+figure_f6_democrats_lottery_estimate,"Figure F.6, p. 34",pipeline,"Figure F.6, Democrats, Lottery, estimate",0.009,3,,,TRUE,
+figure_f6_democrats_lottery_se,"Figure F.6, p. 34",pipeline,"Figure F.6, Democrats, Lottery, se",0.016,3,,,TRUE,
+figure_f6_republicans_lottery_estimate,"Figure F.6, p. 34",pipeline,"Figure F.6, Republicans, Lottery, estimate",-0.022,3,,,TRUE,
+figure_f6_republicans_lottery_se,"Figure F.6, p. 34",pipeline,"Figure F.6, Republicans, Lottery, se",0.011,3,,,TRUE,
+figure_f6_democrats_google_estimate,"Figure F.6, p. 34",pipeline,"Figure F.6, Democrats, Google, estimate",-0.048,3,,,TRUE,
+figure_f6_democrats_google_se,"Figure F.6, p. 34",pipeline,"Figure F.6, Democrats, Google, se",0.030,3,,,TRUE,
+figure_f6_republicans_google_estimate,"Figure F.6, p. 34",pipeline,"Figure F.6, Republicans, Google, estimate",-0.050,3,,,TRUE,
+figure_f6_republicans_google_se,"Figure F.6, p. 34",pipeline,"Figure F.6, Republicans, Google, se",0.064,3,,,TRUE,
+figure_f6_democrats_extra_time_estimate,"Figure F.6, p. 34",pipeline,"Figure F.6, Democrats, Extra Time, estimate",-0.321,3,,,TRUE,
+figure_f6_democrats_extra_time_se,"Figure F.6, p. 34",pipeline,"Figure F.6, Democrats, Extra Time, se",0.131,3,,,TRUE,
+figure_f6_republicans_extra_time_estimate,"Figure F.6, p. 34",pipeline,"Figure F.6, Republicans, Extra Time, estimate",-0.234,3,,,TRUE,
+figure_f6_republicans_extra_time_se,"Figure F.6, p. 34",pipeline,"Figure F.6, Republicans, Extra Time, se",0.131,3,,,TRUE,
+figure_f6_democrats_direction_estimate,"Figure F.6, p. 34",pipeline,"Figure F.6, Democrats, Direction, estimate",-0.008,3,,,TRUE,
+figure_f6_democrats_direction_se,"Figure F.6, p. 34",pipeline,"Figure F.6, Democrats, Direction, se",0.024,3,,,TRUE,
+figure_f6_republicans_direction_estimate,"Figure F.6, p. 34",pipeline,"Figure F.6, Republicans, Direction, estimate",-0.013,3,,,TRUE,
+figure_f6_republicans_direction_se,"Figure F.6, p. 34",pipeline,"Figure F.6, Republicans, Direction, se",0.020,3,,,TRUE,
+figure_f6_democrats_accuracy_estimate,"Figure F.6, p. 34",pipeline,"Figure F.6, Democrats, Accuracy, estimate",0.002,3,,,TRUE,
+figure_f6_democrats_accuracy_se,"Figure F.6, p. 34",pipeline,"Figure F.6, Democrats, Accuracy, se",0.017,3,,,TRUE,
+figure_f6_republicans_accuracy_estimate,"Figure F.6, p. 34",pipeline,"Figure F.6, Republicans, Accuracy, estimate",-0.034,3,,,TRUE,
+figure_f6_republicans_accuracy_se,"Figure F.6, p. 34",pipeline,"Figure F.6, Republicans, Accuracy, se",0.037,3,,,TRUE,
+figure_f7_ipw_lottery_estimate,"Figure F.7, p. 35",pipeline,"Figure F.7, independents, IPW, Lottery, estimate",-0.006,3,,,TRUE,
+figure_f7_ipw_lottery_se,"Figure F.7, p. 35",pipeline,"Figure F.7, independents, IPW, Lottery, se",0.038,3,,,TRUE,
+figure_f7_ipw_adjusted_lottery_estimate,"Figure F.7, p. 35",pipeline,"Figure F.7, independents, IPW-Adjusted, Lottery, estimate",-0.003,3,,,TRUE,
+figure_f7_ipw_adjusted_lottery_se,"Figure F.7, p. 35",pipeline,"Figure F.7, independents, IPW-Adjusted, Lottery, se",0.040,3,,,TRUE,
+figure_f7_ipw_google_estimate,"Figure F.7, p. 35",pipeline,"Figure F.7, independents, IPW, Google, estimate",-0.054,3,,,TRUE,
+figure_f7_ipw_google_se,"Figure F.7, p. 35",pipeline,"Figure F.7, independents, IPW, Google, se",0.083,3,,,TRUE,
+figure_f7_ipw_adjusted_google_estimate,"Figure F.7, p. 35",pipeline,"Figure F.7, independents, IPW-Adjusted, Google, estimate",-0.004,3,,,TRUE,
+figure_f7_ipw_adjusted_google_se,"Figure F.7, p. 35",pipeline,"Figure F.7, independents, IPW-Adjusted, Google, se",0.076,3,,,TRUE,
+figure_f7_ipw_extra_time_estimate,"Figure F.7, p. 35",pipeline,"Figure F.7, independents, IPW, Extra Time, estimate",-0.065,3,,,TRUE,
+figure_f7_ipw_extra_time_se,"Figure F.7, p. 35",pipeline,"Figure F.7, independents, IPW, Extra Time, se",0.161,3,,,TRUE,
+figure_f7_ipw_adjusted_extra_time_estimate,"Figure F.7, p. 35",pipeline,"Figure F.7, independents, IPW-Adjusted, Extra Time, estimate",-0.132,3,,,TRUE,
+figure_f7_ipw_adjusted_extra_time_se,"Figure F.7, p. 35",pipeline,"Figure F.7, independents, IPW-Adjusted, Extra Time, se",0.141,3,,,TRUE,
+figure_f7_ipw_direction_estimate,"Figure F.7, p. 35",pipeline,"Figure F.7, independents, IPW, Direction, estimate",-0.211,3,,,TRUE,
+figure_f7_ipw_direction_se,"Figure F.7, p. 35",pipeline,"Figure F.7, independents, IPW, Direction, se",0.122,3,,,TRUE,
+figure_f7_ipw_adjusted_direction_estimate,"Figure F.7, p. 35",pipeline,"Figure F.7, independents, IPW-Adjusted, Direction, estimate",-0.168,3,,,TRUE,
+figure_f7_ipw_adjusted_direction_se,"Figure F.7, p. 35",pipeline,"Figure F.7, independents, IPW-Adjusted, Direction, se",0.116,3,,,TRUE,
+figure_f7_ipw_accuracy_estimate,"Figure F.7, p. 35",pipeline,"Figure F.7, independents, IPW, Accuracy, estimate",0.040,3,,,TRUE,
+figure_f7_ipw_accuracy_se,"Figure F.7, p. 35",pipeline,"Figure F.7, independents, IPW, Accuracy, se",0.033,3,,,TRUE,
+figure_f7_ipw_adjusted_accuracy_estimate,"Figure F.7, p. 35",pipeline,"Figure F.7, independents, IPW-Adjusted, Accuracy, estimate",0.036,3,,,TRUE,
+figure_f7_ipw_adjusted_accuracy_se,"Figure F.7, p. 35",pipeline,"Figure F.7, independents, IPW-Adjusted, Accuracy, se",0.031,3,,,TRUE,
+figure_f8_democrats_ipw_lottery_estimate,"Figure F.8, p. 36",pipeline,"Figure F.8, Democrats, IPW, Lottery, estimate",0.071,3,,,TRUE,
+figure_f8_democrats_ipw_lottery_se,"Figure F.8, p. 36",pipeline,"Figure F.8, Democrats, IPW, Lottery, se",0.026,3,,,TRUE,
+figure_f8_republicans_ipw_lottery_estimate,"Figure F.8, p. 36",pipeline,"Figure F.8, Republicans, IPW, Lottery, estimate",0.041,3,,,TRUE,
+figure_f8_republicans_ipw_lottery_se,"Figure F.8, p. 36",pipeline,"Figure F.8, Republicans, IPW, Lottery, se",0.017,3,,,TRUE,
+figure_f8_democrats_static_lottery_estimate,"Figure F.8, p. 36",pipeline,"Figure F.8, Democrats, Static, Lottery, estimate",0.071,3,,unseeded,TRUE,"A 1,000-replicate bootstrap whose resampling order the deposit does not pin down."
+figure_f8_democrats_static_lottery_se,"Figure F.8, p. 36",pipeline,"Figure F.8, Democrats, Static, Lottery, se",0.027,3,,unseeded,TRUE,"A 1,000-replicate bootstrap whose resampling order the deposit does not pin down."
+figure_f8_republicans_static_lottery_estimate,"Figure F.8, p. 36",pipeline,"Figure F.8, Republicans, Static, Lottery, estimate",0.040,3,,unseeded,TRUE,"A 1,000-replicate bootstrap whose resampling order the deposit does not pin down."
+figure_f8_republicans_static_lottery_se,"Figure F.8, p. 36",pipeline,"Figure F.8, Republicans, Static, Lottery, se",0.025,3,,unseeded,TRUE,"A 1,000-replicate bootstrap whose resampling order the deposit does not pin down."
+figure_f8_democrats_ipw_google_estimate,"Figure F.8, p. 36",pipeline,"Figure F.8, Democrats, IPW, Google, estimate",0.054,3,,,TRUE,
+figure_f8_democrats_ipw_google_se,"Figure F.8, p. 36",pipeline,"Figure F.8, Democrats, IPW, Google, se",0.033,3,,,TRUE,
+figure_f8_republicans_ipw_google_estimate,"Figure F.8, p. 36",pipeline,"Figure F.8, Republicans, IPW, Google, estimate",-0.037,3,,,TRUE,
+figure_f8_republicans_ipw_google_se,"Figure F.8, p. 36",pipeline,"Figure F.8, Republicans, IPW, Google, se",0.059,3,,,TRUE,
+figure_f8_democrats_static_google_estimate,"Figure F.8, p. 36",pipeline,"Figure F.8, Democrats, Static, Google, estimate",0.054,3,,unseeded,TRUE,"A 1,000-replicate bootstrap whose resampling order the deposit does not pin down."
+figure_f8_democrats_static_google_se,"Figure F.8, p. 36",pipeline,"Figure F.8, Democrats, Static, Google, se",0.026,3,,unseeded,TRUE,"A 1,000-replicate bootstrap whose resampling order the deposit does not pin down."
+figure_f8_republicans_static_google_estimate,"Figure F.8, p. 36",pipeline,"Figure F.8, Republicans, Static, Google, estimate",-0.038,3,,unseeded,TRUE,"A 1,000-replicate bootstrap whose resampling order the deposit does not pin down."
+figure_f8_republicans_static_google_se,"Figure F.8, p. 36",pipeline,"Figure F.8, Republicans, Static, Google, se",0.022,3,,unseeded,TRUE,"A 1,000-replicate bootstrap whose resampling order the deposit does not pin down."
+figure_f8_democrats_ipw_extra_time_estimate,"Figure F.8, p. 36",pipeline,"Figure F.8, Democrats, IPW, Extra Time, estimate",-0.009,3,,,TRUE,
+figure_f8_democrats_ipw_extra_time_se,"Figure F.8, p. 36",pipeline,"Figure F.8, Democrats, IPW, Extra Time, se",0.133,3,,,TRUE,
+figure_f8_republicans_ipw_extra_time_estimate,"Figure F.8, p. 36",pipeline,"Figure F.8, Republicans, IPW, Extra Time, estimate",-0.059,3,,,TRUE,
+figure_f8_republicans_ipw_extra_time_se,"Figure F.8, p. 36",pipeline,"Figure F.8, Republicans, IPW, Extra Time, se",0.081,3,,,TRUE,
+figure_f8_democrats_static_extra_time_estimate,"Figure F.8, p. 36",pipeline,"Figure F.8, Democrats, Static, Extra Time, estimate",-0.009,3,,unseeded,TRUE,"A 1,000-replicate bootstrap whose resampling order the deposit does not pin down."
+figure_f8_democrats_static_extra_time_se,"Figure F.8, p. 36",pipeline,"Figure F.8, Democrats, Static, Extra Time, se",0.031,3,,unseeded,TRUE,"A 1,000-replicate bootstrap whose resampling order the deposit does not pin down."
+figure_f8_republicans_static_extra_time_estimate,"Figure F.8, p. 36",pipeline,"Figure F.8, Republicans, Static, Extra Time, estimate",-0.060,3,,unseeded,TRUE,"A 1,000-replicate bootstrap whose resampling order the deposit does not pin down."
+figure_f8_republicans_static_extra_time_se,"Figure F.8, p. 36",pipeline,"Figure F.8, Republicans, Static, Extra Time, se",0.026,3,,unseeded,TRUE,"A 1,000-replicate bootstrap whose resampling order the deposit does not pin down."
+figure_f8_democrats_ipw_direction_estimate,"Figure F.8, p. 36",pipeline,"Figure F.8, Democrats, IPW, Direction, estimate",0.033,3,,,TRUE,
+figure_f8_democrats_ipw_direction_se,"Figure F.8, p. 36",pipeline,"Figure F.8, Democrats, IPW, Direction, se",0.029,3,,,TRUE,
+figure_f8_republicans_ipw_direction_estimate,"Figure F.8, p. 36",pipeline,"Figure F.8, Republicans, IPW, Direction, estimate",-0.052,3,,,TRUE,
+figure_f8_republicans_ipw_direction_se,"Figure F.8, p. 36",pipeline,"Figure F.8, Republicans, IPW, Direction, se",0.052,3,,,TRUE,
+figure_f8_democrats_static_direction_estimate,"Figure F.8, p. 36",pipeline,"Figure F.8, Democrats, Static, Direction, estimate",0.033,3,,unseeded,TRUE,"A 1,000-replicate bootstrap whose resampling order the deposit does not pin down."
+figure_f8_democrats_static_direction_se,"Figure F.8, p. 36",pipeline,"Figure F.8, Democrats, Static, Direction, se",0.027,3,,unseeded,TRUE,"A 1,000-replicate bootstrap whose resampling order the deposit does not pin down."
+figure_f8_republicans_static_direction_estimate,"Figure F.8, p. 36",pipeline,"Figure F.8, Republicans, Static, Direction, estimate",-0.052,3,,unseeded,TRUE,"A 1,000-replicate bootstrap whose resampling order the deposit does not pin down."
+figure_f8_republicans_static_direction_se,"Figure F.8, p. 36",pipeline,"Figure F.8, Republicans, Static, Direction, se",0.024,3,,unseeded,TRUE,"A 1,000-replicate bootstrap whose resampling order the deposit does not pin down."
+figure_f8_democrats_ipw_accuracy_estimate,"Figure F.8, p. 36",pipeline,"Figure F.8, Democrats, IPW, Accuracy, estimate",0.061,3,,,TRUE,
+figure_f8_democrats_ipw_accuracy_se,"Figure F.8, p. 36",pipeline,"Figure F.8, Democrats, IPW, Accuracy, se",0.025,3,,,TRUE,
+figure_f8_republicans_ipw_accuracy_estimate,"Figure F.8, p. 36",pipeline,"Figure F.8, Republicans, IPW, Accuracy, estimate",-0.053,3,,,TRUE,
+figure_f8_republicans_ipw_accuracy_se,"Figure F.8, p. 36",pipeline,"Figure F.8, Republicans, IPW, Accuracy, se",0.050,3,,,TRUE,
+figure_f8_democrats_static_accuracy_estimate,"Figure F.8, p. 36",pipeline,"Figure F.8, Democrats, Static, Accuracy, estimate",0.061,3,,unseeded,TRUE,"A 1,000-replicate bootstrap whose resampling order the deposit does not pin down."
+figure_f8_democrats_static_accuracy_se,"Figure F.8, p. 36",pipeline,"Figure F.8, Democrats, Static, Accuracy, se",0.027,3,,unseeded,TRUE,"A 1,000-replicate bootstrap whose resampling order the deposit does not pin down."
+figure_f8_republicans_static_accuracy_estimate,"Figure F.8, p. 36",pipeline,"Figure F.8, Republicans, Static, Accuracy, estimate",-0.054,3,,unseeded,TRUE,"A 1,000-replicate bootstrap whose resampling order the deposit does not pin down."
+figure_f8_republicans_static_accuracy_se,"Figure F.8, p. 36",pipeline,"Figure F.8, Republicans, Static, Accuracy, se",0.023,3,,unseeded,TRUE,"A 1,000-replicate bootstrap whose resampling order the deposit does not pin down."

@@ -1,0 +1,154 @@
+Scenario,Algorithm,batches,statistic,value
+1: Clear winner,Thompson Sampling,10,Best arm selection,0.9681000000000002
+1: Clear winner,Thompson Sampling,10,Coverage of best arm,0.9583
+1: Clear winner,Thompson Sampling,10,Coverage of ATE,0.7951000000000001
+1: Clear winner,Thompson Sampling,100,Best arm selection,0.9687
+1: Clear winner,Thompson Sampling,100,Coverage of best arm,0.9614
+1: Clear winner,Thompson Sampling,100,Coverage of ATE,0.8068000000000004
+1: Clear winner,Thompson Sampling,2,Best arm selection,0.945
+1: Clear winner,Thompson Sampling,2,Coverage of best arm,0.9515
+1: Clear winner,Thompson Sampling,2,Coverage of ATE,0.8459999999999999
+1: Clear winner,Thompson Sampling,20,Best arm selection,0.9673000000000002
+1: Clear winner,Thompson Sampling,20,Coverage of best arm,0.9560000000000004
+1: Clear winner,Thompson Sampling,20,Coverage of ATE,0.7993000000000001
+1: Clear winner,Thompson Sampling,4,Best arm selection,0.9616999999999996
+1: Clear winner,Thompson Sampling,4,Coverage of best arm,0.9553999999999996
+1: Clear winner,Thompson Sampling,4,Coverage of ATE,0.7689
+1: Clear winner,Thompson Sampling,5,Best arm selection,0.9629
+1: Clear winner,Thompson Sampling,5,Coverage of best arm,0.9561000000000004
+1: Clear winner,Thompson Sampling,5,Coverage of ATE,0.7744999999999994
+1: Clear winner,Thompson Sampling,50,Best arm selection,0.9700999999999996
+1: Clear winner,Thompson Sampling,50,Coverage of best arm,0.9595999999999996
+1: Clear winner,Thompson Sampling,50,Coverage of ATE,0.8049
+1: Clear winner,Thompson Sampling,8,Best arm selection,0.9653000000000002
+1: Clear winner,Thompson Sampling,8,Coverage of best arm,0.9546000000000004
+1: Clear winner,Thompson Sampling,8,Coverage of ATE,0.7851000000000001
+1: Clear winner,Thompson Sampling,1,Best arm selection,0.9086
+1: Clear winner,Thompson Sampling,1,Coverage of best arm,0.9407
+1: Clear winner,Thompson Sampling,1,Coverage of ATE,0.9485000000000005
+1: Clear winner,Control-Augmented,10,Best arm selection,0.9560000000000004
+1: Clear winner,Control-Augmented,10,Coverage of best arm,0.9566
+1: Clear winner,Control-Augmented,10,Coverage of ATE,0.9516000000000004
+1: Clear winner,Control-Augmented,100,Best arm selection,0.9573
+1: Clear winner,Control-Augmented,100,Coverage of best arm,0.9568
+1: Clear winner,Control-Augmented,100,Coverage of ATE,0.9526
+1: Clear winner,Control-Augmented,2,Best arm selection,0.9388999999999998
+1: Clear winner,Control-Augmented,2,Coverage of best arm,0.9479
+1: Clear winner,Control-Augmented,2,Coverage of ATE,0.9447
+1: Clear winner,Control-Augmented,20,Best arm selection,0.9601999999999998
+1: Clear winner,Control-Augmented,20,Coverage of best arm,0.9616
+1: Clear winner,Control-Augmented,20,Coverage of ATE,0.9543
+1: Clear winner,Control-Augmented,4,Best arm selection,0.9489
+1: Clear winner,Control-Augmented,4,Coverage of best arm,0.9538
+1: Clear winner,Control-Augmented,4,Coverage of ATE,0.9519
+1: Clear winner,Control-Augmented,5,Best arm selection,0.9545
+1: Clear winner,Control-Augmented,5,Coverage of best arm,0.9549999999999998
+1: Clear winner,Control-Augmented,5,Coverage of ATE,0.9492
+1: Clear winner,Control-Augmented,50,Best arm selection,0.9577
+1: Clear winner,Control-Augmented,50,Coverage of best arm,0.9624
+1: Clear winner,Control-Augmented,50,Coverage of ATE,0.9564
+1: Clear winner,Control-Augmented,8,Best arm selection,0.9548
+1: Clear winner,Control-Augmented,8,Coverage of best arm,0.9560000000000004
+1: Clear winner,Control-Augmented,8,Coverage of ATE,0.952
+2: No clear winner,Thompson Sampling,10,Best arm selection,0.19329999999999972
+2: No clear winner,Thompson Sampling,10,Coverage of best arm,0.88
+2: No clear winner,Thompson Sampling,10,Coverage of ATE,0.8509000000000004
+2: No clear winner,Thompson Sampling,100,Best arm selection,0.1902999999999996
+2: No clear winner,Thompson Sampling,100,Coverage of best arm,0.8945999999999998
+2: No clear winner,Thompson Sampling,100,Coverage of ATE,0.8656999999999998
+2: No clear winner,Thompson Sampling,2,Best arm selection,0.17700000000000035
+2: No clear winner,Thompson Sampling,2,Coverage of best arm,0.8193000000000003
+2: No clear winner,Thompson Sampling,2,Coverage of ATE,0.8016999999999999
+2: No clear winner,Thompson Sampling,20,Best arm selection,0.18589999999999984
+2: No clear winner,Thompson Sampling,20,Coverage of best arm,0.8896000000000001
+2: No clear winner,Thompson Sampling,20,Coverage of ATE,0.8604999999999998
+2: No clear winner,Thompson Sampling,4,Best arm selection,0.18259999999999943
+2: No clear winner,Thompson Sampling,4,Coverage of best arm,0.8621999999999994
+2: No clear winner,Thompson Sampling,4,Coverage of ATE,0.8287999999999995
+2: No clear winner,Thompson Sampling,5,Best arm selection,0.18100000000000016
+2: No clear winner,Thompson Sampling,5,Coverage of best arm,0.8723000000000002
+2: No clear winner,Thompson Sampling,5,Coverage of ATE,0.8379999999999993
+2: No clear winner,Thompson Sampling,50,Best arm selection,0.18770000000000023
+2: No clear winner,Thompson Sampling,50,Coverage of best arm,0.89400000000000035
+2: No clear winner,Thompson Sampling,50,Coverage of ATE,0.8625999999999998
+2: No clear winner,Thompson Sampling,8,Best arm selection,0.1936
+2: No clear winner,Thompson Sampling,8,Coverage of best arm,0.8837999999999998
+2: No clear winner,Thompson Sampling,8,Coverage of ATE,0.8501999999999996
+2: No clear winner,Thompson Sampling,1,Best arm selection,0.17979999999999982
+2: No clear winner,Thompson Sampling,1,Coverage of best arm,0.9345
+2: No clear winner,Thompson Sampling,1,Coverage of ATE,0.9473
+2: No clear winner,Control-Augmented,10,Best arm selection,0.17400000000000018
+2: No clear winner,Control-Augmented,10,Coverage of best arm,0.8793
+2: No clear winner,Control-Augmented,10,Coverage of ATE,0.8863000000000002
+2: No clear winner,Control-Augmented,100,Best arm selection,0.17779999999999985
+2: No clear winner,Control-Augmented,100,Coverage of best arm,0.884899999999999
+2: No clear winner,Control-Augmented,100,Coverage of ATE,0.8919000000000002
+2: No clear winner,Control-Augmented,2,Best arm selection,0.15870000000000029
+2: No clear winner,Control-Augmented,2,Coverage of best arm,0.8204999999999999
+2: No clear winner,Control-Augmented,2,Coverage of ATE,0.8675999999999993
+2: No clear winner,Control-Augmented,20,Best arm selection,0.1737
+2: No clear winner,Control-Augmented,20,Coverage of best arm,0.8809999999999998
+2: No clear winner,Control-Augmented,20,Coverage of ATE,0.8851000000000002
+2: No clear winner,Control-Augmented,4,Best arm selection,0.16469999999999924
+2: No clear winner,Control-Augmented,4,Coverage of best arm,0.8571000000000008
+2: No clear winner,Control-Augmented,4,Coverage of ATE,0.868199999999999
+2: No clear winner,Control-Augmented,5,Best arm selection,0.1760000000000005
+2: No clear winner,Control-Augmented,5,Coverage of best arm,0.8667000000000001
+2: No clear winner,Control-Augmented,5,Coverage of ATE,0.8789000000000001
+2: No clear winner,Control-Augmented,50,Best arm selection,0.17990000000000006
+2: No clear winner,Control-Augmented,50,Coverage of best arm,0.8854999999999996
+2: No clear winner,Control-Augmented,50,Coverage of ATE,0.8903000000000001
+2: No clear winner,Control-Augmented,8,Best arm selection,0.1750999999999998
+2: No clear winner,Control-Augmented,8,Coverage of best arm,0.8782000000000003
+2: No clear winner,Control-Augmented,8,Coverage of ATE,0.8869999999999997
+3: Competing second-best,Thompson Sampling,10,Best arm selection,0.7146999999999999
+3: Competing second-best,Thompson Sampling,10,Coverage of best arm,0.9554999999999998
+3: Competing second-best,Thompson Sampling,10,Coverage of ATE,0.7958000000000001
+3: Competing second-best,Thompson Sampling,100,Best arm selection,0.7041000000000002
+3: Competing second-best,Thompson Sampling,100,Coverage of best arm,0.9578
+3: Competing second-best,Thompson Sampling,100,Coverage of ATE,0.7993000000000002
+3: Competing second-best,Thompson Sampling,2,Best arm selection,0.6761999999999998
+3: Competing second-best,Thompson Sampling,2,Coverage of best arm,0.9456
+3: Competing second-best,Thompson Sampling,2,Coverage of ATE,0.8464000000000004
+3: Competing second-best,Thompson Sampling,20,Best arm selection,0.7082999999999998
+3: Competing second-best,Thompson Sampling,20,Coverage of best arm,0.9557
+3: Competing second-best,Thompson Sampling,20,Coverage of ATE,0.7956999999999999
+3: Competing second-best,Thompson Sampling,4,Best arm selection,0.6964000000000005
+3: Competing second-best,Thompson Sampling,4,Coverage of best arm,0.9502999999999998
+3: Competing second-best,Thompson Sampling,4,Coverage of ATE,0.7592000000000001
+3: Competing second-best,Thompson Sampling,5,Best arm selection,0.6987000000000001
+3: Competing second-best,Thompson Sampling,5,Coverage of best arm,0.9479
+3: Competing second-best,Thompson Sampling,5,Coverage of ATE,0.7595999999999999
+3: Competing second-best,Thompson Sampling,50,Best arm selection,0.7101999999999997
+3: Competing second-best,Thompson Sampling,50,Coverage of best arm,0.9546000000000002
+3: Competing second-best,Thompson Sampling,50,Coverage of ATE,0.8030999999999996
+3: Competing second-best,Thompson Sampling,8,Best arm selection,0.7000000000000003
+3: Competing second-best,Thompson Sampling,8,Coverage of best arm,0.9521000000000002
+3: Competing second-best,Thompson Sampling,8,Coverage of ATE,0.7827000000000002
+3: Competing second-best,Thompson Sampling,1,Best arm selection,0.6348999999999994
+3: Competing second-best,Thompson Sampling,1,Coverage of best arm,0.9400000000000004
+3: Competing second-best,Thompson Sampling,1,Coverage of ATE,0.9448
+3: Competing second-best,Control-Augmented,10,Best arm selection,0.6829
+3: Competing second-best,Control-Augmented,10,Coverage of best arm,0.9464
+3: Competing second-best,Control-Augmented,10,Coverage of ATE,0.9370999999999996
+3: Competing second-best,Control-Augmented,100,Best arm selection,0.6699999999999994
+3: Competing second-best,Control-Augmented,100,Coverage of best arm,0.9407000000000004
+3: Competing second-best,Control-Augmented,100,Coverage of ATE,0.936
+3: Competing second-best,Control-Augmented,2,Best arm selection,0.6644999999999998
+3: Competing second-best,Control-Augmented,2,Coverage of best arm,0.9434999999999998
+3: Competing second-best,Control-Augmented,2,Coverage of ATE,0.9418999999999996
+3: Competing second-best,Control-Augmented,20,Best arm selection,0.6759000000000006
+3: Competing second-best,Control-Augmented,20,Coverage of best arm,0.9425
+3: Competing second-best,Control-Augmented,20,Coverage of ATE,0.9382999999999996
+3: Competing second-best,Control-Augmented,4,Best arm selection,0.6729000000000008
+3: Competing second-best,Control-Augmented,4,Coverage of best arm,0.9433999999999996
+3: Competing second-best,Control-Augmented,4,Coverage of ATE,0.9367999999999992
+3: Competing second-best,Control-Augmented,5,Best arm selection,0.6847000000000004
+3: Competing second-best,Control-Augmented,5,Coverage of best arm,0.9421000000000002
+3: Competing second-best,Control-Augmented,5,Coverage of ATE,0.9319
+3: Competing second-best,Control-Augmented,50,Best arm selection,0.6794999999999998
+3: Competing second-best,Control-Augmented,50,Coverage of best arm,0.9459
+3: Competing second-best,Control-Augmented,50,Coverage of ATE,0.9406
+3: Competing second-best,Control-Augmented,8,Best arm selection,0.6818000000000001
+3: Competing second-best,Control-Augmented,8,Coverage of best arm,0.9429
+3: Competing second-best,Control-Augmented,8,Coverage of ATE,0.9376000000000002

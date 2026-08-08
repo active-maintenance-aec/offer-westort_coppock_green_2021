@@ -1,0 +1,5 @@
+party,augmented_arm,f_statistic,p_value,iterations
+Democrats,position 3 (deposit),1.9336017510367842,0.027000000000000024,1000
+Republicans,position 3 (deposit),2.313103608072941,0.01100000000000001,1000
+Democrats,control (corrected),1.9336017510367842,0.02400000000000002,1000
+Republicans,control (corrected),2.313103608072941,0.008000000000000007,1000
