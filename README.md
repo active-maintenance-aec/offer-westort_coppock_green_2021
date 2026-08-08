@@ -74,9 +74,9 @@ source("run_all.R")
 
 The first run downloads about 132 MB from the Dataverse, almost all of
 it two saved simulation objects. Later runs verify what is already on
-disk and download nothing. The whole pipeline took 14 minutes on the
+disk and download nothing. The whole pipeline took 14.2 minutes on the
 machine that produced the committed output,
-maintained/text_study2_f_tests.R alone accounting for 3.8 of them.
+maintained/text_study2_f_tests.R alone accounting for 3.9 of them.
 Timings are not comparable across machines.
 
 # The paper
@@ -480,8 +480,8 @@ checksums the archive records are one claim rather than two.
 
 | Script                                       | Minutes |
 |:---------------------------------------------|:--------|
-| maintained/text_study2_f_tests.R             | 3.8     |
-| ground_truth/extract_archive_values.R        | 3.2     |
+| maintained/text_study2_f_tests.R             | 3.9     |
+| ground_truth/extract_archive_values.R        | 3.3     |
 | maintained/study3_probabilities.R            | 2.2     |
 | maintained/study2_probabilities.R            | 2.1     |
 | maintained/figure_f8_simulated_comparisons.R | 1.2     |
