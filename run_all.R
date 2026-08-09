@@ -87,6 +87,17 @@ timed("maintained", "text_study2_control_responses.R")
 timed("maintained", "text_study2_f_tests.R")
 timed("maintained", "text_study2_batched_ols.R")
 
+# Figure timestamps ----
+# R's pdf() device stamps a wall-clock /CreationDate and /ModDate into every figure it
+# writes, and those two fields are the only reason two runs of this pipeline produce
+# differing files. Blanking them lets the determinism check cover every file the
+# pipeline writes rather than all but the figures.
+source(here::here("maintained", "helpers.R"))
+walk(
+  list.files(here::here("maintained", "output"), pattern = "\\.pdf$", full.names = TRUE),
+  blank_pdf_timestamps
+)
+
 # The deposit's own output, then the ground truth ----
 # extract_archive_values.R runs four of the deposited scripts and parses what they
 # print, which is where value_script comes from; build_ground_truth.R reads every
