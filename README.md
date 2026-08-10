@@ -61,7 +61,8 @@ the deposited code produce, and this report.
     maintained/in_text_claims.R  the second instrument: one block per published number
     ground_truth/         the extraction, the comparison, and the deposit's own output
     README.qmd            this report
-    errata.qmd            three sentences in the article the data do not support
+    errata.qmd            the sentences in the article the data do not support
+    errata_entries.csv    the errata, as data; errata.qmd writes it, this report reads it
 
 ## How to reproduce
 
@@ -208,7 +209,8 @@ data do not support. Each is a misstatement in the prose; every figure
 and table is correct as printed, and no conclusion changes. They are set
 out in `errata.qmd`, which renders to
 `offer-westort_coppock_green_2021_errata.pdf` with its corrected values
-computed at render time.
+computed at render time and writes `errata_entries.csv`, the spine this
+section counts and numbers from.
 
 1.  **The estimated mean of the leading minimum wage arm.** The article
     gives the winning arm “a probability of being best of 0.219 and an

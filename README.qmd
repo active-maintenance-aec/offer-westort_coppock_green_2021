@@ -39,6 +39,11 @@ image_path <- function(file) {
   file.path("maintained", "output", paste0(file, extension))
 }
 
+count_word <- function(n) {
+  words <- c("One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten")
+  if (n <= length(words)) words[n] else as.character(n)
+}
+
 # value_paper is the string the article prints, so it is read as a string. Guessed
 # as a double it would lose the article's own precision.
 character_value <- cols(value_paper = col_character(), .default = col_guess())
@@ -58,6 +63,12 @@ write_calls <- read_csv(here::here("ground_truth", "archive_write_calls.csv"),
                         show_col_types = FALSE)
 manifest <- read_csv(here::here("original_manifest.csv"), show_col_types = FALSE)
 timings <- read_csv(here::here("run_timings.csv"), show_col_types = FALSE)
+
+# The errata spine, written by errata.qmd. Every count of the corrections below is derived
+# from it, so this report and the errata note cannot come to disagree about how many there
+# are or what number each carries.
+spine <- read_csv(here::here("errata_entries.csv"), show_col_types = FALSE)
+n_errata <- nrow(spine)
 
 # claim_id is NA by design on rows recording something the article does not state,
 # so a bare logical index would return extra NA elements.
@@ -101,7 +112,8 @@ maintained/output/    everything the rewrite writes, committed so a fresh run ca
 maintained/in_text_claims.R  the second instrument: one block per published number
 ground_truth/         the extraction, the comparison, and the deposit's own output
 README.qmd            this report
-errata.qmd            three sentences in the article the data do not support
+errata.qmd            the sentences in the article the data do not support
+errata_entries.csv    the errata, as data; errata.qmd writes it, this report reads it
 ```
 
 ## How to reproduce
@@ -156,11 +168,11 @@ Running is not reproducing, and the two questions have different answers here. W
 
 # Errata
 
-Three sentences in the article state a number or a treatment label the data do not support. Each is a misstatement in the prose; every figure and table is correct as printed, and no conclusion changes. They are set out in `errata.qmd`, which renders to `offer-westort_coppock_green_2021_errata.pdf` with its corrected values computed at render time.
+`r count_word(n_errata)` sentences in the article state a number or a treatment label the data do not support. Each is a misstatement in the prose; every figure and table is correct as printed, and no conclusion changes. They are set out in `errata.qmd`, which renders to `offer-westort_coppock_green_2021_errata.pdf` with its corrected values computed at render time and writes `errata_entries.csv`, the spine this section counts and numbers from.
 
-1. **The estimated mean of the leading minimum wage arm.** The article gives the winning arm "a probability of being best of 0.219 and an estimated mean of 0.895 over 183 respondents". The arm with a 0.219 probability and 183 respondents is Proposal 3 (N), whose mean is `r sprintf("%.3f", gt("s1_mw_top_mean", "value_rewrite"))`. The 0.895 belongs to Proposal 3 (Y), a different arm. The same sentence labels the arm "(B" where Figures 3 and 4 use "(N)".
+1. **The estimated mean of the leading minimum wage arm.** The article gives the winning arm "a probability of being best of 0.219 and an estimated mean of 0.895 over 183 respondents". The arm with a `r sprintf("%.3f", gt("s1_mw_top_posterior", "value_rewrite"))` probability and `r gt("s1_mw_top_n", "value_rewrite")` respondents is Proposal 3 (N), whose mean is `r sprintf("%.3f", gt("s1_mw_top_mean", "value_rewrite"))`. The 0.895 belongs to Proposal 3 (Y), a different arm. The same sentence labels the arm "(B" where Figures 3 and 4 use "(N)".
 2. **The arm carrying the 4.1-point Republican effect.** The article declares "the 4.1-point average effect of the accuracy treatment statistically significant (p = 0.014)". The 4.1-point effect is the Lottery arm's, as the two preceding sentences and Figure 6 both say. The Accuracy arm's Republican estimate is in the opposite direction.
-3. **A share rounded twice.** The article reports picking the best minimum wage proposal "37% of the time in static experiments". The simulations give `r sprintf("%.2f", gt("s1_mw_correct_static", "value_rewrite"))` per cent, which is 36 at whole-percentage precision; rounding to one decimal first and then again produces 37.
+3. **A share rounded twice.** The article reports picking the best minimum wage proposal "37% of the time in static experiments". The simulations give `r sprintf("%.2f", gt("s1_mw_correct_static", "value_rewrite"))` per cent, which is `r sprintf("%.0f", gt("s1_mw_correct_static", "value_rewrite"))` at whole-percentage precision; rounding to one decimal first and then again produces 37.
 
 ## Two findings that do not belong in an errata
 

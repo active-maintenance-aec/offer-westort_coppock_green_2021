@@ -32,6 +32,9 @@ mw_mean <- function(arm_label) {
   figure_4$estimate[figure_4$topic == "Minimum wage" & figure_4$arm == arm_label]
 }
 
+mw_p3y <- figure_3 |>
+  filter(topic == "Minimum wage", arm == "Proposal 3 (Y)", batch == 10)
+
 republican_ipw <- figure_6 |> filter(type == "Republicans", Estimates == "IPW")
 lottery <- republican_ipw |> filter(term == "Lottery")
 accuracy <- republican_ipw |> filter(term == "Accuracy")
@@ -39,32 +42,122 @@ accuracy <- republican_ipw |> filter(term == "Accuracy")
 mw_static <- static_simulations |> filter(topic == "Minimum wage")
 
 fmt <- function(x, digits) sprintf(paste0("%.", digits, "f"), x)
+
+count_word <- function(n) {
+  words <- c("One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten")
+  if (n <= length(words)) words[n] else as.character(n)
+}
 ```
 
-Three sentences in Offer-Westort, Coppock, and Green (2021), *American Journal of Political Science* 65(4): 826–844, [doi:10.1111/ajps.12597](https://doi.org/10.1111/ajps.12597), state a number or a treatment label that the study's own data do not support. Each is a misstatement in the prose. No conclusion in the article changes, and every figure and table it reports is correct as printed. The corrected values below are computed from a maintained reproduction of the analysis, held at `active-maintenance-aec/offer-westort_coppock_green_2021`, which reproduces all 913 of the article's published table and figure values.
+```{r}
+#| label: entries
+# THE ERRATA SPINE. Every entry is defined once, here, and the document below is rendered
+# from it rather than from prose typed a second time. The same rows are written to
+# errata_entries.csv at the foot of this file, so any other document that needs the
+# corrections (the README, a remastered edition) reads them instead of keeping its own copy,
+# which is how two statements of one correction come to disagree.
+#
+# [[...]] marks the span that changes. Each renderer supplies its own markup for it: bold
+# here, \was{} in an edition. Nothing else in a published or corrected field is markup, so
+# either renderer can set the same string.
+#
+# Numbering is the published note's and is APPEND-ONLY: an entry can already have been cited
+# by its number, so a later finding is added at the end and never interleaved, renumbered,
+# merged or split.
+#
+# `form` is a renderer's choice of macro for the entry: "full" where the published and
+# corrected fields are whole sentences that need setting as blocks, "brief" where the entry
+# is a token replacement.
+#
+# Every corrected value is computed here, at render time, from the maintained pipeline's
+# output. None of them is typed.
+entries <- tribble(
+  ~entry, ~class, ~source, ~form, ~title, ~location, ~published, ~corrected, ~note,
+
+  1, "quantity", "pipeline", "full",
+  "The estimated mean of the leading minimum wage arm",
+  "published p. 835",
+  "The winning arm, by a hair, was Proposal 3 ([[B]], without current minimum wage), with a probability of being best of 0.219 and an estimated mean of [[0.895]] over 183 respondents.",
+  str_glue(
+    "The winning arm, by a hair, was Proposal 3 ([[N]], without current minimum wage), with ",
+    "a probability of being best of 0.219 and an estimated mean of ",
+    "[[{fmt(mw_mean(mw_final$arm[1]), 3)}]] over 183 respondents."),
+  str_glue(
+    "The arm with a {fmt(mw_final$posterior_prob[1], 3)} probability of being best and ",
+    "{mw_final$cumulative_trials[1]} respondents is Proposal 3 (N), whose ",
+    "inverse-probability-weighted mean is {fmt(mw_mean('Proposal 3 (N)'), 3)}. The 0.895 ",
+    "printed in the sentence is Figure 4's estimate for Proposal 3 (Y), a different arm, ",
+    "which drew {mw_p3y$cumulative_trials} respondents and ended with a ",
+    "{fmt(mw_p3y$posterior_prob, 3)} probability of being best. Figures 3 and 4 label the ",
+    "two versions of each minimum wage proposal \"(Y)\" and \"(N)\", so the \"B\" in the ",
+    "parenthesis is also an \"N\"."),
+
+  2, "label", "pipeline", "full",
+  "The arm carrying the 4.1-point Republican effect",
+  "published p. 840",
+  "In this particular case, the adaptive design with the smaller standard error allows us to declare the 4.1-point average effect of the [[accuracy]] treatment statistically significant (p = 0.014), whereas under that static design the effect would not have attained statistical significance (p = 0.152).",
+  str_glue(
+    "In this particular case, the adaptive design with the smaller standard error allows us ",
+    "to declare the {fmt(100 * lottery$estimate, 1)}-point average effect of the ",
+    "[[Lottery]] treatment statistically significant (p = {fmt(lottery$p.value, 3)}), ",
+    "whereas under that static design the effect would not have attained statistical ",
+    "significance (p = 0.152)."),
+  str_glue(
+    "Figure 6 gives the Republican Lottery arm an effect of ",
+    "{fmt(100 * lottery$estimate, 1)} percentage points with a p-value of ",
+    "{fmt(lottery$p.value, 3)}. The Accuracy arm's Republican estimate is ",
+    "{fmt(100 * accuracy$estimate, 1)} percentage points, in the opposite direction, with a ",
+    "p-value of {fmt(accuracy$p.value, 3)}. The two preceding sentences and Figure 5 both ",
+    "identify the Lottery as the arm in question. The static-design p-value of 0.152 is ",
+    "left as printed: it comes from a bootstrap the deposited materials do not seed ",
+    "reproducibly, and the reproduction cannot recompute it."),
+
+  3, "quantity", "pipeline", "full",
+  "The share of static minimum wage simulations picking the best proposal",
+  "published p. 837",
+  "Treating observed success rates as the truth in simulations of the minimum wage experiment, we picked the best proposal 47% of the time in adaptive experiments and [[37%]] of the time in static experiments.",
+  str_glue(
+    "Treating observed success rates as the truth in simulations of the minimum wage ",
+    "experiment, we picked the best proposal ",
+    "{fmt(100 * mw_static$correct_adaptive, 0)}% of the time in adaptive experiments and ",
+    "[[{fmt(100 * mw_static$correct_static, 1)}%]] of the time in static experiments."),
+  str_glue(
+    "The deposited simulations pick the best minimum wage proposal in ",
+    "{fmt(100 * mw_static$correct_static, 2)} per cent of ",
+    "{format(mw_static$iterations, big.mark = ',')} static runs, which is ",
+    "{fmt(100 * mw_static$correct_static, 0)} per cent at the whole-percentage precision ",
+    "the sentence uses. Rounding to one decimal first gives 36.5, and rounding that again ",
+    "gives 37. The other three shares in the same passage round correctly.")
+) |>
+  mutate(across(c(title, published, corrected, note), as.character))
+
+stopifnot(nrow(entries) == max(entries$entry), !anyDuplicated(entries$entry))
+
+# The spine's markup, resolved for this document. Another renderer resolves it differently.
+bold <- function(x) str_replace_all(x, "\\[\\[(.*?)\\]\\]", "**\\1**")
+```
+
+`r count_word(nrow(entries))` sentences in Offer-Westort, Coppock, and Green (2021), *American Journal of Political Science* 65(4): 826–844, [doi:10.1111/ajps.12597](https://doi.org/10.1111/ajps.12597), state a number or a treatment label that the study's own data do not support. Each is a misstatement in the prose. No conclusion in the article changes, and every figure and table it reports is correct as printed. The corrected values below are computed from a maintained reproduction of the analysis, held at `active-maintenance-aec/offer-westort_coppock_green_2021`, which reproduces all 913 of the article's published table and figure values.
 
 Changed tokens are shown in bold on both sides. Where a sentence contains other quantities, those are reprinted unchanged.
 
-## 1. The estimated mean of the leading minimum wage arm
+```{r}
+#| label: render-entries
+#| results: asis
+# A heading is only a heading when a blank line precedes it: emitted straight after the
+# previous entry's note, "## 2." lands in the page as literal text.
+walk(seq_len(nrow(entries)), function(i) {
+  e <- entries[i, ]
+  cat("\n\n## ", e$entry, ". ", e$title,
+      "\n\n> ", bold(e$published), " (", str_remove(e$location, "^published "), ")",
+      "\n\n*Corrected:* ", bold(e$corrected),
+      "\n\n", e$note, "\n", sep = "")
+})
+```
 
-> The winning arm, by a hair, was Proposal 3 (**B**, without current minimum wage), with a probability of being best of 0.219 and an estimated mean of **0.895** over 183 respondents. (p. 835)
-
-*Corrected:* The winning arm, by a hair, was Proposal 3 (**N**, without current minimum wage), with a probability of being best of 0.219 and an estimated mean of **`r fmt(mw_mean(mw_final$arm[1]), 3)`** over 183 respondents.
-
-The arm with a `r fmt(mw_final$posterior_prob[1], 3)` probability of being best and `r mw_final$cumulative_trials[1]` respondents is Proposal 3 (N), whose inverse-probability-weighted mean is `r fmt(mw_mean("Proposal 3 (N)"), 3)`. The 0.895 printed in the sentence is Figure 4's estimate for Proposal 3 (Y), a different arm, which drew `r figure_3$cumulative_trials[figure_3$topic == "Minimum wage" & figure_3$arm == "Proposal 3 (Y)" & figure_3$batch == 10]` respondents and ended with a `r fmt(figure_3$posterior_prob[figure_3$topic == "Minimum wage" & figure_3$arm == "Proposal 3 (Y)" & figure_3$batch == 10], 3)` probability of being best. Figures 3 and 4 label the two versions of each minimum wage proposal "(Y)" and "(N)", so the "B" in the parenthesis is also an "N".
-
-## 2. The arm carrying the 4.1-point Republican effect
-
-> In this particular case, the adaptive design with the smaller standard error allows us to declare the 4.1-point average effect of the **accuracy** treatment statistically significant (p = 0.014), whereas under that static design the effect would not have attained statistical significance (p = 0.152). (p. 840)
-
-*Corrected:* In this particular case, the adaptive design with the smaller standard error allows us to declare the `r fmt(100 * lottery$estimate, 1)`-point average effect of the **Lottery** treatment statistically significant (p = `r fmt(lottery$p.value, 3)`), whereas under that static design the effect would not have attained statistical significance (p = 0.152).
-
-Figure 6 gives the Republican Lottery arm an effect of `r fmt(100 * lottery$estimate, 1)` percentage points with a p-value of `r fmt(lottery$p.value, 3)`. The Accuracy arm's Republican estimate is `r fmt(100 * accuracy$estimate, 1)` percentage points, in the opposite direction, with a p-value of `r fmt(accuracy$p.value, 3)`. The two preceding sentences and Figure 5 both identify the Lottery as the arm in question. The static-design p-value of 0.152 is left as printed: it comes from a bootstrap the deposited materials do not seed reproducibly, and the reproduction cannot recompute it.
-
-## 3. The share of static minimum wage simulations picking the best proposal
-
-> Treating observed success rates as the truth in simulations of the minimum wage experiment, we picked the best proposal 47% of the time in adaptive experiments and **37%** of the time in static experiments. (p. 837)
-
-*Corrected:* Treating observed success rates as the truth in simulations of the minimum wage experiment, we picked the best proposal `r fmt(100 * mw_static$correct_adaptive, 0)`% of the time in adaptive experiments and **`r fmt(100 * mw_static$correct_static, 1)`%** of the time in static experiments.
-
-The deposited simulations pick the best minimum wage proposal in `r fmt(100 * mw_static$correct_static, 2)` per cent of `r format(mw_static$iterations, big.mark = ",")` static runs, which is `r fmt(100 * mw_static$correct_static, 0)` per cent at the whole-percentage precision the sentence uses. Rounding to one decimal first gives 36.5, and rounding that again gives 37. The other three shares in the same passage round correctly.
+```{r}
+#| label: emit-spine
+# The machine-readable spine, written wherever this document is rendered. Every other
+# statement of these corrections reads it rather than restating them.
+write_csv(entries, here("errata_entries.csv"))
+```
