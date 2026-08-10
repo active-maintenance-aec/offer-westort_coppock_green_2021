@@ -75,9 +75,9 @@ source("run_all.R")
 
 The first run downloads about 132 MB from the Dataverse, almost all of
 it two saved simulation objects. Later runs verify what is already on
-disk and download nothing. The whole pipeline took 14.2 minutes on the
+disk and download nothing. The whole pipeline took 13.6 minutes on the
 machine that produced the committed output,
-maintained/text_study2_f_tests.R alone accounting for 3.9 of them.
+maintained/text_study2_f_tests.R alone accounting for 3.7 of them.
 Timings are not comparable across machines.
 
 # The paper
@@ -205,9 +205,10 @@ article.
 # Errata
 
 Three sentences in the article state a number or a treatment label the
-data do not support. Each is a misstatement in the prose; every figure
-and table is correct as printed, and no conclusion changes. They are set
-out in `errata.qmd`, which renders to
+data do not support, and one reference-list entry is wrong in two ways
+the deposit cannot speak to. Every figure and table is correct as
+printed, and no conclusion changes. All four are set out in
+`errata.qmd`, which renders to
 `offer-westort_coppock_green_2021_errata.pdf` with its corrected values
 computed at render time and writes `errata_entries.csv`, the spine this
 section counts and numbers from.
@@ -227,6 +228,13 @@ section counts and numbers from.
     minimum wage proposal “37% of the time in static experiments”. The
     simulations give 36.46 per cent, which is 36 at whole-percentage
     precision; rounding to one decimal first and then again produces 37.
+4.  **Pallmann et al. (2018) skips its ninth author and runs two words
+    of its title together.** A sweep of all 49 printed references
+    against Crossref drew three flags; two are Crossref matching an
+    entirely different work and this one is real. The entry’s ninth and
+    tenth names are the article’s tenth and eleventh authors, Lang’o
+    Odondi having been dropped, and the title prints “Why UseThem”
+    without the space.
 
 ## Two findings that do not belong in an errata
 
@@ -482,12 +490,12 @@ checksums the archive records are one claim rather than two.
 
 | Script                                       | Minutes |
 |:---------------------------------------------|:--------|
-| maintained/text_study2_f_tests.R             | 3.9     |
-| ground_truth/extract_archive_values.R        | 3.3     |
+| maintained/text_study2_f_tests.R             | 3.7     |
+| ground_truth/extract_archive_values.R        | 3.1     |
 | maintained/study3_probabilities.R            | 2.2     |
 | maintained/study2_probabilities.R            | 2.1     |
 | maintained/figure_f8_simulated_comparisons.R | 1.2     |
-| maintained/text_study1_f_tests.R             | 1.1     |
+| maintained/text_study1_f_tests.R             | 1.0     |
 | maintained/text_study2_batched_ols.R         | 0.2     |
 | maintained/simulations_illustrative.R        | 0.0     |
 

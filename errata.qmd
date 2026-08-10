@@ -127,7 +127,29 @@ entries <- tribble(
     "{format(mw_static$iterations, big.mark = ',')} static runs, which is ",
     "{fmt(100 * mw_static$correct_static, 0)} per cent at the whole-percentage precision ",
     "the sentence uses. Rounding to one decimal first gives 36.5, and rounding that again ",
-    "gives 37. The other three shares in the same passage round correctly.")
+    "gives 37. The other three shares in the same passage round correctly."),
+
+  4, "bibliographic", "reference_audit", "brief",
+  "Pallmann et al. (2018) skips its ninth author and runs two words of its title together",
+  "published p. 844",
+  paste(
+    "Pallmann, Philip, Alun W. Bedding, Babak Choodari-Oskooei, Munyaradzi Dimairo, Laura ",
+    "Flight, Lisa V. Hampson, Jane Holmes, Adrian P. Mander, Matthew R. Sydes, Sofía S. ",
+    "Villar, et al. 2018. \"Adaptive Designs in Clinical Trials: Why [[UseThem]], and How ",
+    "to Run and Report Them.\" BMC Medicine 16(1): 29."),
+  paste(
+    "Pallmann, Philip, Alun W. Bedding, Babak Choodari-Oskooei, Munyaradzi Dimairo, Laura ",
+    "Flight, Lisa V. Hampson, Jane Holmes, Adrian P. Mander, [[Lang'o Odondi]], Matthew R. ",
+    "Sydes, Sofía S. Villar, et al. 2018. \"Adaptive Designs in Clinical Trials: Why [[Use ",
+    "Them]], and How to Run and Report Them.\" BMC Medicine 16(1): 29."),
+  paste(
+    "Two defects in one entry. The names it prints ninth and tenth are the article's tenth",
+    "and eleventh authors: Lang'o Odondi is skipped, so the entry is not the first ten",
+    "authors of anything. Crossref, doi 10.1186/s12916-018-1017-7: Pallmann, Bedding,",
+    "Choodari-Oskooei, Dimairo, Flight, Hampson, Holmes, Mander, Odondi, Sydes, Villar,",
+    "Wason, Weir, Wheeler, Yap, Jaki. The insertion is marked on the corrected side only,",
+    "since no span of the published list is wrong in itself. The title's \"Use Them\" is set",
+    "without its space, which the rendered page confirms rather than the text extraction.")
 ) |>
   mutate(across(c(title, published, corrected, note), as.character))
 
@@ -137,7 +159,7 @@ stopifnot(nrow(entries) == max(entries$entry), !anyDuplicated(entries$entry))
 bold <- function(x) str_replace_all(x, "\\[\\[(.*?)\\]\\]", "**\\1**")
 ```
 
-`r count_word(nrow(entries))` sentences in Offer-Westort, Coppock, and Green (2021), *American Journal of Political Science* 65(4): 826–844, [doi:10.1111/ajps.12597](https://doi.org/10.1111/ajps.12597), state a number or a treatment label that the study's own data do not support. Each is a misstatement in the prose. No conclusion in the article changes, and every figure and table it reports is correct as printed. The corrected values below are computed from a maintained reproduction of the analysis, held at `active-maintenance-aec/offer-westort_coppock_green_2021`, which reproduces all 913 of the article's published table and figure values.
+`r count_word(nrow(entries))` corrections to Offer-Westort, Coppock, and Green (2021), *American Journal of Political Science* 65(4): 826–844, [doi:10.1111/ajps.12597](https://doi.org/10.1111/ajps.12597). `r count_word(sum(entries$class != "bibliographic"))` are sentences stating a number or a treatment label that the study's own data do not support, and `r tolower(count_word(sum(entries$class == "bibliographic")))` is a reference-list entry. No conclusion in the article changes, and every figure and table it reports is correct as printed. The corrected values in entries 1 to `r max(entries$entry[entries$class != "bibliographic"])` are computed from a maintained reproduction of the analysis, held at `active-maintenance-aec/offer-westort_coppock_green_2021`, which reproduces all 913 of the article's published table and figure values; the reference-list entry is verified against the authoritative record at Crossref, named in the entry.
 
 Changed tokens are shown in bold on both sides. Where a sentence contains other quantities, those are reprinted unchanged.
 
