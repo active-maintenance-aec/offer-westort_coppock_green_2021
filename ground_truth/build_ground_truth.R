@@ -510,6 +510,27 @@ ground_truth <- ground_truth |>
          value_script, value_paper, match, value_rewrite, match_rewrite, holds,
          defect_locus, notes)
 
+# Errata spine gate ----
+# errata.qmd names, for each published entry, the ground truth rows that entry corrects. An
+# id that no longer exists is a typo or a renamed claim, and a dangling reference in a
+# document whose whole purpose is correcting the record is worse than a build that refuses.
+errata_path <- here::here("errata_entries.csv")
+if (file.exists(errata_path)) {
+  errata_ids <- read_csv(errata_path, show_col_types = FALSE) |>
+    pull(claim_ids) |>
+    str_split(";") |>
+    unlist() |>
+    str_trim()
+  errata_ids <- errata_ids[!is.na(errata_ids) & errata_ids != ""]
+  dangling_errata_ids <- setdiff(errata_ids, ground_truth$claim_id)
+  if (length(dangling_errata_ids) > 0) {
+    stop("errata_entries.csv lists claim ids absent from the ground truth: ",
+         paste(dangling_errata_ids, collapse = ", "))
+  }
+  print(str_glue("Errata spine: {length(unique(errata_ids))} distinct claim ids listed, ",
+                 "all present in the ground truth."))
+}
+
 write_csv(ground_truth,
           here::here("ground_truth", "offer-westort_coppock_green_2021_ground_truth.csv"))
 

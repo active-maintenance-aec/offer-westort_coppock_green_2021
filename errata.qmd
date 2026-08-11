@@ -71,8 +71,14 @@ count_word <- function(n) {
 #
 # Every corrected value is computed here, at render time, from the maintained pipeline's
 # output. None of them is typed.
+# `claim_ids` names the ground truth rows the entry corrects, semicolon separated, and it is
+# what makes "has this finding been published?" a query over the corpus rather than a reading
+# of every note. It is empty where the entry has no ground truth row: a reference list is not
+# an extraction claim. A row an entry discusses but declines to correct is not listed, which
+# is why entry 2 does not carry s2_rep_static_p. Every id listed here is checked against the
+# ground truth by ground_truth/build_ground_truth.R, which refuses to finish on a dangling one.
 entries <- tribble(
-  ~entry, ~class, ~source, ~form, ~title, ~location, ~published, ~corrected, ~note,
+  ~entry, ~class, ~source, ~form, ~title, ~location, ~published, ~corrected, ~note, ~claim_ids,
 
   1, "quantity", "pipeline", "full",
   "The estimated mean of the leading minimum wage arm",
@@ -91,6 +97,7 @@ entries <- tribble(
     "{fmt(mw_p3y$posterior_prob, 3)} probability of being best. Figures 3 and 4 label the ",
     "two versions of each minimum wage proposal \"(Y)\" and \"(N)\", so the \"B\" in the ",
     "parenthesis is also an \"N\"."),
+  "s1_mw_top_mean",
 
   2, "label", "pipeline", "full",
   "The arm carrying the 4.1-point Republican effect",
@@ -111,6 +118,7 @@ entries <- tribble(
     "identify the Lottery as the arm in question. The static-design p-value of 0.152 is ",
     "left as printed: it comes from a bootstrap the deposited materials do not seed ",
     "reproducibly, and the reproduction cannot recompute it."),
+  "s2_rep_4pt_arm",
 
   3, "quantity", "pipeline", "full",
   "The share of static minimum wage simulations picking the best proposal",
@@ -128,6 +136,7 @@ entries <- tribble(
     "{fmt(100 * mw_static$correct_static, 0)} per cent at the whole-percentage precision ",
     "the sentence uses. Rounding to one decimal first gives 36.5, and rounding that again ",
     "gives 37. The other three shares in the same passage round correctly."),
+  "s1_mw_correct_static",
 
   4, "bibliographic", "reference_audit", "brief",
   "Pallmann et al. (2018) skips its ninth author and runs two words of its title together",
@@ -149,9 +158,10 @@ entries <- tribble(
     "Choodari-Oskooei, Dimairo, Flight, Hampson, Holmes, Mander, Odondi, Sydes, Villar,",
     "Wason, Weir, Wheeler, Yap, Jaki. The insertion is marked on the corrected side only,",
     "since no span of the published list is wrong in itself. The title's \"Use Them\" is set",
-    "without its space, which the rendered page confirms rather than the text extraction.")
+    "without its space, which the rendered page confirms rather than the text extraction."),
+  ""
 ) |>
-  mutate(across(c(title, published, corrected, note), as.character))
+  mutate(across(c(title, published, corrected, note, claim_ids), as.character))
 
 stopifnot(nrow(entries) == max(entries$entry), !anyDuplicated(entries$entry))
 
