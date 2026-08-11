@@ -41,6 +41,14 @@ accuracy <- republican_ipw |> filter(term == "Accuracy")
 
 mw_static <- static_simulations |> filter(topic == "Minimum wage")
 
+# The randomization inference tests, from the variant that reproduces the deposit's own
+# procedure rather than the one correcting its augmented arm, so the entry below isolates
+# the transposition from every other difference.
+study2_f_tests <- out("text_study2_f_tests.csv") |>
+  filter(augmented_arm == "position 3 (deposit)")
+ri_rep <- study2_f_tests |> filter(party == "Republicans")
+ri_dem <- study2_f_tests |> filter(party == "Democrats")
+
 fmt <- function(x, digits) sprintf(paste0("%.", digits, "f"), x)
 
 count_word <- function(n) {
@@ -61,9 +69,11 @@ count_word <- function(n) {
 # here, \was{} in an edition. Nothing else in a published or corrected field is markup, so
 # either renderer can set the same string.
 #
-# Numbering is the published note's and is APPEND-ONLY: an entry can already have been cited
-# by its number, so a later finding is added at the end and never interleaved, renumbered,
-# merged or split.
+# Numbering orders entries by kind and by severity, and MAY be changed. Append-only was the
+# earlier rule, on the theory that a published entry number could already have been cited;
+# reversed 2026-08-10, since these notes are not so widely circulated that a renumber costs
+# anything. Discover first, order last. A renumber may change `entry`; it must never change
+# which claim_ids an entry claims.
 #
 # `form` is a renderer's choice of macro for the entry: "full" where the published and
 # corrected fields are whole sentences that need setting as blocks, "brief" where the entry
@@ -74,9 +84,13 @@ count_word <- function(n) {
 # `claim_ids` names the ground truth rows the entry corrects, semicolon separated, and it is
 # what makes "has this finding been published?" a query over the corpus rather than a reading
 # of every note. It is empty where the entry has no ground truth row: a reference list is not
-# an extraction claim. A row an entry discusses but declines to correct is not listed, which
-# is why entry 2 does not carry s2_rep_static_p. Every id listed here is checked against the
-# ground truth by ground_truth/build_ground_truth.R, which refuses to finish on a dangling one.
+# an extraction claim. It names every row the entry ADDRESSES, including one it explains and
+# declines to correct, which is why entry 2 carries s2_rep_static_p as well as s2_rep_4pt_arm.
+# The earlier rule listed only corrected rows; that made a finding which had been published in
+# full read as unpublished, which is the opposite of what the column is for. Whether a row was
+# corrected or only explained is visible from the [[...]] spans and the note. Every id listed
+# here is checked against the ground truth by ground_truth/build_ground_truth.R, which refuses
+# to finish on a dangling one.
 entries <- tribble(
   ~entry, ~class, ~source, ~form, ~title, ~location, ~published, ~corrected, ~note, ~claim_ids,
 
@@ -118,7 +132,7 @@ entries <- tribble(
     "identify the Lottery as the arm in question. The static-design p-value of 0.152 is ",
     "left as printed: it comes from a bootstrap the deposited materials do not seed ",
     "reproducibly, and the reproduction cannot recompute it."),
-  "s2_rep_4pt_arm",
+  "s2_rep_4pt_arm;s2_rep_static_p",
 
   3, "quantity", "pipeline", "full",
   "The share of static minimum wage simulations picking the best proposal",
@@ -138,7 +152,35 @@ entries <- tribble(
     "gives 37. The other three shares in the same passage round correctly."),
   "s1_mw_correct_static",
 
-  4, "bibliographic", "reference_audit", "brief",
+  4, "quantity", "pipeline", "full",
+  "The two randomization inference p-values are transposed",
+  "published p. 840; published p. 841",
+  paste(
+    "Using randomization inference, we reject the null of no difference across treatments (p = [[0.028]]).",
+    "Using randomization inference, we again reject the null (p = [[0.013]]).",
+    sep = "\n\n"),
+  str_glue(
+    "Using randomization inference, we reject the null of no difference across treatments ",
+    "(p = [[{fmt(ri_rep$p_value, 3)}]]).",
+    "\n\n",
+    "Using randomization inference, we again reject the null (p = [[{fmt(ri_dem$p_value, 3)}]])."),
+  str_glue(
+    "The first sentence is about the Republican trial and the second about the Democratic ",
+    "one. Run on the deposited data, the deposit's own script returns the published pair with ",
+    "the parties exchanged: 0.013 for the Republicans and 0.028 for the Democrats. The ",
+    "observed F statistics settle which way round it belongs: ",
+    "the Republican F is {fmt(ri_rep$f_statistic, 2)} against the Democratic ",
+    "{fmt(ri_dem$f_statistic, 2)}, and the larger F takes the smaller p-value, so the smaller ",
+    "of the two p-values is the Republicans'. Both nulls are still rejected at conventional ",
+    "levels and no conclusion changes; only the two numbers swap places.",
+    "\n\n",
+    "The corrected values are this reproduction's own, from a seeded run of the deposited ",
+    "procedure at {format(ri_rep$iterations, big.mark = ',')} iterations. They differ in the ",
+    "third decimal from the deposit's unseeded run, which is the sampling variation the ",
+    "procedure carries."),
+  "s2_rep_ri_p;s2_dem_ri_p",
+
+  5, "bibliographic", "reference_audit", "brief",
   "Pallmann et al. (2018) skips its ninth author and runs two words of its title together",
   "published p. 844",
   paste(
@@ -178,12 +220,22 @@ Changed tokens are shown in bold on both sides. Where a sentence contains other 
 #| results: asis
 # A heading is only a heading when a blank line precedes it: emitted straight after the
 # previous entry's note, "## 2." lands in the page as literal text.
+# An entry quoting more than one passage carries them separated by a blank line, with one
+# location per passage; each pair is emitted as its own quote so a blockquote never has to
+# span a paragraph break.
 walk(seq_len(nrow(entries)), function(i) {
   e <- entries[i, ]
-  cat("\n\n## ", e$entry, ". ", e$title,
-      "\n\n> ", bold(e$published), " (", str_remove(e$location, "^published "), ")",
-      "\n\n*Corrected:* ", bold(e$corrected),
-      "\n\n", e$note, "\n", sep = "")
+  published_passages <- str_split_1(e$published, "\n\n")
+  corrected_passages <- str_split_1(e$corrected, "\n\n")
+  pages <- str_remove(str_split_1(e$location, "; "), "^published ")
+  stopifnot(length(published_passages) == length(corrected_passages),
+            length(pages) == length(published_passages))
+  cat("\n\n## ", e$entry, ". ", e$title, sep = "")
+  walk(seq_along(pages), function(j) {
+    cat("\n\n> ", bold(published_passages[j]), " (", pages[j], ")",
+        "\n\n*Corrected:* ", bold(corrected_passages[j]), sep = "")
+  })
+  cat("\n\n", e$note, "\n", sep = "")
 })
 ```
 
