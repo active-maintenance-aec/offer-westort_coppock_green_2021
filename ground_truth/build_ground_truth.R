@@ -613,12 +613,15 @@ claims_output <- capture.output(
   source(here::here("maintained", "in_text_claims.R"), local = new.env())
 )
 
+# The whole line has to match, not just its prefix: the claims file ends with two
+# CLAIM SUMMARY lines, which start with "CLAIM " and are not claims, and a prefix
+# filter counted them as two claims with no id.
 printed <- tibble(line = claims_output) |>
-  filter(str_starts(line, "CLAIM ")) |>
   mutate(
     claim_id = str_match(line, "^CLAIM ([^ ]+) = ")[, 2],
     printed_value = str_match(line, "^CLAIM [^ ]+ = ([^|]+) \\|\\|")[, 2] |> str_trim()
-  )
+  ) |>
+  filter(!is.na(claim_id))
 
 required <- published_claims |> filter(needs_block)
 
@@ -628,15 +631,30 @@ stopifnot(
   setequal(printed$claim_id, required$claim_id)
 )
 
-# Value by value, against the other instrument. A shared digits override is what
-# makes this a check rather than an identity: both files look the precision up in
-# published_claims.csv, so neither can name a different one.
+# The precision each claim is rendered at, read off the article's own statement and
+# off the correction where a quantity erratum publishes one. Entry 3 corrects a share
+# the article prints as 37% to 36.5%, so the article's nought decimals would put 36 on
+# a line whose whole purpose is to be laid beside a note saying 36.5. Both instruments
+# take the finer of the two, which is what keeps the comparison below a check rather
+# than a disagreement about rounding.
+correction_digits <- read_csv(errata_path, show_col_types = FALSE) |>
+  filter(class == "quantity", !is.na(corrected_values)) |>
+  transmute(claim_id = str_split(claim_ids, ";"),
+            corrected = str_split(as.character(corrected_values), ";")) |>
+  unnest(c(claim_id, corrected)) |>
+  transmute(claim_id = str_trim(claim_id),
+            corrected_digits = excheckr::claim_digits(str_trim(corrected)))
+
+# Value by value, against the other instrument. A shared precision rule is what makes
+# this a check rather than an identity: both files derive it from the same two
+# statements, so neither can name a different one.
 cross <- required |>
   select(claim_id, value_paper, digits, mode) |>
   join_one_to_one(printed |> select(claim_id, printed_value), by = "claim_id") |>
   join_one_to_one(ground_truth |> select(claim_id, value_rewrite), by = "claim_id") |>
+  left_join(correction_digits, by = "claim_id") |>
   mutate(
-    build_value = render(value_rewrite, digits),
+    build_value = render(value_rewrite, pmax(digits, coalesce(corrected_digits, digits))),
     exempt = coalesce(mode, "") == "approximate"
   )
 

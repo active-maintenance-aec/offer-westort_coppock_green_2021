@@ -91,8 +91,17 @@ count_word <- function(n) {
 # corrected or only explained is visible from the [[...]] spans and the note. Every id listed
 # here is checked against the ground truth by ground_truth/build_ground_truth.R, which refuses
 # to finish on a dangling one.
+#
+# `corrected_values` runs parallel to claim_ids, one value per id in the same order,
+# carrying the corrected quantity as a number rather than as a sentence. The sentence
+# already holds it, but only inside prose a reader has to parse. in_text_claims.R asserts
+# that the value it computes for a corrected claim is this one, which is the check that the
+# correction this note publishes is the correction the pipeline currently supports. Each
+# value comes from the same expression that glues the sentence, so the two cannot be written
+# apart, and the gate below re-checks that each one is still inside the span it belongs to.
+# An entry of a class that changes no quantity carries NA.
 entries <- tribble(
-  ~entry, ~class, ~source, ~form, ~title, ~location, ~published, ~corrected, ~note, ~claim_ids,
+  ~entry, ~class, ~source, ~form, ~title, ~location, ~published, ~corrected, ~note, ~claim_ids, ~corrected_values,
 
   1, "quantity", "pipeline", "full",
   "The estimated mean of the leading minimum wage arm",
@@ -112,6 +121,7 @@ entries <- tribble(
     "two versions of each minimum wage proposal \"(Y)\" and \"(N)\", so the \"B\" in the ",
     "parenthesis is also an \"N\"."),
   "s1_mw_top_mean",
+  fmt(mw_mean(mw_final$arm[1]), 3),
 
   2, "label", "pipeline", "full",
   "The arm carrying the 4.1-point Republican effect",
@@ -133,6 +143,7 @@ entries <- tribble(
     "left as printed: it comes from a bootstrap the deposited materials do not seed ",
     "reproducibly, and the reproduction cannot recompute it."),
   "s2_rep_4pt_arm;s2_rep_static_p",
+  NA_character_,
 
   3, "quantity", "pipeline", "full",
   "The share of static minimum wage simulations picking the best proposal",
@@ -151,6 +162,7 @@ entries <- tribble(
     "the sentence uses. Rounding to one decimal first gives 36.5, and rounding that again ",
     "gives 37. The other three shares in the same passage round correctly."),
   "s1_mw_correct_static",
+  str_c(fmt(100 * mw_static$correct_static, 1), "%"),
 
   4, "quantity", "pipeline", "full",
   "The two randomization inference p-values are transposed",
@@ -179,6 +191,7 @@ entries <- tribble(
     "third decimal from the deposit's unseeded run, which is the sampling variation the ",
     "procedure carries."),
   "s2_rep_ri_p;s2_dem_ri_p",
+  str_c(fmt(ri_rep$p_value, 3), ";", fmt(ri_dem$p_value, 3)),
 
   5, "bibliographic", "reference_audit", "brief",
   "Pallmann et al. (2018) skips its ninth author and runs two words of its title together",
@@ -201,11 +214,52 @@ entries <- tribble(
     "Wason, Weir, Wheeler, Yap, Jaki. The insertion is marked on the corrected side only,",
     "since no span of the published list is wrong in itself. The title's \"Use Them\" is set",
     "without its space, which the rendered page confirms rather than the text extraction."),
-  ""
+  "",
+  NA_character_
 ) |>
-  mutate(across(c(title, published, corrected, note, claim_ids), as.character))
+  mutate(across(c(title, published, corrected, note, claim_ids, corrected_values), as.character))
 
 stopifnot(nrow(entries) == max(entries$entry), !anyDuplicated(entries$entry))
+
+# Gate: corrected_values agrees with the sentence it was glued into ----
+# The column and the sentence are written from one expression, so they begin in agreement
+# and this gate exists for the edit that separates them: a value moved from one marked span
+# to another, a span reworded to carry a second number, a claim id appended without its
+# value. Each value has to be inside the span it belongs to, matched by position where the
+# counts line up.
+marked_spans <- function(x) str_match_all(x, "\\[\\[(.*?)\\]\\]")[[1]][, 2]
+
+quantified <- entries |>
+  filter(!is.na(corrected_values)) |>
+  mutate(ids = str_split(claim_ids, ";"), values = str_split(corrected_values, ";"),
+         spans = map(corrected, marked_spans))
+
+stopifnot(all(lengths(quantified$ids) == lengths(quantified$values)))
+
+# Entry 1 marks a label as well as a number, so its spans outnumber its values and the
+# pairing by position is not available. There the value is required to be inside some span
+# instead.
+value_placed <- pmap_lgl(quantified, function(...) {
+  e <- list(...)
+  if (length(e$values) == length(e$spans)) {
+    all(map2_lgl(e$values, e$spans, \(v, s) str_detect(s, fixed(v))))
+  } else {
+    all(map_lgl(e$values, \(v) any(map_lgl(e$spans, \(s) str_detect(s, fixed(v))))))
+  }
+})
+
+if (!all(value_placed)) {
+  print(quantified |> filter(!value_placed) |> select(entry, title, corrected_values, corrected))
+  stop("An entry's corrected_values are not in the spans of its corrected sentence.")
+}
+
+# An entry that changes a quantity has to say which one, and an entry that changes none may
+# not carry a value. The class is the declaration and this is where it binds.
+stopifnot(
+  all(!is.na(entries$corrected_values[entries$class == "quantity"])),
+  all(is.na(entries$corrected_values[entries$class != "quantity"])),
+  all(is.na(entries$corrected_values) | !is.na(entries$claim_ids))
+)
 
 # The spine's markup, resolved for this document. Another renderer resolves it differently.
 bold <- function(x) str_replace_all(x, "\\[\\[(.*?)\\]\\]", "**\\1**")

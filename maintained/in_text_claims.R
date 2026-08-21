@@ -13,26 +13,52 @@
 #   fails the gate rather than passing it silently.
 
 source(here::here("maintained", "helpers.R"))
+library(excheckr)
 
 options(width = 200)
 
-extraction <- read_csv(
+published <- read_csv(
   here::here("ground_truth", "published_claims.csv"),
-  col_types = cols(value_paper = col_character(), .default = col_guess())
-)
+  col_types = cols(.default = col_character())
+) |>
+  # The extraction's mode column says which quantities cannot be compared at the
+  # precision the article prints them to, and it has said so since before this file
+  # existed: 22 draws from a bootstrap the deposit does not seed reproducibly, and two
+  # figures the sentence hedges. Until 2026-08-20 nothing read it and all 24 were
+  # compared anyway, so 18 of them stood as disagreements with the article that were
+  # never disagreements. The mapping is declared once, here, rather than at 24 call
+  # sites; every other claim is compared.
+  mutate(expect = recode_values(mode,
+                                from = c("unseeded", "approximate"),
+                                to = c("range", "derived"),
+                                default = "compare"))
 
-# Both instruments look the precision up here, so neither can name a different one.
-claim <- function(id, value) {
-  row <- extraction[extraction$claim_id == id, ]
-  stopifnot(nrow(row) == 1, length(value) == 1, !is.na(value))
-  zero <- sprintf(paste0("%.", row$digits, "f"), 0)
-  rendered <- sprintf(paste0("%.", row$digits, "f"), value)
-  # A difference of two nearly equal numbers can arrive as a negative zero, which
-  # prints with a minus sign the other instrument will not have.
-  if (rendered == str_c("-", zero)) rendered <- zero
-  cat("CLAIM ", id, " = ", rendered, " || ", row$quantity,
-      " [article: ", row$value_paper, "]\n", sep = "")
-}
+# The errata spine, one row per published entry. Every column is read as character
+# because the spine carries "0.011" and a reader left to guess returns 0.011 as a
+# double and loses the precision the comparison rests on. errata.qmd writes this
+# file and nothing else keeps a copy of it.
+errata <- read_csv(here::here("errata_entries.csv"),
+                   col_types = cols(.default = col_character()))
+
+# The scoring machinery comes from excheckr, which carries the verdict ladder, the
+# typography parser and the printed form this file used to define for itself. What is
+# passed here is what the package cannot know: the extraction, the errata spine, the
+# column the prose descriptions live in, and the shape of the printed line.
+# format = "id" is the CLAIM <id> = <value> || [verdict] <label> line
+# ground_truth/build_ground_truth.R parses, and it must stay exactly that.
+#
+# The expectation is derived, never typed at a call site, so every claim() call names a
+# number and nothing else: published_claims.csv says what the article prints and
+# errata_entries.csv says which of those a published note corrects and to what. Entry 2
+# is of class label, so it corrects a word and leaves its two claims expected to
+# reproduce; only the three quantity entries move an expectation.
+#
+# The precision is no longer named twice. It used to come from the extraction's digits
+# column; measured on 2026-08-20, claim_digits() reproduces all 293 of this file's
+# declared digits from the typography of value_paper alone, so the column was recording
+# what the article's own statement already said.
+claim_start(published = published, errata = errata, format = "id",
+            label_column = "quantity", expect_column = "expect")
 
 read_out <- function(file) read_csv(file.path(out_dir, file), show_col_types = FALSE)
 
@@ -413,3 +439,28 @@ print_face(figure_6, "figure_6_", c("type", "Estimates", "term"))
 print_face(filter(figure_f6, term != "Control mean"), "figure_f6_", c("type", "term"))
 print_face(figure_f7, "figure_f7_", c("Estimates", "term"))
 print_face(figure_f8, "figure_f8_", c("type", "Estimates", "term"))
+
+# Gates ----
+# The verdicts above are assertions only if something reads them. assert_claims() is
+# what reads them, and the four checks it runs are together the property this file
+# exists to hold: every quantity the article prints is either reproduced here or
+# corrected by a published erratum, and nothing is quietly in neither state.
+#
+#   1. No claim ended on a failing verdict (MISMATCH, STALE, DRIFT or MISSING).
+#   2. Every claim a quantity erratum names was printed, and printed as corrected. An
+#      entry naming a claim this file does not cover is a correction nothing checks.
+#   3. The claims printed are exactly those the extraction declares need a block, which
+#      is the one gate a failing verdict cannot substitute for: a claim that is never
+#      printed has no verdict to fail.
+#   4. The verdict counts partition the claims, so an exemption cannot fall out of the
+#      accounting unnoticed.
+#
+# A DRIFT has two causes and they are fixed in opposite directions: the pipeline has
+# moved off the value the note publishes, or errata.qmd has not been re-rendered since
+# it last moved. Re-render before investigating.
+assert_claims()
+
+# The exemptions are counted, never merely allowed. A claim scored [range], [derived] or
+# [hedged] is one this file declines to assert, and a file that let that set grow in
+# silence would report the same clean run whether it checked every claim or none.
+invisible(claim_summary())
