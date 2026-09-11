@@ -5,6 +5,22 @@ format:
     output-file: offer-westort_coppock_green_2021_errata.pdf
     geometry: margin=1in
     fontsize: 11pt
+    include-in-header:
+      text: |
+        % The mark for a span that is wholly mathematical. See mark() below.
+        %
+        % Quarto renders this note with LuaLaTeX, where the template loads
+        % unicode-math and NO BOLD MATH VERSION EXISTS: \mathversion{bold} is
+        % then silently a no-op, and the mark disappears instead of looking
+        % wrong, which is the worse failure. Declaring one needs the normal
+        % version declared with it. Setting only the bold version leaves the
+        % normal one unassigned and the document loses its Greek letters, its
+        % hats and its tildes, everywhere, not only inside a mark.
+        \ifdefined\setmathfont
+          \setmathfont{latinmodern-math.otf}
+          \setmathfont{latinmodern-math.otf}[version=bold, FakeBold=2.5]
+        \fi
+        \newcommand{\mathmark}[1]{{\mathversion{bold}#1}}
 ---
 
 ```{r}
@@ -551,17 +567,25 @@ if (nrow(marker_misplaced) > 0) {
 
 # The spine's markup, resolved for this document. Another renderer resolves it differently.
 #
-# A span is bolded, EXCEPT one that is wholly inline math, which is underlined instead.
-# \textbf does not reach inside math mode, so bolding "$\alpha_{1,t}$" changes nothing a
-# reader can see, and entry 11's two sides then differ only in a subscript with no mark on
-# it: the correction would be invisible in the document whose job is showing it. Underlining
-# survives the switch into math. The two markers mean one thing, "this is what changed".
+# A span is bolded, and a span that is wholly inline math is bolded too, by the bold math
+# version rather than by \textbf. \textbf does not reach inside math mode, so bolding
+# "$\alpha_{1,t}$" changes nothing a reader can see, and entry 11's two sides would then
+# differ only in a subscript with no mark on it: the correction would be invisible in the
+# document whose job is showing it.
+#
+# It was \underline until 2026-09-10, which was legible and looked wrong. TeX sets the rule
+# below the box's full DEPTH, so on entry 11 it cleared the integral's lower limit by sitting
+# a long way under everything else, and on entry 8 it ran hard against the descenders of
+# \left[ ... \right]. A rule whose distance from the expression is set by the lowest thing
+# in it cannot look right on both. \mathversion{bold} switches the whole formula, \left,
+# \operatorname and large operators included, where \bm chokes on all three, and it leaves
+# the two markers meaning one thing: "this is what changed".
 mark <- function(x) {
   if (is.na(x)) return(x)
   str_replace_all(x, "\\[\\[(.*?)\\]\\]", function(matched) {
     span <- str_match(matched, "\\[\\[(.*?)\\]\\]")[, 2]
     if_else(str_detect(span, "^\\$.*\\$$"),
-            str_c("\\underline{", span, "}"),
+            str_c("\\mathmark{", span, "}"),
             str_c("**", span, "**"))
   })
 }
@@ -573,7 +597,7 @@ The corrected values in entries 1 to `r max(entries$entry[entries$class == "quan
 
 The supporting information entries come from a reading of sections B.2, B.3, C.1, C.2 and C.3 against the authors' own source, whose compiled PDF is byte-identical to the published appendix. They are of a different kind from the first `r tolower(count_word(n_article + n_bibliographic))`, because none of them changes a quantity: every numeric claim in those five sections was recomputed independently and all of them reproduce, including both columns of all twelve rows of Table C.1. What is left is notation, one word, two dropped or transposed characters, one variance term, and one number that is right and is asked to demonstrate something it does not. Their page numbers are the appendix's own, which is separately paginated 1 to 49.
 
-Changed tokens are shown in bold on both sides, and a changed expression is underlined instead, because bold does not reach inside mathematics. Where a sentence contains other quantities, those are reprinted unchanged. `r count_word(sum(entries$form == "note")) |> tolower()` entry, `r str_flatten_comma(entries$entry[entries$form == "note"])`, quotes a passage and proposes no change to it; its note says why.
+Changed tokens are shown in bold on both sides, and a changed expression is set in bold mathematics, which is the same mark made the way mathematics can carry it. Where a sentence contains other quantities, those are reprinted unchanged. `r count_word(sum(entries$form == "note")) |> tolower()` entry, `r str_flatten_comma(entries$entry[entries$form == "note"])`, quotes a passage and proposes no change to it; its note says why.
 
 ```{r}
 #| label: render-entries
