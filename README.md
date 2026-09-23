@@ -11,6 +11,7 @@
   - [Whether it runs](#whether-it-runs)
   - [Whether the numbers reproduce](#whether-the-numbers-reproduce)
 - [Errata](#errata)
+  - [The supporting information](#the-supporting-information)
   - [Two findings that do not belong in an
     errata](#two-findings-that-do-not-belong-in-an-errata)
 - [The ground truth](#the-ground-truth)
@@ -204,11 +205,12 @@ article.
 
 # Errata
 
-Three sentences in the article state a number or a treatment label the
-data do not support, and one reference-list entry is wrong in two ways
-the deposit cannot speak to. Every figure and table is correct as
-printed, and no conclusion changes. All four are set out in
-`errata.qmd`, which renders to
+Four sentences in the article state a number or a treatment label the
+data do not support, one reference-list entry is wrong in two ways the
+deposit cannot speak to, and eight defects are in the supporting
+information’s proofs and worked examples. Every figure and table is
+correct as printed, and no conclusion in either document changes. All 13
+are set out in `errata.qmd`, which renders to
 `offer-westort_coppock_green_2021_errata.pdf` with its corrected values
 computed at render time and writes `errata_entries.csv`, the spine this
 section counts and numbers from.
@@ -235,6 +237,65 @@ section counts and numbers from.
     tenth names are the article’s tenth and eleventh authors, Lang’o
     Odondi having been dropped, and the title prints “Why UseThem”
     without the space.
+
+## The supporting information
+
+Entries 6 to 13 come from a different kind of check from everything
+above: a reading of appendix sections B.2, B.3, C.1, C.2 and C.3 for
+soundness, against the authors’ own source, whose compiled PDF is
+byte-identical to the published appendix. The gate a remastered edition
+runs compares two pictures of a display and the reproduction never
+reaches a derivation at all, so a proof could be wrong in every line and
+pass both.
+
+Nothing in those five sections is wrong in a way that changes a result,
+and **none of the eight entries changes a quantity**. Every numeric
+claim in them was recomputed independently and all of them reproduce:
+both columns of all twelve rows of Table C.1, the 0.458 and the 0.708 of
+C.2, and C.3’s posteriors, its 0.929 and 0.713, and both periods’
+sampling probabilities. So does C.1’s conjugacy, B.3’s square-root
+allocation rule, and its comparison against the static design at
+$1/(K+1)$.
+
+What the reading found instead was six defects of notation and wording,
+one missing term, and one number doing a job it cannot do.
+
+- **B.2 warrants its central step with the wrong random variable.** The
+  factorisation is justified “because
+  $Y_i \perp\!\!\!\perp K_i \mid S_i$”, which is false: the realized
+  outcome is a deterministic function of the assignment. The condition
+  the proof needs, and states correctly elsewhere, is independence of
+  the *potential* outcome. The step is valid; its stated warrant is not.
+- **B.3’s variance display drops the covariance between its two terms.**
+  $\hat\tau_k^{HT}$ is a difference of two Horvitz-Thompson means whose
+  indicators are mutually exclusive, so a positive term is missing. It
+  is free of the assignment probabilities, so neither conclusion the
+  section draws from the display moves.
+- **The same display conditions on one unit’s history while summing over
+  all of them.** The sum-of-variances structure is right for the
+  unconditional variance, by a martingale-difference argument the
+  section’s own constant-means assumption supports, but that is not the
+  argument printed.
+- **“The product of two binomials is also a binomial”** is false for
+  $n > 1$. The Bernoulli case actually used is fine and the display that
+  follows is correct.
+- **“ams” for “arms.”**
+- **C.2’s inner integral gives arm two’s density arm one’s parameters.**
+  The line below it substitutes arm two’s correctly, so the defect is
+  confined to the general display and the $5/6$ is right.
+- **C.2’s expected best-arm sample mean is offered as a bias that
+  adaptive assignment introduces, and it is not.** This is the only
+  finding of the eight that touches meaning.
+  $\mathrm{E}[\hat\theta_k] = 0.458$ against a truth of 0.5 is the
+  adaptive bias and the static counterfactual is exactly 0.5, so that
+  number earns its place. $\mathrm{E}[\hat\theta_{\max}] = 0.708$ is the
+  winner’s curse, which is present under any design, and the static
+  counterfactual is **0.750**: higher than the adaptive figure, not
+  lower. Nothing is corrected on the page, because the sentence states a
+  true number and what is wrong is the inference it invites; the entry
+  stands as a note.
+- **C.3 reverses the subscripts** on the control condition’s period-two
+  sampling probability.
 
 ## Two findings that do not belong in an errata
 
@@ -513,7 +574,7 @@ analysis.
 |:-------------|:--------|
 | R            | 4.6.0   |
 | tidyverse    | 2.0.0   |
-| estimatr     | 1.0.6   |
+| estimatr     | 2.0.0   |
 | ggplot2      | 4.0.3   |
 | MCMCpack     | 1.7.1   |
 | bandit       | 0.5.1   |

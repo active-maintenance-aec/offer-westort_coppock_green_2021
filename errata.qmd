@@ -5,6 +5,22 @@ format:
     output-file: offer-westort_coppock_green_2021_errata.pdf
     geometry: margin=1in
     fontsize: 11pt
+    include-in-header:
+      text: |
+        % The mark for a span that is wholly mathematical. See mark() below.
+        %
+        % Quarto renders this note with LuaLaTeX, where the template loads
+        % unicode-math and NO BOLD MATH VERSION EXISTS: \mathversion{bold} is
+        % then silently a no-op, and the mark disappears instead of looking
+        % wrong, which is the worse failure. Declaring one needs the normal
+        % version declared with it. Setting only the bold version leaves the
+        % normal one unassigned and the document loses its Greek letters, its
+        % hats and its tildes, everywhere, not only inside a mark.
+        \ifdefined\setmathfont
+          \setmathfont{latinmodern-math.otf}
+          \setmathfont{latinmodern-math.otf}[version=bold, FakeBold=2.5]
+        \fi
+        \newcommand{\mathmark}[1]{{\mathversion{bold}#1}}
 ---
 
 ```{r}
@@ -51,6 +67,48 @@ ri_dem <- study2_f_tests |> filter(party == "Democrats")
 
 fmt <- function(x, digits) sprintf(paste0("%.", digits, "f"), x)
 
+# The static counterfactual behind appendix entry 12 ----
+# Appendix C.2 offers E[max(theta_1, theta_2)] = 0.708 as evidence that adaptive assignment
+# biases estimation. The maximum of two noisy estimates exceeds their common mean under ANY
+# design, so the number only shows what the section says it shows if a non-adaptive design
+# gives something smaller. It does not. The comparison is computed here rather than typed,
+# from the example's own stated setup: two arms with true success rate 0.5, Beta(1,1) priors,
+# one forced observation per arm in period one, and one observation in period two assigned
+# with probability equal to the posterior probability that the arm is best.
+p_arm_one_best <- function(a1, b1, a2, b2) {
+  integrate(function(t) dbeta(t, a1, b1) * pbeta(t, a2, b2), 0, 1)$value
+}
+
+c2_example <- expand_grid(first_arm_one = 0:1, first_arm_two = 0:1,
+                          second_to_arm_one = c(TRUE, FALSE), second_outcome = 0:1) |>
+  mutate(
+    posterior_arm_one_best = map2_dbl(
+      first_arm_one, first_arm_two,
+      \(a, b) p_arm_one_best(a + 1, 2 - a, b + 1, 2 - b)),
+    assignment_prob = if_else(second_to_arm_one,
+                              posterior_arm_one_best, 1 - posterior_arm_one_best),
+    n_one = if_else(second_to_arm_one, 2, 1),
+    n_two = if_else(second_to_arm_one, 1, 2),
+    mean_one = (first_arm_one + if_else(second_to_arm_one, second_outcome, 0L)) / n_one,
+    mean_two = (first_arm_two + if_else(second_to_arm_one, 0L, second_outcome)) / n_two,
+    best_mean = pmax(mean_one, mean_two),
+    naive_mean = mean_one)
+
+c2_expectation <- function(assignment_prob, value) {
+  sum(0.25 * assignment_prob * 0.5 * value)
+}
+
+c2_best_adaptive <- c2_expectation(c2_example$assignment_prob, c2_example$best_mean)
+c2_best_static <- c2_expectation(0.5, c2_example$best_mean)
+c2_naive_adaptive <- c2_expectation(c2_example$assignment_prob, c2_example$naive_mean)
+c2_naive_static <- c2_expectation(0.5, c2_example$naive_mean)
+
+# The enumeration has to return the appendix's own two numbers before its counterfactual is
+# worth anything. If these stop matching, the setup above has drifted from the one C.2 states
+# and the entry below is describing a different example.
+stopifnot(abs(c2_best_adaptive - 0.708) < 0.0005,
+          abs(c2_naive_adaptive - 0.458) < 0.0005)
+
 count_word <- function(n) {
   words <- c("One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten")
   if (n <= length(words)) words[n] else as.character(n)
@@ -91,8 +149,17 @@ count_word <- function(n) {
 # corrected or only explained is visible from the [[...]] spans and the note. Every id listed
 # here is checked against the ground truth by ground_truth/build_ground_truth.R, which refuses
 # to finish on a dangling one.
+#
+# `corrected_values` runs parallel to claim_ids, one value per id in the same order,
+# carrying the corrected quantity as a number rather than as a sentence. The sentence
+# already holds it, but only inside prose a reader has to parse. in_text_claims.R asserts
+# that the value it computes for a corrected claim is this one, which is the check that the
+# correction this note publishes is the correction the pipeline currently supports. Each
+# value comes from the same expression that glues the sentence, so the two cannot be written
+# apart, and the gate below re-checks that each one is still inside the span it belongs to.
+# An entry of a class that changes no quantity carries NA.
 entries <- tribble(
-  ~entry, ~class, ~source, ~form, ~title, ~location, ~published, ~corrected, ~note, ~claim_ids,
+  ~entry, ~class, ~source, ~form, ~title, ~location, ~published, ~corrected, ~note, ~claim_ids, ~corrected_values,
 
   1, "quantity", "pipeline", "full",
   "The estimated mean of the leading minimum wage arm",
@@ -112,6 +179,7 @@ entries <- tribble(
     "two versions of each minimum wage proposal \"(Y)\" and \"(N)\", so the \"B\" in the ",
     "parenthesis is also an \"N\"."),
   "s1_mw_top_mean",
+  fmt(mw_mean(mw_final$arm[1]), 3),
 
   2, "label", "pipeline", "full",
   "The arm carrying the 4.1-point Republican effect",
@@ -133,6 +201,7 @@ entries <- tribble(
     "left as printed: it comes from a bootstrap the deposited materials do not seed ",
     "reproducibly, and the reproduction cannot recompute it."),
   "s2_rep_4pt_arm;s2_rep_static_p",
+  NA_character_,
 
   3, "quantity", "pipeline", "full",
   "The share of static minimum wage simulations picking the best proposal",
@@ -151,6 +220,7 @@ entries <- tribble(
     "the sentence uses. Rounding to one decimal first gives 36.5, and rounding that again ",
     "gives 37. The other three shares in the same passage round correctly."),
   "s1_mw_correct_static",
+  str_c(fmt(100 * mw_static$correct_static, 1), "%"),
 
   4, "quantity", "pipeline", "full",
   "The two randomization inference p-values are transposed",
@@ -179,6 +249,7 @@ entries <- tribble(
     "third decimal from the deposit's unseeded run, which is the sampling variation the ",
     "procedure carries."),
   "s2_rep_ri_p;s2_dem_ri_p",
+  str_c(fmt(ri_rep$p_value, 3), ";", fmt(ri_dem$p_value, 3)),
 
   5, "bibliographic", "reference_audit", "brief",
   "Pallmann et al. (2018) skips its ninth author and runs two words of its title together",
@@ -201,19 +272,332 @@ entries <- tribble(
     "Wason, Weir, Wheeler, Yap, Jaki. The insertion is marked on the corrected side only,",
     "since no span of the published list is wrong in itself. The title's \"Use Them\" is set",
     "without its space, which the rendered page confirms rather than the text extraction."),
-  ""
+  "",
+  NA_character_,
+
+  # Appendix entries. These come from a reading of the supporting information's proofs and
+  # worked examples rather than from the pipeline, which is why their source is proof_audit
+  # and none of them carries a corrected value: not one of them changes a quantity. Every
+  # numeric claim in sections B.2, B.3, C.1, C.2 and C.3 was recomputed independently and all
+  # of them reproduce, so what is left is notation, wording, and one number that is right and
+  # is asked to demonstrate something it does not.
+  #
+  # Page numbers are the published appendix's own, which is separately paginated 1 to 49.
+
+  6, "notation", "proof_audit", "full",
+  "The independence that warrants the Horvitz-Thompson factorisation names the realized outcome",
+  "published appendix p. 8",
+  "And because [[$Y_i$]] $\\perp\\!\\!\\!\\perp K_i \\mid S_i$,",
+  "And because [[$Y_i(k)$]] $\\perp\\!\\!\\!\\perp K_i \\mid S_i$,",
+  paste(
+    "The realized outcome is $Y_i = \\sum_k \\mathbf{1}\\{K_i = k\\} Y_i(k)$, a deterministic",
+    "function of the assignment and the potential outcomes, so it is never independent of",
+    "$K_i$ given $S_i$ once treatment has an effect. The condition the proof needs is",
+    "independence of the *potential* outcome, $Y_i(k) \\perp\\!\\!\\!\\perp K_i \\mid S_i$, which",
+    "is what B.2 assumes two paragraphs earlier and what B.3 assumes again. The expression",
+    "being factored on this line already carries $Y_i(k)$ rather than $Y_i$, so the step is",
+    "valid and only its stated warrant is wrong. No other line of B.2 is affected and the",
+    "unbiasedness result stands."),
+  "",
+  NA_character_,
+
+  7, "derivation", "proof_audit", "full",
+  "The variance of the control-augmented estimator drops the covariance between its two terms",
+  "published appendix p. 10",
+  paste0(
+    "$\\operatorname{Var}\\left[\\hat\\tau_k^{HT} \\mid S_i\\right] = ",
+    "\\frac{1}{N^2} \\sum_{i=1}^N \\operatorname{Var}\\left[Y_i(k) ",
+    "\\frac{\\mathbf{1}\\{K_i = k\\}}{\\pi_i(k; S_i)} \\;\\middle|\\; S_i\\right] + ",
+    "\\frac{1}{N^2} \\sum_{i=1}^N \\operatorname{Var}\\left[Y_i(0) ",
+    "\\frac{\\mathbf{1}\\{K_i = 0\\}}{\\pi_i(0; S_i)} \\;\\middle|\\; S_i\\right]$"),
+  paste0(
+    "$\\operatorname{Var}\\left[\\hat\\tau_k^{HT} \\mid S_i\\right] = ",
+    "\\frac{1}{N^2} \\sum_{i=1}^N \\operatorname{Var}\\left[Y_i(k) ",
+    "\\frac{\\mathbf{1}\\{K_i = k\\}}{\\pi_i(k; S_i)} \\;\\middle|\\; S_i\\right] + ",
+    "\\frac{1}{N^2} \\sum_{i=1}^N \\operatorname{Var}\\left[Y_i(0) ",
+    "\\frac{\\mathbf{1}\\{K_i = 0\\}}{\\pi_i(0; S_i)} \\;\\middle|\\; S_i\\right]$ ",
+    "[[$+\\; \\frac{2}{N^2} \\sum_{i=1}^N \\Pr[Y_i(k) = 1] \\Pr[Y_i(0) = 1]$]]"),
+  paste(
+    "$\\hat\\tau_k^{HT}$ is a difference of two Horvitz-Thompson means, so its variance carries",
+    "$-2\\operatorname{Cov}$ and the display is a sum of two variances with nothing in that",
+    "place. The covariance does not vanish. Within a unit the two indicators are mutually",
+    "exclusive, so the product of the two terms is identically zero and their conditional",
+    "covariance is $-\\Pr[Y_i(k) = 1]\\Pr[Y_i(0) = 1]$, which enters the variance with the",
+    "opposite sign. The printed expression therefore understates the variance by the term",
+    "shown.",
+    "\n\n",
+    "**Neither conclusion drawn from the display moves.** The missing term is free of the",
+    "assignment probabilities, so it leaves the minimisation untouched: minimising",
+    "$\\Pr[Y_i(k) = 1]/\\pi_i(k; S_i) + \\Pr[Y_i(0) = 1]/\\pi_i(0; S_i)$ at fixed total",
+    "probability still gives probabilities proportional to the square roots of the success",
+    "rates, and the comparison against the static design at $1/(K+1)$ still favours the",
+    "adaptive design for $K > 1$. Entry 8 corrects the same display's conditioning and the two",
+    "compose: the term added here is the one that survives into the unconditional variance",
+    "entry 8 states."),
+  "",
+  NA_character_,
+
+  8, "derivation", "proof_audit", "full",
+  "The variance display conditions on one unit's history while summing over all of them",
+  "published appendix p. 10",
+  paste0(
+    "[[Conditional on history, the]] variance can be expressed as, ",
+    "[[$\\operatorname{Var}\\left[\\hat\\tau_k^{HT} \\mid S_i\\right]$]]$\\; = \\;$ ",
+    "$\\frac{1}{N^2} \\sum_{i=1}^N \\operatorname{Var}\\left[\\,\\cdot\\,\\middle|\\; S_i\\right] ",
+    "+ \\cdots$"),
+  paste0(
+    "[[Because the summands are a martingale difference sequence with respect to the ",
+    "history, the]] variance can be expressed as, ",
+    "[[$\\operatorname{Var}\\left[\\hat\\tau_k^{HT}\\right]$]]$\\; = \\;$ ",
+    "$\\frac{1}{N^2} \\sum_{i=1}^N \\mathrm{E}\\operatorname{Var}\\left[\\,\\cdot\\,\\middle|\\; S_i\\right] ",
+    "+ \\cdots$"),
+  paste(
+    "The index $i$ is free on the left of the printed equality and bound by the sum on the",
+    "right. Neither reading of the conditioning supports the display. Conditioning on one",
+    "unit's history cannot license summing per-unit variances, because under adaptive",
+    "assignment the units are dependent; conditioning on the whole history leaves only the",
+    "last unit random, and the sum collapses to a single term.",
+    "\n\n",
+    "**The sum-of-variances structure is nonetheless right, for the unconditional variance.**",
+    "Under the constant means the section assumes, $\\mathrm{E}$ of each summand given the",
+    "history is the constant $\\tau_k$, so the centred summands are a martingale difference",
+    "sequence and every cross-unit covariance is zero. What the section needs is that",
+    "argument rather than a conditioning bar. The right-hand side is abbreviated above",
+    "because entry 7 is what changes it; the two entries mark disjoint spans of one display",
+    "and are applied together."),
+  "",
+  NA_character_,
+
+  9, "wording", "proof_audit", "full",
+  "\"The product of two binomials is also a binomial\"",
+  "published appendix p. 10",
+  paste0(
+    "The $Y_i(k)$ and $\\mathbf{1}\\{K_i = k\\}$ terms are independent [[binomials]], and the ",
+    "product of two [[binomials]] is also a [[binomial]], and so we express the variance of ",
+    "their product accordingly."),
+  paste0(
+    "The $Y_i(k)$ and $\\mathbf{1}\\{K_i = k\\}$ terms are independent [[Bernoullis]], and the ",
+    "product of two [[Bernoullis]] is also a [[Bernoulli]], and so we express the variance of ",
+    "their product accordingly."),
+  paste(
+    "As a claim about the binomial distribution the sentence is false: the product of two",
+    "$\\text{Binomial}(n, p)$ variables with $n > 1$ is not binomial. It holds for the",
+    "Bernoulli case, which is the only one used here and the one the section's constant-means",
+    "assumption sets up, and the display that follows is correct. Writing",
+    "$p = \\Pr[Y_i(k) = 1 \\mid S_i]$ and $q = \\Pr[K_i = k \\mid S_i]$, the product is",
+    "$\\text{Bernoulli}(pq)$ with variance $pq(1 - pq)$, which is what is printed. Only the",
+    "word is wrong."),
+  "",
+  NA_character_,
+
+  10, "typographic", "proof_audit", "brief",
+  "\"ams\" for \"arms\"",
+  "published appendix p. 11",
+  paste0(
+    "They show regret as a function of the expected sum of assignments to suboptimal arms, ",
+    "multiplied by the difference between the best arm mean and the mean under [[ams]] ",
+    "$k \\neq k^{*}$."),
+  paste0(
+    "They show regret as a function of the expected sum of assignments to suboptimal arms, ",
+    "multiplied by the difference between the best arm mean and the mean under [[arms]] ",
+    "$k \\neq k^{*}$."),
+  paste(
+    "A dropped letter. The sentence is otherwise right, and so is the claim it leads to: the",
+    "expected number of plays of suboptimal arms under Thompson sampling grows as",
+    "$O(\\ln N)$ against $O(N)$, that being $N/(K+1)$, under a random design."),
+  "",
+  NA_character_,
+
+  11, "notation", "proof_audit", "full",
+  "Arm two's posterior density carries arm one's parameters",
+  "published appendix p. 14",
+  paste0(
+    "[[$\\int_{\\theta_2 = 0}^{\\theta_1} c_{2,t}\\, \\theta_2^{\\alpha_{1,t} - 1} ",
+    "(1 - \\theta_2)^{\\beta_{1,t} - 1} \\, d\\theta_2$]]"),
+  paste0(
+    "[[$\\int_{\\theta_2 = 0}^{\\theta_1} c_{2,t}\\, \\theta_2^{\\alpha_{2,t} - 1} ",
+    "(1 - \\theta_2)^{\\beta_{2,t} - 1} \\, d\\theta_2$]]"),
+  paste(
+    "The inner integral is arm two's posterior density. Its normalising constant $c_{2,t}$ is",
+    "indexed correctly and both exponents are not: they carry arm one's parameters.",
+    "\n\n",
+    "The line immediately below, which substitutes $t = 1$, uses arm two's parameters",
+    "correctly, $\\Gamma(3)/\\Gamma(1)\\Gamma(2)$ and $\\theta_2^{0}(1 - \\theta_2)^{1}$, which",
+    "is the $\\text{Beta}(1, 2)$ posterior the preceding paragraph derives for arm two. So the",
+    "defect is confined to the general display, and the $5/6$ the calculation evaluates to is",
+    "right."),
+  "",
+  NA_character_,
+
+  12, "interpretation", "proof_audit", "note",
+  "The expected best-arm sample mean is offered as a bias that adaptive assignment introduces",
+  "published appendix p. 16",
+  paste0(
+    "If we condition on the best observed arm, however, the expected sample mean of the best ",
+    "arm is 0.708, although the true parameter value for either arm is 0.5."),
+  NA_character_,
+  paste0(
+    "The number is right. Enumerating the example's sixteen paths returns ",
+    fmt(c2_best_adaptive, 3), ", and the two-period enumeration in Table C.1 reproduces in ",
+    "both of its columns. What the number cannot carry is the weight the section puts on it. ",
+    "C.2 exists to show that \"this preferential assignment probability conditional on ",
+    "observed success or failure introduces a source of bias into estimation\", and both ",
+    "figures in the enumeration are offered under that heading.",
+    "\n\n",
+    "The first one earns it. $\\mathrm{E}[\\hat\\theta_k] = ", fmt(c2_naive_adaptive, 3),
+    "$ against a truth of $0.5$ is exactly the bias the section is about, and a static ",
+    "50-50 design run through the same enumeration returns ", fmt(c2_naive_static, 3),
+    ", unbiased. The second one does not. The maximum of two noisy estimates exceeds their ",
+    "common mean under any design whatever, adaptive or not, and the same static 50-50 ",
+    "design returns ", fmt(c2_best_static, 3), " here: **higher** than the ",
+    fmt(c2_best_adaptive, 3), " the adaptive design produces. Read as the section invites, ",
+    "the figure points the wrong way, because more of the second period's probability goes ",
+    "to the arm that is currently ahead, and that arm's mean is the one a failure pulls down.",
+    "\n\n",
+    "Nothing is corrected on the page. The sentence states a true number and the defect is ",
+    "in what a reader is invited to conclude from it, which is not a thing an erratum can fix ",
+    "by replacing a token; rewriting the section's framing would be editing the authors' ",
+    "argument rather than correcting their record. The entry stands as a note so that the ",
+    "finding is on the record beside the sentence it concerns. Both comparisons above are ",
+    "computed at render time from the setup C.2 itself states, and the computation is held to ",
+    "reproducing the appendix's own 0.458 and 0.708 before its counterfactual is reported."),
+  "",
+  NA_character_,
+
+  13, "typographic", "proof_audit", "brief",
+  "Reversed subscripts on the control condition's period-two sampling probability",
+  "published appendix p. 18",
+  paste0(
+    "Suppose that in period two based on the sampling probabilities ",
+    "[[$(\\tilde p_{T1,2},\\ \\tilde p_{T2,2},\\ \\tilde p_{2,C})$]], from our period size of ",
+    "nine, we assign six observations to arm T1, one to arm T2, and two to the control."),
+  paste0(
+    "Suppose that in period two based on the sampling probabilities ",
+    "[[$(\\tilde p_{T1,2},\\ \\tilde p_{T2,2},\\ \\tilde p_{C,2})$]], from our period size of ",
+    "nine, we assign six observations to arm T1, one to arm T2, and two to the control."),
+  paste(
+    "The control condition's probability is set four lines above as $\\tilde p_{C,2}$ and is",
+    "written that way everywhere else in the section, arm first and period second, as it is",
+    "for both treatment arms in the same tuple. Only this one is reversed. Every number in",
+    "C.3 is right: the posteriors, the 0.929 and 0.713, the cumulative sample difference of",
+    "four, and both periods' probabilities, which sum to one."),
+  "",
+  NA_character_
 ) |>
-  mutate(across(c(title, published, corrected, note, claim_ids), as.character))
+  mutate(across(c(title, published, corrected, note, claim_ids, corrected_values), as.character))
 
 stopifnot(nrow(entries) == max(entries$entry), !anyDuplicated(entries$entry))
 
+# The counts the prose below reads. Derived from the spine's own columns, so an entry added
+# or reclassified moves every sentence that counts it. `source` is what separates the
+# appendix entries from the article's: they are the ones a reading found rather than the
+# pipeline.
+n_appendix <- sum(entries$source == "proof_audit")
+n_bibliographic <- sum(entries$class == "bibliographic")
+n_article <- nrow(entries) - n_appendix - n_bibliographic
+
+# Gate: corrected_values agrees with the sentence it was glued into ----
+# The column and the sentence are written from one expression, so they begin in agreement
+# and this gate exists for the edit that separates them: a value moved from one marked span
+# to another, a span reworded to carry a second number, a claim id appended without its
+# value. Each value has to be inside the span it belongs to, matched by position where the
+# counts line up.
+marked_spans <- function(x) str_match_all(x, "\\[\\[(.*?)\\]\\]")[[1]][, 2]
+
+quantified <- entries |>
+  filter(!is.na(corrected_values)) |>
+  mutate(ids = str_split(claim_ids, ";"), values = str_split(corrected_values, ";"),
+         spans = map(corrected, marked_spans))
+
+stopifnot(all(lengths(quantified$ids) == lengths(quantified$values)))
+
+# Entry 1 marks a label as well as a number, so its spans outnumber its values and the
+# pairing by position is not available. There the value is required to be inside some span
+# instead.
+value_placed <- pmap_lgl(quantified, function(...) {
+  e <- list(...)
+  if (length(e$values) == length(e$spans)) {
+    all(map2_lgl(e$values, e$spans, \(v, s) str_detect(s, fixed(v))))
+  } else {
+    all(map_lgl(e$values, \(v) any(map_lgl(e$spans, \(s) str_detect(s, fixed(v))))))
+  }
+})
+
+if (!all(value_placed)) {
+  print(quantified |> filter(!value_placed) |> select(entry, title, corrected_values, corrected))
+  stop("An entry's corrected_values are not in the spans of its corrected sentence.")
+}
+
+# An entry that changes a quantity has to say which one, and an entry that changes none may
+# not carry a value. The class is the declaration and this is where it binds.
+stopifnot(
+  all(!is.na(entries$corrected_values[entries$class == "quantity"])),
+  all(is.na(entries$corrected_values[entries$class != "quantity"])),
+  all(is.na(entries$corrected_values) | !is.na(entries$claim_ids))
+)
+
+# An entry may record a defect and deliberately leave the page alone, which is what
+# form == "note" declares: entry 12 states a true number and what is wrong with it is the
+# inference the section invites, so there is no token to replace and no corrected sentence to
+# set. The declaration and the missing corrected side have to agree, in both directions. A
+# note entry that acquired a corrected sentence would render a correction nobody authorised,
+# and a full entry that lost one would render "Corrected: NA".
+stopifnot(is.na(entries$corrected) == (entries$form == "note"))
+
+# Gate: no marked span opens inside inline math ----
+# A renderer resolves [[...]] to markup, and markup inside $...$ is set as literal characters:
+# "$[[Y_i]] \\perp K_i$" printed a pair of asterisks either side of the symbol rather than
+# bolding it, and the failure is invisible in the source because the marker is valid and the
+# math is valid. The marker has to sit OUTSIDE the math it marks, "[[$Y_i$]]", which also
+# makes the span a thing another renderer can wrap. Counting the dollars before each marker
+# is the whole test: an odd count means math is open.
+opens_inside_math <- function(x) {
+  if (is.na(x)) return(FALSE)
+  positions <- str_locate_all(x, fixed("[["))[[1]][, 1]
+  any(map_lgl(positions, \(i) str_count(str_sub(x, 1, i - 1), fixed("$")) %% 2 == 1))
+}
+
+marker_misplaced <- entries |>
+  filter(map_lgl(published, opens_inside_math) | map_lgl(corrected, opens_inside_math))
+
+if (nrow(marker_misplaced) > 0) {
+  print(marker_misplaced |> select(entry, title))
+  stop("A marked span opens inside inline math; move the [[ ]] outside the $ $.")
+}
+
 # The spine's markup, resolved for this document. Another renderer resolves it differently.
-bold <- function(x) str_replace_all(x, "\\[\\[(.*?)\\]\\]", "**\\1**")
+#
+# A span is bolded, and a span that is wholly inline math is bolded too, by the bold math
+# version rather than by \textbf. \textbf does not reach inside math mode, so bolding
+# "$\alpha_{1,t}$" changes nothing a reader can see, and entry 11's two sides would then
+# differ only in a subscript with no mark on it: the correction would be invisible in the
+# document whose job is showing it.
+#
+# It was \underline until 2026-09-10, which was legible and looked wrong. TeX sets the rule
+# below the box's full DEPTH, so on entry 11 it cleared the integral's lower limit by sitting
+# a long way under everything else, and on entry 8 it ran hard against the descenders of
+# \left[ ... \right]. A rule whose distance from the expression is set by the lowest thing
+# in it cannot look right on both. \mathversion{bold} switches the whole formula, \left,
+# \operatorname and large operators included, where \bm chokes on all three, and it leaves
+# the two markers meaning one thing: "this is what changed".
+mark <- function(x) {
+  if (is.na(x)) return(x)
+  str_replace_all(x, "\\[\\[(.*?)\\]\\]", function(matched) {
+    span <- str_match(matched, "\\[\\[(.*?)\\]\\]")[, 2]
+    if_else(str_detect(span, "^\\$.*\\$$"),
+            str_c("\\mathmark{", span, "}"),
+            str_c("**", span, "**"))
+  })
+}
 ```
 
-`r count_word(nrow(entries))` corrections to Offer-Westort, Coppock, and Green (2021), *American Journal of Political Science* 65(4): 826–844, [doi:10.1111/ajps.12597](https://doi.org/10.1111/ajps.12597). `r count_word(sum(entries$class != "bibliographic"))` are sentences stating a number or a treatment label that the study's own data do not support, and `r tolower(count_word(sum(entries$class == "bibliographic")))` is a reference-list entry. No conclusion in the article changes, and every figure and table it reports is correct as printed. The corrected values in entries 1 to `r max(entries$entry[entries$class != "bibliographic"])` are computed from a maintained reproduction of the analysis, held at `active-maintenance-aec/offer-westort_coppock_green_2021`, which reproduces all 913 of the article's published table and figure values; the reference-list entry is verified against the authoritative record at Crossref, named in the entry.
+`r count_word(nrow(entries))` corrections to Offer-Westort, Coppock, and Green (2021), *American Journal of Political Science* 65(4): 826–844, [doi:10.1111/ajps.12597](https://doi.org/10.1111/ajps.12597). `r count_word(n_article)` are sentences in the article stating a number or a treatment label that the study's own data do not support, `r tolower(count_word(n_bibliographic))` is a reference-list entry, and `r tolower(count_word(n_appendix))` are in the supporting information. No conclusion in either document changes, no result in either is wrong, and every figure and table is correct as printed.
 
-Changed tokens are shown in bold on both sides. Where a sentence contains other quantities, those are reprinted unchanged.
+The corrected values in entries 1 to `r max(entries$entry[entries$class == "quantity"])` are computed from a maintained reproduction of the analysis, held at `active-maintenance-aec/offer-westort_coppock_green_2021`, which reproduces all 913 of the article's published table and figure values; the reference-list entry is verified against the authoritative record at Crossref, named in the entry.
+
+The supporting information entries come from a reading of sections B.2, B.3, C.1, C.2 and C.3 against the authors' own source, whose compiled PDF is byte-identical to the published appendix. They are of a different kind from the first `r tolower(count_word(n_article + n_bibliographic))`, because none of them changes a quantity: every numeric claim in those five sections was recomputed independently and all of them reproduce, including both columns of all twelve rows of Table C.1. What is left is notation, one word, two dropped or transposed characters, one variance term, and one number that is right and is asked to demonstrate something it does not. Their page numbers are the appendix's own, which is separately paginated 1 to 49.
+
+Changed tokens are shown in bold on both sides, and a changed expression is set in bold mathematics, which is the same mark made the way mathematics can carry it. Where a sentence contains other quantities, those are reprinted unchanged. `r count_word(sum(entries$form == "note")) |> tolower()` entry, `r str_flatten_comma(entries$entry[entries$form == "note"])`, quotes a passage and proposes no change to it; its note says why.
 
 ```{r}
 #| label: render-entries
@@ -226,14 +610,14 @@ Changed tokens are shown in bold on both sides. Where a sentence contains other 
 walk(seq_len(nrow(entries)), function(i) {
   e <- entries[i, ]
   published_passages <- str_split_1(e$published, "\n\n")
-  corrected_passages <- str_split_1(e$corrected, "\n\n")
+  corrected_passages <- if (e$form == "note") published_passages else str_split_1(e$corrected, "\n\n")
   pages <- str_remove(str_split_1(e$location, "; "), "^published ")
   stopifnot(length(published_passages) == length(corrected_passages),
             length(pages) == length(published_passages))
   cat("\n\n## ", e$entry, ". ", e$title, sep = "")
   walk(seq_along(pages), function(j) {
-    cat("\n\n> ", bold(published_passages[j]), " (", pages[j], ")",
-        "\n\n*Corrected:* ", bold(corrected_passages[j]), sep = "")
+    cat("\n\n> ", mark(published_passages[j]), " (", pages[j], ")", sep = "")
+    if (e$form != "note") cat("\n\n*Corrected:* ", mark(corrected_passages[j]), sep = "")
   })
   cat("\n\n", e$note, "\n", sep = "")
 })
