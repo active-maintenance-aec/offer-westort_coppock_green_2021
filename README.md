@@ -76,9 +76,9 @@ source("run_all.R")
 
 The first run downloads about 132 MB from the Dataverse, almost all of
 it two saved simulation objects. Later runs verify what is already on
-disk and download nothing. The whole pipeline took 13.6 minutes on the
+disk and download nothing. The whole pipeline took 10.3 minutes on the
 machine that produced the committed output,
-maintained/text_study2_f_tests.R alone accounting for 3.7 of them.
+ground_truth/extract_archive_values.R alone accounting for 2.3 of them.
 Timings are not comparable across machines.
 
 # The paper
@@ -310,7 +310,7 @@ correct and the labels are swapped. This stays out of the errata because
 a corrected sentence has to print a number, and the corrected numbers
 are simulation estimates of 1,000 draws each that the deposit and this
 reproduction do not agree on to the third decimal: the reproduction
-returns 0.027 where the deposit returns 0.028, and 0.011 where the
+returns 0.021 where the deposit returns 0.028, and 0.015 where the
 deposit returns 0.013. Both readings reject the null at conventional
 levels, so no conclusion turns on it.
 
@@ -326,7 +326,7 @@ error printed beside it on Figure F.8, 0.040 and 0.025, both reproduce.
 # The ground truth
 
 `ground_truth/offer-westort_coppock_green_2021_ground_truth.csv` has
-1052 rows. 981 carry a value comparison against the article and 977 of
+1052 rows. 981 carry a value comparison against the article and 975 of
 those agree at the precision the page prints. 29 more carry a truth
 value rather than a number, of which 27 hold. Nothing in the file is
 typed except the published values, which are read from the article and
@@ -336,20 +336,24 @@ the supplement; every other column is computed by
 | Claim | Article | Reproduction | Deposit | Locus |
 |:---|:---|:---|:---|:---|
 | Minimum wage leading arm’s estimated mean | 0.895 | 0.865 |  | paper_internal |
+| Minimum wage randomization inference F-test p-value | 0.429 | 0.417 | 0.417 | upstream |
+| Right-to-work randomization inference F-test p-value | 0.199 | 0.189 | 0.189 | upstream |
 | Share of simulated static minimum wage trials picking the best proposal, per cent | 37 | 36.460 |  | paper_internal |
-| Republican Lottery p-value, simulated static design | 0.152 | 0.117 |  | archive |
+| Republican Lottery p-value, simulated static design | 0.152 | 0.103 |  | archive |
 | The article names the 4.1-point Republican effect as the accuracy treatment’s | 1 | 0.000 |  | paper_internal |
-| Republican randomization inference F-test p-value | 0.028 | 0.011 | 0.013 | paper_internal |
-| Democratic randomization inference F-test p-value | 0.013 | 0.027 | 0.028 | paper_internal |
+| Republican randomization inference F-test p-value | 0.028 | 0.015 | 0.015 | paper_internal |
+| Democratic randomization inference F-test p-value | 0.013 | 0.021 | 0.021 | paper_internal |
 
 Every row on which the article, the deposit and the reproduction do not
 agree.
 
 `defect_locus` records where the fault lies, because a disagreement
-reads as a failure of the reproduction and here never is. Four of the
-six rows are the article disagreeing with its own materials, one is a
-bootstrap the deposit cannot support, and one is the transposed pair
-described above.
+reads as a failure of the reproduction and here never is. Five of the
+eight rows are the article disagreeing with its own materials, two of
+those five being the transposed pair described above; one is a bootstrap
+the deposit cannot support; and two are Study 1 randomization-inference
+p-values that moved when estimatr stopped drawing from the random number
+stream, which is the `upstream` locus.
 
 ## Float coverage
 
@@ -551,12 +555,12 @@ checksums the archive records are one claim rather than two.
 
 | Script                                       | Minutes |
 |:---------------------------------------------|:--------|
-| maintained/text_study2_f_tests.R             | 3.7     |
-| ground_truth/extract_archive_values.R        | 3.1     |
+| ground_truth/extract_archive_values.R        | 2.3     |
 | maintained/study3_probabilities.R            | 2.2     |
 | maintained/study2_probabilities.R            | 2.1     |
-| maintained/figure_f8_simulated_comparisons.R | 1.2     |
+| maintained/text_study2_f_tests.R             | 2.1     |
 | maintained/text_study1_f_tests.R             | 1.0     |
+| maintained/figure_f8_simulated_comparisons.R | 0.3     |
 | maintained/text_study2_batched_ols.R         | 0.2     |
 | maintained/simulations_illustrative.R        | 0.0     |
 
@@ -570,15 +574,15 @@ analysis.
 
 # R environment
 
-| Component    | Version |
-|:-------------|:--------|
-| R            | 4.6.0   |
-| tidyverse    | 2.0.0   |
-| estimatr     | 2.0.0   |
-| ggplot2      | 4.0.3   |
-| MCMCpack     | 1.7.1   |
-| bandit       | 0.5.1   |
-| modelsummary | 2.6.0   |
+| Component    | Version    |
+|:-------------|:-----------|
+| R            | 4.6.0      |
+| tidyverse    | 2.0.0      |
+| estimatr     | 2.0.0.9000 |
+| ggplot2      | 4.0.3      |
+| MCMCpack     | 1.7.1      |
+| bandit       | 0.5.1      |
+| modelsummary | 2.6.0      |
 
 The environment the committed output was produced in.
 

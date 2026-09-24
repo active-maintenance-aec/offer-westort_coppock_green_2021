@@ -133,10 +133,10 @@ figure_3,study_1_counts,NA,Minimum wage,NA,Proposal 4 (N),NA,NA,NA,NA,n,31
 figure_3,study_1_counts,NA,Minimum wage,NA,Proposal 5 (Y),NA,NA,NA,NA,n,209
 figure_3,study_1_counts,NA,Minimum wage,NA,Proposal 5 (N),NA,NA,NA,NA,n,133
 text_study1_f_tests,study_1_f,NA,NA,mw,NA,NA,NA,NA,NA,f_statistic,3.415861
-text_study1_f_tests,study_1_f,NA,NA,mw,NA,NA,NA,NA,NA,p_value,0.429
+text_study1_f_tests,study_1_f,NA,NA,mw,NA,NA,NA,NA,NA,p_value,0.417
 text_study1_f_tests,study_1_f,NA,NA,rtw,NA,NA,NA,NA,NA,f_statistic,14.805485
-text_study1_f_tests,study_1_f,NA,NA,rtw,NA,NA,NA,NA,NA,p_value,0.199
+text_study1_f_tests,study_1_f,NA,NA,rtw,NA,NA,NA,NA,NA,p_value,0.189
 text_study2_f_tests,study_2_f,NA,NA,d,NA,NA,NA,NA,NA,f_statistic,1.933602
-text_study2_f_tests,study_2_f,NA,NA,d,NA,NA,NA,NA,NA,p_value,0.028
+text_study2_f_tests,study_2_f,NA,NA,d,NA,NA,NA,NA,NA,p_value,0.021
 text_study2_f_tests,study_2_f,NA,NA,r,NA,NA,NA,NA,NA,f_statistic,2.313104
-text_study2_f_tests,study_2_f,NA,NA,r,NA,NA,NA,NA,NA,p_value,0.013
+text_study2_f_tests,study_2_f,NA,NA,r,NA,NA,NA,NA,NA,p_value,0.015

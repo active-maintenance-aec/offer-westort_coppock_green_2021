@@ -429,11 +429,19 @@ ground_truth <-
     # significant digits, so value_script is already rounded when it is read. Two
     # separately rounded numbers can legitimately differ by a full unit in the
     # last printed digit, which is the tolerance the archive comparison takes.
-    match = if_else(is.na(value_script) | mode != "", NA_integer_,
+    # The two modes named here are quantities the article states at a precision the
+    # deposit cannot support, so a verdict on the comparison would be meaningless and
+    # `holds` judges them on dispersion instead. "upstream" is deliberately NOT among
+    # them: those two rows are compared and do get a verdict, because this file's job
+    # is to record a disagreement between the article and the reproduction and a
+    # disagreement caused by a package upgrade is still one. It is the claims file
+    # that must not halt on them, and it reads the same column for its own purpose.
+    match = if_else(is.na(value_script) | mode %in% c("approximate", "unseeded"),
+                    NA_integer_,
                     agrees(value_script, value_paper, digits, tolerance = 1)),
     match_rewrite = case_when(
       claim_type == "descriptive" ~ NA_integer_,
-      mode != "" ~ NA_integer_,
+      mode %in% c("approximate", "unseeded") ~ NA_integer_,
       is.na(value_rewrite) ~ NA_integer_,
       TRUE ~ agrees(value_rewrite, value_paper, digits)
     ),
@@ -464,9 +472,13 @@ locus <- tribble(
   "s2_rep_static_p", "archive",
   "The deposit's own script for this figure stops before reaching it, on a saved object no deposited file contains. Over five seeds of the bootstrap the p-value runs 0.076 to 0.117, and the estimate and standard error printed beside it on Figure F.8 both reproduce.",
   "s2_dem_ri_p", "paper_internal",
-  "The article gives the Democrats 0.013, which is the value the deposited script returns for the Republicans; the value it returns for the Democrats is 0.028, which the article gives the Republicans. The two are transposed, and the observed F statistics settle which way round: the Republican F is the larger of the two, so the Republican p-value is the smaller. The pipeline returns 0.027 here, against the deposit's 0.028.",
+  "The article gives the Democrats 0.013, which is the value the deposited script returns for the Republicans; the value it returns for the Democrats is 0.028, which the article gives the Republicans. The two are transposed, and the observed F statistics settle which way round: the Republican F is the larger of the two, so the Republican p-value is the smaller. The pipeline returns 0.021 here, against the deposit's 0.028.",
   "s2_rep_ri_p", "paper_internal",
-  "The article gives the Republicans 0.028, which is the value the deposited script returns for the Democrats; the value it returns for the Republicans is 0.013, which the article gives the Democrats. The pipeline returns 0.011 here, against the deposit's 0.013."
+  "The article gives the Republicans 0.028, which is the value the deposited script returns for the Democrats; the value it returns for the Republicans is 0.013, which the article gives the Democrats. The pipeline returns 0.015 here, against the deposit's 0.013.",
+  "s1_mw_f_p", "upstream",
+  "The observed F statistic reproduces to ten digits; the p-value is read off 1,000 randomization-inference draws, and the draws changed. estimatr 1.0.6 took one number from the caller's random stream for every model-frame argument a fit carried, and every fit in the null distribution carries weights; estimatr 2.0 takes none. The published 0.429 and this 0.417 are therefore two draws from the same null distribution rather than two values of one statistic. Five seeds under 2.0 give 0.417, 0.437, 0.430, 0.419, and 0.433, against a Monte Carlo standard error of 0.016 at 1,000 iterations.",
+  "s1_rtw_f_p", "upstream",
+  "The same stream change as the row above. The observed F statistic reproduces to ten digits; five seeds under estimatr 2.0 give 0.189, 0.171, 0.198, 0.203, and 0.220, against a published 0.199 and a Monte Carlo standard error of 0.012 at 1,000 iterations."
 )
 
 ground_truth <- ground_truth |>

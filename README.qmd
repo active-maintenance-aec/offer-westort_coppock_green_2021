@@ -221,7 +221,7 @@ adverse |>
   show_table(caption = "Every row on which the article, the deposit and the reproduction do not agree.")
 ```
 
-`defect_locus` records where the fault lies, because a disagreement reads as a failure of the reproduction and here never is. Four of the six rows are the article disagreeing with its own materials, one is a bootstrap the deposit cannot support, and one is the transposed pair described above.
+`defect_locus` records where the fault lies, because a disagreement reads as a failure of the reproduction and here never is. Five of the eight rows are the article disagreeing with its own materials, two of those five being the transposed pair described above; one is a bootstrap the deposit cannot support; and two are Study 1 randomization-inference p-values that moved when estimatr stopped drawing from the random number stream, which is the `upstream` locus.
 
 ## Float coverage
 

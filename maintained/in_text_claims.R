@@ -26,11 +26,21 @@ published <- read_csv(
   # existed: 22 draws from a bootstrap the deposit does not seed reproducibly, and two
   # figures the sentence hedges. Until 2026-08-20 nothing read it and all 24 were
   # compared anyway, so 18 of them stood as disagreements with the article that were
-  # never disagreements. The mapping is declared once, here, rather than at 24 call
+  # never disagreements. The mapping is declared once, here, rather than at 26 call
   # sites; every other claim is compared.
+  #   "upstream" is the third reason and was added on 2026-09-24, for the two Study 1
+  # randomization inference p-values. Those were seeded and did reproduce to three
+  # digits; estimatr 2.0 stopped taking a number from the caller's random stream for
+  # every model-frame argument a fit carries, every fit in those two null distributions
+  # carries weights, and the 1,000 draws behind each p-value are therefore a different
+  # 1,000. The article's 0.429 and this run's 0.417 are two draws from one null
+  # distribution rather than two values of one statistic, which is the same reason
+  # "unseeded" exists and a different cause, so it gets its own word. It is the word
+  # ground_truth/build_ground_truth.R gives those two rows as their defect_locus, and
+  # the two instruments should not name one thing twice.
   mutate(expect = recode_values(mode,
-                                from = c("unseeded", "approximate"),
-                                to = c("range", "derived"),
+                                from = c("unseeded", "approximate", "upstream"),
+                                to = c("range", "derived", "range"),
                                 default = "compare"))
 
 # The errata spine, one row per published entry. Every column is read as character

@@ -32,14 +32,14 @@ s1_mw_top_posterior,"Study 1 results, p. 835",pipeline,Minimum wage leading arm'
 s1_mw_top_mean,"Study 1 results, p. 835",pipeline,Minimum wage leading arm's estimated mean,0.895,3,,,TRUE,
 s1_mw_top_n,"Study 1 results, p. 835",pipeline,Respondents assigned to the minimum wage leading arm,183,0,,,TRUE,
 s1_mw_arms_below_08,"Study 1 results, p. 835",descriptive,Minimum wage arms with a success rate under 0.8,2,0,==,,TRUE,The article spells this as 'only two had success rates under 0.8'.
-s1_mw_f_p,"Study 1 results, p. 835",pipeline,Minimum wage randomization inference F-test p-value,0.429,3,,,TRUE,
+s1_mw_f_p,"Study 1 results, p. 835",pipeline,Minimum wage randomization inference F-test p-value,0.429,3,,upstream,TRUE,"A seeded 1,000-iteration randomization inference. It reproduced to three digits until estimatr 2.0 stopped drawing from the caller's random number stream for each model-frame argument a fit carries; every fit in this null distribution carries weights, so the draws behind the p-value are a different 1,000 and the article's value and this one are two draws from one null distribution."
 s1_rtw_top_posterior,"Study 1 results, p. 835",pipeline,Right-to-work leading arm's posterior probability of being best,0.906,3,,,TRUE,
 s1_rtw_second_posterior,"Study 1 results, p. 835",pipeline,Right-to-work second arm's posterior probability of being best,0.085,3,,,TRUE,
 s1_rtw_top_mean,"Study 1 results, p. 835",pipeline,Right-to-work leading arm's estimated mean,0.926,3,,,TRUE,
 s1_rtw_second_mean,"Study 1 results, p. 835",pipeline,Right-to-work second arm's estimated mean,0.934,3,,,TRUE,
 s1_rtw_top_n,"Study 1 results, p. 835",pipeline,Respondents assigned to the right-to-work leading arm,721,0,,,TRUE,
 s1_rtw_second_n,"Study 1 results, p. 835",pipeline,Respondents assigned to the right-to-work second arm,82,0,,,TRUE,
-s1_rtw_f_p,"Study 1 results, p. 837",pipeline,Right-to-work randomization inference F-test p-value,0.199,3,,,TRUE,
+s1_rtw_f_p,"Study 1 results, p. 837",pipeline,Right-to-work randomization inference F-test p-value,0.199,3,,upstream,TRUE,"A seeded 1,000-iteration randomization inference. It reproduced to three digits until estimatr 2.0 stopped drawing from the caller's random number stream for each model-frame argument a fit carries; every fit in this null distribution carries weights, so the draws behind the p-value are a different 1,000 and the article's value and this one are two draws from one null distribution."
 s1_static_mw_per_arm,"Study 1 results, p. 837",definitional,Expected assignments per minimum wage arm under a static design,100,0,,,TRUE,
 s1_static_rtw_per_arm,"Study 1 results, p. 837",definitional,Expected assignments per right-to-work arm under a static design,125,0,,,TRUE,
 s1_mw_correct_adaptive,"Study 1 results, p. 837",pipeline,"Share of simulated adaptive minimum wage trials picking the best proposal, per cent",47,0,,,TRUE,
