@@ -110,7 +110,9 @@ stopifnot(abs(c2_best_adaptive - 0.708) < 0.0005,
           abs(c2_naive_adaptive - 0.458) < 0.0005)
 
 count_word <- function(n) {
-  words <- c("One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten")
+  words <- c("One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten",
+             "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen",
+             "Eighteen", "Nineteen", "Twenty")
   if (n <= length(words)) words[n] else as.character(n)
 }
 ```
@@ -482,6 +484,30 @@ entries <- tribble(
     "C.3 is right: the posteriors, the 0.929 and 0.713, the cumulative sample difference of",
     "four, and both periods' probabilities, which sum to one."),
   "",
+  NA_character_,
+
+  # Entries 14 and 15 come from the reference audit's re-run of 2026-10-29, which learned to
+  # read a page range printed as its first page alone. They are appended after the appendix
+  # entries rather than set beside entry 5, since an entry number, once published, stays.
+  # Each corrected range keeps the reference list's own style, which drops the leading
+  # digits a last page shares with the first.
+  14, "bibliographic", "reference_audit", "brief",
+  "Trippa et al. (2012) prints a first page in place of a page range",
+  "published p. 844",
+  "Journal of Clinical Oncology 30(26): [[3258]].",
+  "Journal of Clinical Oncology 30(26): [[3258–63]].",
+  paste("Crossref, doi 10.1200/JCO.2011.39.8420, gives the article's pages as 3258 to",
+        "3263."),
+  "",
+  NA_character_,
+
+  15, "bibliographic", "reference_audit", "brief",
+  "Villar, Bowden, and Wason (2015) prints a first page in place of a page range",
+  "published p. 844",
+  "Statistical Science 30(2): [[199]].",
+  "Statistical Science 30(2): [[199–215]].",
+  paste("Crossref, doi 10.1214/14-STS504, gives the article's pages as 199 to 215."),
+  "",
   NA_character_
 ) |>
   mutate(across(c(title, published, corrected, note, claim_ids, corrected_values), as.character))
@@ -591,11 +617,11 @@ mark <- function(x) {
 }
 ```
 
-`r count_word(nrow(entries))` corrections to Offer-Westort, Coppock, and Green (2021), *American Journal of Political Science* 65(4): 826–844, [doi:10.1111/ajps.12597](https://doi.org/10.1111/ajps.12597). `r count_word(n_article)` are sentences in the article stating a number or a treatment label that the study's own data do not support, `r tolower(count_word(n_bibliographic))` is a reference-list entry, and `r tolower(count_word(n_appendix))` are in the supporting information. No conclusion in either document changes, no result in either is wrong, and every figure and table is correct as printed.
+`r count_word(nrow(entries))` corrections to Offer-Westort, Coppock, and Green (2021), *American Journal of Political Science* 65(4): 826–844, [doi:10.1111/ajps.12597](https://doi.org/10.1111/ajps.12597). `r count_word(n_article)` are sentences in the article stating a number or a treatment label that the study's own data do not support, `r tolower(count_word(n_bibliographic))` are reference-list entries, and `r tolower(count_word(n_appendix))` are in the supporting information. No conclusion in either document changes, no result in either is wrong, and every figure and table is correct as printed.
 
-The corrected values in entries 1 to `r max(entries$entry[entries$class == "quantity"])` are computed from a maintained reproduction of the analysis, held at `active-maintenance-aec/offer-westort_coppock_green_2021`, which reproduces all 913 of the article's published table and figure values; the reference-list entry is verified against the authoritative record at Crossref, named in the entry.
+The corrected values in entries 1 to `r max(entries$entry[entries$class == "quantity"])` are computed from a maintained reproduction of the analysis, held at `active-maintenance-aec/offer-westort_coppock_green_2021`, which reproduces all 913 of the article's published table and figure values; the reference-list entries are verified against the authoritative record at Crossref, named in each entry.
 
-The supporting information entries come from a reading of sections B.2, B.3, C.1, C.2 and C.3 against the authors' own source, whose compiled PDF is byte-identical to the published appendix. They are of a different kind from the first `r tolower(count_word(n_article + n_bibliographic))`, because none of them changes a quantity: every numeric claim in those five sections was recomputed independently and all of them reproduce, including both columns of all twelve rows of Table C.1. What is left is notation, one word, two dropped or transposed characters, one variance term, and one number that is right and is asked to demonstrate something it does not. Their page numbers are the appendix's own, which is separately paginated 1 to 49.
+The supporting information entries come from a reading of sections B.2, B.3, C.1, C.2 and C.3 against the authors' own source, whose compiled PDF is byte-identical to the published appendix. They are of a different kind from the article's `r tolower(count_word(n_article + n_bibliographic))`, because none of them changes a quantity: every numeric claim in those five sections was recomputed independently and all of them reproduce, including both columns of all twelve rows of Table C.1. What is left is notation, one word, two dropped or transposed characters, one variance term, and one number that is right and is asked to demonstrate something it does not. Their page numbers are the appendix's own, which is separately paginated 1 to 49.
 
 Changed tokens are shown in bold on both sides, and a changed expression is set in bold mathematics, which is the same mark made the way mathematics can carry it. Where a sentence contains other quantities, those are reprinted unchanged. `r count_word(sum(entries$form == "note")) |> tolower()` entry, `r str_flatten_comma(entries$entry[entries$form == "note"])`, quotes a passage and proposes no change to it; its note says why.
 

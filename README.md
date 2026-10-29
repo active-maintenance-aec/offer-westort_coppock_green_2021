@@ -76,9 +76,9 @@ source("run_all.R")
 
 The first run downloads about 132 MB from the Dataverse, almost all of
 it two saved simulation objects. Later runs verify what is already on
-disk and download nothing. The whole pipeline took 10.3 minutes on the
+disk and download nothing. The whole pipeline took 11 minutes on the
 machine that produced the committed output,
-ground_truth/extract_archive_values.R alone accounting for 2.3 of them.
+maintained/text_study2_f_tests.R alone accounting for 2.6 of them.
 Timings are not comparable across machines.
 
 # The paper
@@ -206,11 +206,11 @@ article.
 # Errata
 
 Four sentences in the article state a number or a treatment label the
-data do not support, one reference-list entry is wrong in two ways the
+data do not support, three reference-list entries are wrong in ways the
 deposit cannot speak to, and eight defects are in the supporting
 information’s proofs and worked examples. Every figure and table is
-correct as printed, and no conclusion in either document changes. All 13
-are set out in `errata.qmd`, which renders to
+correct as printed, and no conclusion in either document changes. All
+fifteen are set out in `errata.qmd`, which renders to
 `offer-westort_coppock_green_2021_errata.pdf` with its corrected values
 computed at render time and writes `errata_entries.csv`, the spine this
 section counts and numbers from.
@@ -237,6 +237,12 @@ section counts and numbers from.
     tenth names are the article’s tenth and eleventh authors, Lang’o
     Odondi having been dropped, and the title prints “Why UseThem”
     without the space.
+5.  **Two page ranges printed as their first page.** A re-run of the
+    sweep on 2026-10-29, which reads a range truncated to its first
+    page, found Trippa et al. (2012) printed as 3258 for 3258–63 and
+    Villar, Bowden, and Wason (2015) as 199 for 199–215. They are errata
+    entries 14 and 15, appended after the supporting information’s
+    entries.
 
 ## The supporting information
 
@@ -555,11 +561,11 @@ checksums the archive records are one claim rather than two.
 
 | Script                                       | Minutes |
 |:---------------------------------------------|:--------|
-| ground_truth/extract_archive_values.R        | 2.3     |
+| maintained/text_study2_f_tests.R             | 2.6     |
+| ground_truth/extract_archive_values.R        | 2.4     |
 | maintained/study3_probabilities.R            | 2.2     |
 | maintained/study2_probabilities.R            | 2.1     |
-| maintained/text_study2_f_tests.R             | 2.1     |
-| maintained/text_study1_f_tests.R             | 1.0     |
+| maintained/text_study1_f_tests.R             | 1.1     |
 | maintained/figure_f8_simulated_comparisons.R | 0.3     |
 | maintained/text_study2_batched_ols.R         | 0.2     |
 | maintained/simulations_illustrative.R        | 0.0     |
@@ -576,9 +582,9 @@ analysis.
 
 | Component    | Version    |
 |:-------------|:-----------|
-| R            | 4.6.0      |
+| R            | 4.6.1      |
 | tidyverse    | 2.0.0      |
-| estimatr     | 2.0.0.9000 |
+| estimatr     | 2.0.1.9000 |
 | ggplot2      | 4.0.3      |
 | MCMCpack     | 1.7.1      |
 | bandit       | 0.5.1      |
