@@ -494,6 +494,12 @@ ground_truth <- ground_truth |>
       mode == "unseeded" ~ str_c("A bootstrap the deposit does not seed reproducibly; the pipeline gives ",
                                  render(value_rewrite, digits), "."),
       is.na(value_rewrite) ~ "No counterpart in the pipeline; verified at the point of use.",
+      coalesce(match_rewrite, 0L) == 1 &
+        coalesce(as.numeric(render(value_rewrite, digits)) !=
+                   as.numeric(normalise_paper(value_paper)), FALSE) ~
+        str_c("The rewrite gives ", render(value_rewrite, digits + 1),
+              ", a tie at the page's precision: it rounds to ", render(value_rewrite, digits),
+              " here and to the published ", value_paper, " on the page."),
       coalesce(match_rewrite, 0L) == 1 ~ str_c("The rewrite gives ", render(value_rewrite, digits),
                                                ", which is the published value."),
       TRUE ~ ""
