@@ -222,7 +222,7 @@ entries <- tribble(
     "the sentence uses. Rounding to one decimal first gives 36.5, and rounding that again ",
     "gives 37. The other three shares in the same passage round correctly."),
   "s1_mw_correct_static",
-  str_c(fmt(100 * mw_static$correct_static, 1), "%"),
+  fmt(100 * mw_static$correct_static, 1),
 
   4, "quantity", "pipeline", "full",
   "The two randomization inference p-values are transposed",
