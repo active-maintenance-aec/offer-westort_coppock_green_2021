@@ -185,7 +185,7 @@ entries <- tribble(
 
   2, "label", "pipeline", "full",
   "The arm carrying the 4.1-point Republican effect",
-  "published p. 840",
+  "published p. 841",
   "In this particular case, the adaptive design with the smaller standard error allows us to declare the 4.1-point average effect of the [[accuracy]] treatment statistically significant (p = 0.014), whereas under that static design the effect would not have attained statistical significance (p = 0.152).",
   str_glue(
     "In this particular case, the adaptive design with the smaller standard error allows us ",
@@ -468,7 +468,7 @@ entries <- tribble(
 
   13, "typographic", "proof_audit", "brief",
   "Reversed subscripts on the control condition's period-two sampling probability",
-  "published appendix p. 18",
+  "published appendix p. 19",
   paste0(
     "Suppose that in period two based on the sampling probabilities ",
     "[[$(\\tilde p_{T1,2},\\ \\tilde p_{T2,2},\\ \\tilde p_{2,C})$]], from our period size of ",
