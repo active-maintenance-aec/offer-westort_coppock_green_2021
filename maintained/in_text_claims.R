@@ -59,7 +59,7 @@ errata <- read_csv(here::here("errata_entries.csv"),
 #
 # The expectation is derived, never typed at a call site, so every claim() call names a
 # number and nothing else: published_claims.csv says what the article prints and
-# errata_entries.csv says which of those a published note corrects and to what. Entry 2
+# errata_entries.csv says which of those a published note corrects and to what. Entry 9
 # is of class label, so it corrects a word and leaves its two claims expected to
 # reproduce; only the three quantity entries move an expectation.
 #

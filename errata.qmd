@@ -67,7 +67,7 @@ ri_dem <- study2_f_tests |> filter(party == "Democrats")
 
 fmt <- function(x, digits) sprintf(paste0("%.", digits, "f"), x)
 
-# The static counterfactual behind appendix entry 12 ----
+# The static counterfactual behind appendix entry 8 ----
 # Appendix C.2 offers E[max(theta_1, theta_2)] = 0.708 as evidence that adaptive assignment
 # biases estimation. The maximum of two noisy estimates exceeds their common mean under ANY
 # design, so the number only shows what the section says it shows if a non-adaptive design
@@ -145,7 +145,7 @@ count_word <- function(n) {
 # what makes "has this finding been published?" a query over the corpus rather than a reading
 # of every note. It is empty where the entry has no ground truth row: a reference list is not
 # an extraction claim. It names every row the entry ADDRESSES, including one it explains and
-# declines to correct, which is why entry 2 carries s2_rep_static_p as well as s2_rep_4pt_arm.
+# declines to correct, which is why entry 9 carries s2_rep_static_p as well as s2_rep_4pt_arm.
 # The earlier rule listed only corrected rows; that made a finding which had been published in
 # full read as unpublished, which is the opposite of what the column is for. Whether a row was
 # corrected or only explained is visible from the [[...]] spans and the note. Every id listed
@@ -165,7 +165,7 @@ entries <- tribble(
 
   1, "quantity", "pipeline", "full",
   "The estimated mean of the leading minimum wage arm",
-  "published p. 835",
+  "p. 835",
   "The winning arm, by a hair, was Proposal 3 ([[B]], without current minimum wage), with a probability of being best of 0.219 and an estimated mean of [[0.895]] over 183 respondents.",
   str_glue(
     "The winning arm, by a hair, was Proposal 3 ([[N]], without current minimum wage), with ",
@@ -183,31 +183,9 @@ entries <- tribble(
   "s1_mw_top_mean",
   fmt(mw_mean(mw_final$arm[1]), 3),
 
-  2, "label", "pipeline", "full",
-  "The arm carrying the 4.1-point Republican effect",
-  "published p. 841",
-  "In this particular case, the adaptive design with the smaller standard error allows us to declare the 4.1-point average effect of the [[accuracy]] treatment statistically significant (p = 0.014), whereas under that static design the effect would not have attained statistical significance (p = 0.152).",
-  str_glue(
-    "In this particular case, the adaptive design with the smaller standard error allows us ",
-    "to declare the {fmt(100 * lottery$estimate, 1)}-point average effect of the ",
-    "[[Lottery]] treatment statistically significant (p = {fmt(lottery$p.value, 3)}), ",
-    "whereas under that static design the effect would not have attained statistical ",
-    "significance (p = 0.152)."),
-  str_glue(
-    "Figure 6 gives the Republican Lottery arm an effect of ",
-    "{fmt(100 * lottery$estimate, 1)} percentage points with a p-value of ",
-    "{fmt(lottery$p.value, 3)}. The Accuracy arm's Republican estimate is ",
-    "{fmt(100 * accuracy$estimate, 1)} percentage points, in the opposite direction, with a ",
-    "p-value of {fmt(accuracy$p.value, 3)}. The two preceding sentences and Figure 5 both ",
-    "identify the Lottery as the arm in question. The static-design p-value of 0.152 is ",
-    "left as printed: it comes from a bootstrap the deposited materials do not seed ",
-    "reproducibly, and the reproduction cannot recompute it."),
-  "s2_rep_4pt_arm;s2_rep_static_p",
-  NA_character_,
-
-  3, "quantity", "pipeline", "full",
+  2, "quantity", "pipeline", "full",
   "The share of static minimum wage simulations picking the best proposal",
-  "published p. 837",
+  "p. 837",
   "Treating observed success rates as the truth in simulations of the minimum wage experiment, we picked the best proposal 47% of the time in adaptive experiments and [[37%]] of the time in static experiments.",
   str_glue(
     "Treating observed success rates as the truth in simulations of the minimum wage ",
@@ -224,9 +202,9 @@ entries <- tribble(
   "s1_mw_correct_static",
   fmt(100 * mw_static$correct_static, 1),
 
-  4, "quantity", "pipeline", "full",
+  3, "quantity", "pipeline", "full",
   "The two randomization inference p-values are transposed",
-  "published p. 840; published p. 841",
+  "p. 840; p. 841",
   paste(
     "Using randomization inference, we reject the null of no difference across treatments (p = [[0.028]]).",
     "Using randomization inference, we again reject the null (p = [[0.013]]).",
@@ -253,30 +231,6 @@ entries <- tribble(
   "s2_rep_ri_p;s2_dem_ri_p",
   str_c(fmt(ri_rep$p_value, 3), ";", fmt(ri_dem$p_value, 3)),
 
-  5, "bibliographic", "reference_audit", "brief",
-  "Pallmann et al. (2018) skips its ninth author and runs two words of its title together",
-  "published p. 844",
-  paste(
-    "Pallmann, Philip, Alun W. Bedding, Babak Choodari-Oskooei, Munyaradzi Dimairo, Laura ",
-    "Flight, Lisa V. Hampson, Jane Holmes, Adrian P. Mander, Matthew R. Sydes, Sofía S. ",
-    "Villar, et al. 2018. \"Adaptive Designs in Clinical Trials: Why [[UseThem]], and How ",
-    "to Run and Report Them.\" BMC Medicine 16(1): 29."),
-  paste(
-    "Pallmann, Philip, Alun W. Bedding, Babak Choodari-Oskooei, Munyaradzi Dimairo, Laura ",
-    "Flight, Lisa V. Hampson, Jane Holmes, Adrian P. Mander, [[Lang'o Odondi]], Matthew R. ",
-    "Sydes, Sofía S. Villar, et al. 2018. \"Adaptive Designs in Clinical Trials: Why [[Use ",
-    "Them]], and How to Run and Report Them.\" BMC Medicine 16(1): 29."),
-  paste(
-    "Two defects in one entry. The names it prints ninth and tenth are the article's tenth",
-    "and eleventh authors: Lang'o Odondi is skipped, so the entry is not the first ten",
-    "authors of anything. Crossref, doi 10.1186/s12916-018-1017-7: Pallmann, Bedding,",
-    "Choodari-Oskooei, Dimairo, Flight, Hampson, Holmes, Mander, Odondi, Sydes, Villar,",
-    "Wason, Weir, Wheeler, Yap, Jaki. The insertion is marked on the corrected side only,",
-    "since no span of the published list is wrong in itself. The title's \"Use Them\" is set",
-    "without its space, which the rendered page confirms rather than the text extraction."),
-  "",
-  NA_character_,
-
   # Appendix entries. These come from a reading of the supporting information's proofs and
   # worked examples rather than from the pipeline, which is why their source is proof_audit
   # and none of them carries a corrected value: not one of them changes a quantity. Every
@@ -286,9 +240,9 @@ entries <- tribble(
   #
   # Page numbers are the published appendix's own, which is separately paginated 1 to 49.
 
-  6, "notation", "proof_audit", "full",
+  4, "definition", "proof", "full",
   "The independence that warrants the Horvitz-Thompson factorisation names the realized outcome",
-  "published appendix p. 8",
+  "app. p. 8",
   "And because [[$Y_i$]] $\\perp\\!\\!\\!\\perp K_i \\mid S_i$,",
   "And because [[$Y_i(k)$]] $\\perp\\!\\!\\!\\perp K_i \\mid S_i$,",
   paste(
@@ -303,9 +257,9 @@ entries <- tribble(
   "",
   NA_character_,
 
-  7, "derivation", "proof_audit", "full",
+  5, "definition", "proof", "full",
   "The variance of the control-augmented estimator drops the covariance between its two terms",
-  "published appendix p. 10",
+  "app. p. 10",
   paste0(
     "$\\operatorname{Var}\\left[\\hat\\tau_k^{HT} \\mid S_i\\right] = ",
     "\\frac{1}{N^2} \\sum_{i=1}^N \\operatorname{Var}\\left[Y_i(k) ",
@@ -333,15 +287,15 @@ entries <- tribble(
     "$\\Pr[Y_i(k) = 1]/\\pi_i(k; S_i) + \\Pr[Y_i(0) = 1]/\\pi_i(0; S_i)$ at fixed total",
     "probability still gives probabilities proportional to the square roots of the success",
     "rates, and the comparison against the static design at $1/(K+1)$ still favours the",
-    "adaptive design for $K > 1$. Entry 8 corrects the same display's conditioning and the two",
+    "adaptive design for $K > 1$. Entry 6 corrects the same display's conditioning and the two",
     "compose: the term added here is the one that survives into the unconditional variance",
-    "entry 8 states."),
+    "entry 6 states."),
   "",
   NA_character_,
 
-  8, "derivation", "proof_audit", "full",
+  6, "definition", "proof", "full",
   "The variance display conditions on one unit's history while summing over all of them",
-  "published appendix p. 10",
+  "app. p. 10",
   paste0(
     "[[Conditional on history, the]] variance can be expressed as, ",
     "[[$\\operatorname{Var}\\left[\\hat\\tau_k^{HT} \\mid S_i\\right]$]]$\\; = \\;$ ",
@@ -365,54 +319,14 @@ entries <- tribble(
     "history is the constant $\\tau_k$, so the centred summands are a martingale difference",
     "sequence and every cross-unit covariance is zero. What the section needs is that",
     "argument rather than a conditioning bar. The right-hand side is abbreviated above",
-    "because entry 7 is what changes it; the two entries mark disjoint spans of one display",
+    "because entry 5 is what changes it; the two entries mark disjoint spans of one display",
     "and are applied together."),
   "",
   NA_character_,
 
-  9, "wording", "proof_audit", "full",
-  "\"The product of two binomials is also a binomial\"",
-  "published appendix p. 10",
-  paste0(
-    "The $Y_i(k)$ and $\\mathbf{1}\\{K_i = k\\}$ terms are independent [[binomials]], and the ",
-    "product of two [[binomials]] is also a [[binomial]], and so we express the variance of ",
-    "their product accordingly."),
-  paste0(
-    "The $Y_i(k)$ and $\\mathbf{1}\\{K_i = k\\}$ terms are independent [[Bernoullis]], and the ",
-    "product of two [[Bernoullis]] is also a [[Bernoulli]], and so we express the variance of ",
-    "their product accordingly."),
-  paste(
-    "As a claim about the binomial distribution the sentence is false: the product of two",
-    "$\\text{Binomial}(n, p)$ variables with $n > 1$ is not binomial. It holds for the",
-    "Bernoulli case, which is the only one used here and the one the section's constant-means",
-    "assumption sets up, and the display that follows is correct. Writing",
-    "$p = \\Pr[Y_i(k) = 1 \\mid S_i]$ and $q = \\Pr[K_i = k \\mid S_i]$, the product is",
-    "$\\text{Bernoulli}(pq)$ with variance $pq(1 - pq)$, which is what is printed. Only the",
-    "word is wrong."),
-  "",
-  NA_character_,
-
-  10, "typographic", "proof_audit", "brief",
-  "\"ams\" for \"arms\"",
-  "published appendix p. 11",
-  paste0(
-    "They show regret as a function of the expected sum of assignments to suboptimal arms, ",
-    "multiplied by the difference between the best arm mean and the mean under [[ams]] ",
-    "$k \\neq k^{*}$."),
-  paste0(
-    "They show regret as a function of the expected sum of assignments to suboptimal arms, ",
-    "multiplied by the difference between the best arm mean and the mean under [[arms]] ",
-    "$k \\neq k^{*}$."),
-  paste(
-    "A dropped letter. The sentence is otherwise right, and so is the claim it leads to: the",
-    "expected number of plays of suboptimal arms under Thompson sampling grows as",
-    "$O(\\ln N)$ against $O(N)$, that being $N/(K+1)$, under a random design."),
-  "",
-  NA_character_,
-
-  11, "notation", "proof_audit", "full",
+  7, "definition", "proof", "full",
   "Arm two's posterior density carries arm one's parameters",
-  "published appendix p. 14",
+  "app. p. 14",
   paste0(
     "[[$\\int_{\\theta_2 = 0}^{\\theta_1} c_{2,t}\\, \\theta_2^{\\alpha_{1,t} - 1} ",
     "(1 - \\theta_2)^{\\beta_{1,t} - 1} \\, d\\theta_2$]]"),
@@ -431,9 +345,9 @@ entries <- tribble(
   "",
   NA_character_,
 
-  12, "interpretation", "proof_audit", "note",
+  8, "interpretation", "proof", "note",
   "The expected best-arm sample mean is offered as a bias that adaptive assignment introduces",
-  "published appendix p. 16",
+  "app. p. 16",
   paste0(
     "If we condition on the best observed arm, however, the expected sample mean of the best ",
     "arm is 0.708, although the true parameter value for either arm is 0.5."),
@@ -466,9 +380,71 @@ entries <- tribble(
   "",
   NA_character_,
 
-  13, "typographic", "proof_audit", "brief",
+  9, "label", "pipeline", "full",
+  "The arm carrying the 4.1-point Republican effect",
+  "p. 841",
+  "In this particular case, the adaptive design with the smaller standard error allows us to declare the 4.1-point average effect of the [[accuracy]] treatment statistically significant (p = 0.014), whereas under that static design the effect would not have attained statistical significance (p = 0.152).",
+  str_glue(
+    "In this particular case, the adaptive design with the smaller standard error allows us ",
+    "to declare the {fmt(100 * lottery$estimate, 1)}-point average effect of the ",
+    "[[Lottery]] treatment statistically significant (p = {fmt(lottery$p.value, 3)}), ",
+    "whereas under that static design the effect would not have attained statistical ",
+    "significance (p = 0.152)."),
+  str_glue(
+    "Figure 6 gives the Republican Lottery arm an effect of ",
+    "{fmt(100 * lottery$estimate, 1)} percentage points with a p-value of ",
+    "{fmt(lottery$p.value, 3)}. The Accuracy arm's Republican estimate is ",
+    "{fmt(100 * accuracy$estimate, 1)} percentage points, in the opposite direction, with a ",
+    "p-value of {fmt(accuracy$p.value, 3)}. The two preceding sentences and Figure 5 both ",
+    "identify the Lottery as the arm in question. The static-design p-value of 0.152 is ",
+    "left as printed: it comes from a bootstrap the deposited materials do not seed ",
+    "reproducibly, and the reproduction cannot recompute it."),
+  "s2_rep_4pt_arm;s2_rep_static_p",
+  NA_character_,
+
+  10, "wording", "proof", "full",
+  "\"The product of two binomials is also a binomial\"",
+  "app. p. 10",
+  paste0(
+    "The $Y_i(k)$ and $\\mathbf{1}\\{K_i = k\\}$ terms are independent [[binomials]], and the ",
+    "product of two [[binomials]] is also a [[binomial]], and so we express the variance of ",
+    "their product accordingly."),
+  paste0(
+    "The $Y_i(k)$ and $\\mathbf{1}\\{K_i = k\\}$ terms are independent [[Bernoullis]], and the ",
+    "product of two [[Bernoullis]] is also a [[Bernoulli]], and so we express the variance of ",
+    "their product accordingly."),
+  paste(
+    "As a claim about the binomial distribution the sentence is false: the product of two",
+    "$\\text{Binomial}(n, p)$ variables with $n > 1$ is not binomial. It holds for the",
+    "Bernoulli case, which is the only one used here and the one the section's constant-means",
+    "assumption sets up, and the display that follows is correct. Writing",
+    "$p = \\Pr[Y_i(k) = 1 \\mid S_i]$ and $q = \\Pr[K_i = k \\mid S_i]$, the product is",
+    "$\\text{Bernoulli}(pq)$ with variance $pq(1 - pq)$, which is what is printed. Only the",
+    "word is wrong."),
+  "",
+  NA_character_,
+
+  11, "typography", "proof", "brief",
+  "\"ams\" for \"arms\"",
+  "app. p. 11",
+  paste0(
+    "They show regret as a function of the expected sum of assignments to suboptimal arms, ",
+    "multiplied by the difference between the best arm mean and the mean under [[ams]] ",
+    "$k \\neq k^{*}$."),
+  paste0(
+    "They show regret as a function of the expected sum of assignments to suboptimal arms, ",
+    "multiplied by the difference between the best arm mean and the mean under [[arms]] ",
+    "$k \\neq k^{*}$."),
+  paste(
+    "A dropped letter. The sentence is otherwise right, and so is the claim it leads to: the",
+    "expected number of plays of suboptimal arms under Thompson sampling grows as",
+    "$O(\\ln N)$ against $O(N)$, that being $N/(K+1)$, under a random design."),
+  "",
+  NA_character_,
+
+  12, "typography", "proof", "brief",
   "Reversed subscripts on the control condition's period-two sampling probability",
-  "published appendix p. 19",
+  "app. p. 19",
   paste0(
     "Suppose that in period two based on the sampling probabilities ",
     "[[$(\\tilde p_{T1,2},\\ \\tilde p_{T2,2},\\ \\tilde p_{2,C})$]], from our period size of ",
@@ -486,14 +462,37 @@ entries <- tribble(
   "",
   NA_character_,
 
+  13, "bibliographic", "reference_audit", "brief",
+  "Pallmann et al. (2018) skips its ninth author and runs two words of its title together",
+  "p. 844",
+  paste(
+    "Pallmann, Philip, Alun W. Bedding, Babak Choodari-Oskooei, Munyaradzi Dimairo, Laura ",
+    "Flight, Lisa V. Hampson, Jane Holmes, Adrian P. Mander, Matthew R. Sydes, Sofía S. ",
+    "Villar, et al. 2018. \"Adaptive Designs in Clinical Trials: Why [[UseThem]], and How ",
+    "to Run and Report Them.\" BMC Medicine 16(1): 29."),
+  paste(
+    "Pallmann, Philip, Alun W. Bedding, Babak Choodari-Oskooei, Munyaradzi Dimairo, Laura ",
+    "Flight, Lisa V. Hampson, Jane Holmes, Adrian P. Mander, [[Lang'o Odondi]], Matthew R. ",
+    "Sydes, Sofía S. Villar, et al. 2018. \"Adaptive Designs in Clinical Trials: Why [[Use ",
+    "Them]], and How to Run and Report Them.\" BMC Medicine 16(1): 29."),
+  paste(
+    "Two defects in one entry. The names it prints ninth and tenth are the article's tenth",
+    "and eleventh authors: Lang'o Odondi is skipped, so the entry is not the first ten",
+    "authors of anything. Crossref, doi 10.1186/s12916-018-1017-7: Pallmann, Bedding,",
+    "Choodari-Oskooei, Dimairo, Flight, Hampson, Holmes, Mander, Odondi, Sydes, Villar,",
+    "Wason, Weir, Wheeler, Yap, Jaki. The insertion is marked on the corrected side only,",
+    "since no span of the published list is wrong in itself. The title's \"Use Them\" is set",
+    "without its space, which the rendered page confirms rather than the text extraction."),
+  "",
+  NA_character_,
+
   # Entries 14 and 15 come from the reference audit's re-run of 2026-10-29, which learned to
-  # read a page range printed as its first page alone. They are appended after the appendix
-  # entries rather than set beside entry 5, since an entry number, once published, stays.
-  # Each corrected range keeps the reference list's own style, which drops the leading
-  # digits a last page shares with the first.
+  # read a page range printed as its first page alone. Each corrected range keeps the
+  # reference list's own style, which drops the leading digits a last page shares with the
+  # first.
   14, "bibliographic", "reference_audit", "brief",
   "Trippa et al. (2012) prints a first page in place of a page range",
-  "published p. 844",
+  "p. 844",
   "Journal of Clinical Oncology 30(26): [[3258]].",
   "Journal of Clinical Oncology 30(26): [[3258–63]].",
   paste("Crossref, doi 10.1200/JCO.2011.39.8420, gives the article's pages as 3258 to",
@@ -503,7 +502,7 @@ entries <- tribble(
 
   15, "bibliographic", "reference_audit", "brief",
   "Villar, Bowden, and Wason (2015) prints a first page in place of a page range",
-  "published p. 844",
+  "p. 844",
   "Statistical Science 30(2): [[199]].",
   "Statistical Science 30(2): [[199–215]].",
   paste("Crossref, doi 10.1214/14-STS504, gives the article's pages as 199 to 215."),
@@ -518,7 +517,7 @@ stopifnot(nrow(entries) == max(entries$entry), !anyDuplicated(entries$entry))
 # or reclassified moves every sentence that counts it. `source` is what separates the
 # appendix entries from the article's: they are the ones a reading found rather than the
 # pipeline.
-n_appendix <- sum(entries$source == "proof_audit")
+n_appendix <- sum(entries$source == "proof")
 n_bibliographic <- sum(entries$class == "bibliographic")
 n_article <- nrow(entries) - n_appendix - n_bibliographic
 
@@ -563,7 +562,7 @@ stopifnot(
 )
 
 # An entry may record a defect and deliberately leave the page alone, which is what
-# form == "note" declares: entry 12 states a true number and what is wrong with it is the
+# form == "note" declares: entry 8 states a true number and what is wrong with it is the
 # inference the section invites, so there is no token to replace and no corrected sentence to
 # set. The declaration and the missing corrected side have to agree, in both directions. A
 # note entry that acquired a corrected sentence would render a correction nobody authorised,
@@ -595,13 +594,13 @@ if (nrow(marker_misplaced) > 0) {
 #
 # A span is bolded, and a span that is wholly inline math is bolded too, by the bold math
 # version rather than by \textbf. \textbf does not reach inside math mode, so bolding
-# "$\alpha_{1,t}$" changes nothing a reader can see, and entry 11's two sides would then
+# "$\alpha_{1,t}$" changes nothing a reader can see, and entry 7's two sides would then
 # differ only in a subscript with no mark on it: the correction would be invisible in the
 # document whose job is showing it.
 #
 # It was \underline until 2026-09-10, which was legible and looked wrong. TeX sets the rule
-# below the box's full DEPTH, so on entry 11 it cleared the integral's lower limit by sitting
-# a long way under everything else, and on entry 8 it ran hard against the descenders of
+# below the box's full DEPTH, so on entry 7 it cleared the integral's lower limit by sitting
+# a long way under everything else, and on entry 6 it ran hard against the descenders of
 # \left[ ... \right]. A rule whose distance from the expression is set by the lowest thing
 # in it cannot look right on both. \mathversion{bold} switches the whole formula, \left,
 # \operatorname and large operators included, where \bm chokes on all three, and it leaves
@@ -653,5 +652,12 @@ walk(seq_len(nrow(entries)), function(i) {
 #| label: emit-spine
 # The machine-readable spine, written wherever this document is rendered. Every other
 # statement of these corrections reads it rather than restating them.
+# The spine's vocabularies are closed (cleanup of 2026-11-07): a value outside them is a
+# typo, and the edition builders read these columns to shape every entry.
+stopifnot(
+  all(entries$class %in% c("quantity", "description", "interpretation", "definition", "label", "float", "cross_reference", "wording", "spelling", "typography", "bibliographic")),
+  all(entries$form %in% c("full", "brief", "note")),
+  all(entries$source %in% c("pipeline", "reading", "reference_audit", "publisher_record", "authors_archive", "proof"))
+)
 write_csv(entries, here("errata_entries.csv"))
 ```

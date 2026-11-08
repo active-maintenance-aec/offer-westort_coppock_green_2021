@@ -650,7 +650,7 @@ stopifnot(
 )
 
 # The precision each claim is rendered at, read off the article's own statement and
-# off the correction where a quantity erratum publishes one. Entry 3 corrects a share
+# off the correction where a quantity erratum publishes one. Entry 2 corrects a share
 # the article prints as 37% to 36.5%, so the article's nought decimals would put 36 on
 # a line whose whole purpose is to be laid beside a note saying 36.5. Both instruments
 # take the finer of the two, which is what keeps the comparison below a check rather

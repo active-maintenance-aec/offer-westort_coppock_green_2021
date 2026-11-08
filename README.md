@@ -246,7 +246,7 @@ section counts and numbers from.
 
 ## The supporting information
 
-Entries 6 to 13 come from a different kind of check from everything
+Entries 4 to 12 come from a different kind of check from everything
 above: a reading of appendix sections B.2, B.3, C.1, C.2 and C.3 for
 soundness, against the authors’ own source, whose compiled PDF is
 byte-identical to the published appendix. The gate a remastered edition

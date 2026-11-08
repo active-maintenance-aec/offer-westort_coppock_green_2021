@@ -74,7 +74,7 @@ n_errata <- nrow(spine)
 
 # The spine carries two kinds of entry now. `source` separates them: the article's came from
 # running the deposit or auditing its references, the appendix's from reading its proofs.
-n_appendix <- sum(spine$source == "proof_audit")
+n_appendix <- sum(spine$source == "proof")
 n_bibliographic <- sum(spine$class == "bibliographic")
 n_article <- n_errata - n_appendix - n_bibliographic
 
@@ -186,7 +186,7 @@ Running is not reproducing, and the two questions have different answers here. W
 
 ## The supporting information
 
-Entries `r min(spine$entry[spine$source == "proof_audit"])` to `r max(spine$entry[spine$source == "proof_audit"])` come from a different kind of check from everything above: a reading of appendix sections B.2, B.3, C.1, C.2 and C.3 for soundness, against the authors' own source, whose compiled PDF is byte-identical to the published appendix. The gate a remastered edition runs compares two pictures of a display and the reproduction never reaches a derivation at all, so a proof could be wrong in every line and pass both.
+Entries `r min(spine$entry[spine$source == "proof"])` to `r max(spine$entry[spine$source == "proof"])` come from a different kind of check from everything above: a reading of appendix sections B.2, B.3, C.1, C.2 and C.3 for soundness, against the authors' own source, whose compiled PDF is byte-identical to the published appendix. The gate a remastered edition runs compares two pictures of a display and the reproduction never reaches a derivation at all, so a proof could be wrong in every line and pass both.
 
 Nothing in those five sections is wrong in a way that changes a result, and **none of the `r tolower(count_word(n_appendix))` entries changes a quantity**. Every numeric claim in them was recomputed independently and all of them reproduce: both columns of all twelve rows of Table C.1, the 0.458 and the 0.708 of C.2, and C.3's posteriors, its 0.929 and 0.713, and both periods' sampling probabilities. So does C.1's conjugacy, B.3's square-root allocation rule, and its comparison against the static design at $1/(K+1)$.
 
