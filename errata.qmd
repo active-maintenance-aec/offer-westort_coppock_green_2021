@@ -23,6 +23,8 @@ format:
         \newcommand{\mathmark}[1]{{\mathversion{bold}#1}}
 ---
 
+The maintained replication code behind these errata is at <https://github.com/active-maintenance-aec/offer-westort_coppock_green_2021> and is archived at Zenodo at <https://doi.org/10.5281/zenodo.24168408>, a DOI that always resolves to the latest version.
+
 ```{r}
 #| label: setup
 #| include: false
