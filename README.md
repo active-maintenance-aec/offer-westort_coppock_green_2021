@@ -28,6 +28,8 @@
 - [R environment](#r-environment)
 - [Licence](#licence)
 
+**Archived at Zenodo:** [doi:10.5281/zenodo.24168408](https://doi.org/10.5281/zenodo.24168408). This DOI always resolves to the latest release of the maintained version.
+
 # What this repository is
 
 A maintained reproduction of Molly Offer-Westort, Alexander Coppock, and
